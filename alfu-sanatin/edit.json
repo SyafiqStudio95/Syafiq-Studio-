@@ -1,0 +1,1133 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4",
+  "c2": "assets/video/c2.mp4",
+  "c3": "assets/video/c3.mp4",
+  "c4": "assets/video/c4.mp4",
+  "c5": "assets/video/c5.mp4",
+  "c6": "assets/video/c6.mp4"
+ },
+ "grade": {
+  "note": "Teal-Amber Premium: smooth 3D LUT (tools/make_lut.py) quiets the cyan backdrop to deep teal and enriches warm covers; adjust+wheels shape contrast, warm highlights/teal shadows; vignette focuses light on the book; per-clip exposure evens lighting",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.16,
+    "shadows": 0.07,
+    "whites": -0.02,
+    "blacks": -0.02,
+    "vibrance": 0.05,
+    "saturation": -0.02
+   },
+   "wheels": {
+    "shadows": {
+     "hue": 195,
+     "amount": 0.1,
+     "level": -0.02
+    },
+    "highlights": {
+     "hue": 38,
+     "amount": 0.07,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.22,
+    "vignetteFeather": 0.7,
+    "grain": 0.04
+   }
+  },
+  "exposure": {
+   "c1": 0.16,
+   "c2": -0.04,
+   "c3": -0.03,
+   "c4": 0.03,
+   "c5": 0.05,
+   "c6": 0.05
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "clips": [
+   {
+    "src": "c2",
+    "in": 3.0,
+    "out": 3.8,
+    "z": 1.0
+   },
+   {
+    "src": "c4",
+    "in": 32.5,
+    "out": 33.3,
+    "z": 1.0
+   },
+   {
+    "src": "c4",
+    "in": 66.6,
+    "out": 67.4,
+    "z": 1.0
+   }
+  ],
+  "lines": [
+   {
+    "text": "SEJARAH ISLAM",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.08,
+    "out": 0.8
+   },
+   {
+    "text": "rasa berselerak?",
+    "style": "question",
+    "y": 680,
+    "in": 0.18,
+    "out": 0.8
+   },
+   {
+    "text": "1,000",
+    "style": "slam",
+    "y": 560,
+    "in": 0.82,
+    "out": 1.6
+   },
+   {
+    "text": "TAHUN SEJARAH",
+    "style": "kicker",
+    "y": 800,
+    "in": 0.95,
+    "out": 1.6
+   },
+   {
+    "text": "disusun dalam",
+    "style": "sub",
+    "y": 590,
+    "in": 1.62,
+    "out": 2.4
+   },
+   {
+    "text": "3 buku.",
+    "style": "slam",
+    "y": 700,
+    "in": 1.75,
+    "out": 2.4
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c1",
+   "in": 0.0,
+   "out": 6.4,
+   "z": 1.0,
+   "note": "Siapa yang tengah mencari bahan bacaan sejarah Islam, inilah buku yang anda perlu dapatkan, Alfu Sanatin.",
+   "a": 0.0,
+   "b": 6.24,
+   "cap": "Siapa yang tengah|mencari bahan bacaan|*sejarah* *Islam?*|Inilah buku yang|anda perlu dapatkan:|*Alfu* *Sanatin.*",
+   "punch": [
+    [
+     "c1",
+     5.1
+    ]
+   ]
+  },
+  {
+   "src": "c1",
+   "in": 7.44,
+   "out": 8.94,
+   "z": 1.08,
+   "note": "Siri yang pertama",
+   "a": 7.49,
+   "b": 8.86,
+   "cap": "Siri yang *pertama*"
+  },
+  {
+   "src": "c1",
+   "in": 9.45,
+   "out": 11.06,
+   "z": 1.0,
+   "note": "berkenaan dengan sejarah",
+   "a": 9.5,
+   "b": 10.98,
+   "cap": "berkenaan dengan sejarah"
+  },
+  {
+   "src": "c1",
+   "in": 12.69,
+   "out": 13.88,
+   "z": 1.14,
+   "note": "Sayyidina Uthman",
+   "a": 12.74,
+   "b": 13.8,
+   "cap": "*Sayyidina* *Uthman*"
+  },
+  {
+   "src": "c1",
+   "in": 14.27,
+   "out": 15.1,
+   "z": 1.0,
+   "note": "sehingga",
+   "a": 14.32,
+   "b": 15.02,
+   "cap": "sehingga"
+  },
+  {
+   "src": "c1",
+   "in": 15.25,
+   "out": 16.02,
+   "z": 1.08,
+   "note": "kepada",
+   "a": 15.3,
+   "b": 15.94,
+   "cap": "kepada"
+  },
+  {
+   "src": "c1",
+   "in": 16.73,
+   "out": 19.22,
+   "z": 1.0,
+   "note": "kejatuhan Khilafah Turki Uthmaniyyah.",
+   "a": 16.78,
+   "b": 19.06,
+   "cap": "kejatuhan Khilafah|*Turki* *Uthmaniyyah.*"
+  },
+  {
+   "src": "c2",
+   "in": 0.0,
+   "out": 2.38,
+   "z": 1.0,
+   "note": "Sejarah Islam yang disusun dalam garis masa",
+   "a": 0.0,
+   "b": 2.3,
+   "cap": "Sejarah Islam|disusun dalam *garis* *masa*"
+  },
+  {
+   "src": "c2",
+   "in": 2.53,
+   "out": 4.58,
+   "z": 1.08,
+   "note": "bermula pada 35 Hijrah",
+   "a": 2.58,
+   "b": 4.5,
+   "cap": "bermula pada *35* *Hijrah*",
+   "punch": [
+    [
+     "c2",
+     3.1
+    ]
+   ]
+  },
+  {
+   "src": "c2",
+   "in": 7.65,
+   "out": 11.48,
+   "z": 1.0,
+   "note": "sehingga rentetan itu sampai kepada",
+   "a": 7.7,
+   "b": 11.4,
+   "cap": "sehingga rentetan itu|sampai kepada"
+  },
+  {
+   "src": "c2",
+   "in": 12.41,
+   "out": 15.5,
+   "z": 1.14,
+   "note": "pengukuhan dan perluasan kuasa pembentukan",
+   "a": 12.46,
+   "b": 15.42,
+   "cap": "pengukuhan dan|perluasan kuasa,|pembentukan"
+  },
+  {
+   "src": "c2",
+   "in": 16.03,
+   "out": 17.66,
+   "z": 1.0,
+   "note": "empayar Uthmaniyyah",
+   "a": 16.08,
+   "b": 17.58,
+   "cap": "*empayar* *Uthmaniyyah*"
+  },
+  {
+   "src": "c2",
+   "in": 18.25,
+   "out": 19.26,
+   "z": 1.08,
+   "note": "di era moden.",
+   "a": 18.3,
+   "b": 19.1,
+   "cap": "di era moden."
+  },
+  {
+   "src": "c3",
+   "in": 0.0,
+   "out": 4.12,
+   "z": 1.0,
+   "note": "Buku Alfu Sanatin yang kedua membawa pembaca kepada",
+   "a": 0.0,
+   "b": 4.04,
+   "cap": "Buku Alfu Sanatin|yang *kedua*|membawa pembaca kepada"
+  },
+  {
+   "src": "c3",
+   "in": 4.45,
+   "out": 5.1,
+   "z": 1.08,
+   "note": "zaman",
+   "a": 4.5,
+   "b": 5.02,
+   "cap": "zaman"
+  },
+  {
+   "src": "c3",
+   "in": 5.45,
+   "out": 8.9,
+   "z": 1.0,
+   "note": "Sultan Selim III menaiki takhta di Uthmaniyyah.",
+   "a": 5.5,
+   "b": 8.74,
+   "cap": "*Sultan* *Selim* *III*|menaiki takhta|di Uthmaniyyah."
+  },
+  {
+   "src": "c3",
+   "in": 9.19,
+   "out": 9.6,
+   "z": 1.14,
+   "note": "Dan",
+   "a": 9.24,
+   "b": 9.52,
+   "cap": "Dan"
+  },
+  {
+   "src": "c3",
+   "in": 10.27,
+   "out": 13.52,
+   "z": 1.0,
+   "note": "rentetan itu berterusan sehingga Intifada yang kedua.",
+   "a": 10.32,
+   "b": 13.36,
+   "cap": "rentetan itu berterusan|sehingga *Intifada*|yang kedua.",
+   "punch": [
+    [
+     "c3",
+     12.0
+    ]
+   ]
+  },
+  {
+   "src": "c4",
+   "in": 0.0,
+   "out": 2.26,
+   "z": 1.0,
+   "note": "Dan Alfu Sanatin siri yang ketiga,",
+   "a": 0.0,
+   "b": 2.18,
+   "cap": "Dan Alfu Sanatin|siri yang *ketiga*,"
+  },
+  {
+   "src": "c4",
+   "in": 2.35,
+   "out": 4.4,
+   "z": 1.08,
+   "note": "The Origin: Tanah yang Dijanjikan,",
+   "a": 2.4,
+   "b": 4.24,
+   "cap": "*The* *Origin:*|Tanah yang Dijanjikan,"
+  },
+  {
+   "src": "c4",
+   "in": 4.59,
+   "out": 6.7,
+   "z": 1.0,
+   "note": "kembali membawa kita kepada",
+   "a": 4.64,
+   "b": 6.62,
+   "cap": "kembali membawa kita kepada"
+  },
+  {
+   "src": "c4",
+   "in": 7.11,
+   "out": 7.62,
+   "z": 1.14,
+   "note": "kisah",
+   "a": 7.16,
+   "b": 7.54,
+   "cap": "kisah"
+  },
+  {
+   "src": "c4",
+   "in": 7.97,
+   "out": 11.06,
+   "z": 1.0,
+   "note": "Palestin, sejarah Palestin bermula daripada",
+   "a": 8.02,
+   "b": 10.98,
+   "cap": "*Palestin*, sejarah Palestin|bermula daripada",
+   "punch": [
+    [
+     "c4",
+     8.1
+    ]
+   ]
+  },
+  {
+   "src": "c4",
+   "in": 11.69,
+   "out": 13.26,
+   "z": 1.08,
+   "note": "zaman awal kenabian",
+   "a": 11.74,
+   "b": 13.18,
+   "cap": "zaman awal kenabian"
+  },
+  {
+   "src": "c4",
+   "in": 13.63,
+   "out": 15.3,
+   "z": 1.0,
+   "note": "Nabi Ibrahim a.s.",
+   "a": 13.68,
+   "b": 15.22,
+   "cap": "*Nabi* *Ibrahim* a.s."
+  },
+  {
+   "src": "c4",
+   "in": 15.75,
+   "out": 17.3,
+   "z": 1.14,
+   "note": "sehinggalah kepada",
+   "a": 15.8,
+   "b": 17.22,
+   "cap": "sehinggalah kepada"
+  },
+  {
+   "src": "c4",
+   "in": 18.69,
+   "out": 20.36,
+   "z": 1.0,
+   "note": "era kemunculan Islam.",
+   "a": 18.74,
+   "b": 20.2,
+   "cap": "era *kemunculan* *Islam.*"
+  },
+  {
+   "src": "c4",
+   "in": 20.55,
+   "out": 21.86,
+   "z": 1.08,
+   "note": "Ia melalui proses",
+   "a": 20.6,
+   "b": 21.78,
+   "cap": "Ia melalui proses"
+  },
+  {
+   "src": "c4",
+   "in": 22.33,
+   "out": 23.96,
+   "z": 1.0,
+   "note": "zaman yang berlainan",
+   "a": 22.38,
+   "b": 23.88,
+   "cap": "zaman yang berlainan"
+  },
+  {
+   "src": "c4",
+   "in": 24.47,
+   "out": 26.52,
+   "z": 1.14,
+   "note": "dan juga sejarah kepada",
+   "a": 24.52,
+   "b": 26.44,
+   "cap": "dan juga sejarah kepada"
+  },
+  {
+   "src": "c4",
+   "in": 26.87,
+   "out": 31.78,
+   "z": 1.0,
+   "note": "pembentukan identiti Israel dan Yahudi pada zaman sekarang. Jadi amatlah",
+   "a": 26.92,
+   "b": 31.7,
+   "cap": "pembentukan|*identiti* Israel|dan Yahudi|pada zaman sekarang.|Jadi amatlah"
+  },
+  {
+   "src": "c4",
+   "in": 31.87,
+   "out": 34.5,
+   "z": 1.08,
+   "note": "penting untuk anda baca, untuk anda tahu",
+   "a": 31.92,
+   "b": 34.42,
+   "cap": "*penting* untuk anda baca,|untuk anda tahu"
+  },
+  {
+   "src": "c4",
+   "in": 34.99,
+   "out": 36.04,
+   "z": 1.0,
+   "note": "berapa",
+   "a": 35.04,
+   "b": 35.96,
+   "cap": "berapa"
+  },
+  {
+   "src": "c4",
+   "in": 36.29,
+   "out": 37.14,
+   "z": 1.14,
+   "note": "perubahan",
+   "a": 36.34,
+   "b": 37.06,
+   "cap": "perubahan"
+  },
+  {
+   "src": "c4",
+   "in": 37.23,
+   "out": 37.98,
+   "z": 1.0,
+   "note": "yang",
+   "a": 37.28,
+   "b": 37.9,
+   "cap": "yang"
+  },
+  {
+   "src": "c4",
+   "in": 38.63,
+   "out": 39.48,
+   "z": 1.08,
+   "note": "berlaku",
+   "a": 38.68,
+   "b": 39.4,
+   "cap": "berlaku"
+  },
+  {
+   "src": "c4",
+   "in": 40.01,
+   "out": 42.78,
+   "z": 1.0,
+   "note": "dalam peredaran zaman yang menjadi",
+   "a": 40.06,
+   "b": 42.7,
+   "cap": "dalam peredaran zaman|yang menjadi"
+  },
+  {
+   "src": "c4",
+   "in": 43.41,
+   "out": 44.94,
+   "z": 1.14,
+   "note": "perbincangan dan",
+   "a": 43.46,
+   "b": 44.86,
+   "cap": "perbincangan dan"
+  },
+  {
+   "src": "c4",
+   "in": 45.59,
+   "out": 49.86,
+   "z": 1.0,
+   "note": "analisis yang sangat bagus untuk anda dapatkan.",
+   "a": 45.64,
+   "b": 49.7,
+   "cap": "*analisis* yang sangat bagus|untuk anda dapatkan."
+  },
+  {
+   "src": "c4",
+   "in": 50.31,
+   "out": 52.02,
+   "z": 1.08,
+   "note": "Jadi anda kena dapatkan tiga buku,",
+   "a": 50.36,
+   "b": 51.94,
+   "cap": "Jadi anda kena dapatkan|*tiga* *buku*,"
+  },
+  {
+   "src": "c4",
+   "in": 52.27,
+   "out": 55.58,
+   "z": 1.0,
+   "note": "Alfu Sanatin I, Alfu Sanatin II",
+   "a": 52.32,
+   "b": 55.5,
+   "cap": "Alfu Sanatin *I*,|Alfu Sanatin *II*"
+  },
+  {
+   "src": "c4",
+   "in": 56.15,
+   "out": 58.02,
+   "z": 1.14,
+   "note": "dan Alfu Sanatin III",
+   "a": 56.2,
+   "b": 57.94,
+   "cap": "dan Alfu Sanatin *III*"
+  },
+  {
+   "src": "c4",
+   "in": 58.25,
+   "out": 60.22,
+   "z": 1.0,
+   "note": "sebagai bahan bacaan sejarah",
+   "a": 58.3,
+   "b": 60.14,
+   "cap": "sebagai bahan bacaan|sejarah"
+  },
+  {
+   "src": "c4",
+   "in": 60.59,
+   "out": 61.28,
+   "z": 1.08,
+   "note": "Islam.",
+   "a": 60.64,
+   "b": 61.12,
+   "cap": "Islam."
+  },
+  {
+   "src": "c4",
+   "in": 61.81,
+   "out": 63.06,
+   "z": 1.0,
+   "note": "Siapa yang berminat",
+   "a": 61.86,
+   "b": 62.98,
+   "cap": "Siapa yang berminat,"
+  },
+  {
+   "src": "c4",
+   "in": 63.19,
+   "out": 64.96,
+   "z": 1.14,
+   "note": "boleh tekan butang ni sekarang.",
+   "a": 63.24,
+   "b": 64.8,
+   "cap": "boleh tekan|*butang* ni sekarang."
+  },
+  {
+   "src": "c4",
+   "in": 65.47,
+   "out": 69.9,
+   "z": 1.0,
+   "note": "Amatlah rugi kalau anda tak dapatkan buku-buku yang sangat bermanfaat ini.",
+   "a": 65.52,
+   "b": 69.74,
+   "cap": "Amatlah *rugi*|kalau anda tak dapatkan|buku-buku yang|sangat bermanfaat ini."
+  },
+  {
+   "src": "c4",
+   "in": 73.57,
+   "out": 74.54,
+   "z": 1.08,
+   "note": "Beli sekarang!",
+   "a": 73.62,
+   "b": 74.38,
+   "cap": "*Beli* *sekarang!*",
+   "punch": [
+    [
+     "c4",
+     73.65
+    ]
+   ]
+  }
+ ],
+ "tail": {
+  "src": "c5",
+  "in": 0.4,
+  "dur": 2.4
+ },
+ "cards": [
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c1",
+    4.95
+   ],
+   "out": [
+    "c1",
+    8.86
+   ],
+   "kicker": "Ibnu Rijal",
+   "title": "Alfu Sanatin",
+   "sub": "‘Seribu Tahun’ · sebuah trilogi",
+   "y": 330
+  },
+  {
+   "id": "vol-1",
+   "kind": "chapter",
+   "in": [
+    "c1",
+    9.45
+   ],
+   "out": [
+    "c1",
+    19.2
+   ],
+   "num": "I",
+   "name": "Alfu Sanatin",
+   "tag": "Jilid pertama",
+   "nodes": [
+    {
+     "at": [
+      "c1",
+      12.74
+     ],
+     "label": "Sayyidina Uthman",
+     "sub": "35 H"
+    },
+    {
+     "at": [
+      "c1",
+      16.78
+     ],
+     "label": "Kejatuhan",
+     "sub": "Khilafah Uthmaniyyah"
+    }
+   ]
+  },
+  {
+   "id": "timeline",
+   "kind": "chapter",
+   "in": [
+    "c2",
+    0.0
+   ],
+   "out": [
+    "c2",
+    19.2
+   ],
+   "num": "",
+   "name": "Garis Masa",
+   "tag": "Sejarah Islam (Hijrah)",
+   "nodes": [
+    {
+     "at": [
+      "c2",
+      2.58
+     ],
+     "label": "35 H",
+     "sub": "bermula"
+    },
+    {
+     "at": [
+      "c2",
+      16.08
+     ],
+     "label": "Uthmaniyyah",
+     "sub": "empayar"
+    },
+    {
+     "at": [
+      "c2",
+      18.3
+     ],
+     "label": "Era Moden"
+    }
+   ]
+  },
+  {
+   "id": "vol-2",
+   "kind": "chapter",
+   "in": [
+    "c3",
+    0.0
+   ],
+   "out": [
+    "c3",
+    13.5
+   ],
+   "num": "II",
+   "name": "Islam, Muslim & Krisis",
+   "tag": "Jilid kedua",
+   "nodes": [
+    {
+     "at": [
+      "c3",
+      5.5
+     ],
+     "label": "Sultan Selim III",
+     "sub": "menaiki takhta"
+    },
+    {
+     "at": [
+      "c3",
+      11.9
+     ],
+     "label": "Intifada",
+     "sub": "kedua"
+    }
+   ]
+  },
+  {
+   "id": "vol-3",
+   "kind": "chapter",
+   "in": [
+    "c4",
+    0.0
+   ],
+   "out": [
+    "c4",
+    20.3
+   ],
+   "num": "III",
+   "name": "Tanah yang Dijanjikan",
+   "tag": "The Origin · Jilid ketiga",
+   "nodes": [
+    {
+     "at": [
+      "c4",
+      8.02
+     ],
+     "label": "Palestin",
+     "sub": "kisahnya"
+    },
+    {
+     "at": [
+      "c4",
+      13.68
+     ],
+     "label": "Nabi Ibrahim a.s.",
+     "sub": "zaman kenabian"
+    },
+    {
+     "at": [
+      "c4",
+      18.74
+     ],
+     "label": "Era Islam",
+     "sub": "kemunculan"
+    }
+   ]
+  },
+  {
+   "id": "must-read",
+   "kind": "title",
+   "in": [
+    "c4",
+    30.68
+   ],
+   "out": [
+    "c4",
+    35.0
+   ],
+   "kicker": "Kenapa penting?",
+   "title": "Wajib Baca",
+   "sub": "jatuh bangun umat, dianalisis",
+   "y": 330
+  },
+  {
+   "id": "trilogy",
+   "kind": "trilogy",
+   "in": [
+    "c4",
+    50.36
+   ],
+   "out": [
+    "c4",
+    61.28
+   ],
+   "head": "Trilogi lengkap",
+   "items": [
+    {
+     "at": [
+      "c4",
+      52.7
+     ],
+     "num": "I",
+     "label": "Jilid 1"
+    },
+    {
+     "at": [
+      "c4",
+      54.5
+     ],
+     "num": "II",
+     "label": "Jilid 2"
+    },
+    {
+     "at": [
+      "c4",
+      56.9
+     ],
+     "num": "III",
+     "label": "Jilid 3"
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c4",
+    61.86
+   ],
+   "buttonAt": [
+    "c4",
+    63.45
+   ],
+   "pulseAt": [
+    "c4",
+    73.62
+   ],
+   "kicker": "Trilogi",
+   "title": "Alfu Sanatin",
+   "by": "Ibnu Rijal",
+   "button": "Beli sekarang"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.4
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 0.82,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.5
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": 1.62,
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-2.mp3",
+   "at": 1.75,
+   "lead": 0.015,
+   "dur": 1.1,
+   "vol": 0.4,
+   "lane": 1
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    0.0
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c1",
+    4.95
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    9.45
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    12.74
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    16.78
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    0.0
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    2.58
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    16.08
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    18.3
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    0.0
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    5.5
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    11.9
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c4",
+    0.0
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c4",
+    8.02
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c4",
+    13.68
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c4",
+    18.74
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c4",
+    30.68
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c4",
+    52.7
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.38
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c4",
+    54.5
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.38
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c4",
+    56.9
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.38
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c4",
+    61.86
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c4",
+    63.45
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-2.mp3",
+   "at": [
+    "c4",
+    73.62
+   ],
+   "lead": 0.015,
+   "dur": 1.2,
+   "vol": 0.35
+  }
+ ]
+}
