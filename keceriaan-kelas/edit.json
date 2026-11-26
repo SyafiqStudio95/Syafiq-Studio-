@@ -1,0 +1,827 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4",
+  "c2": "assets/video/c2.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#12101f",
+   "--paper": "#ffffff",
+   "--gold": "#ffd23f",
+   "--gold-deep": "#ffb400",
+   "--gold-hi": "#ffe877",
+   "--btn-ink": "#1d1400",
+   "--ember": "#ff5a5f",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--cta-size": "92px",
+   "--title-size": "104px",
+   "--slam-size": "150px",
+   "--panel": "430px",
+   "--hook-scrim": ".5"
+  }
+ },
+ "grade": {
+  "note": "Ceria: brighter, livelier poster colours, cream walls kept neutral; no LUT (indoor fluorescent footage, no blue backdrop).",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.14,
+    "shadows": 0.08,
+    "whites": 0.03,
+    "blacks": -0.04,
+    "temperature": 0.03,
+    "vibrance": 0.14,
+    "saturation": 0.04
+   },
+   "wheels": {
+    "highlights": {
+     "hue": 45,
+     "amount": 0.04,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.08,
+    "vignetteFeather": 0.75
+   }
+  },
+  "exposure": {
+   "c1": 0.06,
+   "c2": 0.1
+  },
+  "bakedLut": null
+ },
+ "hook": {
+  "clips": [
+   {
+    "src": "c1",
+    "in": 2.0,
+    "out": 2.8,
+    "z": 1.0
+   },
+   {
+    "src": "c1",
+    "in": 40.0,
+    "out": 40.8,
+    "z": 1.0
+   },
+   {
+    "src": "c1",
+    "in": 64.8,
+    "out": 65.6,
+    "z": 1.0
+   }
+  ],
+  "lines": [
+   {
+    "text": "SESI 2027",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.08,
+    "out": 0.8
+   },
+   {
+    "text": "Kelas masih kosong?",
+    "style": "question",
+    "y": 680,
+    "in": 0.16,
+    "out": 0.8
+   },
+   {
+    "text": "Siap reka.",
+    "style": "slam",
+    "y": 600,
+    "in": 0.82,
+    "out": 1.6
+   },
+   {
+    "text": "8 CARTA · 1 SET",
+    "style": "kicker",
+    "y": 800,
+    "in": 0.86,
+    "out": 1.6
+   },
+   {
+    "text": "cikgu cuma",
+    "style": "sub",
+    "y": 590,
+    "in": 1.62,
+    "out": 2.4
+   },
+   {
+    "text": "tampal je!",
+    "style": "slam",
+    "y": 700,
+    "in": 1.75,
+    "out": 2.4
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c1",
+   "in": 0.0,
+   "out": 6.48,
+   "a": 0.0,
+   "b": 6.4,
+   "z": 1.0,
+   "note": "Sesi persekolahan 2027 dah nak mula, tapi cikgu-cikgu masih pening macam mana nak hias kelas. Jadi saya cadang",
+   "cap": "Sesi persekolahan *2027* dah nak mula,|tapi cikgu-cikgu masih|*pening* macam mana|nak hias kelas.|Jadi saya cadang"
+  },
+  {
+   "src": "c1",
+   "in": 6.97,
+   "out": 11.68,
+   "a": 7.02,
+   "b": 11.52,
+   "z": 1.08,
+   "note": "Set Keceriaan Kelas macam ni, sebab ada design saiz pintu macam ni.",
+   "cap": "*Set* *Keceriaan* *Kelas*|macam ni, sebab ada design|*saiz* *pintu* macam ni."
+  },
+  {
+   "src": "c1",
+   "in": 11.79,
+   "out": 14.24,
+   "a": 11.84,
+   "b": 14.16,
+   "z": 1.0,
+   "note": "Yang ni boleh tampal dekat pintu: selamat datang ke kelas.",
+   "cap": "Yang ni boleh tampal|dekat pintu: *selamat* *datang*|ke kelas."
+  },
+  {
+   "src": "c1",
+   "in": 14.59,
+   "out": 16.7,
+   "a": 14.64,
+   "b": 16.54,
+   "z": 1.14,
+   "note": "Boleh tampal nama kelas kat sini.",
+   "cap": "Boleh tampal *nama* *kelas*|kat sini."
+  },
+  {
+   "src": "c1",
+   "in": 17.23,
+   "out": 19.8,
+   "a": 17.28,
+   "b": 19.64,
+   "z": 1.0,
+   "note": "Ada juga peraturan dalam kelas.",
+   "cap": "Ada juga|*peraturan* dalam kelas."
+  },
+  {
+   "src": "c1",
+   "in": 19.93,
+   "out": 22.23,
+   "a": 19.98,
+   "b": 22.15,
+   "z": 1.08,
+   "note": "Yang ni cikgu boleh pilih,",
+   "cap": "Yang ni cikgu|boleh pilih,"
+  },
+  {
+   "src": "c1",
+   "in": 22.97,
+   "out": 24.64,
+   "a": 23.02,
+   "b": 24.56,
+   "z": 1.0,
+   "note": "ada 43 design,",
+   "cap": "ada *43* *design*,"
+  },
+  {
+   "src": "c1",
+   "in": 25.01,
+   "out": 26.96,
+   "a": 25.06,
+   "b": 26.88,
+   "z": 1.14,
+   "note": "warna berlainan boleh pilih",
+   "cap": "*warna* berlainan|boleh pilih"
+  },
+  {
+   "src": "c1",
+   "in": 27.05,
+   "out": 28.08,
+   "a": 27.1,
+   "b": 27.92,
+   "z": 1.0,
+   "note": "yang mana menarik.",
+   "cap": "yang mana menarik."
+  },
+  {
+   "src": "c1",
+   "in": 28.27,
+   "out": 30.78,
+   "a": 28.32,
+   "b": 30.7,
+   "z": 1.08,
+   "note": "Ada juga carta organisasi kelas,",
+   "cap": "Ada juga|*carta* *organisasi* kelas,"
+  },
+  {
+   "src": "c1",
+   "in": 30.97,
+   "out": 32.68,
+   "a": 31.02,
+   "b": 32.52,
+   "z": 1.0,
+   "note": "boleh tampal nama-nama pelajar.",
+   "cap": "boleh tampal|nama-nama pelajar."
+  },
+  {
+   "src": "c1",
+   "in": 33.07,
+   "out": 34.9,
+   "a": 33.12,
+   "b": 34.82,
+   "z": 1.14,
+   "note": "Jadual bertugas kelas,",
+   "cap": "*Jadual* *bertugas* kelas,"
+  },
+  {
+   "src": "c1",
+   "in": 34.99,
+   "out": 36.3,
+   "a": 35.04,
+   "b": 36.14,
+   "z": 1.0,
+   "note": "jadual waktu kelas.",
+   "cap": "*jadual* *waktu* kelas."
+  },
+  {
+   "src": "c1",
+   "in": 37.03,
+   "out": 41.76,
+   "a": 37.08,
+   "b": 41.6,
+   "z": 1.08,
+   "note": "Dan akhir sekali, selamat hari lahir, happy birthday kepada pelajar-pelajar kita.",
+   "cap": "Dan akhir sekali,|*selamat* *hari* *lahir*,|happy birthday|kepada pelajar-pelajar kita."
+  },
+  {
+   "src": "c1",
+   "in": 42.15,
+   "out": 44.14,
+   "a": 42.2,
+   "b": 44.06,
+   "z": 1.0,
+   "note": "Jadi cikgu-cikgu yang berminat,",
+   "cap": "Jadi cikgu-cikgu|yang berminat,"
+  },
+  {
+   "src": "c1",
+   "in": 44.27,
+   "out": 45.08,
+   "a": 44.32,
+   "b": 45.0,
+   "z": 1.14,
+   "note": "boleh",
+   "cap": "boleh"
+  },
+  {
+   "src": "c1",
+   "in": 45.27,
+   "out": 47.84,
+   "a": 45.32,
+   "b": 47.68,
+   "z": 1.0,
+   "note": "masuk chat dulu, pilih design yang cikgu nak.",
+   "cap": "masuk *chat* dulu,|pilih design yang cikgu nak."
+  },
+  {
+   "src": "c1",
+   "in": 49.65,
+   "out": 51.84,
+   "a": 49.7,
+   "b": 51.76,
+   "z": 1.08,
+   "note": "Kalau tak tahu nak buat macam mana,",
+   "cap": "Kalau tak tahu|nak buat macam mana,"
+  },
+  {
+   "src": "c1",
+   "in": 52.31,
+   "out": 55.32,
+   "a": 52.36,
+   "b": 55.16,
+   "z": 1.0,
+   "note": "boleh. Tak perlu pening-pening hias kelas.",
+   "cap": "boleh. Tak perlu|*pening-pening* hias kelas."
+  },
+  {
+   "src": "c1",
+   "in": 55.51,
+   "out": 58.12,
+   "a": 55.56,
+   "b": 58.04,
+   "z": 1.14,
+   "note": "Boleh beli dan tampal sahaja",
+   "cap": "Boleh *beli* dan|*tampal* sahaja"
+  },
+  {
+   "src": "c1",
+   "in": 58.21,
+   "out": 58.8,
+   "a": 58.26,
+   "b": 58.64,
+   "z": 1.0,
+   "note": "dalam kelas.",
+   "cap": "dalam kelas."
+  },
+  {
+   "src": "c1",
+   "in": 64.57,
+   "out": 66.44,
+   "a": 64.62,
+   "b": 66.28,
+   "z": 1.08,
+   "note": "Lebih jimat masa,",
+   "cap": "Lebih *jimat* *masa*,"
+  },
+  {
+   "src": "c1",
+   "in": 66.49,
+   "out": 67.16,
+   "a": 66.54,
+   "b": 67.0,
+   "z": 1.0,
+   "note": "mudah.",
+   "cap": "*mudah*."
+  },
+  {
+   "src": "c1",
+   "in": 67.39,
+   "out": 72.66,
+   "a": 67.44,
+   "b": 72.58,
+   "z": 1.14,
+   "note": "Cikgu beli, cikgu tampal, cikgu update nama-nama pelajar. Boleh pakai untuk tahun-tahun akan datang.",
+   "cap": "Cikgu beli, cikgu tampal,|cikgu *update*|nama-nama pelajar.|Boleh pakai untuk|*tahun-tahun* akan datang."
+  },
+  {
+   "src": "c1",
+   "in": 72.92,
+   "out": 75.16,
+   "a": 72.97,
+   "b": 75.0,
+   "z": 1.0,
+   "note": "Hanya salin nama-nama pelajar yang lain.",
+   "cap": "Hanya salin|nama-nama pelajar yang lain."
+  },
+  {
+   "src": "c1",
+   "in": 75.55,
+   "out": 77.74,
+   "a": 75.6,
+   "b": 77.58,
+   "z": 1.08,
+   "note": "Jadi sangat berbaloi untuk cikgu dapatkan.",
+   "cap": "Jadi sangat *berbaloi*|untuk cikgu dapatkan."
+  },
+  {
+   "src": "c1",
+   "in": 78.09,
+   "out": 79.96,
+   "a": 78.14,
+   "b": 79.88,
+   "z": 1.0,
+   "note": "Kalau cikgu nak keluar",
+   "cap": "Kalau cikgu|nak keluar"
+  },
+  {
+   "src": "c1",
+   "in": 80.13,
+   "out": 85.3,
+   "a": 80.18,
+   "b": 85.14,
+   "z": 1.14,
+   "note": "modal sendiri boleh. Kalau tak, boleh kutip duit keceriaan kelas,",
+   "cap": "*modal* *sendiri* boleh.|Kalau tak, boleh|*kutip* duit keceriaan kelas,"
+  },
+  {
+   "src": "c1",
+   "in": 85.43,
+   "out": 88.18,
+   "a": 85.48,
+   "b": 88.02,
+   "z": 1.0,
+   "note": "mungkin 2 atau 3 ringgit seorang.",
+   "cap": "mungkin *2* *atau* *3* *ringgit*|seorang."
+  },
+  {
+   "src": "c1",
+   "in": 88.33,
+   "out": 89.98,
+   "a": 88.38,
+   "b": 89.9,
+   "z": 1.08,
+   "note": "Dan yang paling penting sekali,",
+   "cap": "Dan yang paling|penting sekali,"
+  },
+  {
+   "src": "c2",
+   "in": 0.0,
+   "out": 1.44,
+   "a": 0.0,
+   "b": 1.28,
+   "z": 1.0,
+   "note": "harga tengah murah.",
+   "cap": "harga tengah *murah*."
+  },
+  {
+   "src": "c2",
+   "in": 1.77,
+   "out": 3.74,
+   "a": 1.82,
+   "b": 3.58,
+   "z": 1.08,
+   "note": "RM35 saya tengok semalam.",
+   "cap": "*RM35*|saya tengok semalam."
+  },
+  {
+   "src": "c2",
+   "in": 3.89,
+   "out": 5.44,
+   "a": 3.94,
+   "b": 5.36,
+   "z": 1.0,
+   "note": "Beli sekarang sementara",
+   "cap": "*Beli* *sekarang*|sementara"
+  },
+  {
+   "src": "c2",
+   "in": 5.69,
+   "out": 8.28,
+   "a": 5.74,
+   "b": 8.12,
+   "z": 1.14,
+   "note": "design yang cikgu nak masih ada.",
+   "cap": "design yang cikgu nak|masih ada."
+  },
+  {
+   "src": "c2",
+   "in": 8.31,
+   "out": 10.16,
+   "a": 8.36,
+   "b": 10.0,
+   "z": 1.0,
+   "note": "Tekan beg kuning sekarang!",
+   "cap": "Tekan *beg* *kuning*|sekarang!"
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 76.0,
+  "dur": 2.4
+ },
+ "cards": [
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c1",
+    7.02
+   ],
+   "out": [
+    "c1",
+    11.6
+   ],
+   "kicker": "Ready stock",
+   "title": "Set Keceriaan Kelas",
+   "sub": "hiasan kelas siap pakai",
+   "y": 330
+  },
+  {
+   "id": "t-datang",
+   "kind": "title",
+   "in": [
+    "c1",
+    11.84
+   ],
+   "out": [
+    "c1",
+    14.6
+   ],
+   "kicker": "Pintu · 2×4 kaki",
+   "title": "Selamat Datang",
+   "sub": "tampal nama kelas",
+   "y": 330
+  },
+  {
+   "id": "t-peraturan",
+   "kind": "title",
+   "in": [
+    "c1",
+    17.28
+   ],
+   "out": [
+    "c1",
+    19.9
+   ],
+   "kicker": "2×4 kaki",
+   "title": "Peraturan Kelas",
+   "sub": "double tape / stapler",
+   "y": 330
+  },
+  {
+   "id": "t-organisasi",
+   "kind": "title",
+   "in": [
+    "c1",
+    28.32
+   ],
+   "out": [
+    "c1",
+    30.9
+   ],
+   "kicker": "24×18 inci",
+   "title": "Carta Organisasi",
+   "sub": "tulis nama pelajar",
+   "y": 330
+  },
+  {
+   "id": "t-jadual",
+   "kind": "title",
+   "in": [
+    "c1",
+    33.12
+   ],
+   "out": [
+    "c1",
+    36.4
+   ],
+   "kicker": "24×18 inci",
+   "title": "Jadual Bertugas & Waktu",
+   "sub": "isi guna marker",
+   "y": 330
+  },
+  {
+   "id": "t-lahir",
+   "kind": "title",
+   "in": [
+    "c1",
+    37.08
+   ],
+   "out": [
+    "c1",
+    40.1
+   ],
+   "kicker": "24×18 inci",
+   "title": "Hari Lahir Murid",
+   "sub": "ikut bulan lahir",
+   "y": 330
+  },
+  {
+   "id": "t-lasak",
+   "kind": "title",
+   "in": [
+    "c1",
+    71.16
+   ],
+   "out": [
+    "c1",
+    75.0
+   ],
+   "kicker": "Tarpaulin 320 gsm",
+   "title": "Tahan Lasak",
+   "sub": "kalis air, guna semula",
+   "y": 330
+  },
+  {
+   "id": "t-modal",
+   "kind": "title",
+   "in": [
+    "c1",
+    85.48
+   ],
+   "out": [
+    "c1",
+    88.1
+   ],
+   "kicker": "Tip cikgu",
+   "title": "RM2–3 seorang",
+   "sub": "kutip duit kelas",
+   "y": 330
+  },
+  {
+   "id": "t-harga",
+   "kind": "title",
+   "in": [
+    "c2",
+    1.82
+   ],
+   "out": [
+    "c2",
+    3.7
+   ],
+   "kicker": "Harga semasa",
+   "title": "RM35",
+   "sub": "dilihat semalam",
+   "y": 330
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c2",
+    3.94
+   ],
+   "buttonAt": [
+    "c2",
+    8.36
+   ],
+   "pulseAt": [
+    "c2",
+    9.3
+   ],
+   "kicker": "Ready stock",
+   "title": "Set Keceriaan Kelas",
+   "by": "8 carta · pos 1–2 hari",
+   "button": "Tekan beg kuning"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.4
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 0.82,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.5
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": 1.62,
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-2.mp3",
+   "at": 1.75,
+   "lead": 0.015,
+   "dur": 1.1,
+   "vol": 0.4
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    0.0
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c1",
+    7.02
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    11.84
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    17.28
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    28.32
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    33.12
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    37.08
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    71.16
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    85.48
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    0.0
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c2",
+    1.82
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.35
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    8.36
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-2.mp3",
+   "at": [
+    "c2",
+    9.3
+   ],
+   "lead": 0.015,
+   "dur": 1.2,
+   "vol": 0.35
+  }
+ ]
+}

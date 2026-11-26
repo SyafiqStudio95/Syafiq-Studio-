@@ -339,8 +339,8 @@ for gi, (ga, gb, text) in enumerate(cap_groups):
         raise SystemExit(f"caption {gi} has no time: {text}")
     spans = []
     for w in text.split(" "):
-        is_em = w.startswith("*")
-        w = w.strip("*")
+        is_em = "*" in w          # *word*, *word*, *word*. all mark emphasis
+        w = w.replace("*", "")
         spans.append(f'<span class="{"w em" if is_em else "w"}">{esc(w)}</span>')
     gid = f"cap-{gi}"
     groups.append(f'    <div id="{gid}" class="grp"><div class="line">{" ".join(spans)}</div></div>')

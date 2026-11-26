@@ -140,11 +140,11 @@ css = """
     .hk .w { display: inline-block; }
     .kicker { font: 700 46px/1.1 var(--sans); letter-spacing: .32em; text-transform: uppercase; }
     .question { font: var(--em-style, italic) 700 112px/1.0 var(--serif); }
-    .slam { font: 700 210px/0.95 var(--serif); color: var(--gold); letter-spacing: -.01em;
+    .slam { font: 700 var(--slam-size, 210px)/0.95 var(--serif); color: var(--gold); letter-spacing: -.01em;
             text-shadow: 0 10px 50px rgba(0,0,0,.6), 0 0 80px rgba(232,184,92,.25); }
     .sub { font: var(--em-style, italic) 400 84px/1.05 var(--serif); }
     #hook-scrim { position: absolute; inset: 0;
-      background: radial-gradient(120% 70% at 50% 45%, rgba(5,10,12,.15), rgba(5,10,12,.72)); }
+      background: radial-gradient(120% 70% at 50% 40%, rgba(5,10,12,var(--hook-scrim, .15)), rgba(5,10,12,.78)); }
 """
 body.insert(0, '    <div id="hook-scrim"></div>')
 js.append(f'    tl.to("#hook-scrim", {{opacity: 0, duration: 0.25, ease: "power2.in"}}, {fr(hook_dur - 0.25)});')
@@ -158,7 +158,7 @@ def title_scene(cid, c):
     <div id="{cid}-wrap" class="lock">
       <div id="{cid}-rule-l" class="rule"></div>
       <div id="{cid}-kick" class="kick">{esc(c["kicker"])}</div>
-      <div id="{cid}-title" class="ttl">{"".join(f'<span class="ch">{esc(ch) if ch != " " else "&nbsp;"}</span>' for ch in c["title"])}</div>
+      <div id="{cid}-title" class="ttl">{" ".join('<span class="wd">' + "".join(f'<span class="ch">{esc(ch)}</span>' for ch in w) + '</span>' for w in c["title"].split())}</div>
       <div id="{cid}-sub" class="sub">{esc(c["sub"])}</div>
       <div id="{cid}-rule-r" class="rule"></div>
     </div>"""
@@ -168,8 +168,9 @@ def title_scene(cid, c):
     .lock {{ position: absolute; left: 0; right: 0; top: {c.get("y", 330)}px; text-align: center; }}
     .kick {{ font: 700 34px/1 var(--sans); letter-spacing: .42em; color: var(--gold); text-transform: uppercase;
              text-shadow: 0 2px 16px rgba(0,0,0,.6); }}
-    .ttl {{ font: 700 150px/1 var(--serif); color: var(--paper); margin-top: 18px; letter-spacing: .01em;
+    .ttl {{ font: 700 var(--title-size, 150px)/1.02 var(--serif); color: var(--paper); margin: 18px 120px 0; letter-spacing: .01em; text-wrap: balance;
             text-shadow: 0 8px 40px rgba(0,0,0,.65); }}
+    .ttl .wd {{ display: inline-block; white-space: nowrap; }}
     .ttl .ch {{ display: inline-block; }}
     .sub {{ font: var(--em-style, italic) 400 54px/1.1 var(--serif); color: var(--paper); opacity: .92; margin-top: 14px;
             text-shadow: 0 4px 24px rgba(0,0,0,.7); }}
@@ -299,7 +300,7 @@ def cta_scene(cid, c):
     tl.to("#{cid}-btn", {{scale: 1, duration: 0.4, ease: "power2.inOut"}}, {fr(pt + 0.16)});"""
     css = """
     .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,10,12,.78) 0%, rgba(5,10,12,.35) 42%, rgba(5,10,12,.15) 60%, rgba(5,10,12,.7) 100%); }
-    .cta { position: absolute; left: 0; right: 0; top: 330px; text-align: center; }
+    .cta { position: absolute; left: 120px; right: 180px; top: 330px; text-align: center; }
     .kick { font: 700 34px/1 var(--sans); letter-spacing: .4em; color: var(--gold); text-transform: uppercase; }
     .ttl { font: 700 var(--cta-size, 150px)/0.95 var(--serif); color: var(--paper); margin-top: 22px; text-shadow: 0 10px 44px rgba(0,0,0,.6); }
     .by { font: var(--em-style, italic) 400 50px/1.1 var(--serif); color: var(--paper); margin-top: 14px; }
@@ -378,8 +379,8 @@ for gi, (ga, gb, text) in enumerate(cap_groups):
         raise SystemExit(f"caption {gi} has no time: {text}")
     spans = []
     for w in text.split(" "):
-        is_em = w.startswith("*")
-        w = w.strip("*")
+        is_em = "*" in w          # *word*, *word*, *word*. all mark emphasis
+        w = w.replace("*", "")
         spans.append(f'<span class="{"w em" if is_em else "w"}">{esc(w)}</span>')
     gid = f"cap-{gi}"
     groups.append(f'    <div id="{gid}" class="grp"><div class="line">{" ".join(spans)}</div></div>')

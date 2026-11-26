@@ -6,7 +6,7 @@ set -euo pipefail
 SRC=${1:?folder}; PRJ=${2:?project}; OUT="$PRJ/assets/video"; mkdir -p "$OUT"
 i=1; echo "{" > "$PRJ/sources.json"; first=1
 while IFS= read -r f; do
-  ffmpeg -v error -y -i "$f" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,format=yuv420p" \
+  ffmpeg -nostdin -v error -y -i "$f" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,format=yuv420p" \
     -c:v libx264 -preset veryfast -crf 18 -g 30 -color_primaries bt709 -color_trc bt709 -colorspace bt709 \
     -c:a aac -b:a 192k -ar 48000 "$OUT/c$i.mp4"
   [ $first = 1 ] || echo "," >> "$PRJ/sources.json"; first=0

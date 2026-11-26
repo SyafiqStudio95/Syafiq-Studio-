@@ -1,0 +1,5 @@
+[
+ {"label":"A Product Polish","grading":{"intensity":0.7,"adjust":{"exposure":0.01,"contrast":0.06,"highlights":-0.1,"shadows":0.04,"whites":0.02,"blacks":-0.03,"vibrance":0.03,"saturation":0.02}}},
+ {"label":"B Ceria (bright pop)","grading":{"intensity":1,"adjust":{"exposure":0.06,"contrast":0.1,"highlights":-0.14,"shadows":0.08,"whites":0.03,"blacks":-0.04,"temperature":0.03,"vibrance":0.14,"saturation":0.04},"wheels":{"highlights":{"hue":45,"amount":0.04,"level":0}},"details":{"vignette":0.08,"vignetteFeather":0.75}}},
+ {"label":"C Ceria strong","grading":{"intensity":1,"adjust":{"exposure":0.08,"contrast":0.14,"highlights":-0.18,"shadows":0.1,"whites":0.04,"blacks":-0.06,"temperature":0.04,"vibrance":0.2,"saturation":0.06},"wheels":{"highlights":{"hue":45,"amount":0.05,"level":0}},"details":{"vignette":0.1,"vignetteFeather":0.75}}}
+]

@@ -23,8 +23,9 @@ for s in E["edl"]:
     else:
         runs.append((s["src"], [s]))
 
-LUT = os.path.join(ROOT, E["grade"]["bakedLut"])  # smooth teal-amber LUT, baked here (see tools/make_lut.py)
-VF_LUT = f"lut3d=file='{LUT}':interp=tetrahedral"
+# optional smooth LUT baked into the footage (see tools/make_lut.py); "bakedLut": null for none
+LUT = E["grade"].get("bakedLut")
+VF_LUT = f"lut3d=file='{os.path.join(ROOT, LUT)}':interp=tetrahedral" if LUT else "null"
 
 only = set(sys.argv[1:])  # optional: rebuild only these run numbers
 for r, (src, segs) in enumerate(runs):

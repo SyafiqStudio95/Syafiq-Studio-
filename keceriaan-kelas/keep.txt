@@ -1,0 +1,36 @@
+# src start end [. = sentence end] | caption groups (*word* = yellow emphasis)
+c1 0.00 6.40 | Sesi persekolahan *2027* dah nak mula,|tapi cikgu-cikgu masih|*pening* macam mana|nak hias kelas.|Jadi saya cadang
+c1 7.02 11.52 . | *Set* *Keceriaan* *Kelas*|macam ni, sebab ada design|*saiz* *pintu* macam ni.
+c1 11.84 14.16 | Yang ni boleh tampal|dekat pintu: *selamat* *datang*|ke kelas.
+c1 14.64 16.54 . | Boleh tampal *nama* *kelas*|kat sini.
+c1 17.28 19.64 . | Ada juga|*peraturan* dalam kelas.
+c1 19.98 22.15 | Yang ni cikgu|boleh pilih,
+c1 23.02 24.56 | ada *43* *design*,
+c1 25.06 26.88 | *warna* berlainan|boleh pilih
+c1 27.10 27.92 . | yang mana menarik.
+c1 28.32 30.70 | Ada juga|*carta* *organisasi* kelas,
+c1 31.02 32.52 . | boleh tampal|nama-nama pelajar.
+c1 33.12 34.82 | *Jadual* *bertugas* kelas,
+c1 35.04 36.14 . | *jadual* *waktu* kelas.
+c1 37.08 41.60 . | Dan akhir sekali,|*selamat* *hari* *lahir*,|happy birthday|kepada pelajar-pelajar kita.
+c1 42.20 44.06 | Jadi cikgu-cikgu|yang berminat,
+c1 44.32 45.00 | boleh
+c1 45.32 47.68 . | masuk *chat* dulu,|pilih design yang cikgu nak.
+c1 49.70 51.76 | Kalau tak tahu|nak buat macam mana,
+c1 52.36 55.16 . | boleh. Tak perlu|*pening-pening* hias kelas.
+c1 55.56 58.04 | Boleh *beli* dan|*tampal* sahaja
+c1 58.26 58.64 . | dalam kelas.
+c1 64.62 66.28 . | Lebih *jimat* *masa*,
+c1 66.54 67.00 . | *mudah*.
+c1 67.44 72.58 | Cikgu beli, cikgu tampal,|cikgu *update*|nama-nama pelajar.|Boleh pakai untuk|*tahun-tahun* akan datang.
+c1 72.97 75.00 . | Hanya salin|nama-nama pelajar yang lain.
+c1 75.60 77.58 . | Jadi sangat *berbaloi*|untuk cikgu dapatkan.
+c1 78.14 79.88 | Kalau cikgu|nak keluar
+c1 80.18 85.14 . | *modal* *sendiri* boleh.|Kalau tak, boleh|*kutip* duit keceriaan kelas,
+c1 85.48 88.02 . | mungkin *2* *atau* *3* *ringgit*|seorang.
+c1 88.38 89.90 | Dan yang paling|penting sekali,
+c2 0.00 1.28 . | harga tengah *murah*.
+c2 1.82 3.58 . | *RM35*|saya tengok semalam.
+c2 3.94 5.36 | *Beli* *sekarang*|sementara
+c2 5.74 8.12 . | design yang cikgu nak|masih ada.
+c2 8.36 10.00 . | Tekan *beg* *kuning*|sekarang!
