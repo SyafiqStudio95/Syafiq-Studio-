@@ -46,7 +46,9 @@ That project is the reference: copy its decisions, read its `edit.json`, `EDIT.m
 8. `python3 tools/cut.py && python3 tools/build.py`, `hyperframes check` until 0 errors,
    `hyperframes snapshot --at …` at every card and read the contact sheet.
 9. `toolkit/preview.sh <name>`, edit chapters/notes in `preview/index.html`, publish it as a private
-   Artifact (page + every file under preview/ in `files`, root = preview/). Test once in Playwright first.
+   Artifact with `files` = the map in `<name>/preview-files.json` (root = preview/). That map must hold
+   `film/index.html`: without it the player loads nothing ("tak boleh play"). Test once in Playwright first,
+   and after publishing list the artifact's files to confirm.
 10. On approval: `toolkit/finish.sh <name> <output-name>` → master + `-social.mp4` at about -14 LUFS. Send the social file.
 
 ## Gotchas already paid for

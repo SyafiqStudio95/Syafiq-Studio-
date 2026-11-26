@@ -23,3 +23,6 @@ done; wait
 [ -f "$PV/index.html" ] || cp "$HERE/preview-page.html" "$PV/index.html"
 find "$PV" -name '*.mp4' -size +15M -exec echo "WARNING over the 15 MB artifact file limit: {}" \;
 du -sh "$PV"; echo "edit the chapter list + notes in $PV/index.html, then publish it"
+# the Artifact `files` map: every file except the page itself (film/index.html MUST be in it)
+(cd "$PV" && find . -type f ! -path ./index.html | sed 's#^\./##' | sort | python3 -c "import sys,json; print(json.dumps({l.strip(): l.strip() for l in sys.stdin}))") > "$PV/../preview-files.json"
+grep -q '"film/index.html"' "$PRJ/preview-files.json" && echo "files map: $PRJ/preview-files.json (root = $PV)"
