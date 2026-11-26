@@ -12,3 +12,4 @@ grading/teal-amber.cube
 grading/*.jpg
 transcript/audio/
 preview-files.json
+*.log

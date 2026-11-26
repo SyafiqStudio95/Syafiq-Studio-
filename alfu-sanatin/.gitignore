@@ -11,3 +11,4 @@ preview/film/assets/video/
 grading/teal-amber.cube
 grading/*.jpg
 transcript/audio/
+*.log
