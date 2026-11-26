@@ -1,0 +1,240 @@
+<title>Rakaman VO MUST Batch 12</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;600;700&display=swap">
+<style>
+/* Layout: one reading column, a "studio card" per script section, script set large like a teleprompter */
+:root {
+  --bg: #f6f1e6; --surface: #fffdf8; --fg: #1d1a14; --muted: #6b6455; --line: #e3d9c4;
+  --gold: #a87a26; --gold-soft: #f1e3c2; --green: #1f6b45; --green-soft: #dcefe3; --rec: #c0392b; --rec-soft: #f8dcd8;
+  --display: "EB Garamond", Georgia, "Times New Roman", serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12100c; --surface: #1c1913; --fg: #f3ecdc; --muted: #a79f8c; --line: #332e24;
+  --gold: #e3bd6e; --gold-soft: #3a2f18; --green: #6fcf97; --green-soft: #173323; --rec: #ff7a6b; --rec-soft: #3d1c18; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12100c; --surface: #1c1913; --fg: #f3ecdc; --muted: #a79f8c; --line: #332e24;
+  --gold: #e3bd6e; --gold-soft: #3a2f18; --green: #6fcf97; --green-soft: #173323; --rec: #ff7a6b; --rec-soft: #3d1c18; color-scheme: dark }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 400 15px/1.55 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 64px; }
+.wrap { max-width: 720px; margin: 0 auto; display: grid; gap: 22px; }
+header { display: grid; gap: 8px; }
+.eyebrow { font: 700 12px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+h1 { font: 700 34px/1.1 var(--display); margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 60ch; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.bar .total { font: 700 22px/1 var(--display); font-variant-numeric: tabular-nums; }
+.bar .k { color: var(--muted); font-size: 13px; }
+.progress { flex: 1 1 160px; height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; min-width: 120px; }
+.progress i { display: block; height: 100%; width: 0; background: var(--green); transition: width .3s; }
+.tips { font-size: 13.5px; color: var(--muted); margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.sec { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 16px; display: grid; gap: 14px; }
+.sec.is-rec { border-color: var(--rec); box-shadow: 0 0 0 3px var(--rec-soft); }
+.sec-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+.sec-head h2 { font: 700 22px/1.2 var(--display); margin: 0; }
+.meta { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip { margin-left: auto; font: 600 12px/1 var(--body); padding: 6px 10px; border-radius: 99px; background: var(--line); color: var(--muted); white-space: nowrap; }
+.chip.done { background: var(--green-soft); color: var(--green); }
+.chip.local { background: var(--gold-soft); color: var(--gold); }
+.mood { font-style: italic; color: var(--gold); font-size: 13.5px; }
+.script { font: 500 21px/1.6 var(--display); margin: 0; }
+.script .p { color: var(--gold); font-family: var(--body); font-weight: 700; padding: 0 3px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+button, .filebtn { font: 600 14px/1 var(--body); border-radius: 10px; padding: 11px 15px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+button:focus-visible, .filebtn:focus-within { outline: 3px solid var(--gold); outline-offset: 2px; }
+button:disabled { opacity: .45; cursor: default; }
+.rec { background: var(--rec); border-color: var(--rec); color: #fff; }
+.rec .dot { width: 10px; height: 10px; border-radius: 50%; background: #fff; }
+.rec.on .dot { border-radius: 2px; }
+.send { background: var(--green); border-color: var(--green); color: var(--surface); }
+.filebtn input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.filebtn { position: relative; }
+.timer { font: 700 18px/1 var(--body); font-variant-numeric: tabular-nums; min-width: 4.5ch; }
+.timer.over { color: var(--rec); }
+audio { width: 100%; height: 40px; }
+.msg { font-size: 13.5px; color: var(--muted); margin: 0; min-height: 1em; }
+.msg.err { color: var(--rec); }
+.notice { border: 1px dashed var(--gold); background: var(--gold-soft); border-radius: 12px; padding: 12px 14px; font-size: 14px; }
+@media (prefers-reduced-motion: reduce) { .progress i { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">MUST · Batch ke-12 · Voice over</div>
+    <h1>Rakaman Voice Over Penghantaran ke Isparta</h1>
+    <p class="lede">Rakam setiap bahagian satu demi satu. Dengar semula, rakam lagi kalau perlu, kemudian tekan <b>Hantar</b>. Bila keenam-enam bahagian sudah dihantar, beritahu Claude dalam chat.</p>
+  </header>
+
+  <div class="bar">
+    <div><div class="total" id="total">0:00</div><div class="k">jumlah rakaman · sasaran ±1:25</div></div>
+    <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+    <div class="k" id="count">0 / 6 dihantar</div>
+  </div>
+
+  <div class="notice" id="micNotice"><b>Cara paling mudah:</b> rakam setiap bahagian dengan app <b>Voice Memos / Perakam Suara</b> di telefon sambil membaca skrip di bawah, kemudian tekan <b>Pilih fail</b> pada bahagian itu dan <b>Hantar</b>. Butang <i>Cuba rakam di sini</i> hanya berfungsi jika pelayar membenarkan mikrofon.</div>
+
+  <ul class="tips">
+    <li>Bilik senyap, telefon 15–20 cm dari mulut.</li>
+    <li><span style="color:var(--gold);font-weight:700">/</span> = jeda pendek (tarik nafas). Baca dengan tenang, ikut masa sasaran.</li>
+    <li>Tersilap? Rakam semula bahagian itu sahaja.</li>
+  </ul>
+
+  <div id="sections"></div>
+</div>
+
+<script>
+const SECTIONS = [
+  { id: "s1", name: "1. Pembukaan", at: "0:00 – 0:14", target: 13, mood: "Tenang, perlahan",
+    text: "Setiap perjalanan besar / bermula dengan sebuah langkah. / Hari ini, / satu lagi lembaran perjuangan ilmu bakal tercipta, / apabila seramai dua puluh orang pelajar Batch ke-12 MUST / diraikan dalam majlis penghantaran / ke Isparta, Turki." },
+  { id: "s2", name: "2. Pengenalan pelajar", at: "0:14 – 0:28", target: 13, mood: "Yakin, jelas",
+    text: "Terdiri daripada empat belas orang pelajar lelaki, / dan enam orang pelajar perempuan, / mereka bakal membawa satu misi dan harapan besar, / untuk menduduki Peperiksaan Diploma Hafazan, / di bawah Kementerian Agama Islam Turki." },
+  { id: "s3", name: "3. Barisan pengurusan", at: "0:28 – 0:44", target: 16, mood: "Sebut nama dengan jelas",
+    text: "Turut mengiringi rombongan kali ini / ialah Puan Hajah Siti Norbaya binti Abd Rahman, / Ketua Pengurus Operasi MUST, / serta Ustaz Wan Abdul Baith Izzuddin bin Wan Mustafa, / Pengetua, / sebagai tanda sokongan dan komitmen berterusan / dalam melahirkan generasi huffaz berwibawa." },
+  { id: "s4", name: "4. Detik penuh emosi", at: "0:44 – 1:01", target: 16, mood: "Lembut, beremosi",
+    text: "Lebih bermakna, / detik penuh bersejarah ini / turut disaksikan oleh ahli keluarga serta alumni / yang hadir memberikan sokongan dan doa. / Setiap pelukan, / senyuman / dan titipan kata / menjadi kekuatan buat anak-anak ini / melangkah ke bumi asing / demi sebuah cita-cita." },
+  { id: "s5", name: "5. Bacaan doa", at: "1:01 – 1:13", target: 12, mood: "Khusyuk",
+    text: "Majlis diteruskan dengan bacaan doa / yang dipimpin oleh Ustaz Asem Abd Karim, / memohon agar perjalanan dipermudahkan, / segala urusan diberkati, / dan kejayaan mengiringi setiap langkah mereka." },
+  { id: "s6", name: "6. Penutup", at: "1:13 – 1:27", target: 14, mood: "Naikkan semangat",
+    text: "Selamat berjuang, Batch 12! / Pergilah membawa al-Quran di hati, / ilmu sebagai bekalan, / dan doa keluarga sebagai kekuatan. / Semoga pulang nanti / dengan kejayaan yang membanggakan. / MUST. / Melahirkan generasi huffaz berwibawa." }
+];
+
+const state = {}; // id -> {blob, url, dur, type, sent, assetId}
+let assetsApi = null, manifest = {};
+const $ = (s, r = document) => r.querySelector(s);
+const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+function store(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+function load(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } }
+
+function render() {
+  const root = $("#sections");
+  for (const s of SECTIONS) {
+    const el = document.createElement("section");
+    el.className = "sec"; el.id = "sec-" + s.id;
+    el.innerHTML = `
+      <div class="sec-head"><h2></h2><span class="meta"></span><span class="chip" id="chip-${s.id}">Belum dirakam</span></div>
+      <div class="mood"></div>
+      <p class="script"></p>
+      <div class="controls">
+        <button type="button" class="rec" id="rec-${s.id}"><span class="dot"></span><span class="lbl">Cuba rakam di sini</span></button>
+        <span class="timer" id="tm-${s.id}">0:00</span>
+        <label class="filebtn" id="fb-${s.id}">Pilih fail<input type="file" id="file-${s.id}" accept="audio/*,video/mp4,video/webm,video/quicktime"></label>
+        <button type="button" class="send" id="send-${s.id}" disabled>Hantar</button>
+      </div>
+      <audio id="au-${s.id}" controls hidden></audio>
+      <p class="msg" id="msg-${s.id}" aria-live="polite"></p>`;
+    $("h2", el).textContent = s.name;
+    $(".meta", el).textContent = `${s.at} · sasaran ±${s.target} saat`;
+    $(".mood", el).textContent = s.mood;
+    const p = $(".script", el);
+    s.text.split(" / ").forEach((part, i, arr) => {
+      p.appendChild(document.createTextNode(part));
+      if (i < arr.length - 1) { const sp = document.createElement("span"); sp.className = "p"; sp.textContent = "/"; p.appendChild(document.createTextNode(" ")); p.appendChild(sp); p.appendChild(document.createTextNode(" ")); }
+    });
+    root.appendChild(el);
+    $("#rec-" + s.id).addEventListener("click", () => toggleRec(s));
+    $("#file-" + s.id).addEventListener("change", (e) => { const f = e.target.files[0]; if (f) setTake(s, f, f.type || ""); e.target.value = ""; });
+    $("#send-" + s.id).addEventListener("click", () => send(s));
+  }
+}
+
+// ---- recording
+let rec = null; // {s, mr, stream, chunks, t0, timer}
+function pickMime() {
+  if (!window.MediaRecorder) return "";
+  for (const m of ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/mp4;codecs=mp4a.40.2"]) if (MediaRecorder.isTypeSupported(m)) return m;
+  return "";
+}
+function micUnavailable(s, why) {
+  $("#micNotice").hidden = false;
+  msg(s, why || "Mikrofon tidak dapat dibuka di sini. Guna Pilih fail.", true);
+}
+async function toggleRec(s) {
+  if (rec && rec.s.id === s.id) { rec.mr.stop(); return; }
+  if (rec) { msg(s, "Hentikan rakaman bahagian lain dahulu.", true); return; }
+  if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) { micUnavailable(s); return; }
+  let stream;
+  try { stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: true, autoGainControl: true } }); }
+  catch (e) { micUnavailable(s, "Mikrofon tidak dibenarkan (" + (e && e.name || "ralat") + "). Guna Pilih fail, atau benarkan mikrofon dan cuba lagi."); return; }
+  const mime = pickMime();
+  const mr = new MediaRecorder(stream, mime ? { mimeType: mime, audioBitsPerSecond: 128000 } : {});
+  const chunks = [];
+  mr.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
+  mr.onstop = () => {
+    stream.getTracks().forEach(t => t.stop()); clearInterval(rec.timer);
+    const type = (mr.mimeType || mime || "audio/webm").split(";")[0];
+    const blob = new Blob(chunks, { type });
+    $("#sec-" + s.id).classList.remove("is-rec");
+    const b = $("#rec-" + s.id); b.classList.remove("on"); $(".lbl", b).textContent = "Rakam semula";
+    rec = null; setTake(s, blob, type);
+  };
+  mr.start(250);
+  rec = { s, mr, stream, chunks, t0: performance.now() };
+  $("#sec-" + s.id).classList.add("is-rec");
+  const b = $("#rec-" + s.id); b.classList.add("on"); $(".lbl", b).textContent = "Henti";
+  msg(s, "Sedang merakam… baca skrip di atas.");
+  const tm = $("#tm-" + s.id);
+  rec.timer = setInterval(() => { const t = (performance.now() - rec.t0) / 1000; tm.textContent = fmt(t); tm.classList.toggle("over", t > s.target + 3); }, 200);
+}
+
+function setTake(s, blob, type) {
+  const st = state[s.id] || (state[s.id] = {});
+  if (st.url) URL.revokeObjectURL(st.url);
+  st.blob = blob; st.type = type; st.url = URL.createObjectURL(blob); st.sent = false; st.dur = 0;
+  const au = $("#au-" + s.id); au.src = st.url; au.hidden = false;
+  au.onloadedmetadata = () => { if (Number.isFinite(au.duration)) { st.dur = au.duration; showDur(s); totals(); } };
+  if (rec === null && blob && !Number.isFinite(au.duration)) { /* webm duration resolves later */ }
+  $("#send-" + s.id).disabled = false;
+  chip(s, "Belum dihantar", "local");
+  msg(s, "Dengar semula. Kalau puas hati, tekan Hantar.");
+  totals();
+}
+function showDur(s) { const st = state[s.id]; if (!st?.dur) return; const tm = $("#tm-" + s.id); tm.textContent = fmt(st.dur); tm.classList.toggle("over", st.dur > s.target + 3); }
+
+// ---- sending (assets)
+function uploadType(st) {
+  const t = (st.type || st.blob.type || "").toLowerCase();
+  if (t.includes("webm")) return "video/webm";
+  return "video/mp4"; // m4a / mp4 / mov / aac recordings are stored as mp4 containers
+}
+async function send(s) {
+  const st = state[s.id]; if (!st?.blob) return;
+  if (!assetsApi) { msg(s, "Tidak dapat menghantar dari paparan ini. Buka halaman ini sebagai pemilik (log masuk claude.ai).", true); return; }
+  const btn = $("#send-" + s.id); btn.disabled = true; msg(s, "Menghantar…");
+  try {
+    const r = await assetsApi.upload(st.blob, { type: uploadType(st) });
+    st.sent = true; st.assetId = r.id;
+    manifest[s.id] = { id: r.id, dur: Math.round((st.dur || 0) * 10) / 10, at: new Date().toISOString() };
+    store("must-vo-manifest", manifest);
+    try { await assetsApi.upload(new Blob([JSON.stringify({ project: "must-batch12-vo", takes: manifest }, null, 1)], { type: "application/json" }), { type: "application/json" }); } catch (e) {}
+    chip(s, "Dihantar ✓", "done"); msg(s, "Dihantar. Boleh rakam semula bila-bila; yang terbaru akan digunakan.");
+  } catch (e) {
+    btn.disabled = false;
+    const c = e && e.code;
+    msg(s, c === "too_large" ? "Fail terlalu besar (had 20 MB). Rakam audio sahaja, bukan video." :
+           c === "unsupported_type" ? "Jenis fail tidak diterima. Guna rakaman m4a, mp4 atau webm." :
+           c === "quota_or_state" ? "Ruang simpanan penuh. Beritahu Claude." :
+           "Gagal menghantar (" + (c || "ralat") + "). Cuba sekali lagi.", true);
+  }
+  totals();
+}
+
+function chip(s, text, cls) { const c = $("#chip-" + s.id); c.textContent = text; c.className = "chip" + (cls ? " " + cls : ""); }
+function msg(s, text, err) { const m = $("#msg-" + s.id); m.textContent = text; m.classList.toggle("err", !!err); }
+function totals() {
+  let t = 0, n = 0;
+  for (const s of SECTIONS) { const st = state[s.id]; if (st?.dur) t += st.dur; else if (manifest[s.id]?.dur) t += manifest[s.id].dur; if (st?.sent || (!st && manifest[s.id])) n++; }
+  $("#total").textContent = fmt(t); $("#count").textContent = `${n} / 6 dihantar`; $("#prog").style.width = (n / 6 * 100) + "%";
+}
+
+render();
+manifest = load("must-vo-manifest") || {};
+for (const s of SECTIONS) if (manifest[s.id]) { chip(s, "Dihantar ✓", "done"); const tm = $("#tm-" + s.id); if (manifest[s.id].dur) tm.textContent = fmt(manifest[s.id].dur); }
+totals();
+(async () => {
+  try { assetsApi = await window.claude?.use?.("assets"); } catch (e) { assetsApi = null; }
+  if (!assetsApi) for (const s of SECTIONS) { const b = $("#send-" + s.id); b.title = "Hanya pemilik boleh menghantar rakaman"; }
+})();
+</script>
