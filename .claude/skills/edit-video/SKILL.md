@@ -48,7 +48,10 @@ That project is the reference: copy its decisions, read its `edit.json`, `EDIT.m
 9. `toolkit/preview.sh <name>`, edit chapters/notes in `preview/index.html`, publish it as a private
    Artifact with `files` = the map in `<name>/preview-files.json` (root = preview/). That map must hold
    `film/index.html`: without it the player loads nothing ("tak boleh play"). Test once in Playwright first,
-   and after publishing list the artifact's files to confirm.
+   and after publishing list the artifact's files to confirm. Run `python3 toolkit/smooth_preview.py <name>`
+   before publishing: it bakes an approximate grade into the proxies and drops the live WebGL grade, which
+   otherwise makes the preview stutter ("sangkut-sangkut"), worst on phones. If it still stutters, offer a
+   draft MP4 (`hyperframes render --quality draft`), which plays smoothly everywhere.
 10. On approval: `toolkit/finish.sh <name> <output-name>` → master + `-social.mp4` at about -14 LUFS. Send the social file.
 
 ## Gotchas already paid for
