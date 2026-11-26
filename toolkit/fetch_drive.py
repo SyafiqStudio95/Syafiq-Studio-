@@ -20,7 +20,13 @@ fid = re.search(r"folders/([A-Za-z0-9_-]+)", src)
 fid = fid.group(1) if fid else src
 os.makedirs(out, exist_ok=True)
 page = get(f"https://drive.google.com/embeddedfolderview?id={fid}").decode("utf8", "ignore")
-entries = re.findall(r'href="([^"]+)".*?flip-entry-title">([^<]*)', page, re.S)
+# one block per entry, so an icon link of one entry never pairs with the next entry's title
+entries = []
+for block in re.findall(r'<div class="flip-entry" id="entry-.*?flip-entry-title">[^<]*', page, re.S):
+    href = re.search(r'<a href="([^"]+)"', block)
+    title = re.search(r'flip-entry-title">([^<]*)', block)
+    if href and title:
+        entries.append((html.unescape(href.group(1)), title.group(1)))
 manifest = []
 for href, title in entries:
     title = html.unescape(title).strip()

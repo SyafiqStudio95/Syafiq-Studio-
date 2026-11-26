@@ -13,6 +13,7 @@ TMP=$(mktemp -d); (cd "$TMP" && npm pack "gsap@$GSAP" --silent >/dev/null && tar
 cp "$PRJ"/compositions/*.html "$PV/film/compositions/"; cp "$PRJ"/assets/fonts/*.woff2 "$PV/film/assets/fonts/"
 sed -e "s#<script src=\"https://cdn.jsdelivr.net/npm/gsap@$GSAP/dist/gsap.min.js\"></script>#<script src=\"../gsap.min.js\"></script>#" \
     -e '0,/<head>/s#<head>#<head>\n    <script src="../runtime.js"></script>#' "$PRJ/index.html" > "$PV/film/index.html"
+mkdir -p "$PV/film/assets/images"; for f in $(grep -oh "assets/images/[A-Za-z0-9_.-]*" "$PRJ/index.html" "$PRJ"/compositions/*.html | sort -u); do cp "$PRJ/$f" "$PV/film/$f"; done
 for f in $(grep -o 'assets/sfx/[A-Za-z0-9_-]*\.mp3' "$PRJ/index.html" | sort -u); do cp "$PRJ/$f" "$PV/film/$f"; done
 for f in $(grep -o 'assets/video/[A-Za-z0-9_]*\.mp4' "$PRJ/index.html" | sort -u); do
   A="-an"; ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$PRJ/$f" | grep -q . && A="-c:a aac -b:a 96k -ac 1"

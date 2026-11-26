@@ -1,0 +1,621 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#07131c",
+   "--paper": "#ffffff",
+   "--gold": "#ff7aac",
+   "--gold-deep": "#ffb800",
+   "--gold-hi": "#ffe45c",
+   "--btn-ink": "#1d1400",
+   "--ember": "#ff4f8b",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--cta-size": "118px",
+   "--panel": "430px"
+  }
+ },
+ "grade": {
+  "note": "Same blue backdrop as Alfu Sanatin: smooth teal-amber LUT quiets the cyan; pink product hue is outside both LUT bumps so its colour stays true.",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.1,
+    "shadows": 0.1,
+    "whites": -0.02,
+    "blacks": -0.02,
+    "vibrance": 0.05,
+    "saturation": -0.02
+   },
+   "wheels": {
+    "shadows": {
+     "hue": 195,
+     "amount": 0.1,
+     "level": -0.02
+    },
+    "highlights": {
+     "hue": 38,
+     "amount": 0.07,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.1,
+    "vignetteFeather": 0.7,
+    "grain": 0.03
+   }
+  },
+  "exposure": {
+   "c1": 0.12
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "clips": [
+   {
+    "src": "c1",
+    "in": 21.0,
+    "out": 21.8,
+    "z": 1.0
+   },
+   {
+    "src": "c1",
+    "in": 39.0,
+    "out": 39.8,
+    "z": 1.0
+   },
+   {
+    "src": "c1",
+    "in": 45.5,
+    "out": 46.3,
+    "z": 1.0
+   }
+  ],
+  "lines": [
+   {
+    "text": "TAK PERLU CAS",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.08,
+    "out": 0.8
+   },
+   {
+    "text": "Cucuk terus kat phone.",
+    "style": "question",
+    "y": 680,
+    "in": 0.16,
+    "out": 0.8
+   },
+   {
+    "text": "15,573",
+    "style": "slam",
+    "y": 560,
+    "in": 0.82,
+    "out": 1.6
+   },
+   {
+    "text": "RPM · ANGIN KUAT",
+    "style": "kicker",
+    "y": 800,
+    "in": 0.95,
+    "out": 1.6
+   },
+   {
+    "text": "berat cuma",
+    "style": "sub",
+    "y": 590,
+    "in": 1.62,
+    "out": 2.4
+   },
+   {
+    "text": "43 gram.",
+    "style": "slam",
+    "y": 700,
+    "in": 1.75,
+    "out": 2.4
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c1",
+   "in": 0.0,
+   "out": 3.46,
+   "a": 0.0,
+   "b": 3.38,
+   "z": 1.0,
+   "note": "Ini bukan kipas biasa. Ini kipas dari GOOJODOQ,",
+   "cap": "Ini bukan *kipas* *biasa.*|Ini kipas dari *GOOJODOQ,*"
+  },
+  {
+   "src": "c1",
+   "in": 3.83,
+   "out": 4.64,
+   "a": 3.88,
+   "b": 4.56,
+   "z": 1.08,
+   "note": "ultra light,",
+   "cap": "*ultra* *light,*"
+  },
+  {
+   "src": "c1",
+   "in": 5.07,
+   "out": 7.44,
+   "a": 5.12,
+   "b": 7.28,
+   "z": 1.0,
+   "note": "sebab beratnya hanya 43 gram sahaja.",
+   "cap": "sebab beratnya|hanya *43* *gram* sahaja."
+  },
+  {
+   "src": "c1",
+   "in": 8.65,
+   "out": 12.28,
+   "a": 8.7,
+   "b": 12.2,
+   "z": 1.14,
+   "note": "Kipas ini mempunyai 3 level angin: soft wind,",
+   "cap": "Kipas ini mempunyai|*3* *level* angin:|soft wind,"
+  },
+  {
+   "src": "c1",
+   "in": 12.41,
+   "out": 14.3,
+   "a": 12.46,
+   "b": 14.14,
+   "z": 1.0,
+   "note": "comfortable wind dan turbo wind.",
+   "cap": "comfortable wind|dan *turbo* *wind.*"
+  },
+  {
+   "src": "c1",
+   "in": 14.49,
+   "out": 19.14,
+   "a": 14.54,
+   "b": 18.98,
+   "z": 1.08,
+   "note": "Yang menariknya, kipas ini tidak menggunakan bateri, hanya guna USB Type-C.",
+   "cap": "Yang menariknya, kipas ini|tidak menggunakan *bateri,*|hanya guna *USB* *Type-C.*"
+  },
+  {
+   "src": "c1",
+   "in": 19.37,
+   "out": 22.8,
+   "a": 19.42,
+   "b": 22.72,
+   "z": 1.0,
+   "note": "Boleh pakai dekat smartphone, tablet, power bank, laptop",
+   "cap": "Boleh pakai dekat|*smartphone,* *tablet,*|*power* *bank,* *laptop*"
+  },
+  {
+   "src": "c1",
+   "in": 23.23,
+   "out": 24.58,
+   "a": 23.28,
+   "b": 24.42,
+   "z": 1.14,
+   "note": "dan juga USB charger.",
+   "cap": "dan juga *USB* *charger.*"
+  },
+  {
+   "src": "c1",
+   "in": 24.63,
+   "out": 27.88,
+   "a": 24.68,
+   "b": 27.72,
+   "z": 1.0,
+   "note": "Yang lagi menarik, ada 4 warna desain, anda boleh pilih.",
+   "cap": "Yang lagi menarik,|ada *4* *warna* desain,|anda boleh pilih."
+  },
+  {
+   "src": "c1",
+   "in": 28.07,
+   "out": 31.94,
+   "a": 28.12,
+   "b": 31.78,
+   "z": 1.08,
+   "note": "Keempat-empat warna, dan dia fleksibel 180 darjah.",
+   "cap": "Keempat-empat warna,|dan dia *fleksibel*|*180* *darjah.*"
+  },
+  {
+   "src": "c1",
+   "in": 35.13,
+   "out": 41.86,
+   "a": 35.18,
+   "b": 41.78,
+   "z": 1.0,
+   "note": "Kipas ini 15,573 RPM, powerful airflow, yang mempunyai high speed",
+   "cap": "Kipas ini|*15,573* *RPM,*|powerful airflow,|yang mempunyai high speed"
+  },
+  {
+   "src": "c1",
+   "in": 42.11,
+   "out": 44.54,
+   "a": 42.16,
+   "b": 44.46,
+   "z": 1.14,
+   "note": "dan deliver strong wind untuk",
+   "cap": "dan deliver *strong* *wind*|untuk"
+  },
+  {
+   "src": "c1",
+   "in": 45.19,
+   "out": 47.06,
+   "a": 45.24,
+   "b": 46.9,
+   "z": 1.0,
+   "note": "instant comfort yang bagus.",
+   "cap": "*instant* *comfort* yang bagus."
+  },
+  {
+   "src": "c1",
+   "in": 47.27,
+   "out": 49.82,
+   "a": 47.32,
+   "b": 49.74,
+   "z": 1.08,
+   "note": "Boleh pakai masa tengok movie,",
+   "cap": "Boleh pakai|masa tengok *movie,*"
+  },
+  {
+   "src": "c1",
+   "in": 50.19,
+   "out": 53.76,
+   "a": 50.24,
+   "b": 53.6,
+   "z": 1.0,
+   "note": "ataupun sambil-sambil berjalan.",
+   "cap": "ataupun sambil-sambil|*berjalan.*"
+  },
+  {
+   "src": "c1",
+   "in": 54.21,
+   "out": 56.59,
+   "a": 54.26,
+   "b": 56.59,
+   "z": 1.14,
+   "note": "Dan sangat kecil, senang letak dalam poket.",
+   "cap": "Dan sangat *kecil,*|senang letak dalam *poket.*"
+  },
+  {
+   "src": "c1",
+   "in": 56.59,
+   "out": 59.55,
+   "a": 56.59,
+   "b": 59.55,
+   "z": 1.0,
+   "note": "Kipas ni sangat berbaloi sebab tak perlu fikir pasal cas.",
+   "cap": "Kipas ni sangat *berbaloi*|sebab tak perlu|fikir pasal *cas.*"
+  },
+  {
+   "src": "c1",
+   "in": 59.55,
+   "out": 62.28,
+   "a": 59.55,
+   "b": 62.28,
+   "z": 1.08,
+   "note": "Yang paling penting, tak drain bateri phone anda.",
+   "cap": "Yang paling penting,|tak *drain* *bateri*|phone anda."
+  },
+  {
+   "src": "c1",
+   "in": 62.28,
+   "out": 64.38,
+   "a": 62.28,
+   "b": 64.22,
+   "z": 1.0,
+   "note": "Berminat? Tekan beg kuning sekarang!",
+   "cap": "*Berminat?*|Tekan *beg* *kuning*|sekarang!"
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 57.0,
+  "dur": 2.4
+ },
+ "cards": [
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c1",
+    1.5
+   ],
+   "out": [
+    "c1",
+    4.6
+   ],
+   "kicker": "Kipas mini USB-C",
+   "title": "GOOJODOQ",
+   "sub": "bukan kipas biasa",
+   "y": 330
+  },
+  {
+   "id": "f-ringan",
+   "kind": "feature",
+   "in": [
+    "c1",
+    5.12
+   ],
+   "out": [
+    "c1",
+    7.44
+   ],
+   "image": "assets/images/p6.jpg",
+   "pos": "55% 70%",
+   "stat": "43g",
+   "label": "Ringan, tak lenguh tangan",
+   "statSize": 104
+  },
+  {
+   "id": "f-angin",
+   "kind": "feature",
+   "in": [
+    "c1",
+    9.6
+   ],
+   "out": [
+    "c1",
+    14.2
+   ],
+   "image": "assets/images/p4.jpg",
+   "pos": "70% 75%",
+   "stat": "3 Tahap Angin",
+   "statSize": 84,
+   "label": "Lembut · Selesa · Turbo"
+  },
+  {
+   "id": "f-usbc",
+   "kind": "feature",
+   "in": [
+    "c1",
+    14.54
+   ],
+   "out": [
+    "c1",
+    19.1
+   ],
+   "image": "assets/images/p2.jpg",
+   "pos": "35% 62%",
+   "stat": "Tanpa Bateri",
+   "statSize": 84,
+   "label": "Cucuk USB-C, terus berangin"
+  },
+  {
+   "id": "f-warna",
+   "kind": "feature",
+   "in": [
+    "c1",
+    24.68
+   ],
+   "out": [
+    "c1",
+    27.84
+   ],
+   "image": "assets/images/p1.jpg",
+   "pos": "50% 78%",
+   "stat": "4 Warna",
+   "label": "Pilih warna kegemaran anda",
+   "statSize": 104
+  },
+  {
+   "id": "f-180",
+   "kind": "feature",
+   "in": [
+    "c1",
+    29.3
+   ],
+   "out": [
+    "c1",
+    31.9
+   ],
+   "image": "assets/images/p5.jpg",
+   "pos": "55% 68%",
+   "stat": "180°",
+   "label": "Laras arah angin dengan mudah",
+   "statSize": 104
+  },
+  {
+   "id": "f-rpm",
+   "kind": "feature",
+   "in": [
+    "c1",
+    35.6
+   ],
+   "out": [
+    "c1",
+    39.7
+   ],
+   "image": "assets/images/p3.jpg",
+   "pos": "62% 62%",
+   "stat": "15,573 RPM",
+   "statSize": 84,
+   "label": "Angin sampai 9.7 m/s"
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c1",
+    62.28
+   ],
+   "buttonAt": [
+    "c1",
+    62.98
+   ],
+   "pulseAt": [
+    "c1",
+    63.66
+   ],
+   "kicker": "TikTok Shop",
+   "title": "Kipas Mini",
+   "by": "GOOJODOQ · USB-C · 43g",
+   "button": "Tekan beg kuning"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.4
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 0.82,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.5
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": 1.62,
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-2.mp3",
+   "at": 1.75,
+   "lead": 0.015,
+   "dur": 1.1,
+   "vol": 0.4
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    0.0
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.35
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c1",
+    1.5
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    5.34
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    9.82
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    14.76
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    24.9
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    29.52
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    35.82
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.33
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    62.28
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    62.98
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    63.66
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.4
+  }
+ ]
+}

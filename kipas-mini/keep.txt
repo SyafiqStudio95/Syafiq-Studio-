@@ -1,0 +1,20 @@
+# src start end [. = sentence end] | caption groups (*word* = pink emphasis)
+c1 0.00 3.38 | Ini bukan *kipas* *biasa.*|Ini kipas dari *GOOJODOQ,*
+c1 3.88 4.56 | *ultra* *light,*
+c1 5.12 7.28 . | sebab beratnya|hanya *43* *gram* sahaja.
+c1 8.70 12.20 | Kipas ini mempunyai|*3* *level* angin:|soft wind,
+c1 12.46 14.14 . | comfortable wind|dan *turbo* *wind.*
+c1 14.54 18.98 . | Yang menariknya, kipas ini|tidak menggunakan *bateri,*|hanya guna *USB* *Type-C.*
+c1 19.42 22.72 | Boleh pakai dekat|*smartphone,* *tablet,*|*power* *bank,* *laptop*
+c1 23.28 24.42 . | dan juga *USB* *charger.*
+c1 24.68 27.72 . | Yang lagi menarik,|ada *4* *warna* desain,|anda boleh pilih.
+c1 28.12 31.78 . | Keempat-empat warna,|dan dia *fleksibel*|*180* *darjah.*
+c1 35.18 41.78 | Kipas ini|*15,573* *RPM,*|powerful airflow,|yang mempunyai high speed
+c1 42.16 44.46 | dan deliver *strong* *wind*|untuk
+c1 45.24 46.90 . | *instant* *comfort* yang bagus.
+c1 47.32 49.74 | Boleh pakai|masa tengok *movie,*
+c1 50.24 53.60 . | ataupun sambil-sambil|*berjalan.*
+c1 54.26 56.59 . | Dan sangat *kecil,*|senang letak dalam *poket.*
+c1 56.59 59.55 . | Kipas ni sangat *berbaloi*|sebab tak perlu|fikir pasal *cas.*
+c1 59.55 62.28 . | Yang paling penting,|tak *drain* *bateri*|phone anda.
+c1 62.28 64.22 . | *Berminat?*|Tekan *beg* *kuning*|sekarang!

@@ -89,6 +89,12 @@ TOKENS = """
       }"""
 
 
+TH = E.get("theme")
+if TH:  # per-project fonts and colours: {"fonts": [[family, file, weight], ...], "tokens": {"--x": value}}
+    FONT_FACE = "".join(f'\n      @font-face {{ font-family: "{f}"; src: url("{u}") format("woff2"); font-weight: {w}; }}' for f, u, w in TH["fonts"])
+    TOKENS = "\n      :root {\n" + "".join(f"        {k}: {v};\n" for k, v in TH["tokens"].items()) + "      }"
+
+
 def scene(cid, css, body, js, dur):
     return f"""<template>
   <style>{FONT_FACE}{TOKENS}
@@ -133,10 +139,10 @@ css = """
           column-gap: .26em; color: var(--paper); text-shadow: 0 6px 30px rgba(0,0,0,.55); }
     .hk .w { display: inline-block; }
     .kicker { font: 700 46px/1.1 var(--sans); letter-spacing: .32em; text-transform: uppercase; }
-    .question { font: italic 700 112px/1.0 var(--serif); }
+    .question { font: var(--em-style, italic) 700 112px/1.0 var(--serif); }
     .slam { font: 700 210px/0.95 var(--serif); color: var(--gold); letter-spacing: -.01em;
             text-shadow: 0 10px 50px rgba(0,0,0,.6), 0 0 80px rgba(232,184,92,.25); }
-    .sub { font: italic 400 84px/1.05 var(--serif); }
+    .sub { font: var(--em-style, italic) 400 84px/1.05 var(--serif); }
     #hook-scrim { position: absolute; inset: 0;
       background: radial-gradient(120% 70% at 50% 45%, rgba(5,10,12,.15), rgba(5,10,12,.72)); }
 """
@@ -165,7 +171,7 @@ def title_scene(cid, c):
     .ttl {{ font: 700 150px/1 var(--serif); color: var(--paper); margin-top: 18px; letter-spacing: .01em;
             text-shadow: 0 8px 40px rgba(0,0,0,.65); }}
     .ttl .ch {{ display: inline-block; }}
-    .sub {{ font: italic 400 54px/1.1 var(--serif); color: var(--paper); opacity: .92; margin-top: 14px;
+    .sub {{ font: var(--em-style, italic) 400 54px/1.1 var(--serif); color: var(--paper); opacity: .92; margin-top: 14px;
             text-shadow: 0 4px 24px rgba(0,0,0,.7); }}
     .rule {{ width: 420px; height: 3px; margin: 22px auto; background: linear-gradient(90deg, transparent, var(--gold), transparent);
              transform-origin: 50% 50%; }}
@@ -295,18 +301,51 @@ def cta_scene(cid, c):
     .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,10,12,.78) 0%, rgba(5,10,12,.35) 42%, rgba(5,10,12,.15) 60%, rgba(5,10,12,.7) 100%); }
     .cta { position: absolute; left: 0; right: 0; top: 330px; text-align: center; }
     .kick { font: 700 34px/1 var(--sans); letter-spacing: .4em; color: var(--gold); text-transform: uppercase; }
-    .ttl { font: 700 150px/0.95 var(--serif); color: var(--paper); margin-top: 22px; text-shadow: 0 10px 44px rgba(0,0,0,.6); }
-    .by { font: italic 400 50px/1.1 var(--serif); color: var(--paper); margin-top: 14px; }
+    .ttl { font: 700 var(--cta-size, 150px)/0.95 var(--serif); color: var(--paper); margin-top: 22px; text-shadow: 0 10px 44px rgba(0,0,0,.6); }
+    .by { font: var(--em-style, italic) 400 50px/1.1 var(--serif); color: var(--paper); margin-top: 14px; }
     .btn { display: inline-flex; align-items: center; gap: 18px; margin-top: 110px; padding: 30px 56px; border-radius: 999px;
-           background: linear-gradient(180deg, #f0c470, var(--gold-deep)); color: var(--ink);
+           background: linear-gradient(180deg, var(--gold-hi, #f0c470), var(--gold-deep)); color: var(--btn-ink, var(--ink));
            font: 700 46px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase;
            box-shadow: 0 18px 50px rgba(0,0,0,.45), 0 0 0 2px rgba(255,236,190,.5) inset; }
 """
     scenes[cid] = (a, d, scene(cid, css, body, js, d))
 
 
+def feature_scene(cid, c):
+    """Product cutaway: a rounded panel with a product image, a big stat and a short label."""
+    a, b = T(c["in"]), T(c["out"])
+    d = fr(b - a)
+    stat = "".join(f'<span class="ch">{esc(ch) if ch != " " else "&nbsp;"}</span>' for ch in c["stat"])
+    body = f"""    <div id="{cid}-scrim" class="fscrim"></div>
+    <div id="{cid}-wrap" class="feat">
+      <div id="{cid}-panel" class="panel"><img id="{cid}-img" src="{c["image"]}" alt="" style="object-position: {c.get("pos", "50% 60%")}"></div>
+      <div id="{cid}-stat" class="stat">{stat}</div>
+      <div id="{cid}-lbl" class="lbl">{esc(c["label"])}</div>
+    </div>"""
+    css = f"""
+    .fscrim {{ position: absolute; inset: 0; background: radial-gradient(90% 60% at 50% 38%, rgba(6,14,22,.55), rgba(6,14,22,.82)); }}
+    .feat {{ position: absolute; left: 120px; right: 240px; top: 300px; display: flex; flex-direction: column; align-items: center; }}
+    .panel {{ width: var(--panel, 540px); height: var(--panel, 540px); border-radius: 40px; overflow: hidden; background: #eef3f8;
+              box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 3px rgba(255,255,255,.25); }}
+    .panel img {{ width: 100%; height: 100%; object-fit: cover; display: block; transform-origin: 50% 50%; }}
+    .stat {{ margin-top: 28px; font: 800 {c.get("statSize", 118)}px/1 var(--serif); color: var(--gold); letter-spacing: -.02em;
+             text-shadow: 0 8px 30px rgba(0,0,0,.45); }}
+    .stat .ch {{ display: inline-block; }}
+    .lbl {{ margin-top: 14px; max-width: 640px; text-align: center; font: 600 44px/1.2 var(--serif); color: var(--paper);
+            text-shadow: 0 4px 20px rgba(0,0,0,.6); }}
+"""
+    js = f"""    tl.fromTo("#{cid}-scrim", {{opacity: 0}}, {{opacity: 1, duration: 0.3, ease: "power2.out"}}, 0);
+    tl.fromTo("#{cid}-panel", {{opacity: 0, y: 70, scale: 0.86, filter: "blur(10px)"}}, {{opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.5, ease: "expo.out"}}, 0.02);
+    tl.fromTo("#{cid}-img", {{scale: 1.12}}, {{scale: 1.0, duration: {d}, ease: "power1.out"}}, 0);
+    tl.fromTo("#{cid}-stat .ch", {{opacity: 0, y: 40, filter: "blur(6px)"}}, {{opacity: 1, y: 0, filter: "blur(0px)", duration: 0.32, ease: "expo.out", stagger: 0.035}}, 0.22);
+    tl.fromTo("#{cid}-lbl", {{opacity: 0, filter: "blur(8px)"}}, {{opacity: 1, filter: "blur(0px)", duration: 0.25, ease: "power4.out"}}, 0.45);
+    tl.to(["#{cid}-wrap", "#{cid}-scrim"], {{opacity: 0, filter: "blur(10px)", duration: 0.2, ease: "power2.in"}}, {fr(d - 0.22)});"""
+    scenes[cid] = (a, d, scene(cid, css, body, js, d))
+
+
 for c in E["cards"]:
-    {"title": title_scene, "chapter": chapter_scene, "trilogy": trilogy_scene, "cta": cta_scene}[c["kind"]](c["id"], c)
+    {"title": title_scene, "chapter": chapter_scene, "trilogy": trilogy_scene, "cta": cta_scene,
+     "feature": feature_scene}[c["kind"]](c["id"], c)
 
 # ---------------------------------------------------------------- captions
 cap_start = hook_dur
@@ -349,12 +388,12 @@ for gi, (ga, gb, text) in enumerate(cap_groups):
     cjs.append(f'    tl.to("#{gid}", {{opacity: 0, duration: 0.1, ease: "power2.in"}}, {fr(b - 0.1)});')
     cjs.append(f'    tl.set("#{gid}", {{opacity: 0, visibility: "hidden"}}, {b});')
 css = """
-    .grp { position: absolute; left: 120px; right: 200px; bottom: 690px; text-align: center; opacity: 0; }
+    .grp { position: absolute; left: 120px; right: var(--cap-right, 200px); bottom: 690px; text-align: center; opacity: 0; }
     .line { display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: baseline; column-gap: 17px;
             padding: 14px 26px 18px; border-radius: 18px; background: rgba(6,12,14,.38); }
     .w { display: inline-block; font: 700 58px/1.18 var(--sans); color: #fffaf0; letter-spacing: -.01em;
          text-shadow: 0 3px 18px rgba(0,0,0,.55); }
-    .w.em { font: italic 700 70px/1.0 var(--serif); color: var(--gold); letter-spacing: 0; }
+    .w.em { font: var(--em-style, italic) 700 70px/1.0 var(--serif); color: var(--gold); letter-spacing: 0; }
 """
 scenes["captions"] = (cap_start, cap_dur, scene("captions", css, "\n".join(groups), "\n".join(cjs), cap_dur))
 
