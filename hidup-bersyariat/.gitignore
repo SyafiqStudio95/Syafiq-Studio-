@@ -13,3 +13,4 @@ grading/*.jpg
 transcript/audio/
 *.log
 preview-files.json
+assets/images/
