@@ -28,6 +28,9 @@ for i, s in enumerate(E["hook"]["clips"]):
     hook_clips.append({**s, "i": i, "start": fr(t), "dur": d})
     t = fr(t + d)
 HOOK_DUR = t
+OVER_VOICE = bool(E["hook"].get("overVoice"))  # hook visuals play over the opening voice line
+if OVER_VOICE:
+    t = 0.0
 segs, runs = [], []
 for i, s in enumerate(E["edl"]):
     d = fr(fr(s["out"]) - fr(s["in"]))
@@ -366,7 +369,9 @@ for s in segs:
         ga = sp_a + (sp_b - sp_a) * acc / total
         acc += len(p)
         gb = sp_a + (sp_b - sp_a) * acc / total
-        cap_groups.append([fr(max(s["start"], ga - 0.06)), fr(gb), p])
+        if gb <= hook_dur + 0.05:
+            continue  # spoken under the hook: the hook's own lines carry it
+        cap_groups.append([fr(max(s["start"], ga - 0.06, hook_dur)), fr(gb), p])
 # a group holds until the next one opens (never past its cut + 0.35 s)
 for k, g in enumerate(cap_groups):
     nxt = cap_groups[k + 1][0] if k + 1 < len(cap_groups) else AROLL_END
@@ -426,6 +431,8 @@ def cam(wid, vid, src_path, start, dur, mstart, audio, src_key, z=1.0, oy=46):
 for h in hook_clips:
     wid = f"hookcam{h['i']}"
     cam(wid, f"hook{h['i']}", f"assets/video/hook_{h['i']}.mp4", h["start"], h["dur"], 0, "muted", h["src"], h.get("z", 1.0))
+    if OVER_VOICE:
+        vids[-1] = vids[-1].replace('class="cam"', 'class="cam hookcam"', 1)
     wraps_js.append(f'    tl.fromTo("#{wid}", {{scale: {h.get("z", 1.0) * 1.14:.3f}}}, {{scale: {h.get("z", 1.0)}, duration: 0.45, ease: "expo.out", immediateRender: false}}, {h["start"]});')
 
 for r, run in enumerate(runs):
@@ -496,6 +503,7 @@ index = f"""<!doctype html>
       .cam {{ position: absolute; inset: 0; }}
       .cam video {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }}
       .layer {{ position: absolute; inset: 0; z-index: 10; }}
+      .hookcam {{ z-index: 4; }}
       .ovfull {{ z-index: 2; }}
       .pip {{ position: absolute; top: 300px; width: 330px; z-index: 5; transform-origin: 50% 0%; }}
       .pipFrame {{ position: relative; width: 330px; height: 587px; border-radius: 28px; overflow: hidden;

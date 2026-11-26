@@ -86,7 +86,7 @@
       <section>
         <h2>Ringkasan suntingan</h2>
         <div class="stats">
-          <div class="stat"><div class="v">86.2s</div><div class="k">daripada 123s demo + 6 klip anak</div></div>
+          <div class="stat"><div class="v">83.8s</div><div class="k">daripada 123s demo + 6 klip anak</div></div>
           <div class="stat"><div class="v">35</div><div class="k">potongan</div></div>
           <div class="stat"><div class="v">9:16</div><div class="k">1080×1920, 30 fps</div></div>
         </div>
@@ -100,7 +100,7 @@
       <section>
         <h2>Overlay anak-anak bermain</h2>
         <ul class="list">
-          <li><b>Hook</b> dan pembuka: footage anak bermain penuh skrin di bawah <q>Siapa kata tak boleh main bola dalam rumah?</q></li>
+          <li><b>Hook:</b> footage anak bermain dari saat pertama, dengan <b>suara kau terus bermula</b>: <q>Siapa kata tak boleh main bola dalam rumah?</q></li>
           <li><b>4 tetingkap PiP</b> atas demo: <q>Main bersama!</q>, <q>Terapung!</q>, <q>Bonus penguin!</q>, <q>Anak suka!</q>, muncul bila kau sebut perkara yang sama.</li>
           <li><b>Potongan penuh skrin</b> anak bermain pada <q>tak akan ada kerosakan dalam kawasan rumah</q>, dan di belakang butang beg kuning di penutup.</li>
           <li>Klip anak-anak <b>disenyapkan</b>; suara demo kau terus berjalan.</li>
@@ -120,7 +120,7 @@
       <section>
         <h2>Kad &amp; rupa</h2>
         <ul class="list">
-          <li><b>Hook 2.4s:</b> <q>Anak bosan? Main bola dalam rumah!</q> → <q>Terapung. Bercahaya LED</q> → <q>tak pecah apa-apa!</q></li>
+          <li><b>Hook 2.1s:</b> teks ikut suara: <q>Siapa kata tak boleh main bola</q> → <q>dalam rumah?</q> · terapung · LED</li>
           <li><b>Kad ciri</b> dari penerangan produk: Bampar lembut, 3 × AA, Kusyen udara, Lampu LED, Bonus Penguin + Pam, Selamat dalam rumah.</li>
           <li><b>Grade:</b> latar biru demo ditenangkan dan diterangkan; footage anak dikekalkan cerah. Aksen hijau macam lampu LED bola.</li>
         </ul>
@@ -134,17 +134,16 @@
 <script src="player.js"></script>
 <script>
   const CHAPTERS = [
-    [0.0, "Hook", "Anak bosan? Bola terapung, tak pecah apa-apa"],
-    [2.4, "Pembuka", "Siapa kata tak boleh main bola dalam rumah?"],
-    [4.53, "Hover Ball", "Bola khas untuk main bersama anak"],
-    [15.73, "Kualiti", "Bampar lembut, binaan bagus"],
-    [23.94, "Bateri", "3 × AA di bawah bola"],
-    [30.2, "Cara terapung", "Suis, kipas, kusyen udara"],
-    [42.9, "Lampu LED", "Bola terapung bercahaya"],
-    [47.17, "Bonus", "Penguin + pam dalam set"],
-    [53.9, "Selamat", "Tak melambung, tak rosakkan rumah"],
-    [71.27, "Anak suka", "Main dalam rumah dengan baik"],
-    [74.6, "Penutup", "Tekan beg kuning, stok terhad"]
+    [0.0, "Hook", "Siapa kata tak boleh main bola dalam rumah?"],
+    [2.13, "Hover Ball", "Bola khas untuk main bersama anak"],
+    [13.33, "Kualiti", "Bampar lembut, binaan bagus"],
+    [21.54, "Bateri", "3 × AA di bawah bola"],
+    [27.80, "Cara terapung", "Suis, kipas, kusyen udara"],
+    [40.50, "Lampu LED", "Bola terapung bercahaya"],
+    [44.77, "Bonus", "Penguin + pam dalam set"],
+    [51.50, "Selamat", "Tak melambung, tak rosakkan rumah"],
+    [68.87, "Anak suka", "Main dalam rumah dengan baik"],
+    [72.20, "Penutup", "Tekan beg kuning, stok terhad"]
   ];
   const player = document.getElementById("player");
   const status = document.getElementById("status");
@@ -167,7 +166,7 @@
 
   player.addEventListener("ready", () => {
     const d = player.duration;
-    status.innerHTML = `Sedia · <b>${Number.isFinite(d) ? d.toFixed(1) : "86.2"}s</b> · tekan main untuk tonton dengan bunyi`;
+    status.innerHTML = `Sedia · <b>${Number.isFinite(d) ? d.toFixed(1) : "83.8"}s</b> · tekan main untuk tonton dengan bunyi`;
   });
   player.addEventListener("error", (e) => {
     status.textContent = "Filem gagal dimuat. Muat semula halaman untuk cuba lagi.";

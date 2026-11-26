@@ -18,7 +18,7 @@
         --cap-right: 300px;
         --cta-size: 112px;
         --title-size: 112px;
-        --slam-size: 160px;
+        --slam-size: 140px;
         --hook-scrim: .45;
       }
     #root { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
@@ -35,36 +35,28 @@
       background: radial-gradient(120% 70% at 50% 40%, rgba(5,10,12,var(--hook-scrim, .15)), rgba(5,10,12,.78)); }
 
   </style>
-  <div id="root" data-composition-id="hook" data-start="0" data-duration="2.4" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="hook" data-start="0" data-duration="2.1" data-width="1080" data-height="1920">
     <div id="hook-scrim"></div>
-    <div id="hook-l0" class="hk kicker" style="top:600px"><span class="w">ANAK</span> <span class="w">BOSAN?</span></div>
-    <div id="hook-l1" class="hk question" style="top:680px"><span class="w">Main</span> <span class="w">bola</span> <span class="w">dalam</span> <span class="w">rumah!</span></div>
-    <div id="hook-l2" class="hk slam" style="top:580px"><span class="w">Terapung.</span></div>
-    <div id="hook-l3" class="hk kicker" style="top:790px"><span class="w">BERCAHAYA</span> <span class="w">LED</span></div>
-    <div id="hook-l4" class="hk sub" style="top:590px"><span class="w">tak</span> <span class="w">pecah</span></div>
-    <div id="hook-l5" class="hk slam" style="top:700px"><span class="w">apa-apa!</span></div>
+    <div id="hook-l0" class="hk kicker" style="top:600px"><span class="w">SIAPA</span> <span class="w">KATA</span></div>
+    <div id="hook-l1" class="hk question" style="top:680px"><span class="w">tak</span> <span class="w">boleh</span> <span class="w">main</span> <span class="w">bola</span></div>
+    <div id="hook-l2" class="hk slam" style="top:560px"><span class="w">dalam</span> <span class="w">rumah?</span></div>
+    <div id="hook-l3" class="hk kicker" style="top:880px"><span class="w">TERAPUNG</span> <span class="w">·</span> <span class="w">LED</span></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
     tl.fromTo("#hook-l0 .w", {opacity: 0, filter: "blur(8px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power4.out", stagger: 0.07}, 0.0667);
-    tl.to("#hook-l0", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 0.6333);
-    tl.set("#hook-l0", {opacity: 0}, 0.8);
-    tl.fromTo("#hook-l1 .w", {opacity: 0, filter: "blur(8px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power4.out", stagger: 0.07}, 0.1667);
-    tl.to("#hook-l1", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 0.6333);
-    tl.set("#hook-l1", {opacity: 0}, 0.8);
-    tl.fromTo("#hook-l2", {opacity: 0, scale: 1.35, filter: "blur(14px)"}, {opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.32, ease: "expo.out"}, 0.8333);
-    tl.to("#hook-l2", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 1.4333);
-    tl.set("#hook-l2", {opacity: 0}, 1.6);
-    tl.fromTo("#hook-l3 .w", {opacity: 0, filter: "blur(8px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power4.out", stagger: 0.07}, 0.9);
-    tl.to("#hook-l3", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 1.4333);
-    tl.set("#hook-l3", {opacity: 0}, 1.6);
-    tl.fromTo("#hook-l4 .w", {opacity: 0, filter: "blur(8px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power4.out", stagger: 0.07}, 1.6333);
-    tl.to("#hook-l4", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 2.2333);
-    tl.set("#hook-l4", {opacity: 0}, 2.4);
-    tl.fromTo("#hook-l5", {opacity: 0, scale: 1.35, filter: "blur(14px)"}, {opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.32, ease: "expo.out"}, 1.7333);
-    tl.to("#hook-l5", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 2.2333);
-    tl.set("#hook-l5", {opacity: 0}, 2.4);
-    tl.to("#hook-scrim", {opacity: 0, duration: 0.25, ease: "power2.in"}, 2.1333);
+    tl.to("#hook-l0", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 0.8333);
+    tl.set("#hook-l0", {opacity: 0}, 1.0);
+    tl.fromTo("#hook-l1 .w", {opacity: 0, filter: "blur(8px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power4.out", stagger: 0.07}, 0.1333);
+    tl.to("#hook-l1", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 0.8333);
+    tl.set("#hook-l1", {opacity: 0}, 1.0);
+    tl.fromTo("#hook-l2", {opacity: 0, scale: 1.35, filter: "blur(14px)"}, {opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.32, ease: "expo.out"}, 1.0333);
+    tl.to("#hook-l2", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 1.9333);
+    tl.set("#hook-l2", {opacity: 0}, 2.1);
+    tl.fromTo("#hook-l3 .w", {opacity: 0, filter: "blur(8px)"}, {opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power4.out", stagger: 0.07}, 1.1);
+    tl.to("#hook-l3", {opacity: 0, filter: "blur(10px)", duration: 0.16, ease: "power2.in"}, 1.9333);
+    tl.set("#hook-l3", {opacity: 0}, 2.1);
+    tl.to("#hook-scrim", {opacity: 0, duration: 0.25, ease: "power2.in"}, 1.8667);
     window.__timelines["hook"] = tl;
   </script>
 </template>

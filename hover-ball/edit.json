@@ -44,7 +44,7 @@
    "--cap-right": "300px",
    "--cta-size": "112px",
    "--title-size": "112px",
-   "--slam-size": "160px",
+   "--slam-size": "140px",
    "--hook-scrim": ".45"
   }
  },
@@ -89,63 +89,50 @@
    {
     "src": "c2",
     "in": 10.0,
-    "out": 10.8
+    "out": 10.7
    },
    {
     "src": "c4",
     "in": 4.0,
-    "out": 4.8
+    "out": 4.7
    },
    {
     "src": "c3",
     "in": 17.0,
-    "out": 17.8
+    "out": 17.7
    }
   ],
   "lines": [
    {
-    "text": "ANAK BOSAN?",
+    "text": "SIAPA KATA",
     "style": "kicker",
     "y": 600,
-    "in": 0.08,
-    "out": 0.8
+    "in": 0.05,
+    "out": 1.0
    },
    {
-    "text": "Main bola dalam rumah!",
+    "text": "tak boleh main bola",
     "style": "question",
     "y": 680,
-    "in": 0.16,
-    "out": 0.8
+    "in": 0.12,
+    "out": 1.0
    },
    {
-    "text": "Terapung.",
+    "text": "dalam rumah?",
     "style": "slam",
-    "y": 580,
-    "in": 0.82,
-    "out": 1.6
+    "y": 560,
+    "in": 1.02,
+    "out": 2.1
    },
    {
-    "text": "BERCAHAYA LED",
+    "text": "TERAPUNG · LED",
     "style": "kicker",
-    "y": 790,
-    "in": 0.9,
-    "out": 1.6
-   },
-   {
-    "text": "tak pecah",
-    "style": "sub",
-    "y": 590,
-    "in": 1.62,
-    "out": 2.4
-   },
-   {
-    "text": "apa-apa!",
-    "style": "slam",
-    "y": 700,
-    "in": 1.75,
-    "out": 2.4
+    "y": 880,
+    "in": 1.1,
+    "out": 2.1
    }
-  ]
+  ],
+  "overVoice": true
  },
  "edl": [
   {
@@ -506,16 +493,6 @@
  },
  "overlays": [
   {
-   "mode": "full",
-   "src": "c4",
-   "in": 3.0,
-   "dur": 1.9,
-   "at": [
-    "c5",
-    0.0
-   ]
-  },
-  {
    "mode": "pip",
    "side": "left",
    "src": "c2",
@@ -588,7 +565,7 @@
    ],
    "kicker": "Bola dalam rumah",
    "title": "Hover Ball",
-   "sub": "terapung · bercahaya LED",
+   "sub": "terapung · lampu LED",
    "y": 330
   },
   {
@@ -636,7 +613,7 @@
    ],
    "kicker": "Kusyen udara",
    "title": "Terapung",
-   "sub": "kipas menolak bola ke atas",
+   "sub": "kipas tolak bola ke atas",
    "y": 330
   },
   {
@@ -713,34 +690,27 @@
    "file": "whoosh.mp3",
    "at": 0.0,
    "dur": 0.57,
-   "vol": 0.4
+   "vol": 0.28
   },
   {
    "file": "impact-bass-1.mp3",
-   "at": 0.82,
+   "at": 1.02,
    "lead": 0.04,
    "dur": 2.1,
-   "vol": 0.5
-  },
-  {
-   "file": "whoosh.mp3",
-   "at": 1.62,
-   "lead": 0.13,
-   "dur": 0.57,
    "vol": 0.35
   },
   {
-   "file": "impact-bass-2.mp3",
-   "at": 1.75,
-   "lead": 0.015,
-   "dur": 1.1,
-   "vol": 0.4
+   "file": "whoosh.mp3",
+   "at": 1.0,
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.24
   },
   {
    "file": "whoosh.mp3",
    "at": [
     "c5",
-    1.95
+    2.2
    ],
    "lead": 0.13,
    "dur": 0.57,
