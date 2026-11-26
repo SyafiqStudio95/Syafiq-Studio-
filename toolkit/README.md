@@ -17,4 +17,6 @@ Dalam Claude Code, taip **`/edit-video`** dan kongsi link folder Google Drive â€
 
 Rujukan lengkap: `alfu-sanatin/edit.json` (hook, kad, caption, SFX, grade) dan `alfu-sanatin/EDIT.md`.
 
+**Gaya hook:** suara bermula dari saat pertama; footage hook (2â€“3 shot, ~2 saat) dimainkan di atas ayat pembuka dan teks hook ikut ayat tu (`"overVoice": true`, lalai).
+
 Untuk affiliate TikTok: hantar versi tanpa muzik, kemudian tambah lagu dari Commercial Music Library dalam app TikTok.

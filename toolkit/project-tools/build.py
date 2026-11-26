@@ -28,7 +28,7 @@ for i, s in enumerate(E["hook"]["clips"]):
     hook_clips.append({**s, "i": i, "start": fr(t), "dur": d})
     t = fr(t + d)
 HOOK_DUR = t
-OVER_VOICE = bool(E["hook"].get("overVoice"))  # hook visuals play over the opening voice line
+OVER_VOICE = bool(E["hook"].get("overVoice", True))  # house style: voice from frame 0, hook visuals over it
 if OVER_VOICE:
     t = 0.0
 segs, runs = [], []

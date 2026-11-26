@@ -37,7 +37,12 @@ That project is the reference: copy its decisions, read its `edit.json`, `EDIT.m
    paper/handling noise, silent clips (use them as b-roll). When a boundary is ambiguous, keep the words
    rather than cut mid-word, and tell the user. Fix spelling in captions (takhta, empayar, Palestin, butang).
    `python3 toolkit/make_edl.py <name>`.
-6. Fill the rest of `<name>/edit.json` like alfu-sanatin's: `hook` (2-3 muted shots, 3 kinetic lines ≤2.5 s),
+6. Fill the rest of `<name>/edit.json` like hover-ball's (the current house style) — `hook`:
+   **the voice is heard from the first frame.** The A-roll starts at 0 (`"overVoice": true`, the default in
+   tools/build.py) and 2-3 muted hook shots (0.7 s each, ~2.1 s total) play over the opening line; the hook's
+   kinetic lines echo that spoken line (e.g. "SIAPA KATA" / "tak boleh main bola" / "dalam rumah?"), and
+   captions start after the hook. Pick the strongest spoken question or claim as the first kept phrase.
+   Never open on silent footage. Then
    `cards` (title / chapter with era-line nodes / trilogy / cta), `sfx` (whoosh on source changes, pop on nodes,
    impact on hook + payoff; lead = file peak: whoosh 0.13, impact-bass-1 0.04, pop 0.1), `tail`, `grade`.
 7. Grade: `python3 tools/make_lut.py` (smooth saturation-weighted teal-amber LUT, edit its numbers per footage),
@@ -64,6 +69,8 @@ That project is the reference: copy its decisions, read its `edit.json`, `EDIT.m
 - Safe zone 1080×1920: text between y 288-1248 and x 120-888 (780 below y 840). Captions bottom ≤ y 1248.
 - Whisper large-v3 on silence: "Terima kasih kerana menonton"; on repeats: invented news lines.
 - The A-roll is baked per source run (12 ms audio fades per cut). Hook/tail b-roll are baked too.
+- The opening 2-3 s must carry the voice (user's standing request): keep `hook.overVoice` true; end the hook
+  where the second phrase starts so the title card lands on it; lower the hook SFX (~0.3) under the voice.
 - `git push` may 403 even after the user connects GitHub (session credentials are minted at start); the
   GitHub MCP tools can still write text files.
 - Render: ~25 min for 105 s at delivery quality on 4 CPUs (software WebGL); master ≈ 430 MB, social ≈ 170 MB.
