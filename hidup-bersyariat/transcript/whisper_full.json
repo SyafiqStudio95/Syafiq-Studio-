@@ -1,0 +1,907 @@
+{
+ "c1": [
+  {
+   "start": 0.0,
+   "end": 18.46,
+   "text": " Buku ni diterbitkan pada 2009. Siapa sangka dah 17 tahun buku ni masih lagi menjadi pilihan di pasaran kerana Indahnya Hidup Bersyariat, Modul Fardu Ain dan Keluarga dan Masyarakat Sepanjang Hayat adalah satu buku yang sangat lengkap dari sudut fiqh.",
+   "words": [
+    {
+     "w": " Buku",
+     "s": 0.0,
+     "e": 0.42
+    },
+    {
+     "w": " ni",
+     "s": 0.42,
+     "e": 0.6
+    },
+    {
+     "w": " diterbitkan",
+     "s": 0.6,
+     "e": 1.22
+    },
+    {
+     "w": " pada",
+     "s": 1.22,
+     "e": 1.48
+    },
+    {
+     "w": " 2009.",
+     "s": 1.48,
+     "e": 1.92
+    },
+    {
+     "w": " Siapa",
+     "s": 2.5,
+     "e": 3.02
+    },
+    {
+     "w": " sangka",
+     "s": 3.02,
+     "e": 3.48
+    },
+    {
+     "w": " dah",
+     "s": 3.48,
+     "e": 4.1
+    },
+    {
+     "w": " 17",
+     "s": 4.1,
+     "e": 4.48
+    },
+    {
+     "w": " tahun",
+     "s": 4.48,
+     "e": 4.94
+    },
+    {
+     "w": " buku",
+     "s": 4.94,
+     "e": 5.5
+    },
+    {
+     "w": " ni",
+     "s": 5.5,
+     "e": 5.62
+    },
+    {
+     "w": " masih",
+     "s": 5.62,
+     "e": 5.96
+    },
+    {
+     "w": " lagi",
+     "s": 5.96,
+     "e": 6.28
+    },
+    {
+     "w": " menjadi",
+     "s": 6.28,
+     "e": 6.64
+    },
+    {
+     "w": " pilihan",
+     "s": 6.64,
+     "e": 7.54
+    },
+    {
+     "w": " di",
+     "s": 7.54,
+     "e": 7.66
+    },
+    {
+     "w": " pasaran",
+     "s": 7.66,
+     "e": 8.04
+    },
+    {
+     "w": " kerana",
+     "s": 8.04,
+     "e": 8.96
+    },
+    {
+     "w": " Indahnya",
+     "s": 8.96,
+     "e": 9.46
+    },
+    {
+     "w": " Hidup",
+     "s": 9.46,
+     "e": 9.8
+    },
+    {
+     "w": " Bersyariat,",
+     "s": 9.8,
+     "e": 10.24
+    },
+    {
+     "w": " Modul",
+     "s": 10.42,
+     "e": 11.04
+    },
+    {
+     "w": " Fardu",
+     "s": 11.04,
+     "e": 11.38
+    },
+    {
+     "w": " Ain",
+     "s": 11.38,
+     "e": 11.66
+    },
+    {
+     "w": " dan",
+     "s": 11.66,
+     "e": 11.82
+    },
+    {
+     "w": " Keluarga",
+     "s": 11.82,
+     "e": 12.38
+    },
+    {
+     "w": " dan",
+     "s": 12.38,
+     "e": 12.62
+    },
+    {
+     "w": " Masyarakat",
+     "s": 12.62,
+     "e": 13.22
+    },
+    {
+     "w": " Sepanjang",
+     "s": 13.22,
+     "e": 13.58
+    },
+    {
+     "w": " Hayat",
+     "s": 13.58,
+     "e": 13.9
+    },
+    {
+     "w": " adalah",
+     "s": 13.9,
+     "e": 14.44
+    },
+    {
+     "w": " satu",
+     "s": 14.44,
+     "e": 14.82
+    },
+    {
+     "w": " buku",
+     "s": 14.82,
+     "e": 15.34
+    },
+    {
+     "w": " yang",
+     "s": 15.34,
+     "e": 15.5
+    },
+    {
+     "w": " sangat",
+     "s": 15.5,
+     "e": 15.84
+    },
+    {
+     "w": " lengkap",
+     "s": 15.84,
+     "e": 16.4
+    },
+    {
+     "w": " dari",
+     "s": 16.4,
+     "e": 16.96
+    },
+    {
+     "w": " sudut",
+     "s": 16.96,
+     "e": 17.86
+    },
+    {
+     "w": " fiqh.",
+     "s": 17.86,
+     "e": 18.46
+    }
+   ]
+  },
+  {
+   "start": 18.46,
+   "end": 29.42,
+   "text": " Oh, daripada awal kelahiran sehinggalah peringkat kanak-kanak, remaja, berkahwin, munakahat dan bermasyarakat, semuanya ada.",
+   "words": [
+    {
+     "w": " Oh,",
+     "s": 18.46,
+     "e": 18.6
+    },
+    {
+     "w": " daripada",
+     "s": 18.6,
+     "e": 20.0
+    },
+    {
+     "w": " awal",
+     "s": 20.0,
+     "e": 20.44
+    },
+    {
+     "w": " kelahiran",
+     "s": 20.44,
+     "e": 20.9
+    },
+    {
+     "w": " sehinggalah",
+     "s": 20.9,
+     "e": 22.06
+    },
+    {
+     "w": " peringkat",
+     "s": 22.06,
+     "e": 23.58
+    },
+    {
+     "w": " kanak",
+     "s": 23.58,
+     "e": 23.98
+    },
+    {
+     "w": "-kanak,",
+     "s": 23.98,
+     "e": 24.46
+    },
+    {
+     "w": " remaja,",
+     "s": 24.48,
+     "e": 25.06
+    },
+    {
+     "w": " berkahwin,",
+     "s": 25.28,
+     "e": 26.9
+    },
+    {
+     "w": " munakahat",
+     "s": 26.9,
+     "e": 27.5
+    },
+    {
+     "w": " dan",
+     "s": 27.5,
+     "e": 27.82
+    },
+    {
+     "w": " bermasyarakat,",
+     "s": 27.82,
+     "e": 28.66
+    },
+    {
+     "w": " semuanya",
+     "s": 28.66,
+     "e": 29.22
+    },
+    {
+     "w": " ada.",
+     "s": 29.22,
+     "e": 29.42
+    }
+   ]
+  },
+  {
+   "start": 29.54,
+   "end": 34.8,
+   "text": " Sampailah kepada pengakhiran hayat seorang manusia tu, mereka meningannya. Semua ada dalam ni.",
+   "words": [
+    {
+     "w": " Sampailah",
+     "s": 29.54,
+     "e": 30.2
+    },
+    {
+     "w": " kepada",
+     "s": 30.2,
+     "e": 30.36
+    },
+    {
+     "w": " pengakhiran",
+     "s": 30.36,
+     "e": 31.16
+    },
+    {
+     "w": " hayat",
+     "s": 31.16,
+     "e": 31.48
+    },
+    {
+     "w": " seorang",
+     "s": 31.48,
+     "e": 31.86
+    },
+    {
+     "w": " manusia",
+     "s": 31.86,
+     "e": 32.38
+    },
+    {
+     "w": " tu,",
+     "s": 32.38,
+     "e": 32.54
+    },
+    {
+     "w": " mereka",
+     "s": 32.62,
+     "e": 33.18
+    },
+    {
+     "w": " meningannya.",
+     "s": 33.18,
+     "e": 33.74
+    },
+    {
+     "w": " Semua",
+     "s": 33.88,
+     "e": 34.18
+    },
+    {
+     "w": " ada",
+     "s": 34.18,
+     "e": 34.34
+    },
+    {
+     "w": " dalam",
+     "s": 34.34,
+     "e": 34.62
+    },
+    {
+     "w": " ni.",
+     "s": 34.62,
+     "e": 34.8
+    }
+   ]
+  },
+  {
+   "start": 34.9,
+   "end": 47.3,
+   "text": " Yang lebih menarik buku ni, dia ada bukan sekadar tulisan, dia ada gambar dan menjadi mudah bagi kita nak baca, nak tengok.",
+   "words": [
+    {
+     "w": " Yang",
+     "s": 34.9,
+     "e": 35.4
+    },
+    {
+     "w": " lebih",
+     "s": 35.4,
+     "e": 35.54
+    },
+    {
+     "w": " menarik",
+     "s": 35.54,
+     "e": 35.9
+    },
+    {
+     "w": " buku",
+     "s": 35.9,
+     "e": 36.24
+    },
+    {
+     "w": " ni,",
+     "s": 36.24,
+     "e": 36.4
+    },
+    {
+     "w": " dia",
+     "s": 36.5,
+     "e": 37.9
+    },
+    {
+     "w": " ada",
+     "s": 37.9,
+     "e": 38.24
+    },
+    {
+     "w": " bukan",
+     "s": 38.24,
+     "e": 38.72
+    },
+    {
+     "w": " sekadar",
+     "s": 38.72,
+     "e": 39.38
+    },
+    {
+     "w": " tulisan,",
+     "s": 39.38,
+     "e": 40.64
+    },
+    {
+     "w": " dia",
+     "s": 40.7,
+     "e": 41.1
+    },
+    {
+     "w": " ada",
+     "s": 41.1,
+     "e": 41.5
+    },
+    {
+     "w": " gambar",
+     "s": 41.5,
+     "e": 42.7
+    },
+    {
+     "w": " dan",
+     "s": 42.7,
+     "e": 43.66
+    },
+    {
+     "w": " menjadi",
+     "s": 43.66,
+     "e": 44.38
+    },
+    {
+     "w": " mudah",
+     "s": 44.38,
+     "e": 45.56
+    },
+    {
+     "w": " bagi",
+     "s": 45.56,
+     "e": 45.8
+    },
+    {
+     "w": " kita",
+     "s": 45.8,
+     "e": 45.98
+    },
+    {
+     "w": " nak",
+     "s": 45.98,
+     "e": 46.14
+    },
+    {
+     "w": " baca,",
+     "s": 46.14,
+     "e": 46.52
+    },
+    {
+     "w": " nak",
+     "s": 46.6,
+     "e": 46.82
+    },
+    {
+     "w": " tengok.",
+     "s": 46.82,
+     "e": 47.3
+    }
+   ]
+  },
+  {
+   "start": 47.3,
+   "end": 77.28,
+   "text": " Yang lebih menarik buku ni, dia ada bukan sekadar tulisan, dia ada gambar dan menjadi mudah bagi kita nak baca, nak tengok.",
+   "words": [
+    {
+     "w": " Yang",
+     "s": 47.3,
+     "e": 47.34
+    },
+    {
+     "w": " lebih",
+     "s": 47.34,
+     "e": 48.76
+    },
+    {
+     "w": " menarik",
+     "s": 48.76,
+     "e": 53.5
+    },
+    {
+     "w": " buku",
+     "s": 53.5,
+     "e": 55.02
+    },
+    {
+     "w": " ni,",
+     "s": 55.02,
+     "e": 55.14
+    },
+    {
+     "w": " dia",
+     "s": 55.48,
+     "e": 57.2
+    },
+    {
+     "w": " ada",
+     "s": 57.2,
+     "e": 57.24
+    },
+    {
+     "w": " bukan",
+     "s": 57.24,
+     "e": 61.2
+    },
+    {
+     "w": " sekadar",
+     "s": 61.2,
+     "e": 72.92
+    },
+    {
+     "w": " tulisan,",
+     "s": 72.92,
+     "e": 72.96
+    },
+    {
+     "w": " dia",
+     "s": 72.96,
+     "e": 73.4
+    },
+    {
+     "w": " ada",
+     "s": 73.4,
+     "e": 73.68
+    },
+    {
+     "w": " gambar",
+     "s": 73.68,
+     "e": 74.2
+    },
+    {
+     "w": " dan",
+     "s": 74.2,
+     "e": 77.24
+    },
+    {
+     "w": " menjadi",
+     "s": 77.24,
+     "e": 77.28
+    },
+    {
+     "w": " mudah",
+     "s": 77.28,
+     "e": 77.28
+    },
+    {
+     "w": " bagi",
+     "s": 77.28,
+     "e": 77.28
+    },
+    {
+     "w": " kita",
+     "s": 77.28,
+     "e": 77.28
+    },
+    {
+     "w": " nak",
+     "s": 77.28,
+     "e": 77.28
+    },
+    {
+     "w": " baca,",
+     "s": 77.28,
+     "e": 77.28
+    },
+    {
+     "w": " nak",
+     "s": 77.28,
+     "e": 77.28
+    },
+    {
+     "w": " tengok.",
+     "s": 77.28,
+     "e": 77.28
+    }
+   ]
+  },
+  {
+   "start": 78.88,
+   "end": 86.3,
+   "text": " Sangat mudah bagi sesiapa yang nak tengok cara nak ambil luduk macam mana, cara solat sakit macam mana.",
+   "words": [
+    {
+     "w": " Sangat",
+     "s": 78.88,
+     "e": 79.6
+    },
+    {
+     "w": " mudah",
+     "s": 79.6,
+     "e": 79.92
+    },
+    {
+     "w": " bagi",
+     "s": 79.92,
+     "e": 80.34
+    },
+    {
+     "w": " sesiapa",
+     "s": 80.34,
+     "e": 80.86
+    },
+    {
+     "w": " yang",
+     "s": 80.86,
+     "e": 81.22
+    },
+    {
+     "w": " nak",
+     "s": 81.22,
+     "e": 81.98
+    },
+    {
+     "w": " tengok",
+     "s": 81.98,
+     "e": 82.28
+    },
+    {
+     "w": " cara",
+     "s": 82.28,
+     "e": 82.52
+    },
+    {
+     "w": " nak",
+     "s": 82.52,
+     "e": 82.9
+    },
+    {
+     "w": " ambil",
+     "s": 82.9,
+     "e": 83.42
+    },
+    {
+     "w": " luduk",
+     "s": 83.42,
+     "e": 83.84
+    },
+    {
+     "w": " macam",
+     "s": 83.84,
+     "e": 84.02
+    },
+    {
+     "w": " mana,",
+     "s": 84.02,
+     "e": 84.36
+    },
+    {
+     "w": " cara",
+     "s": 84.48,
+     "e": 85.08
+    },
+    {
+     "w": " solat",
+     "s": 85.08,
+     "e": 85.48
+    },
+    {
+     "w": " sakit",
+     "s": 85.48,
+     "e": 85.86
+    },
+    {
+     "w": " macam",
+     "s": 85.86,
+     "e": 86.02
+    },
+    {
+     "w": " mana.",
+     "s": 86.02,
+     "e": 86.3
+    }
+   ]
+  },
+  {
+   "start": 86.8,
+   "end": 97.9,
+   "text": " Semua tu ada dan juga dia berikan kita panduan-panduan yang sangat jelas lah dari sudut rajah, contoh kenal dengan haji.",
+   "words": [
+    {
+     "w": " Semua",
+     "s": 86.8,
+     "e": 87.52
+    },
+    {
+     "w": " tu",
+     "s": 87.52,
+     "e": 87.62
+    },
+    {
+     "w": " ada",
+     "s": 87.62,
+     "e": 87.78
+    },
+    {
+     "w": " dan",
+     "s": 87.78,
+     "e": 88.62
+    },
+    {
+     "w": " juga",
+     "s": 88.62,
+     "e": 90.04
+    },
+    {
+     "w": " dia",
+     "s": 90.04,
+     "e": 90.32
+    },
+    {
+     "w": " berikan",
+     "s": 90.32,
+     "e": 90.68
+    },
+    {
+     "w": " kita",
+     "s": 90.68,
+     "e": 90.96
+    },
+    {
+     "w": " panduan",
+     "s": 90.96,
+     "e": 91.46
+    },
+    {
+     "w": "-panduan",
+     "s": 91.46,
+     "e": 91.92
+    },
+    {
+     "w": " yang",
+     "s": 91.92,
+     "e": 92.14
+    },
+    {
+     "w": " sangat",
+     "s": 92.14,
+     "e": 92.38
+    },
+    {
+     "w": " jelas",
+     "s": 92.38,
+     "e": 92.68
+    },
+    {
+     "w": " lah",
+     "s": 92.68,
+     "e": 92.8
+    },
+    {
+     "w": " dari",
+     "s": 92.8,
+     "e": 93.08
+    },
+    {
+     "w": " sudut",
+     "s": 93.08,
+     "e": 95.24
+    },
+    {
+     "w": " rajah,",
+     "s": 95.24,
+     "e": 95.74
+    },
+    {
+     "w": " contoh",
+     "s": 95.8,
+     "e": 97.12
+    },
+    {
+     "w": " kenal",
+     "s": 97.12,
+     "e": 97.42
+    },
+    {
+     "w": " dengan",
+     "s": 97.42,
+     "e": 97.54
+    },
+    {
+     "w": " haji.",
+     "s": 97.54,
+     "e": 97.9
+    }
+   ]
+  },
+  {
+   "start": 98.96,
+   "end": 104.82,
+   "text": " Jadi siapa yang berminat dapatkan buku Indahnya Hidup Bersyariat boleh dapatkan sekarang.",
+   "words": [
+    {
+     "w": " Jadi",
+     "s": 98.66,
+     "e": 99.02
+    },
+    {
+     "w": " siapa",
+     "s": 99.02,
+     "e": 99.36
+    },
+    {
+     "w": " yang",
+     "s": 99.36,
+     "e": 99.54
+    },
+    {
+     "w": " berminat",
+     "s": 99.54,
+     "e": 99.96
+    },
+    {
+     "w": " dapatkan",
+     "s": 99.96,
+     "e": 100.54
+    },
+    {
+     "w": " buku",
+     "s": 100.54,
+     "e": 100.9
+    },
+    {
+     "w": " Indahnya",
+     "s": 100.9,
+     "e": 101.4
+    },
+    {
+     "w": " Hidup",
+     "s": 101.4,
+     "e": 102.26
+    },
+    {
+     "w": " Bersyariat",
+     "s": 102.26,
+     "e": 102.84
+    },
+    {
+     "w": " boleh",
+     "s": 102.84,
+     "e": 103.82
+    },
+    {
+     "w": " dapatkan",
+     "s": 103.82,
+     "e": 104.44
+    },
+    {
+     "w": " sekarang.",
+     "s": 104.44,
+     "e": 104.82
+    }
+   ]
+  },
+  {
+   "start": 104.82,
+   "end": 107.32,
+   "text": " Sekarang, sementara harga tengah murah.",
+   "words": [
+    {
+     "w": " Sekarang,",
+     "s": 104.82,
+     "e": 105.04
+    },
+    {
+     "w": " sementara",
+     "s": 105.04,
+     "e": 106.16
+    },
+    {
+     "w": " harga",
+     "s": 106.16,
+     "e": 106.68
+    },
+    {
+     "w": " tengah",
+     "s": 106.68,
+     "e": 106.94
+    },
+    {
+     "w": " murah.",
+     "s": 106.94,
+     "e": 107.32
+    }
+   ]
+  }
+ ]
+}

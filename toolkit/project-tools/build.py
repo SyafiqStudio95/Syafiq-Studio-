@@ -307,7 +307,7 @@ def cta_scene(cid, c):
     .kick { font: 700 34px/1 var(--sans); letter-spacing: .4em; color: var(--gold); text-transform: uppercase; }
     .ttl { font: 700 var(--cta-size, 150px)/0.95 var(--serif); color: var(--paper); margin-top: 22px; text-shadow: 0 10px 44px rgba(0,0,0,.6); }
     .by { font: var(--em-style, italic) 400 50px/1.1 var(--serif); color: var(--paper); margin-top: 14px; }
-    .btn { display: inline-flex; align-items: center; gap: 18px; margin-top: 110px; padding: 30px 56px; border-radius: 999px;
+    .btn { display: inline-flex; align-items: center; gap: 18px; white-space: nowrap; margin-top: 110px; padding: 30px 56px; border-radius: 999px;
            background: linear-gradient(180deg, var(--gold-hi, #f0c470), var(--gold-deep)); color: var(--btn-ink, var(--ink));
            font: 700 46px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase;
            box-shadow: 0 18px 50px rgba(0,0,0,.45), 0 0 0 2px rgba(255,236,190,.5) inset; }

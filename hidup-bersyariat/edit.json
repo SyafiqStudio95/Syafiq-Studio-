@@ -1,0 +1,789 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4"
+ },
+ "grade": {
+  "note": "Teal-Amber Premium: smooth 3D LUT (tools/make_lut.py) quiets the cyan backdrop to deep teal and enriches warm covers; adjust+wheels shape contrast, warm highlights/teal shadows; vignette focuses light on the book; per-clip exposure evens lighting",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.16,
+    "shadows": 0.07,
+    "whites": -0.02,
+    "blacks": -0.02,
+    "vibrance": 0.05,
+    "saturation": -0.02
+   },
+   "wheels": {
+    "shadows": {
+     "hue": 195,
+     "amount": 0.1,
+     "level": -0.02
+    },
+    "highlights": {
+     "hue": 38,
+     "amount": 0.07,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.22,
+    "vignetteFeather": 0.7,
+    "grain": 0.04
+   }
+  },
+  "exposure": {
+   "c1": 0.14
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c1",
+    "in": 80.5,
+    "out": 81.2
+   },
+   {
+    "src": "c1",
+    "in": 64.0,
+    "out": 64.7
+   },
+   {
+    "src": "c1",
+    "in": 96.6,
+    "out": 97.3
+   }
+  ],
+  "lines": [
+   {
+    "text": "BUKU NI DITERBITKAN",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.05,
+    "out": 1.0
+   },
+   {
+    "text": "pada tahun",
+    "style": "question",
+    "y": 680,
+    "in": 0.12,
+    "out": 1.0
+   },
+   {
+    "text": "2009.",
+    "style": "slam",
+    "y": 560,
+    "in": 1.02,
+    "out": 2.1
+   },
+   {
+    "text": "17 TAHUN MASIH DICARI",
+    "style": "kicker",
+    "y": 800,
+    "in": 1.1,
+    "out": 2.1
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c1",
+   "in": 0.17,
+   "out": 2.72,
+   "a": 0.22,
+   "b": 2.56,
+   "z": 1.0,
+   "note": "Buku ni diterbitkan pada 2009.",
+   "cap": "Buku ni diterbitkan|pada *2009*."
+  },
+  {
+   "src": "c1",
+   "in": 2.83,
+   "out": 3.78,
+   "a": 2.88,
+   "b": 3.62,
+   "z": 1.08,
+   "note": "Siapa sangka?",
+   "cap": "*Siapa* *sangka?*"
+  },
+  {
+   "src": "c1",
+   "in": 3.99,
+   "out": 7.12,
+   "a": 4.04,
+   "b": 7.04,
+   "z": 1.0,
+   "note": "Dah 17 tahun, buku ni masih lagi menjadi",
+   "cap": "Dah *17* *tahun*,|buku ni masih lagi menjadi"
+  },
+  {
+   "src": "c1",
+   "in": 7.21,
+   "out": 8.38,
+   "a": 7.26,
+   "b": 8.22,
+   "z": 1.14,
+   "note": "pilihan di pasaran.",
+   "cap": "*pilihan* di pasaran."
+  },
+  {
+   "src": "c1",
+   "in": 8.59,
+   "out": 10.56,
+   "a": 8.64,
+   "b": 10.4,
+   "z": 1.0,
+   "note": "Kerana Indahnya Hidup Bersyariat,",
+   "cap": "Kerana *Indahnya* *Hidup*|*Bersyariat*,"
+  },
+  {
+   "src": "c1",
+   "in": 10.69,
+   "out": 16.5,
+   "a": 10.74,
+   "b": 16.42,
+   "z": 1.08,
+   "note": "modul fardu ain diri, keluarga dan masyarakat sepanjang hayat, buku yang sangat lengkap",
+   "cap": "modul fardu ain diri,|keluarga dan masyarakat|*sepanjang* *hayat*,|buku yang sangat *lengkap*"
+  },
+  {
+   "src": "c1",
+   "in": 16.63,
+   "out": 17.98,
+   "a": 16.68,
+   "b": 17.9,
+   "z": 1.0,
+   "note": "dari sudut",
+   "cap": "dari sudut"
+  },
+  {
+   "src": "c1",
+   "in": 18.11,
+   "out": 19.24,
+   "a": 18.16,
+   "b": 19.08,
+   "z": 1.14,
+   "note": "fiqh.",
+   "cap": "*fiqh*."
+  },
+  {
+   "src": "c1",
+   "in": 19.45,
+   "out": 22.2,
+   "a": 19.5,
+   "b": 22.12,
+   "z": 1.0,
+   "note": "Daripada awal kelahiran sehinggalah",
+   "cap": "Daripada awal *kelahiran*|sehinggalah"
+  },
+  {
+   "src": "c1",
+   "in": 22.79,
+   "out": 25.54,
+   "a": 22.84,
+   "b": 25.46,
+   "z": 1.08,
+   "note": "peringkat kanak-kanak, remaja,",
+   "cap": "peringkat *kanak-kanak*,|remaja,"
+  },
+  {
+   "src": "c1",
+   "in": 26.03,
+   "out": 32.91,
+   "a": 26.08,
+   "b": 32.75,
+   "z": 1.0,
+   "note": "berkahwin, munakahat dan bermasyarakat. Semuanya ada, sampailah pengakhiran hayat seorang manusia.",
+   "cap": "*berkahwin*, munakahat|dan bermasyarakat.|Semuanya ada,|sampailah *pengakhiran* *hayat*|seorang manusia."
+  },
+  {
+   "src": "c1",
+   "in": 34.95,
+   "out": 36.92,
+   "a": 35.0,
+   "b": 36.84,
+   "z": 1.14,
+   "note": "Yang lebih menarik, buku ni",
+   "cap": "Yang lebih menarik,|buku ni"
+  },
+  {
+   "src": "c1",
+   "in": 37.69,
+   "out": 39.68,
+   "a": 37.74,
+   "b": 39.6,
+   "z": 1.0,
+   "note": "dia ada bukan sekadar",
+   "cap": "dia ada bukan sekadar"
+  },
+  {
+   "src": "c1",
+   "in": 40.27,
+   "out": 41.86,
+   "a": 40.32,
+   "b": 41.78,
+   "z": 1.08,
+   "note": "tulisan. Dia ada",
+   "cap": "*tulisan*. Dia ada"
+  },
+  {
+   "src": "c1",
+   "in": 42.21,
+   "out": 42.94,
+   "a": 42.26,
+   "b": 42.86,
+   "z": 1.0,
+   "note": "gambar,",
+   "cap": "*gambar*,"
+  },
+  {
+   "src": "c1",
+   "in": 43.57,
+   "out": 44.04,
+   "a": 43.62,
+   "b": 43.96,
+   "z": 1.14,
+   "note": "kemudian",
+   "cap": "kemudian"
+  },
+  {
+   "src": "c1",
+   "in": 44.13,
+   "out": 47.56,
+   "a": 44.18,
+   "b": 47.4,
+   "z": 1.0,
+   "note": "menjadi mudah bagi kita nak baca, nak tengok.",
+   "cap": "menjadi *mudah* bagi kita|nak baca, nak tengok."
+  },
+  {
+   "src": "c1",
+   "in": 48.13,
+   "out": 51.3,
+   "a": 48.18,
+   "b": 51.22,
+   "z": 1.08,
+   "note": "Panduannya macam kita tengok ensiklopedia,",
+   "cap": "Panduannya macam kita|tengok *ensiklopedia*,"
+  },
+  {
+   "src": "c1",
+   "in": 51.77,
+   "out": 52.42,
+   "a": 51.82,
+   "b": 52.26,
+   "z": 1.0,
+   "note": "nampak tak?",
+   "cap": "nampak tak?"
+  },
+  {
+   "src": "c1",
+   "in": 54.85,
+   "out": 57.84,
+   "a": 54.9,
+   "b": 57.76,
+   "z": 1.14,
+   "note": "Buku ni sangat bagus sebagai modul kepada",
+   "cap": "Buku ni sangat bagus|sebagai *modul* kepada"
+  },
+  {
+   "src": "c1",
+   "in": 58.21,
+   "out": 60.44,
+   "a": 58.26,
+   "b": 60.36,
+   "z": 1.0,
+   "note": "usrah bersama keluarga, ataupun",
+   "cap": "*usrah* bersama keluarga,|ataupun"
+  },
+  {
+   "src": "c1",
+   "in": 60.63,
+   "out": 63.56,
+   "a": 60.68,
+   "b": 63.48,
+   "z": 1.08,
+   "note": "modul untuk aktiviti",
+   "cap": "modul untuk aktiviti"
+  },
+  {
+   "src": "c1",
+   "in": 64.23,
+   "out": 65.7,
+   "a": 64.28,
+   "b": 65.62,
+   "z": 1.0,
+   "note": "sekolah",
+   "cap": "*sekolah*"
+  },
+  {
+   "src": "c1",
+   "in": 65.81,
+   "out": 66.3,
+   "a": 65.86,
+   "b": 66.22,
+   "z": 1.14,
+   "note": "ke,",
+   "cap": "ke,"
+  },
+  {
+   "src": "c1",
+   "in": 66.73,
+   "out": 68.2,
+   "a": 66.78,
+   "b": 68.12,
+   "z": 1.0,
+   "note": "aktiviti",
+   "cap": "aktiviti"
+  },
+  {
+   "src": "c1",
+   "in": 68.31,
+   "out": 69.2,
+   "a": 68.36,
+   "b": 69.12,
+   "z": 1.08,
+   "note": "bersama",
+   "cap": "bersama"
+  },
+  {
+   "src": "c1",
+   "in": 69.89,
+   "out": 73.36,
+   "a": 69.94,
+   "b": 73.2,
+   "z": 1.0,
+   "note": "kawan-kawan ke, aktiviti bersama masyarakat ke.",
+   "cap": "kawan-kawan ke,|aktiviti bersama *masyarakat* ke."
+  },
+  {
+   "src": "c1",
+   "in": 78.79,
+   "out": 81.56,
+   "a": 78.84,
+   "b": 81.48,
+   "z": 1.14,
+   "note": "Sangat mudah bagi sesiapa",
+   "cap": "Sangat mudah bagi sesiapa"
+  },
+  {
+   "src": "c1",
+   "in": 81.67,
+   "out": 84.7,
+   "a": 81.72,
+   "b": 84.62,
+   "z": 1.0,
+   "note": "yang nak tengok cara ambil wuduk,",
+   "cap": "yang nak tengok|cara ambil *wuduk*,"
+  },
+  {
+   "src": "c1",
+   "in": 84.79,
+   "out": 86.64,
+   "a": 84.84,
+   "b": 86.56,
+   "z": 1.08,
+   "note": "cara solat orang sakit.",
+   "cap": "cara *solat* orang sakit."
+  },
+  {
+   "src": "c1",
+   "in": 87.03,
+   "out": 88.36,
+   "a": 87.08,
+   "b": 88.2,
+   "z": 1.0,
+   "note": "Semua tu ada.",
+   "cap": "Semua tu ada."
+  },
+  {
+   "src": "c1",
+   "in": 89.65,
+   "out": 93.3,
+   "a": 89.7,
+   "b": 93.22,
+   "z": 1.14,
+   "note": "Dia berikan kita panduan yang sangat jelas",
+   "cap": "Dia berikan kita|panduan yang sangat *jelas*"
+  },
+  {
+   "src": "c1",
+   "in": 93.91,
+   "out": 96.0,
+   "a": 93.96,
+   "b": 95.92,
+   "z": 1.0,
+   "note": "dari sudut rajah,",
+   "cap": "dari sudut *rajah*,"
+  },
+  {
+   "src": "c1",
+   "in": 96.63,
+   "out": 98.34,
+   "a": 96.68,
+   "b": 98.18,
+   "z": 1.08,
+   "note": "contohnya haji.",
+   "cap": "contohnya *haji*."
+  },
+  {
+   "src": "c1",
+   "in": 98.91,
+   "out": 103.12,
+   "a": 98.96,
+   "b": 103.04,
+   "z": 1.0,
+   "note": "Jadi siapa yang berminat dapatkan buku Indahnya Hidup Bersyariat,",
+   "cap": "Jadi siapa yang berminat|dapatkan buku|*Indahnya* *Hidup* *Bersyariat*,"
+  },
+  {
+   "src": "c1",
+   "in": 103.73,
+   "out": 105.26,
+   "a": 103.78,
+   "b": 105.1,
+   "z": 1.14,
+   "note": "boleh dapatkan sekarang,",
+   "cap": "boleh dapatkan *sekarang*,"
+  },
+  {
+   "src": "c1",
+   "in": 105.79,
+   "out": 107.5,
+   "a": 105.84,
+   "b": 107.34,
+   "z": 1.0,
+   "note": "sementara harga tengah murah!",
+   "cap": "sementara harga|tengah *murah*!"
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 104.0,
+  "dur": 2.4
+ },
+ "cards": [
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c1",
+    8.64
+   ],
+   "out": [
+    "c1",
+    14.0
+   ],
+   "kicker": "Dato' Hj. Ismail Kamus",
+   "title": "Indahnya Hidup Bersyariat",
+   "sub": "modul fardu ain sepanjang hayat",
+   "y": 330
+  },
+  {
+   "id": "hayat",
+   "kind": "chapter",
+   "in": [
+    "c1",
+    19.5
+   ],
+   "out": [
+    "c1",
+    32.9
+   ],
+   "num": "",
+   "name": "Sepanjang Hayat",
+   "tag": "Fardu ain & fardu kifayah",
+   "nodes": [
+    {
+     "at": [
+      "c1",
+      19.5
+     ],
+     "label": "Kelahiran",
+     "sub": "syariat bayi"
+    },
+    {
+     "at": [
+      "c1",
+      22.84
+     ],
+     "label": "Remaja",
+     "sub": "& kahwin"
+    },
+    {
+     "at": [
+      "c1",
+      29.69
+     ],
+     "label": "Akhir hayat",
+     "sub": "pengurusan jenazah"
+    }
+   ]
+  },
+  {
+   "id": "t-gambar",
+   "kind": "title",
+   "in": [
+    "c1",
+    42.26
+   ],
+   "out": [
+    "c1",
+    47.5
+   ],
+   "kicker": "Fotografi warna penuh",
+   "title": "Carta & Rajah",
+   "sub": "mudah dibaca, mudah dihafal",
+   "y": 330
+  },
+  {
+   "id": "t-modul",
+   "kind": "title",
+   "in": [
+    "c1",
+    54.9
+   ],
+   "out": [
+    "c1",
+    60.4
+   ],
+   "kicker": "Sesuai untuk",
+   "title": "Usrah & Tazkirah",
+   "sub": "keluarga · sekolah · surau",
+   "y": 330
+  },
+  {
+   "id": "t-amali",
+   "kind": "title",
+   "in": [
+    "c1",
+    81.72
+   ],
+   "out": [
+    "c1",
+    88.2
+   ],
+   "kicker": "Langkah demi langkah",
+   "title": "Wuduk & Solat",
+   "sub": "berpandukan gambar sebenar",
+   "y": 330
+  },
+  {
+   "id": "t-sumber",
+   "kind": "title",
+   "in": [
+    "c1",
+    89.7
+   ],
+   "out": [
+    "c1",
+    95.9
+   ],
+   "kicker": "Bersumberkan",
+   "title": "Al-Quran & Hadis Sahih",
+   "sub": "panduan yang jelas",
+   "y": 330
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c1",
+    98.96
+   ],
+   "buttonAt": [
+    "c1",
+    103.78
+   ],
+   "pulseAt": [
+    "c1",
+    106.18
+   ],
+   "kicker": "Edisi kemas kini",
+   "title": "Indahnya Hidup Bersyariat",
+   "by": "Dato' Hj. Ismail Kamus",
+   "button": "Dapatkan sekarang"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.28
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.02,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.35
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": 1.0,
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    2.88
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c1",
+    8.64
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    19.5
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    22.84
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    29.69
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    42.26
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    54.9
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    81.72
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    89.7
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    98.96
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    103.78
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    106.18
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.35
+  }
+ ],
+ "theme": {
+  "fonts": [
+   [
+    "EB Garamond",
+    "assets/fonts/EBGaramond-400.woff2",
+    400
+   ],
+   [
+    "EB Garamond",
+    "assets/fonts/EBGaramond-700.woff2",
+    700
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#0b1418",
+   "--paper": "#f6ecd6",
+   "--gold": "#e8b85c",
+   "--gold-deep": "#b9832f",
+   "--ember": "#c4512f",
+   "--serif": "\"EB Garamond\", Georgia, serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--cap-right": "300px",
+   "--title-size": "108px",
+   "--cta-size": "92px",
+   "--slam-size": "190px"
+  }
+ }
+}
