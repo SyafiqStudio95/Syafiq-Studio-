@@ -10,11 +10,14 @@ GSAP=$(grep -o 'gsap@[0-9.]*' "$PRJ/index.html" | head -1 | cut -d@ -f2)
 rm -rf "$PV/film"; mkdir -p "$PV/film/assets/video" "$PV/film/assets/fonts" "$PV/film/assets/sfx" "$PV/film/compositions"
 cp "$DIST/hyperframes-player.global.js" "$PV/player.js"; cp "$DIST/hyperframe.runtime.iife.js" "$PV/runtime.js"
 TMP=$(mktemp -d); (cd "$TMP" && npm pack "gsap@$GSAP" --silent >/dev/null && tar xzf gsap-*.tgz); cp "$TMP/package/dist/gsap.min.js" "$PV/gsap.min.js"; rm -rf "$TMP"
-cp "$PRJ"/compositions/*.html "$PV/film/compositions/"; cp "$PRJ"/assets/fonts/*.woff2 "$PV/film/assets/fonts/"
+cp "$PRJ"/compositions/*.html "$PV/film/compositions/" 2>/dev/null || true; cp "$PRJ"/assets/fonts/*.woff2 "$PV/film/assets/fonts/"
 sed -e "s#<script src=\"https://cdn.jsdelivr.net/npm/gsap@$GSAP/dist/gsap.min.js\"></script>#<script src=\"../gsap.min.js\"></script>#" \
     -e '0,/<head>/s#<head>#<head>\n    <script src="../runtime.js"></script>#' "$PRJ/index.html" > "$PV/film/index.html"
 mkdir -p "$PV/film/assets/images"; for f in $(grep -oh "assets/images/[A-Za-z0-9_.-]*" "$PRJ/index.html" "$PRJ"/compositions/*.html | sort -u); do cp "$PRJ/$f" "$PV/film/$f"; done
 for f in $(grep -o 'assets/sfx/[A-Za-z0-9_-]*\.mp3' "$PRJ/index.html" | sort -u); do cp "$PRJ/$f" "$PV/film/$f"; done
+# placed audio (VO, music): mp3 proxies, page refs rewritten
+mkdir -p "$PV/film/assets/audio"; for f in $(grep -o 'assets/audio/[A-Za-z0-9_-]*\.\(wav\|mp3\|m4a\)' "$PRJ/index.html" | sort -u); do
+  o="${f%.*}.mp3"; ffmpeg -v error -y -i "$PRJ/$f" -c:a libmp3lame -b:a 128k "$PV/film/$o"; sed -i "s#$f#$o#g" "$PV/film/index.html"; done
 for f in $(grep -o 'assets/video/[A-Za-z0-9_]*\.mp4' "$PRJ/index.html" | sort -u); do
   A="-an"; ffprobe -v error -select_streams a -show_entries stream=index -of csv=p=0 "$PRJ/$f" | grep -q . && A="-c:a aac -b:a 96k -ac 1"
   ffmpeg -v error -y -i "$PRJ/$f" -vf scale=540:960:flags=lanczos -c:v libx264 -preset slow -crf 27 -maxrate 1400k -bufsize 2800k \

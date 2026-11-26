@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ms" data-resolution="portrait">
+  <head>
+    <script src="../runtime.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="../gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-700.woff2") format("woff2"); font-weight: 700; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      :root { --gold: #e9c277; --gold-deep: #b8893a; --paper: #fbf4e4; --green: #1f6b45;
+              --serif: "EB Garamond", Georgia, serif; --sans: "Inter", Arial, sans-serif; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0a0806; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; }
+      #broll { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .card { position: absolute; inset: 0; opacity: 0; z-index: 10; pointer-events: none; }
+      .scrim.top { position: absolute; left: 0; right: 0; top: 0; height: 1000px;
+        background: linear-gradient(180deg, rgba(10,7,3,.78) 0%, rgba(10,7,3,.55) 50%, rgba(10,7,3,0) 100%); }
+      .blk { position: absolute; left: 130px; right: 192px; text-align: center; }
+      .kick { font: 700 28px/1.3 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--gold);
+              text-shadow: 0 2px 14px rgba(0,0,0,.7); }
+      .rule { width: 360px; height: 3px; margin: 22px auto; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+      .ttl { font: italic 400 76px/1.05 var(--serif); color: var(--paper); text-shadow: 0 6px 30px rgba(0,0,0,.7); }
+      .huge { font: 700 112px/1.0 var(--serif); color: var(--paper); margin-top: 10px; letter-spacing: .02em;
+              text-shadow: 0 8px 40px rgba(0,0,0,.7); }
+      .gold { color: var(--gold); }
+      .sub { font: 400 40px/1.2 var(--sans); color: var(--paper); margin-top: 22px; opacity: .95; text-shadow: 0 3px 18px rgba(0,0,0,.8); }
+      .num { font: 700 300px/0.9 var(--serif); color: var(--gold); text-shadow: 0 10px 50px rgba(0,0,0,.7); }
+      .row { display: flex; justify-content: center; gap: 22px; margin-top: 26px; }
+      .pill { font: 400 36px/1 var(--sans); color: var(--paper); padding: 18px 30px; border-radius: 999px;
+              background: rgba(12,9,4,.6); border: 2px solid rgba(233,194,119,.7); }
+      .pill b { color: var(--gold); font-weight: 700; }
+      .plate { position: absolute; left: 110px; right: 300px; bottom: 672px; padding: 26px 34px 30px; border-radius: 22px;
+               background: rgba(12,9,4,.72); border-left: 6px solid var(--gold); text-align: left; }
+      .pk { font: 700 28px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+      .pt { font: 700 44px/1.12 var(--serif); color: var(--paper); margin-top: 14px; }
+      .ps { font: 400 30px/1.25 var(--sans); color: #eadfc6; margin-top: 12px; }
+      .chip { display: inline-block; font: 700 30px/1 var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--paper);
+              padding: 18px 30px; border-radius: 999px; background: rgba(12,9,4,.62); border: 2px solid rgba(233,194,119,.75); }
+      .tag { font: italic 400 58px/1.12 var(--serif); color: var(--paper); text-shadow: 0 6px 30px rgba(0,0,0,.8); }
+      .cap { position: absolute; left: 100px; right: 300px; bottom: 672px; text-align: center; opacity: 0; z-index: 20; }
+      .line { display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: baseline; column-gap: 14px;
+              padding: 14px 26px 18px; border-radius: 18px; background: rgba(10,7,3,.5); }
+      .w { display: inline-block; font: 700 46px/1.2 var(--sans); color: #fffaf0; text-shadow: 0 3px 16px rgba(0,0,0,.6); }
+      .w.em { font: italic 700 54px/1.05 var(--serif); color: var(--gold); }
+      #fadeout, #fadein { position: absolute; inset: 0; background: #000; z-index: 50; opacity: 0; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="90.0" data-fps="30" data-width="1080" data-height="1920">
+      <video id="broll" class="clip footage" src="assets/video/broll.mp4" data-start="0" data-duration="90.0" data-media-start="0" data-track-index="0" muted playsinline></video>
+      <div id="card-title" class="card">
+  <div class="scrim top"></div>
+  <div class="blk" style="top:300px">
+    <div class="kick a">Madrasah Uthmaniyah Smart Tahfiz</div>
+    <div class="rule a"></div>
+    <div class="ttl a">Majlis Penghantaran</div>
+    <div class="huge a">BATCH <span class="gold">KE-12</span></div>
+    <div class="sub a">Malaysia &#8594; Isparta, Turki</div>
+  </div>
+      </div>
+      <div id="card-stat" class="card">
+  <div class="scrim top"></div>
+  <div class="blk" style="top:340px">
+    <div class="num a">20</div>
+    <div class="kick a">Pelajar Batch ke-12</div>
+    <div class="row a"><div class="pill"><b>14</b> lelaki</div><div class="pill"><b>6</b> perempuan</div></div>
+  </div>
+      </div>
+      <div id="card-misi" class="card">
+  <div class="plate a">
+    <div class="pk">Misi</div>
+    <div class="pt">Peperiksaan<br>Diploma Hafazan</div>
+    <div class="ps">Kementerian Agama Islam Turki</div>
+  </div>
+      </div>
+      <div id="card-nama1" class="card">
+  <div class="plate a">
+    <div class="pk">Mengiringi rombongan</div>
+    <div class="pt">Puan Hajah Siti Norbaya<br>binti Abd Rahman</div>
+    <div class="ps">Ketua Pengurus Operasi MUST</div>
+  </div>
+      </div>
+      <div id="card-nama2" class="card">
+  <div class="plate a">
+    <div class="pk">Mengiringi rombongan</div>
+    <div class="pt">Ustaz Wan Abdul Baith<br>Izzuddin bin Wan Mustafa</div>
+    <div class="ps">Pengetua MUST</div>
+  </div>
+      </div>
+      <div id="card-emosi" class="card">
+  <div class="blk" style="top:310px"><div class="chip a">Detik Penuh Emosi</div></div>
+      </div>
+      <div id="card-doa" class="card">
+  <div class="plate a">
+    <div class="pk">Bacaan Doa</div>
+    <div class="pt">Ustaz Asem Abd Karim</div>
+    <div class="ps">Memohon perjalanan dipermudahkan</div>
+  </div>
+      </div>
+      <div id="card-berjuang" class="card">
+  <div class="scrim top"></div>
+  <div class="blk" style="top:330px">
+    <div class="ttl a">Selamat Berjuang,</div>
+    <div class="huge a">BATCH <span class="gold">12!</span></div>
+  </div>
+      </div>
+      <div id="card-end" class="card">
+  <div class="scrim top"></div>
+  <div class="blk" style="top:300px; right:200px; left:150px">
+    <div class="tag a">&#8220;Melangkah Dengan Al-Quran,<br>Menggapai Kecemerlangan.&#8221;</div>
+    <div class="rule a"></div>
+    <div class="kick a">MUST<br>Melahirkan Generasi<br>Huffaz Berwibawa</div>
+  </div>
+      </div>
+      <div id="cap0" class="cap"><div class="line"><span class="w">Setiap</span> <span class="w">perjalanan</span> <span class="w">besar</span></div></div>
+      <div id="cap1" class="cap"><div class="line"><span class="w">bermula</span> <span class="w">dengan</span> <span class="w em">sebuah</span> <span class="w em">langkah.</span></div></div>
+      <div id="cap2" class="cap"><div class="line"><span class="w">Hari</span> <span class="w">ini,</span> <span class="w">satu</span> <span class="w">lagi</span> <span class="w">lembaran</span></div></div>
+      <div id="cap3" class="cap"><div class="line"><span class="w em">perjuangan</span> <span class="w em">ilmu</span> <span class="w">bakal</span> <span class="w">tercipta,</span></div></div>
+      <div id="cap4" class="cap"><div class="line"><span class="w">apabila</span> <span class="w">seramai</span> <span class="w em">20</span> <span class="w em">orang</span> <span class="w em">pelajar</span></div></div>
+      <div id="cap5" class="cap"><div class="line"><span class="w em">Batch</span> <span class="w em">ke-12</span> <span class="w">MUST</span> <span class="w">diraikan</span></div></div>
+      <div id="cap6" class="cap"><div class="line"><span class="w">dalam</span> <span class="w">majlis</span> <span class="w">penghantaran</span></div></div>
+      <div id="cap7" class="cap"><div class="line"><span class="w">ke</span> <span class="w em">Isparta,</span> <span class="w em">Turki.</span></div></div>
+      <div id="cap8" class="cap"><div class="line"><span class="w">Terdiri</span> <span class="w">daripada</span> <span class="w em">14</span> <span class="w">pelajar</span> <span class="w">lelaki</span></div></div>
+      <div id="cap9" class="cap"><div class="line"><span class="w">dan</span> <span class="w em">6</span> <span class="w">pelajar</span> <span class="w">perempuan,</span></div></div>
+      <div id="cap10" class="cap"><div class="line"><span class="w">mereka</span> <span class="w">bakal</span> <span class="w">membawa</span></div></div>
+      <div id="cap11" class="cap"><div class="line"><span class="w">satu</span> <span class="w em">misi</span> <span class="w">dan</span> <span class="w em">harapan</span> <span class="w">besar,</span></div></div>
+      <div id="cap12" class="cap"><div class="line"><span class="w">sebagai</span> <span class="w">tanda</span> <span class="w">sokongan</span></div></div>
+      <div id="cap13" class="cap"><div class="line"><span class="w">dan</span> <span class="w">komitmen</span> <span class="w">berterusan</span></div></div>
+      <div id="cap14" class="cap"><div class="line"><span class="w">melahirkan</span> <span class="w em">generasi</span> <span class="w em">huffaz</span></div></div>
+      <div id="cap15" class="cap"><div class="line"><span class="w em">berwibawa.</span></div></div>
+      <div id="cap16" class="cap"><div class="line"><span class="w">Lebih</span> <span class="w">bermakna,</span> <span class="w">detik</span> <span class="w">bersejarah</span> <span class="w">ini</span></div></div>
+      <div id="cap17" class="cap"><div class="line"><span class="w">turut</span> <span class="w">disaksikan</span> <span class="w em">ahli</span> <span class="w em">keluarga</span></div></div>
+      <div id="cap18" class="cap"><div class="line"><span class="w">serta</span> <span class="w em">alumni</span></div></div>
+      <div id="cap19" class="cap"><div class="line"><span class="w">yang</span> <span class="w">hadir</span> <span class="w">memberikan</span></div></div>
+      <div id="cap20" class="cap"><div class="line"><span class="w">sokongan</span> <span class="w">dan</span> <span class="w em">doa.</span></div></div>
+      <div id="cap21" class="cap"><div class="line"><span class="w">Setiap</span> <span class="w em">pelukan,</span> <span class="w em">senyuman</span></div></div>
+      <div id="cap22" class="cap"><div class="line"><span class="w">dan</span> <span class="w">titipan</span> <span class="w">kata</span></div></div>
+      <div id="cap23" class="cap"><div class="line"><span class="w">menjadi</span> <span class="w em">kekuatan</span> <span class="w">buat</span> <span class="w">anak-anak</span> <span class="w">ini</span></div></div>
+      <div id="cap24" class="cap"><div class="line"><span class="w">melangkah</span> <span class="w">ke</span> <span class="w">bumi</span> <span class="w">asing</span></div></div>
+      <div id="cap25" class="cap"><div class="line"><span class="w">demi</span> <span class="w">sebuah</span> <span class="w em">cita-cita.</span></div></div>
+      <div id="cap26" class="cap"><div class="line"><span class="w">memohon</span> <span class="w">agar</span> <span class="w">perjalanan</span> <span class="w">dipermudahkan,</span></div></div>
+      <div id="cap27" class="cap"><div class="line"><span class="w">segala</span> <span class="w">urusan</span> <span class="w em">diberkati</span></div></div>
+      <div id="cap28" class="cap"><div class="line"><span class="w">dan</span> <span class="w em">kejayaan</span> <span class="w">mengiringi</span></div></div>
+      <div id="cap29" class="cap"><div class="line"><span class="w">setiap</span> <span class="w">langkah</span> <span class="w">mereka.</span></div></div>
+      <div id="cap30" class="cap"><div class="line"><span class="w">Pergilah</span> <span class="w">membawa</span> <span class="w em">al-Quran</span> <span class="w">di</span> <span class="w">hati,</span></div></div>
+      <div id="cap31" class="cap"><div class="line"><span class="w em">ilmu</span> <span class="w">sebagai</span> <span class="w">bekalan</span></div></div>
+      <div id="cap32" class="cap"><div class="line"><span class="w">dan</span> <span class="w em">doa</span> <span class="w em">keluarga</span> <span class="w">sebagai</span> <span class="w">kekuatan.</span></div></div>
+      <div id="cap33" class="cap"><div class="line"><span class="w">Semoga</span> <span class="w">pulang</span> <span class="w">nanti</span></div></div>
+      <div id="cap34" class="cap"><div class="line"><span class="w">dengan</span> <span class="w em">kejayaan</span> <span class="w">yang</span> <span class="w">membanggakan.</span></div></div>
+      <div id="fadein"></div>
+      <div id="fadeout"></div>
+      <audio id="vo" class="clip" src="assets/audio/vo.mp3" data-start="0" data-duration="90.0" data-media-start="0" data-volume="1" data-track-index="1"></audio>
+      <audio id="music" class="clip" src="assets/audio/music_mix.mp3" data-start="0" data-duration="90.0" data-media-start="0" data-volume="1" data-track-index="2"></audio>
+      <audio id="sfx00" class="clip" src="assets/sfx/whoosh.mp3" data-start="0.0667" data-duration="0.57" data-volume="0.35" data-track-index="3"></audio>
+      <audio id="sfx01" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="0.3333" data-duration="2.1" data-volume="0.45" data-track-index="4"></audio>
+      <audio id="sfx02" class="clip" src="assets/sfx/whoosh.mp3" data-start="14.2667" data-duration="0.57" data-volume="0.3" data-track-index="5"></audio>
+      <audio id="sfx03" class="clip" src="assets/sfx/impact-bass-2.mp3" data-start="14.4667" data-duration="1.1" data-volume="0.35" data-track-index="3"></audio>
+      <audio id="sfx04" class="clip" src="assets/sfx/pop.mp3" data-start="22.2333" data-duration="0.72" data-volume="0.25" data-track-index="4"></audio>
+      <audio id="sfx05" class="clip" src="assets/sfx/pop.mp3" data-start="27.9667" data-duration="0.72" data-volume="0.25" data-track-index="5"></audio>
+      <audio id="sfx06" class="clip" src="assets/sfx/pop.mp3" data-start="34.4" data-duration="0.72" data-volume="0.25" data-track-index="3"></audio>
+      <audio id="sfx07" class="clip" src="assets/sfx/sparkle.mp3" data-start="44.5" data-duration="1.8" data-volume="0.2" data-track-index="4"></audio>
+      <audio id="sfx08" class="clip" src="assets/sfx/pop.mp3" data-start="61.2" data-duration="0.72" data-volume="0.25" data-track-index="5"></audio>
+      <audio id="sfx09" class="clip" src="assets/sfx/whoosh.mp3" data-start="73.3667" data-duration="0.57" data-volume="0.3" data-track-index="3"></audio>
+      <audio id="sfx10" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="73.6" data-duration="2.1" data-volume="0.4" data-track-index="4"></audio>
+      <audio id="sfx11" class="clip" src="assets/sfx/sparkle.mp3" data-start="84.3" data-duration="1.8" data-volume="0.22" data-track-index="5"></audio>
+    </div>
+    <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.set("#card-title", {opacity: 1}, 0.2667);
+    tl.fromTo("#card-title .scrim", {opacity: 0}, {opacity: 1, duration: 0.4}, 0.2667);
+    tl.fromTo("#card-title .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 0.2667);
+    tl.fromTo("#card-title .rule", {scaleX: 0}, {scaleX: 1, duration: 0.7, ease: "expo.out"}, 0.3667);
+    tl.to("#card-title", {opacity: 0, duration: 0.3, ease: "power2.in"}, 6.3);
+    tl.set("#card-stat", {opacity: 1}, 14.4);
+    tl.fromTo("#card-stat .scrim", {opacity: 0}, {opacity: 1, duration: 0.4}, 14.4);
+    tl.fromTo("#card-stat .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 14.4);
+    tl.to("#card-stat", {opacity: 0, duration: 0.3, ease: "power2.in"}, 21.9);
+    tl.set("#card-misi", {opacity: 1}, 22.2);
+    tl.fromTo("#card-misi .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 22.2);
+    tl.to("#card-misi", {opacity: 0, duration: 0.3, ease: "power2.in"}, 27.2667);
+    tl.set("#card-nama1", {opacity: 1}, 27.9333);
+    tl.fromTo("#card-nama1 .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 27.9333);
+    tl.to("#card-nama1", {opacity: 0, duration: 0.3, ease: "power2.in"}, 34.1);
+    tl.set("#card-nama2", {opacity: 1}, 34.3667);
+    tl.fromTo("#card-nama2 .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 34.3667);
+    tl.to("#card-nama2", {opacity: 0, duration: 0.3, ease: "power2.in"}, 38.2333);
+    tl.set("#card-emosi", {opacity: 1}, 44.5);
+    tl.fromTo("#card-emosi .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 44.5);
+    tl.to("#card-emosi", {opacity: 0, duration: 0.3, ease: "power2.in"}, 47.4);
+    tl.set("#card-doa", {opacity: 1}, 61.1333);
+    tl.fromTo("#card-doa .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 61.1333);
+    tl.to("#card-doa", {opacity: 0, duration: 0.3, ease: "power2.in"}, 66.1333);
+    tl.set("#card-berjuang", {opacity: 1}, 73.6);
+    tl.fromTo("#card-berjuang .scrim", {opacity: 0}, {opacity: 1, duration: 0.4}, 73.6);
+    tl.fromTo("#card-berjuang .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 73.6);
+    tl.to("#card-berjuang", {opacity: 0, duration: 0.3, ease: "power2.in"}, 75.9333);
+    tl.set("#card-end", {opacity: 1}, 84.5);
+    tl.fromTo("#card-end .scrim", {opacity: 0}, {opacity: 1, duration: 0.4}, 84.5);
+    tl.fromTo("#card-end .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 84.5);
+    tl.fromTo("#card-end .rule", {scaleX: 0}, {scaleX: 1, duration: 0.7, ease: "expo.out"}, 84.6);
+    tl.fromTo("#cap0", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 0.6);
+    tl.fromTo("#cap0 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.247}, 0.6);
+    tl.set("#cap0", {opacity: 0}, 1.8333);
+    tl.fromTo("#cap1", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 1.8333);
+    tl.fromTo("#cap1 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.24}, 1.8333);
+    tl.set("#cap1", {opacity: 0}, 3.4333);
+    tl.fromTo("#cap2", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 3.7);
+    tl.fromTo("#cap2 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.176}, 3.7);
+    tl.set("#cap2", {opacity: 0}, 5.1667);
+    tl.fromTo("#cap3", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 5.1667);
+    tl.fromTo("#cap3 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.24}, 5.1667);
+    tl.set("#cap3", {opacity: 0}, 6.7667);
+    tl.fromTo("#cap4", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 7.0667);
+    tl.fromTo("#cap4 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.252}, 7.0667);
+    tl.set("#cap4", {opacity: 0}, 9.1667);
+    tl.fromTo("#cap5", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 9.1667);
+    tl.fromTo("#cap5 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.25}, 9.1667);
+    tl.set("#cap5", {opacity: 0}, 10.8333);
+    tl.fromTo("#cap6", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 10.8333);
+    tl.fromTo("#cap6 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.327}, 10.8333);
+    tl.set("#cap6", {opacity: 0}, 12.4667);
+    tl.fromTo("#cap7", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 12.4667);
+    tl.fromTo("#cap7 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.24}, 12.4667);
+    tl.set("#cap7", {opacity: 0}, 13.6667);
+    tl.fromTo("#cap8", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 14.5);
+    tl.fromTo("#cap8 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.3}, 14.5);
+    tl.set("#cap8", {opacity: 0}, 17.0);
+    tl.fromTo("#cap9", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 17.0);
+    tl.fromTo("#cap9 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.265}, 17.0);
+    tl.set("#cap9", {opacity: 0}, 18.7667);
+    tl.fromTo("#cap10", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 19.0667);
+    tl.fromTo("#cap10 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.247}, 19.0667);
+    tl.set("#cap10", {opacity: 0}, 20.3);
+    tl.fromTo("#cap11", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 20.3);
+    tl.fromTo("#cap11 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.204}, 20.3);
+    tl.set("#cap11", {opacity: 0}, 22.0);
+    tl.fromTo("#cap12", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 38.6333);
+    tl.fromTo("#cap12 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.28}, 38.6333);
+    tl.set("#cap12", {opacity: 0}, 40.0333);
+    tl.fromTo("#cap13", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 40.0333);
+    tl.fromTo("#cap13 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.3}, 40.0333);
+    tl.set("#cap13", {opacity: 0}, 41.5333);
+    tl.fromTo("#cap14", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 41.5333);
+    tl.fromTo("#cap14 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.34}, 41.5333);
+    tl.set("#cap14", {opacity: 0}, 43.2333);
+    tl.fromTo("#cap15", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 43.2333);
+    tl.fromTo("#cap15 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.38}, 43.2333);
+    tl.set("#cap15", {opacity: 0}, 43.8667);
+    tl.fromTo("#cap16", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 44.7);
+    tl.fromTo("#cap16 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.296}, 44.7);
+    tl.set("#cap16", {opacity: 0}, 47.1667);
+    tl.fromTo("#cap17", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 47.1667);
+    tl.fromTo("#cap17 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.305}, 47.1667);
+    tl.set("#cap17", {opacity: 0}, 49.2);
+    tl.fromTo("#cap18", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 49.2);
+    tl.fromTo("#cap18 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.25}, 49.2);
+    tl.set("#cap18", {opacity: 0}, 50.0333);
+    tl.fromTo("#cap19", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 50.3);
+    tl.fromTo("#cap19 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.247}, 50.3);
+    tl.set("#cap19", {opacity: 0}, 51.5333);
+    tl.fromTo("#cap20", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 51.5333);
+    tl.fromTo("#cap20 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.2}, 51.5333);
+    tl.set("#cap20", {opacity: 0}, 52.5333);
+    tl.fromTo("#cap21", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 52.8);
+    tl.fromTo("#cap21 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.293}, 52.8);
+    tl.set("#cap21", {opacity: 0}, 54.2667);
+    tl.fromTo("#cap22", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 54.2667);
+    tl.fromTo("#cap22 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.2}, 54.2667);
+    tl.set("#cap22", {opacity: 0}, 55.2667);
+    tl.fromTo("#cap23", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 55.2667);
+    tl.fromTo("#cap23 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.26}, 55.2667);
+    tl.set("#cap23", {opacity: 0}, 57.4333);
+    tl.fromTo("#cap24", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 57.7);
+    tl.fromTo("#cap24 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.205}, 57.7);
+    tl.set("#cap24", {opacity: 0}, 59.0667);
+    tl.fromTo("#cap25", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 59.0667);
+    tl.fromTo("#cap25 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.267}, 59.0667);
+    tl.set("#cap25", {opacity: 0}, 60.4);
+    tl.fromTo("#cap26", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 66.4667);
+    tl.fromTo("#cap26 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.345}, 66.4667);
+    tl.set("#cap26", {opacity: 0}, 68.7667);
+    tl.fromTo("#cap27", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 68.7667);
+    tl.fromTo("#cap27 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.28}, 68.7667);
+    tl.set("#cap27", {opacity: 0}, 70.1667);
+    tl.fromTo("#cap28", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 70.1667);
+    tl.fromTo("#cap28 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.28}, 70.1667);
+    tl.set("#cap28", {opacity: 0}, 71.5667);
+    tl.fromTo("#cap29", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 71.5667);
+    tl.fromTo("#cap29 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.267}, 71.5667);
+    tl.set("#cap29", {opacity: 0}, 72.9);
+    tl.fromTo("#cap30", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 76.0);
+    tl.fromTo("#cap30 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.236}, 76.0);
+    tl.set("#cap30", {opacity: 0}, 77.9667);
+    tl.fromTo("#cap31", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 77.9667);
+    tl.fromTo("#cap31 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.227}, 77.9667);
+    tl.set("#cap31", {opacity: 0}, 79.1);
+    tl.fromTo("#cap32", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 79.1);
+    tl.fromTo("#cap32 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.236}, 79.1);
+    tl.set("#cap32", {opacity: 0}, 81.0667);
+    tl.fromTo("#cap33", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 81.3333);
+    tl.fromTo("#cap33 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.213}, 81.3333);
+    tl.set("#cap33", {opacity: 0}, 82.4);
+    tl.fromTo("#cap34", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 82.4);
+    tl.fromTo("#cap34 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.28}, 82.4);
+    tl.set("#cap34", {opacity: 0}, 84.2667);
+    tl.fromTo("#fadeout", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power1.in"}, 89.2);
+    tl.fromTo("#fadein", {opacity: 1}, {opacity: 0, duration: 0.5, ease: "power1.out"}, 0);
+    window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
