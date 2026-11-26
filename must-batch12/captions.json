@@ -1,7 +1,7 @@
 {"note":"display text per VO line (same order as vo.json). '|' splits caption chunks. empty = no caption (a card says it). *word* = gold emphasis",
 "lines":[
  "Setiap perjalanan besar|bermula dengan *sebuah* *langkah.*",
- "Hari ini, satu lagi lembaran|*perjuangan* *ilmu* bakal tercipta,",
+ "Hari ini, satu lembaran|*perjuangan* *ilmu* bakal tercipta,",
  "apabila seramai *20* *orang* *pelajar*|*Batch* *ke-12* MUST diraikan|dalam majlis penghantaran|ke *Isparta,* *Turki.*",
  "Terdiri daripada *14* pelajar lelaki|dan *6* pelajar perempuan,",
  "mereka bakal membawa|satu *misi* dan *harapan* besar,",

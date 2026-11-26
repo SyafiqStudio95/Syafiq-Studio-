@@ -71,7 +71,7 @@
 <div class="wrap">
   <header>
     <div class="eyebrow">Preview · belum dirender</div    <h1>Penghantaran Pelajar Batch ke-12 MUST ke Isparta, Turki</h1>
-    <p class="lede">Video TikTok 90 saat dengan voice over dari skrip dalam Drive. Tekan main untuk tonton dengan bunyi, atau pilih bab untuk lompat.</p>
+    <p class="lede">Video TikTok 1:52 dengan voice over bacaan anda sendiri. Tekan main untuk tonton dengan bunyi, atau pilih bab untuk lompat.</p>
   </header>
 
   <div class="stage">
@@ -86,8 +86,8 @@
       <section>
         <h2>Ringkasan</h2>
         <div class="stats">
-          <div class="stat"><div class="v">90s</div><div class="k">tepat 1 minit 30 saat</div></div>
-          <div class="stat"><div class="v">26</div><div class="k">shot (16 video, 9 gambar, logo)</div></div>
+          <div class="stat"><div class="v">1:52</div><div class="k">ikut panjang bacaan asal</div></div>
+          <div class="stat"><div class="v">29</div><div class="k">shot (18 video, 10 gambar, logo)</div></div>
           <div class="stat"><div class="v">9:16</div><div class="k">1080×1920, 30 fps</div></div>
         </div>
       </section>
@@ -100,10 +100,10 @@
       <section>
         <h2>Suara &amp; bunyi</h2>
         <ul class="list">
-          <li><b>Voice over:</b> dijana dengan model suara Bahasa Melayu (Meta MMS-TTS) dari skrip penuh dalam Drive, setiap ayat disusun ikut masa bahagian skrip. Bunyinya agak “robotik” berbanding suara manusia.</li>
-          <li><b>Sebutan:</b> “MUST” disebut <q>Mast</q>, “Batch” disebut <q>betch</q>, nombor disebut penuh (dua puluh, empat belas).</li>
-          <li><b>Muzik:</b> underscore sinematik lembut yang dijana sendiri (piano + pad, bebas hak cipta), naik emosi dari 0:44 dan selesai pada logo; diperlahankan automatik di bawah suara.</li>
-          <li><b>SFX:</b> whoosh + bass impact pada tajuk dan “Selamat Berjuang”, pop pada kad nama.</li>
+          <li><b>Voice over:</b> rakaman anda sendiri, kelajuan asal. Bunyi rendah dibuang, sedikit pengurangan hingar dan kompresi, kekuatan diseragamkan ke -16 LUFS.</li>
+          <li><b>Penutup:</b> anda baca <q>MUST, bersama kita melahirkan generasi Qurani</q> di atas animasi logo, dengan tagline <q>Bersama Membina Generasi Qurani</q>.</li>
+          <li><b>Muzik:</b> underscore sinematik lembut (dijana sendiri, bebas hak cipta), diperlahankan di bawah suara.</li>
+          <li><b>SFX:</b> whoosh + bass impact pada tajuk dan <q>Selamat Berjuang</q>, pop pada kad nama.</li>
         </ul>
       </section>
 
@@ -126,12 +126,12 @@
 <script>
   const CHAPTERS = [
     [0.0, "Pembukaan", "Setiap perjalanan besar bermula dengan sebuah langkah"],
-    [14.5, "Pengenalan pelajar", "20 pelajar: 14 lelaki, 6 perempuan · Diploma Hafazan"],
-    [28.0, "Barisan pengurusan", "Puan Hajah Siti Norbaya · Ustaz Wan Abdul Baith Izzuddin"],
-    [44.7, "Detik penuh emosi", "Keluarga dan alumni memberi sokongan dan doa"],
-    [61.2, "Bacaan doa", "Dipimpin Ustaz Asem Abd Karim"],
-    [73.7, "Penutup", "Selamat berjuang, Batch 12!"],
-    [84.5, "Logo MUST", "Bersama Membina Generasi Qurani"]
+    [18.0, "Pengenalan pelajar", "20 pelajar: 14 lelaki, 6 perempuan · Diploma Hafazan"],
+    [34.4, "Barisan pengurusan", "Puan Hajah Siti Norbaya · Ustaz Wan Abdul Baith Izzuddin"],
+    [55.0, "Detik penuh emosi", "Keluarga dan alumni memberi sokongan dan doa"],
+    [76.3, "Bacaan doa", "Dipimpin Ustaz Asem Abd Karim"],
+    [90.0, "Penutup", "Selamat berjuang, Batch 12!"],
+    [102.3, "Logo MUST", "Bersama Membina Generasi Qurani"]
   ];
   const player = document.getElementById("player");
   const status = document.getElementById("status");
@@ -154,7 +154,7 @@
 
   player.addEventListener("ready", () => {
     const d = player.duration;
-    status.innerHTML = `Sedia · <b>${Number.isFinite(d) ? d.toFixed(1) : "90.0"}s</b> · tekan main untuk tonton dengan bunyi`;
+    status.innerHTML = `Sedia · <b>${Number.isFinite(d) ? d.toFixed(1) : "112.0"}s</b> · tekan main untuk tonton dengan bunyi`;
   });
   player.addEventListener("error", (e) => {
     status.textContent = "Filem gagal dimuat. Muat semula halaman untuk cuba lagi.";

@@ -4,7 +4,7 @@
 import json, os, html
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VO=json.load(open(f"{R}/assets/audio/vo.json")); CAP=json.load(open(f"{R}/captions.json"))["lines"]
-TOTAL=90.0
+TOTAL=112.0
 def fr(x): return round(round(x*30)/30,4)
 def esc(s): return html.escape(s,quote=True)
 def words(s):
@@ -24,7 +24,7 @@ V=lambda i,k="start": VO[i][k]
 # ---- cards (film times from VO lines)
 CARDS=[]
 def card(cid,start,end,body): CARDS.append((cid,fr(start),fr(end),body))
-card("title",0.25,6.6,'''
+card("title",0.25,7.0,'''
   <div class="scrim top"></div>
   <div class="blk" style="top:300px">
     <div class="kick a">Madrasah Uthmaniyah Smart Tahfiz</div>
@@ -72,7 +72,7 @@ card("berjuang",V(15)-0.15,V(15,"end")+0.5,'''
     <div class="ttl a">Selamat Berjuang,</div>
     <div class="huge a">BATCH <span class="gold">12!</span></div>
   </div>''')
-card("end",84.5,TOTAL,'''
+card("end",V(18)-0.1,TOTAL,'''
   <div class="scrim top"></div>
   <div class="blk" style="top:300px; right:200px; left:150px">
     <div class="tag a">&#8220;Bersama Membina<br>Generasi Qurani&#8221;</div>
@@ -85,11 +85,11 @@ SFX=[("whoosh.mp3",0.05,0.57,0.35),("impact-bass-1.mp3",0.35,2.1,0.45),
      ("pop.mp3",V(5)-0.05,0.72,0.25),("pop.mp3",V(6)-0.05,0.72,0.25),("pop.mp3",V(7)-0.05,0.72,0.25),
      ("sparkle.mp3",V(9)-0.2,1.8,0.2),("pop.mp3",V(13)-0.05,0.72,0.25),
      ("whoosh.mp3",V(15)-0.4,0.57,0.3),("impact-bass-1.mp3",V(15)-0.15,2.1,0.4),
-     ("sparkle.mp3",84.3,1.8,0.22)]
+     ("sparkle.mp3",102.3,1.8,0.22)]
 # ---- HTML
 cards_html="\n".join(f'      <div id="card-{c}" class="card">{b}\n      </div>' for c,s,e,b in CARDS)
 caps_html="\n".join(f'      <div id="cap{i}" class="cap"><div class="line">{words(t)}</div></div>' for i,(s,e,t) in enumerate(caps))
-audio=[f'      <audio id="vo" class="clip" src="assets/audio/vo.wav" data-start="0" data-duration="{TOTAL}" data-media-start="0" data-volume="1" data-track-index="1"></audio>',
+audio=[f'      <audio id="vo" class="clip" src="assets/audio/vo.wav" data-start="0" data-duration="{round(TOTAL-0.06,2)}" data-media-start="0" data-volume="1" data-track-index="1"></audio>',
        f'      <audio id="music" class="clip" src="assets/audio/music_mix.wav" data-start="0" data-duration="{TOTAL}" data-media-start="0" data-volume="1" data-track-index="2"></audio>']
 for i,(f,s,d,v) in enumerate(SFX):
     audio.append(f'      <audio id="sfx{i:02d}" class="clip" src="assets/sfx/{f}" data-start="{fr(s)}" data-duration="{d}" data-volume="{v}" data-track-index="{3+i%3}"></audio>')
@@ -105,7 +105,7 @@ for i,(s,e,t) in enumerate(caps):
     js.append(f'    tl.fromTo("#cap{i}", {{opacity: 0, y: 14}}, {{opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}}, {s});')
     js.append(f'    tl.fromTo("#cap{i} .w", {{opacity: 0.35}}, {{opacity: 1, duration: 0.12, stagger: {round(max(0.04,(e-s)*0.6/max(1,len(t.split()))),3)}}}, {s});')
     js.append(f'    tl.set("#cap{i}", {{opacity: 0}}, {e});')
-js.append('    tl.fromTo("#fadeout", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power1.in"}, 89.2);')
+js.append(f'    tl.fromTo("#fadeout", {{opacity: 0}}, {{opacity: 1, duration: 0.8, ease: "power1.in"}}, {TOTAL-0.8});')
 js.append('    tl.fromTo("#fadein", {opacity: 1}, {opacity: 0, duration: 0.5, ease: "power1.out"}, 0);')
 CSS='''
       @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; }
