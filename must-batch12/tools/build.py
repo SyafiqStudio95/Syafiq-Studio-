@@ -72,13 +72,8 @@ card("berjuang",V(15)-0.15,V(15,"end")+0.5,'''
     <div class="ttl a">Selamat Berjuang,</div>
     <div class="huge a">BATCH <span class="gold">12!</span></div>
   </div>''')
-card("end",V(18)-0.1,TOTAL,'''
-  <div class="scrim top"></div>
-  <div class="blk" style="top:300px; right:200px; left:150px">
-    <div class="tag a">&#8220;Bersama Membina<br>Generasi Qurani&#8221;</div>
-    <div class="rule a"></div>
-    <div class="kick a">MUST<br>Melahirkan Generasi<br>Huffaz Berwibawa</div>
-  </div>''')
+# ending: MUST logo animation only, no text (user request)
+LOGO_T=102.3
 # ---- SFX
 SFX=[("whoosh.mp3",0.05,0.57,0.35),("impact-bass-1.mp3",0.35,2.1,0.45),
      ("whoosh.mp3",V(3)-0.25,0.57,0.3),("impact-bass-2.mp3",V(3)-0.05,1.1,0.35),
@@ -106,6 +101,8 @@ for i,(s,e,t) in enumerate(caps):
     js.append(f'    tl.fromTo("#cap{i} .w", {{opacity: 0.35}}, {{opacity: 1, duration: 0.12, stagger: {round(max(0.04,(e-s)*0.6/max(1,len(t.split()))),3)}}}, {s});')
     js.append(f'    tl.set("#cap{i}", {{opacity: 0}}, {e});')
 js.append(f'    tl.fromTo("#fadeout", {{opacity: 0}}, {{opacity: 1, duration: 0.8, ease: "power1.in"}}, {TOTAL-0.8});')
+js.append(f'    tl.fromTo("#dip", {{opacity: 0}}, {{opacity: 1, duration: 0.4, ease: "power2.in"}}, {LOGO_T-0.4});')
+js.append(f'    tl.to("#dip", {{opacity: 0, duration: 0.9, ease: "power2.out"}}, {LOGO_T});')
 js.append('    tl.fromTo("#fadein", {opacity: 1}, {opacity: 0, duration: 0.5, ease: "power1.out"}, 0);')
 CSS='''
       @font-face { font-family: "EB Garamond"; src: url("assets/fonts/EBGaramond-400.woff2") format("woff2"); font-weight: 400; }
@@ -148,7 +145,7 @@ CSS='''
               padding: 14px 26px 18px; border-radius: 18px; background: rgba(10,7,3,.5); }
       .w { display: inline-block; font: 700 46px/1.2 var(--sans); color: #fffaf0; text-shadow: 0 3px 16px rgba(0,0,0,.6); }
       .w.em { font: italic 700 54px/1.05 var(--serif); color: var(--gold); }
-      #fadeout, #fadein { position: absolute; inset: 0; background: #000; z-index: 50; opacity: 0; pointer-events: none; }
+      #fadeout, #fadein, #dip { position: absolute; inset: 0; background: #000; z-index: 50; opacity: 0; pointer-events: none; }
 '''
 doc=f'''<!doctype html>
 <html lang="ms" data-resolution="portrait">
@@ -163,6 +160,7 @@ doc=f'''<!doctype html>
       <video id="broll" class="clip footage" src="assets/video/broll.mp4" data-start="0" data-duration="{TOTAL}" data-media-start="0" data-track-index="0" muted playsinline></video>
 {cards_html}
 {caps_html}
+      <div id="dip"></div>
       <div id="fadein"></div>
       <div id="fadeout"></div>
 {chr(10).join(audio)}

@@ -45,7 +45,7 @@
               padding: 14px 26px 18px; border-radius: 18px; background: rgba(10,7,3,.5); }
       .w { display: inline-block; font: 700 46px/1.2 var(--sans); color: #fffaf0; text-shadow: 0 3px 16px rgba(0,0,0,.6); }
       .w.em { font: italic 700 54px/1.05 var(--serif); color: var(--gold); }
-      #fadeout, #fadein { position: absolute; inset: 0; background: #000; z-index: 50; opacity: 0; pointer-events: none; }
+      #fadeout, #fadein, #dip { position: absolute; inset: 0; background: #000; z-index: 50; opacity: 0; pointer-events: none; }
     </style>
   </head>
   <body>
@@ -107,14 +107,6 @@
     <div class="huge a">BATCH <span class="gold">12!</span></div>
   </div>
       </div>
-      <div id="card-end" class="card">
-  <div class="scrim top"></div>
-  <div class="blk" style="top:300px; right:200px; left:150px">
-    <div class="tag a">&#8220;Bersama Membina<br>Generasi Qurani&#8221;</div>
-    <div class="rule a"></div>
-    <div class="kick a">MUST<br>Melahirkan Generasi<br>Huffaz Berwibawa</div>
-  </div>
-      </div>
       <div id="cap0" class="cap"><div class="line"><span class="w">Setiap</span> <span class="w">perjalanan</span> <span class="w">besar</span></div></div>
       <div id="cap1" class="cap"><div class="line"><span class="w">bermula</span> <span class="w">dengan</span> <span class="w em">sebuah</span> <span class="w em">langkah.</span></div></div>
       <div id="cap2" class="cap"><div class="line"><span class="w">Hari</span> <span class="w">ini,</span> <span class="w">satu</span> <span class="w">lembaran</span></div></div>
@@ -150,6 +142,7 @@
       <div id="cap32" class="cap"><div class="line"><span class="w">dan</span> <span class="w em">doa</span> <span class="w em">keluarga</span> <span class="w">sebagai</span> <span class="w">kekuatan.</span></div></div>
       <div id="cap33" class="cap"><div class="line"><span class="w">Semoga</span> <span class="w">pulang</span> <span class="w">nanti</span></div></div>
       <div id="cap34" class="cap"><div class="line"><span class="w">dengan</span> <span class="w em">kejayaan</span> <span class="w">yang</span> <span class="w">membanggakan.</span></div></div>
+      <div id="dip"></div>
       <div id="fadein"></div>
       <div id="fadeout"></div>
       <audio id="vo" class="clip" src="assets/audio/vo.wav" data-start="0" data-duration="111.94" data-media-start="0" data-volume="1" data-track-index="1"></audio>
@@ -198,10 +191,6 @@
     tl.fromTo("#card-berjuang .scrim", {opacity: 0}, {opacity: 1, duration: 0.4}, 90.0667);
     tl.fromTo("#card-berjuang .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 90.0667);
     tl.to("#card-berjuang", {opacity: 0, duration: 0.3, ease: "power2.in"}, 92.0);
-    tl.set("#card-end", {opacity: 1}, 102.4);
-    tl.fromTo("#card-end .scrim", {opacity: 0}, {opacity: 1, duration: 0.4}, 102.4);
-    tl.fromTo("#card-end .a", {opacity: 0, y: 26, filter: "blur(8px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.55, ease: "expo.out", stagger: 0.12}, 102.4);
-    tl.fromTo("#card-end .rule", {scaleX: 0}, {scaleX: 1, duration: 0.7, ease: "expo.out"}, 102.5);
     tl.fromTo("#cap0", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.18, ease: "power2.out"}, 0.5);
     tl.fromTo("#cap0 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.36}, 0.5);
     tl.set("#cap0", {opacity: 0}, 2.3);
@@ -308,6 +297,8 @@
     tl.fromTo("#cap34 .w", {opacity: 0.35}, {opacity: 1, duration: 0.12, stagger: 0.35}, 100.0667);
     tl.set("#cap34", {opacity: 0}, 102.4);
     tl.fromTo("#fadeout", {opacity: 0}, {opacity: 1, duration: 0.8, ease: "power1.in"}, 111.2);
+    tl.fromTo("#dip", {opacity: 0}, {opacity: 1, duration: 0.4, ease: "power2.in"}, 101.89999999999999);
+    tl.to("#dip", {opacity: 0, duration: 0.9, ease: "power2.out"}, 102.3);
     tl.fromTo("#fadein", {opacity: 1}, {opacity: 0, duration: 0.5, ease: "power1.out"}, 0);
     window.__timelines["main"] = tl;
     </script>

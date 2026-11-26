@@ -21,7 +21,7 @@ for i,s in enumerate(S):
     if s["mode"]=="logo":
         fc=(f"[0:v]{pad}scale=-2:1560,crop=1080:1560,setsar=1,fps={FPS},format=rgba,"
             f"geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='255*min(1,Y/260)'[fg];"
-            f"color=c=0x0b0a09:s=1080x1920:r={FPS}[bg];[bg][fg]overlay=0:360:shortest=1,"
+            f"color=c=0x0b0a09:s=1080x1920:r={FPS}[bg];[bg][fg]overlay=0:180:shortest=1,"
             f"{GRADE},format=yuv420p[v]")
     elif s["mode"]=="full":
         cx=s.get("cx",0.5)
