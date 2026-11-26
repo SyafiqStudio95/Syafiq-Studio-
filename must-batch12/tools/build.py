@@ -75,7 +75,7 @@ card("berjuang",V(15)-0.15,V(15,"end")+0.5,'''
 card("end",84.5,TOTAL,'''
   <div class="scrim top"></div>
   <div class="blk" style="top:300px; right:200px; left:150px">
-    <div class="tag a">&#8220;Melangkah Dengan Al-Quran,<br>Menggapai Kecemerlangan.&#8221;</div>
+    <div class="tag a">&#8220;Bersama Membina<br>Generasi Qurani&#8221;</div>
     <div class="rule a"></div>
     <div class="kick a">MUST<br>Melahirkan Generasi<br>Huffaz Berwibawa</div>
   </div>''')
