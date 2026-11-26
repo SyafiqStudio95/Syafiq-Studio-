@@ -441,6 +441,28 @@ for r, run in enumerate(runs):
         for p in s.get("punch", []):
             wraps_js.append(f'    tl.to("#{wid}", {{scale: {s.get("z", 1.0) * 1.07:.3f}, duration: 0.35, ease: "expo.out"}}, {T(p)});')
 
+# overlays: kids-playing clips over the demo, muted, while the voice carries on
+OV = E.get("overlays", [])
+for i, o in enumerate(OV):
+    st = fr(T(o["at"]))
+    d = fr(o["dur"])
+    wid = f"ov{i}"
+    if o.get("mode", "pip") == "full":
+        vids.append(f'      <div id="{wid}" class="cam ovfull"><video id="ovv{i}" class="clip footage" src="assets/video/ov_{i}.mp4" '
+                    f'data-start="{st}" data-duration="{d}" data-media-start="0" data-track-index="1" muted '
+                    f'data-color-grading="{grade_attr(o["src"])}" playsinline></video></div>')
+        wraps_js.append(f'    tl.fromTo("#{wid}", {{scale: 1.12}}, {{scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}}, {st});')
+    else:
+        side = o.get("side", "left")
+        x = 120 if side == "left" else 888 - 330 - 24  # TikTok-safe right edge, room for the tilt
+        tag = f'<div class="pipTag">{esc(o["tag"])}</div>' if o.get("tag") else ""
+        vids.append(f'      <div id="{wid}" class="pip" style="left:{x}px"><div class="pipFrame"><video id="ovv{i}" class="clip footage" src="assets/video/ov_{i}.mp4" '
+                    f'data-start="{st}" data-duration="{d}" data-media-start="0" data-track-index="1" muted '
+                    f'data-color-grading="{grade_attr(o["src"])}" playsinline></video></div>{tag}</div>')
+        wraps_js.append(f'    tl.set("#{wid}", {{opacity: 0}}, 0);')
+        wraps_js.append(f'    tl.fromTo("#{wid}", {{opacity: 0, scale: 0.6, rotation: {-6 if side == "left" else 6}, y: 40}}, {{opacity: 1, scale: 1, rotation: {-2 if side == "left" else 2}, y: 0, duration: 0.5, ease: "back.out(1.6)"}}, {st});')
+        wraps_js.append(f'    tl.to("#{wid}", {{opacity: 0, scale: 0.85, duration: 0.22, ease: "power2.in"}}, {fr(st + d - 0.22)});')
+
 cam("tailcam", "tail", "assets/video/tail.mp4", TAIL["start"], TAIL["dur"], 0, "muted", TAIL["src"], TAIL.get("z", 1.0))
 wraps_js.append(f'    tl.fromTo("#tailcam", {{scale: 1.1}}, {{scale: 1.0, duration: {TAIL["dur"]}, ease: "power2.out", immediateRender: false}}, {TAIL["start"]});')
 
@@ -474,6 +496,14 @@ index = f"""<!doctype html>
       .cam {{ position: absolute; inset: 0; }}
       .cam video {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }}
       .layer {{ position: absolute; inset: 0; z-index: 10; }}
+      .ovfull {{ z-index: 2; }}
+      .pip {{ position: absolute; top: 300px; width: 330px; z-index: 5; transform-origin: 50% 0%; }}
+      .pipFrame {{ position: relative; width: 330px; height: 587px; border-radius: 28px; overflow: hidden;
+                  border: 6px solid #fff; box-shadow: 0 24px 60px rgba(0,0,0,.45); background: #000; }}
+      .pipFrame video {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }}
+      .pipTag {{ margin: -22px auto 0; position: relative; width: max-content; white-space: nowrap; padding: 10px 18px; border-radius: 999px;
+                background: var(--pip-tag-bg, #ffd23f); color: var(--pip-tag-ink, #1d1400); font: 800 32px/1 "Poppins", Arial, sans-serif;
+                box-shadow: 0 10px 24px rgba(0,0,0,.3); }}
       #captions {{ z-index: 20; }}
     </style>
   </head>

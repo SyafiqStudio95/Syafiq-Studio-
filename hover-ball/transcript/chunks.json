@@ -1,0 +1,374 @@
+{
+ "c1": [
+  {
+   "a": 0.0,
+   "b": 2.64,
+   "text": "Terima kasih kerana menonton."
+  },
+  {
+   "a": 3.62,
+   "b": 5.52,
+   "text": "Terima kasih kerana menonton."
+  },
+  {
+   "a": 5.74,
+   "b": 6.04,
+   "text": "Terima kasih kerana menonton."
+  },
+  {
+   "a": 6.42,
+   "b": 6.8,
+   "text": "Terima kasih kerana menonton."
+  },
+  {
+   "a": 7.38,
+   "b": 7.5093125,
+   "text": "Terima kasih kerana menonton."
+  }
+ ],
+ "c2": [
+  {
+   "a": 0.0,
+   "b": 0.22,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 0.5,
+   "b": 1.3,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 3.36,
+   "b": 4.68,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 5.04,
+   "b": 9.7,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 10.86,
+   "b": 11.34,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 13.32,
+   "b": 13.98,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 14.64,
+   "b": 14.8,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 15.04,
+   "b": 15.32,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 15.62,
+   "b": 15.7866875,
+   "text": "Terima kasih kerana menonton!"
+  }
+ ],
+ "c3": [
+  {
+   "a": 0.4,
+   "b": 0.64,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 1.56,
+   "b": 2.1,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 2.62,
+   "b": 3.0,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 3.32,
+   "b": 5.14,
+   "text": "Tengah penguin, tengah penguin."
+  },
+  {
+   "a": 7.66,
+   "b": 8.96,
+   "text": "Okey, lepas, lepas, tengah penguin, lepas."
+  },
+  {
+   "a": 9.32,
+   "b": 9.72,
+   "text": "Terima kasih."
+  },
+  {
+   "a": 10.64,
+   "b": 11.42,
+   "text": "Sari kata oleh SDI Media"
+  },
+  {
+   "a": 11.66,
+   "b": 12.14,
+   "text": "Sari kata oleh SDI Media"
+  },
+  {
+   "a": 13.08,
+   "b": 13.58,
+   "text": "Terima kasih."
+  },
+  {
+   "a": 14.12,
+   "b": 14.26,
+   "text": "Sari kata oleh SDI Media"
+  },
+  {
+   "a": 15.08,
+   "b": 15.22,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 15.9,
+   "b": 17.8,
+   "text": "Terima kasih kerana menonton!"
+  }
+ ],
+ "c4": [
+  {
+   "a": 0.0,
+   "b": 1.06,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 2.36,
+   "b": 3.08,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 3.44,
+   "b": 7.54,
+   "text": "Penguin, pelikah penguin itu ya? Pelikah!"
+  },
+  {
+   "a": 7.82,
+   "b": 8.4,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 9.66,
+   "b": 14.5066875,
+   "text": "Penguin bernas!"
+  }
+ ],
+ "c5": [
+  {
+   "a": 0.0,
+   "b": 1.9,
+   "text": "Kenapa kata tak boleh main bola dalam rumah?"
+  },
+  {
+   "a": 2.28,
+   "b": 3.58,
+   "text": "Inilah hover ball."
+  },
+  {
+   "a": 3.88,
+   "b": 5.62,
+   "text": "Bola untuk main dalam rumah."
+  },
+  {
+   "a": 6.66,
+   "b": 6.86,
+   "text": "Terima kasih kerana menonton!"
+  },
+  {
+   "a": 7.42,
+   "b": 11.74,
+   "text": "Hover ball ni adalah bola yang khas diciptakan."
+  },
+  {
+   "a": 11.96,
+   "b": 12.9,
+   "text": "Untuk anda."
+  },
+  {
+   "a": 13.36,
+   "b": 15.48,
+   "text": "Membuat aktiviti bersama anak-anak dekat rumah."
+  },
+  {
+   "a": 15.82,
+   "b": 17.44,
+   "text": "Boleh tengok dekat sini kualiti dia."
+  },
+  {
+   "a": 17.86,
+   "b": 18.9,
+   "text": "Dekat bahagian tepi."
+  },
+  {
+   "a": 19.26,
+   "b": 20.12,
+   "text": "Memang sangat lembut."
+  },
+  {
+   "a": 20.9,
+   "b": 22.68,
+   "text": "Sangat lembut. Dan juga..."
+  },
+  {
+   "a": 22.98,
+   "b": 24.9,
+   "text": "Sudut kualiti dia kita boleh lihat."
+  },
+  {
+   "a": 25.38,
+   "b": 26.18,
+   "text": "Sangat bagus."
+  },
+  {
+   "a": 26.82,
+   "b": 27.84,
+   "text": "Dekat bahagian dalam dia."
+  },
+  {
+   "a": 28.26,
+   "b": 28.98,
+   "text": "Dia ada..."
+  },
+  {
+   "a": 29.54,
+   "b": 31.34,
+   "text": "Ruang untuk kita nak masukkan bateri."
+  },
+  {
+   "a": 32.06,
+   "b": 32.78,
+   "text": "AA."
+  },
+  {
+   "a": 33.64,
+   "b": 36.08,
+   "text": "Dan apa yang saya sangat suka adalah..."
+  },
+  {
+   "a": 36.68,
+   "b": 37.7,
+   "text": "Dari sudut."
+  },
+  {
+   "a": 39.24,
+   "b": 41.9,
+   "text": "Dari sudut. Bila kita tekannya swiss,"
+  },
+  {
+   "a": 42.66,
+   "b": 45.98,
+   "text": "kita nampak kat bahagian dalam tu, kipas tu akan berpusing."
+  },
+  {
+   "a": 46.4,
+   "b": 46.68,
+   "text": "Dan..."
+  },
+  {
+   "a": 47.04,
+   "b": 49.32,
+   "text": "Angin daripada atas akan masuk yang menolak."
+  },
+  {
+   "a": 49.84,
+   "b": 53.58,
+   "text": "Haver Ball ini untuk terangkat dan dia akan bergerak secara otomatik."
+  },
+  {
+   "a": 53.82,
+   "b": 67.02,
+   "text": "Kita boleh tengok lagi kat sini."
+  },
+  {
+   "a": 68.5,
+   "b": 76.52,
+   "text": "Dan turut bersama dalam set mainan ini, dia bagi kita satu patung. Haa ni air."
+  },
+  {
+   "a": 77.34,
+   "b": 79.14,
+   "text": "Dia bagi kita satu."
+  },
+  {
+   "a": 79.74,
+   "b": 83.54,
+   "text": "Penguin macam ni. Haa anda boleh pump. Dia bagi sekali dengan pump kat sini."
+  },
+  {
+   "a": 83.94,
+   "b": 84.68,
+   "text": "Haa anda boleh pump."
+  }
+ ],
+ "c6": [
+  {
+   "a": 0.32,
+   "b": 1.5,
+   "text": "Jadi anda tak perlu risau."
+  },
+  {
+   "a": 1.86,
+   "b": 3.28,
+   "text": "Bila ada hover ball ni,"
+  },
+  {
+   "a": 3.6,
+   "b": 4.58,
+   "text": "memang tak akan"
+  },
+  {
+   "a": 4.86,
+   "b": 8.74,
+   "text": "kita kata tak akan ada kerosakan dalam kawasan rumah lah. Anak kan?"
+  },
+  {
+   "a": 9.08,
+   "b": 14.24,
+   "text": "Bola tu tidak akan terbang tinggi. Biasa bola akan melambung tinggi. Kena bahagian"
+  },
+  {
+   "a": 14.6,
+   "b": 17.32,
+   "text": "kipas tapi bila menggunakan hover ball ni"
+  },
+  {
+   "a": 17.92,
+   "b": 20.1,
+   "text": "anda dapat buat aktiviti bersama anak-anak."
+  },
+  {
+   "a": 20.58,
+   "b": 22.86,
+   "text": "Anak-anak pun dapat main dalam rumah dengan baik."
+  },
+  {
+   "a": 23.52,
+   "b": 27.02,
+   "text": "Tak ada masalah. Jadi siapa yang berminat nak dapatkan hover ball ni."
+  },
+  {
+   "a": 27.7,
+   "b": 29.8,
+   "text": "Yang sangat cantik, berkualiti."
+  },
+  {
+   "a": 30.7,
+   "b": 32.72,
+   "text": "Boleh tekan beg kuning sekarang."
+  },
+  {
+   "a": 33.34,
+   "b": 35.08,
+   "text": "Sementara stok masih ada."
+  }
+ ]
+}

@@ -1,0 +1,1592 @@
+{
+ "c1": [
+  {
+   "start": 0.0,
+   "end": 5.96,
+   "text": " Terima kasih kerana menonton",
+   "words": [
+    {
+     "w": " Terima",
+     "s": 0.0,
+     "e": 1.24
+    },
+    {
+     "w": " kasih",
+     "s": 1.24,
+     "e": 1.88
+    },
+    {
+     "w": " kerana",
+     "s": 1.88,
+     "e": 3.2
+    },
+    {
+     "w": " menonton",
+     "s": 3.2,
+     "e": 5.96
+    }
+   ]
+  }
+ ],
+ "c2": [
+  {
+   "start": 0.0,
+   "end": 4.44,
+   "text": " Terima kasih kerana menonton!",
+   "words": [
+    {
+     "w": " Terima",
+     "s": 0.0,
+     "e": 0.6
+    },
+    {
+     "w": " kasih",
+     "s": 0.6,
+     "e": 0.6
+    },
+    {
+     "w": " kerana",
+     "s": 0.6,
+     "e": 4.44
+    },
+    {
+     "w": " menonton!",
+     "s": 4.44,
+     "e": 4.44
+    }
+   ]
+  }
+ ],
+ "c3": [
+  {
+   "start": 2.24,
+   "end": 4.6,
+   "text": " Peng colaborstation penguun",
+   "words": [
+    {
+     "w": " Peng",
+     "s": 2.24,
+     "e": 3.64
+    },
+    {
+     "w": " colaborstation",
+     "s": 3.64,
+     "e": 4.06
+    },
+    {
+     "w": " penguun",
+     "s": 4.06,
+     "e": 4.6
+    }
+   ]
+  },
+  {
+   "start": 6.42,
+   "end": 8.38,
+   "text": " Penguun alir",
+   "words": [
+    {
+     "w": " Penguun",
+     "s": 6.42,
+     "e": 7.82
+    },
+    {
+     "w": " alir",
+     "s": 7.82,
+     "e": 8.38
+    }
+   ]
+  },
+  {
+   "start": 8.38,
+   "end": 11.18,
+   "text": " Penguun penyembah",
+   "words": [
+    {
+     "w": " Penguun",
+     "s": 8.38,
+     "e": 10.88
+    },
+    {
+     "w": " penyembah",
+     "s": 10.88,
+     "e": 11.18
+    }
+   ]
+  },
+  {
+   "start": 15.040000000000001,
+   "end": 16.92,
+   "text": " Penguun mengalir",
+   "words": [
+    {
+     "w": " Penguun",
+     "s": 15.040000000000001,
+     "e": 16.44
+    },
+    {
+     "w": " mengalir",
+     "s": 16.44,
+     "e": 16.92
+    }
+   ]
+  },
+  {
+   "start": 16.92,
+   "end": 18.76,
+   "text": " Penguun sang basis",
+   "words": [
+    {
+     "w": " Penguun",
+     "s": 16.92,
+     "e": 17.52
+    },
+    {
+     "w": " sang",
+     "s": 17.52,
+     "e": 17.66
+    },
+    {
+     "w": " basis",
+     "s": 17.66,
+     "e": 18.76
+    }
+   ]
+  },
+  {
+   "start": 23.220000000000002,
+   "end": 24.62,
+   "text": " Penguun relaman",
+   "words": [
+    {
+     "w": " Penguun",
+     "s": 23.220000000000002,
+     "e": 24.62
+    },
+    {
+     "w": " relaman",
+     "s": 24.62,
+     "e": 24.62
+    }
+   ]
+  },
+  {
+   "start": 27.28,
+   "end": 28.68,
+   "text": " Setinggi serpentine",
+   "words": [
+    {
+     "w": " Setinggi",
+     "s": 27.28,
+     "e": 28.68
+    },
+    {
+     "w": " serpentine",
+     "s": 28.68,
+     "e": 28.68
+    }
+   ]
+  }
+ ],
+ "c4": [
+  {
+   "start": 2.6,
+   "end": 4.0,
+   "text": " PENGUIN",
+   "words": [
+    {
+     "w": " PENGUIN",
+     "s": 2.6,
+     "e": 4.0
+    }
+   ]
+  },
+  {
+   "start": 5.0,
+   "end": 11.18,
+   "text": " pemika penguing, pemika beau, penguing soy, penguing penglai",
+   "words": [
+    {
+     "w": " pemika",
+     "s": 4.66,
+     "e": 5.36
+    },
+    {
+     "w": " penguing,",
+     "s": 5.36,
+     "e": 6.1
+    },
+    {
+     "w": " pemika",
+     "s": 6.24,
+     "e": 7.34
+    },
+    {
+     "w": " beau,",
+     "s": 7.34,
+     "e": 8.02
+    },
+    {
+     "w": " penguing",
+     "s": 8.06,
+     "e": 8.06
+    },
+    {
+     "w": " soy,",
+     "s": 8.06,
+     "e": 8.06
+    },
+    {
+     "w": " penguing",
+     "s": 8.5,
+     "e": 10.18
+    },
+    {
+     "w": " penglai",
+     "s": 10.18,
+     "e": 11.18
+    }
+   ]
+  },
+  {
+   "start": 12.5,
+   "end": 13.64,
+   "text": " TASA SANTA",
+   "words": [
+    {
+     "w": " TASA",
+     "s": 12.22,
+     "e": 12.92
+    },
+    {
+     "w": " SANTA",
+     "s": 12.92,
+     "e": 13.64
+    }
+   ]
+  }
+ ],
+ "c5": [
+  {
+   "start": 0.0,
+   "end": 1.68,
+   "text": " Siapa kata tak boleh main bola dalam rumah?",
+   "words": [
+    {
+     "w": " Siapa",
+     "s": 0.0,
+     "e": 0.16
+    },
+    {
+     "w": " kata",
+     "s": 0.16,
+     "e": 0.44
+    },
+    {
+     "w": " tak",
+     "s": 0.44,
+     "e": 0.58
+    },
+    {
+     "w": " boleh",
+     "s": 0.58,
+     "e": 0.74
+    },
+    {
+     "w": " main",
+     "s": 0.74,
+     "e": 0.94
+    },
+    {
+     "w": " bola",
+     "s": 0.94,
+     "e": 1.08
+    },
+    {
+     "w": " dalam",
+     "s": 1.08,
+     "e": 1.3
+    },
+    {
+     "w": " rumah?",
+     "s": 1.3,
+     "e": 1.68
+    }
+   ]
+  },
+  {
+   "start": 1.88,
+   "end": 5.44,
+   "text": " Inilah hoverball, bola untuk main dalam rumah",
+   "words": [
+    {
+     "w": " Inilah",
+     "s": 1.88,
+     "e": 2.52
+    },
+    {
+     "w": " hoverball,",
+     "s": 2.52,
+     "e": 3.28
+    },
+    {
+     "w": " bola",
+     "s": 3.44,
+     "e": 3.96
+    },
+    {
+     "w": " untuk",
+     "s": 3.96,
+     "e": 4.46
+    },
+    {
+     "w": " main",
+     "s": 4.46,
+     "e": 4.8
+    },
+    {
+     "w": " dalam",
+     "s": 4.8,
+     "e": 5.06
+    },
+    {
+     "w": " rumah",
+     "s": 5.06,
+     "e": 5.44
+    }
+   ]
+  },
+  {
+   "start": 8.78,
+   "end": 15.26,
+   "text": " Hoverball ni adalah bola yang khas diciptakan untuk anda membuat aktiviti bersama anak-anak dekat rumah",
+   "words": [
+    {
+     "w": " Hoverball",
+     "s": 8.78,
+     "e": 9.44
+    },
+    {
+     "w": " ni",
+     "s": 9.44,
+     "e": 9.62
+    },
+    {
+     "w": " adalah",
+     "s": 9.62,
+     "e": 9.78
+    },
+    {
+     "w": " bola",
+     "s": 9.78,
+     "e": 10.12
+    },
+    {
+     "w": " yang",
+     "s": 10.12,
+     "e": 10.36
+    },
+    {
+     "w": " khas",
+     "s": 10.36,
+     "e": 10.78
+    },
+    {
+     "w": " diciptakan",
+     "s": 10.78,
+     "e": 11.46
+    },
+    {
+     "w": " untuk",
+     "s": 11.46,
+     "e": 12.06
+    },
+    {
+     "w": " anda",
+     "s": 12.06,
+     "e": 12.52
+    },
+    {
+     "w": " membuat",
+     "s": 12.52,
+     "e": 13.58
+    },
+    {
+     "w": " aktiviti",
+     "s": 13.58,
+     "e": 14.02
+    },
+    {
+     "w": " bersama",
+     "s": 14.02,
+     "e": 14.46
+    },
+    {
+     "w": " anak",
+     "s": 14.46,
+     "e": 14.68
+    },
+    {
+     "w": "-anak",
+     "s": 14.68,
+     "e": 14.86
+    },
+    {
+     "w": " dekat",
+     "s": 14.86,
+     "e": 15.04
+    },
+    {
+     "w": " rumah",
+     "s": 15.04,
+     "e": 15.26
+    }
+   ]
+  },
+  {
+   "start": 15.26,
+   "end": 20.02,
+   "text": " Boleh tengok dekat sini kualiti dia, dekat bahagian tepi memang sangat lembut",
+   "words": [
+    {
+     "w": " Boleh",
+     "s": 15.26,
+     "e": 15.84
+    },
+    {
+     "w": " tengok",
+     "s": 15.84,
+     "e": 16.08
+    },
+    {
+     "w": " dekat",
+     "s": 16.08,
+     "e": 16.24
+    },
+    {
+     "w": " sini",
+     "s": 16.24,
+     "e": 16.42
+    },
+    {
+     "w": " kualiti",
+     "s": 16.42,
+     "e": 16.92
+    },
+    {
+     "w": " dia,",
+     "s": 16.92,
+     "e": 17.22
+    },
+    {
+     "w": " dekat",
+     "s": 17.34,
+     "e": 17.96
+    },
+    {
+     "w": " bahagian",
+     "s": 17.96,
+     "e": 18.36
+    },
+    {
+     "w": " tepi",
+     "s": 18.36,
+     "e": 18.68
+    },
+    {
+     "w": " memang",
+     "s": 18.68,
+     "e": 19.3
+    },
+    {
+     "w": " sangat",
+     "s": 19.3,
+     "e": 19.62
+    },
+    {
+     "w": " lembut",
+     "s": 19.62,
+     "e": 20.02
+    }
+   ]
+  },
+  {
+   "start": 20.02,
+   "end": 25.84,
+   "text": " Dan juga sudut kualiti dia kita boleh lihat sangat bagus",
+   "words": [
+    {
+     "w": " Dan",
+     "s": 20.02,
+     "e": 20.96
+    },
+    {
+     "w": " juga",
+     "s": 20.96,
+     "e": 22.28
+    },
+    {
+     "w": " sudut",
+     "s": 22.28,
+     "e": 23.26
+    },
+    {
+     "w": " kualiti",
+     "s": 23.26,
+     "e": 23.66
+    },
+    {
+     "w": " dia",
+     "s": 23.66,
+     "e": 23.9
+    },
+    {
+     "w": " kita",
+     "s": 23.9,
+     "e": 24.14
+    },
+    {
+     "w": " boleh",
+     "s": 24.14,
+     "e": 24.4
+    },
+    {
+     "w": " lihat",
+     "s": 24.4,
+     "e": 24.66
+    },
+    {
+     "w": " sangat",
+     "s": 24.66,
+     "e": 25.48
+    },
+    {
+     "w": " bagus",
+     "s": 25.48,
+     "e": 25.84
+    }
+   ]
+  },
+  {
+   "start": 25.84,
+   "end": 32.2,
+   "text": " Dekat bahagian dalam dia, dia ada ruang untuk kita nak masukkan bateri AA",
+   "words": [
+    {
+     "w": " Dekat",
+     "s": 25.84,
+     "e": 26.94
+    },
+    {
+     "w": " bahagian",
+     "s": 26.94,
+     "e": 27.24
+    },
+    {
+     "w": " dalam",
+     "s": 27.24,
+     "e": 27.46
+    },
+    {
+     "w": " dia,",
+     "s": 27.46,
+     "e": 27.66
+    },
+    {
+     "w": " dia",
+     "s": 27.74,
+     "e": 28.28
+    },
+    {
+     "w": " ada",
+     "s": 28.28,
+     "e": 28.68
+    },
+    {
+     "w": " ruang",
+     "s": 28.68,
+     "e": 29.8
+    },
+    {
+     "w": " untuk",
+     "s": 29.8,
+     "e": 30.0
+    },
+    {
+     "w": " kita",
+     "s": 30.0,
+     "e": 30.2
+    },
+    {
+     "w": " nak",
+     "s": 30.2,
+     "e": 30.36
+    },
+    {
+     "w": " masukkan",
+     "s": 30.36,
+     "e": 30.78
+    },
+    {
+     "w": " bateri",
+     "s": 30.78,
+     "e": 31.22
+    },
+    {
+     "w": " AA",
+     "s": 31.22,
+     "e": 32.2
+    }
+   ]
+  },
+  {
+   "start": 32.2,
+   "end": 41.3,
+   "text": " Dan apa yang saya sangat suka adalah dari sudut bila kita tekan Swiss",
+   "words": [
+    {
+     "w": " Dan",
+     "s": 32.2,
+     "e": 32.84
+    },
+    {
+     "w": " apa",
+     "s": 32.84,
+     "e": 34.24
+    },
+    {
+     "w": " yang",
+     "s": 34.24,
+     "e": 34.4
+    },
+    {
+     "w": " saya",
+     "s": 34.4,
+     "e": 34.56
+    },
+    {
+     "w": " sangat",
+     "s": 34.56,
+     "e": 34.9
+    },
+    {
+     "w": " suka",
+     "s": 34.9,
+     "e": 35.36
+    },
+    {
+     "w": " adalah",
+     "s": 35.36,
+     "e": 35.76
+    },
+    {
+     "w": " dari",
+     "s": 35.76,
+     "e": 36.76
+    },
+    {
+     "w": " sudut",
+     "s": 36.76,
+     "e": 37.36
+    },
+    {
+     "w": " bila",
+     "s": 37.36,
+     "e": 40.34
+    },
+    {
+     "w": " kita",
+     "s": 40.34,
+     "e": 40.58
+    },
+    {
+     "w": " tekan",
+     "s": 40.58,
+     "e": 41.16
+    },
+    {
+     "w": " Swiss",
+     "s": 41.16,
+     "e": 41.3
+    }
+   ]
+  },
+  {
+   "start": 41.3,
+   "end": 45.66,
+   "text": " Kita nampak kat bahagian dalam tu, kipas tu akan berpusing",
+   "words": [
+    {
+     "w": " Kita",
+     "s": 41.3,
+     "e": 42.38
+    },
+    {
+     "w": " nampak",
+     "s": 42.38,
+     "e": 43.1
+    },
+    {
+     "w": " kat",
+     "s": 43.1,
+     "e": 43.24
+    },
+    {
+     "w": " bahagian",
+     "s": 43.24,
+     "e": 43.54
+    },
+    {
+     "w": " dalam",
+     "s": 43.54,
+     "e": 43.78
+    },
+    {
+     "w": " tu,",
+     "s": 43.78,
+     "e": 44.0
+    },
+    {
+     "w": " kipas",
+     "s": 44.08,
+     "e": 44.88
+    },
+    {
+     "w": " tu",
+     "s": 44.88,
+     "e": 44.92
+    },
+    {
+     "w": " akan",
+     "s": 44.92,
+     "e": 45.08
+    },
+    {
+     "w": " berpusing",
+     "s": 45.08,
+     "e": 45.66
+    }
+   ]
+  },
+  {
+   "start": 45.66,
+   "end": 53.5,
+   "text": " Dan angin daripada atas akan masuk yang menolak hoverball ni untuk terangkat dan dia akan bergerak secara otomatik",
+   "words": [
+    {
+     "w": " Dan",
+     "s": 45.66,
+     "e": 46.32
+    },
+    {
+     "w": " angin",
+     "s": 46.32,
+     "e": 47.32
+    },
+    {
+     "w": " daripada",
+     "s": 47.32,
+     "e": 47.56
+    },
+    {
+     "w": " atas",
+     "s": 47.56,
+     "e": 47.9
+    },
+    {
+     "w": " akan",
+     "s": 47.9,
+     "e": 48.02
+    },
+    {
+     "w": " masuk",
+     "s": 48.02,
+     "e": 48.42
+    },
+    {
+     "w": " yang",
+     "s": 48.42,
+     "e": 48.72
+    },
+    {
+     "w": " menolak",
+     "s": 48.72,
+     "e": 49.26
+    },
+    {
+     "w": " hoverball",
+     "s": 49.26,
+     "e": 50.84
+    },
+    {
+     "w": " ni",
+     "s": 50.84,
+     "e": 51.04
+    },
+    {
+     "w": " untuk",
+     "s": 51.04,
+     "e": 51.32
+    },
+    {
+     "w": " terangkat",
+     "s": 51.32,
+     "e": 51.86
+    },
+    {
+     "w": " dan",
+     "s": 51.86,
+     "e": 52.02
+    },
+    {
+     "w": " dia",
+     "s": 52.02,
+     "e": 52.16
+    },
+    {
+     "w": " akan",
+     "s": 52.16,
+     "e": 52.3
+    },
+    {
+     "w": " bergerak",
+     "s": 52.3,
+     "e": 52.66
+    },
+    {
+     "w": " secara",
+     "s": 52.66,
+     "e": 52.88
+    },
+    {
+     "w": " otomatik",
+     "s": 52.88,
+     "e": 53.5
+    }
+   ]
+  },
+  {
+   "start": 53.5,
+   "end": 54.62,
+   "text": " Kita boleh tengok dekat sini",
+   "words": [
+    {
+     "w": " Kita",
+     "s": 53.5,
+     "e": 53.88
+    },
+    {
+     "w": " boleh",
+     "s": 53.88,
+     "e": 54.04
+    },
+    {
+     "w": " tengok",
+     "s": 54.04,
+     "e": 54.24
+    },
+    {
+     "w": " dekat",
+     "s": 54.24,
+     "e": 54.42
+    },
+    {
+     "w": " sini",
+     "s": 54.42,
+     "e": 54.62
+    }
+   ]
+  },
+  {
+   "start": 67.74000000000001,
+   "end": 74.06,
+   "text": " Dan turut bersama dalam set mainan ni, dia bagi kita satu patung",
+   "words": [
+    {
+     "w": " Dan",
+     "s": 67.74000000000001,
+     "e": 68.34
+    },
+    {
+     "w": " turut",
+     "s": 68.34,
+     "e": 68.94
+    },
+    {
+     "w": " bersama",
+     "s": 68.94,
+     "e": 69.34
+    },
+    {
+     "w": " dalam",
+     "s": 69.34,
+     "e": 69.5
+    },
+    {
+     "w": " set",
+     "s": 69.5,
+     "e": 69.76
+    },
+    {
+     "w": " mainan",
+     "s": 69.76,
+     "e": 70.08
+    },
+    {
+     "w": " ni,",
+     "s": 70.08,
+     "e": 70.2
+    },
+    {
+     "w": " dia",
+     "s": 70.22,
+     "e": 70.36
+    },
+    {
+     "w": " bagi",
+     "s": 70.36,
+     "e": 70.8
+    },
+    {
+     "w": " kita",
+     "s": 70.8,
+     "e": 71.1
+    },
+    {
+     "w": " satu",
+     "s": 71.1,
+     "e": 71.9
+    },
+    {
+     "w": " patung",
+     "s": 71.9,
+     "e": 74.06
+    }
+   ]
+  },
+  {
+   "start": 74.06,
+   "end": 75.9,
+   "text": " Inilah air",
+   "words": [
+    {
+     "w": " Inilah",
+     "s": 74.06,
+     "e": 75.22
+    },
+    {
+     "w": " air",
+     "s": 75.22,
+     "e": 75.9
+    }
+   ]
+  },
+  {
+   "start": 75.9,
+   "end": 80.52,
+   "text": " Dia bagi kita satu penguin macam ni",
+   "words": [
+    {
+     "w": " Dia",
+     "s": 75.9,
+     "e": 76.54
+    },
+    {
+     "w": " bagi",
+     "s": 76.54,
+     "e": 77.68
+    },
+    {
+     "w": " kita",
+     "s": 77.68,
+     "e": 77.88
+    },
+    {
+     "w": " satu",
+     "s": 77.88,
+     "e": 78.48
+    },
+    {
+     "w": " penguin",
+     "s": 78.48,
+     "e": 79.86
+    },
+    {
+     "w": " macam",
+     "s": 79.86,
+     "e": 80.26
+    },
+    {
+     "w": " ni",
+     "s": 80.26,
+     "e": 80.52
+    }
+   ]
+  },
+  {
+   "start": 80.52,
+   "end": 83.34,
+   "text": " Anda boleh pump, dia bagi sekali dengan pump kat sini",
+   "words": [
+    {
+     "w": " Anda",
+     "s": 80.52,
+     "e": 81.18
+    },
+    {
+     "w": " boleh",
+     "s": 81.18,
+     "e": 81.5
+    },
+    {
+     "w": " pump,",
+     "s": 81.5,
+     "e": 81.8
+    },
+    {
+     "w": " dia",
+     "s": 81.92,
+     "e": 82.08
+    },
+    {
+     "w": " bagi",
+     "s": 82.08,
+     "e": 82.28
+    },
+    {
+     "w": " sekali",
+     "s": 82.28,
+     "e": 82.5
+    },
+    {
+     "w": " dengan",
+     "s": 82.5,
+     "e": 82.74
+    },
+    {
+     "w": " pump",
+     "s": 82.74,
+     "e": 83.02
+    },
+    {
+     "w": " kat",
+     "s": 83.02,
+     "e": 83.18
+    },
+    {
+     "w": " sini",
+     "s": 83.18,
+     "e": 83.34
+    }
+   ]
+  },
+  {
+   "start": 83.34,
+   "end": 84.46,
+   "text": " Anda boleh pump",
+   "words": [
+    {
+     "w": " Anda",
+     "s": 83.34,
+     "e": 83.96
+    },
+    {
+     "w": " boleh",
+     "s": 83.96,
+     "e": 84.18
+    },
+    {
+     "w": " pump",
+     "s": 84.18,
+     "e": 84.46
+    }
+   ]
+  },
+  {
+   "start": 85.44,
+   "end": 86.44,
+   "text": " Terima kasih kerana menonton!",
+   "words": [
+    {
+     "w": " Terima",
+     "s": 85.44,
+     "e": 85.52
+    },
+    {
+     "w": " kasih",
+     "s": 85.52,
+     "e": 85.54
+    },
+    {
+     "w": " kerana",
+     "s": 85.54,
+     "e": 86.4
+    },
+    {
+     "w": " menonton!",
+     "s": 86.4,
+     "e": 86.44
+    }
+   ]
+  }
+ ],
+ "c6": [
+  {
+   "start": 0.0,
+   "end": 7.6,
+   "text": " Jadi anda tak perlu risau bila ada hoverball ni memang tak akan kita kata tak akan ada kerosakan dalam kawasan rumah lah",
+   "words": [
+    {
+     "w": " Jadi",
+     "s": 0.0,
+     "e": 0.34
+    },
+    {
+     "w": " anda",
+     "s": 0.34,
+     "e": 0.56
+    },
+    {
+     "w": " tak",
+     "s": 0.56,
+     "e": 0.74
+    },
+    {
+     "w": " perlu",
+     "s": 0.74,
+     "e": 0.86
+    },
+    {
+     "w": " risau",
+     "s": 0.86,
+     "e": 1.38
+    },
+    {
+     "w": " bila",
+     "s": 1.38,
+     "e": 1.96
+    },
+    {
+     "w": " ada",
+     "s": 1.96,
+     "e": 2.24
+    },
+    {
+     "w": " hoverball",
+     "s": 2.24,
+     "e": 2.84
+    },
+    {
+     "w": " ni",
+     "s": 2.84,
+     "e": 3.08
+    },
+    {
+     "w": " memang",
+     "s": 3.08,
+     "e": 3.74
+    },
+    {
+     "w": " tak",
+     "s": 3.74,
+     "e": 4.1
+    },
+    {
+     "w": " akan",
+     "s": 4.1,
+     "e": 4.36
+    },
+    {
+     "w": " kita",
+     "s": 4.36,
+     "e": 4.92
+    },
+    {
+     "w": " kata",
+     "s": 4.92,
+     "e": 5.34
+    },
+    {
+     "w": " tak",
+     "s": 5.34,
+     "e": 5.56
+    },
+    {
+     "w": " akan",
+     "s": 5.56,
+     "e": 5.8
+    },
+    {
+     "w": " ada",
+     "s": 5.8,
+     "e": 6.02
+    },
+    {
+     "w": " kerosakan",
+     "s": 6.02,
+     "e": 6.64
+    },
+    {
+     "w": " dalam",
+     "s": 6.64,
+     "e": 6.86
+    },
+    {
+     "w": " kawasan",
+     "s": 6.86,
+     "e": 7.14
+    },
+    {
+     "w": " rumah",
+     "s": 7.14,
+     "e": 7.38
+    },
+    {
+     "w": " lah",
+     "s": 7.38,
+     "e": 7.6
+    }
+   ]
+  },
+  {
+   "start": 7.6,
+   "end": 14.86,
+   "text": " Anak kan bola tu tidak akan terbang tinggi biasa bola akan melambung tinggi kena bahagian kipas",
+   "words": [
+    {
+     "w": " Anak",
+     "s": 7.6,
+     "e": 8.32
+    },
+    {
+     "w": " kan",
+     "s": 8.32,
+     "e": 8.52
+    },
+    {
+     "w": " bola",
+     "s": 8.52,
+     "e": 9.58
+    },
+    {
+     "w": " tu",
+     "s": 9.58,
+     "e": 9.9
+    },
+    {
+     "w": " tidak",
+     "s": 9.9,
+     "e": 10.16
+    },
+    {
+     "w": " akan",
+     "s": 10.16,
+     "e": 10.36
+    },
+    {
+     "w": " terbang",
+     "s": 10.36,
+     "e": 10.68
+    },
+    {
+     "w": " tinggi",
+     "s": 10.68,
+     "e": 11.02
+    },
+    {
+     "w": " biasa",
+     "s": 11.02,
+     "e": 11.2
+    },
+    {
+     "w": " bola",
+     "s": 11.2,
+     "e": 11.44
+    },
+    {
+     "w": " akan",
+     "s": 11.44,
+     "e": 11.72
+    },
+    {
+     "w": " melambung",
+     "s": 11.72,
+     "e": 12.22
+    },
+    {
+     "w": " tinggi",
+     "s": 12.22,
+     "e": 12.56
+    },
+    {
+     "w": " kena",
+     "s": 12.56,
+     "e": 13.58
+    },
+    {
+     "w": " bahagian",
+     "s": 13.58,
+     "e": 14.1
+    },
+    {
+     "w": " kipas",
+     "s": 14.1,
+     "e": 14.86
+    }
+   ]
+  },
+  {
+   "start": 14.86,
+   "end": 19.84,
+   "text": " Tapi bila menggunakan hoverball ni anda dapat buat aktiviti bersama anak-anak",
+   "words": [
+    {
+     "w": " Tapi",
+     "s": 14.86,
+     "e": 15.12
+    },
+    {
+     "w": " bila",
+     "s": 15.12,
+     "e": 15.48
+    },
+    {
+     "w": " menggunakan",
+     "s": 15.48,
+     "e": 16.18
+    },
+    {
+     "w": " hoverball",
+     "s": 16.18,
+     "e": 16.98
+    },
+    {
+     "w": " ni",
+     "s": 16.98,
+     "e": 17.2
+    },
+    {
+     "w": " anda",
+     "s": 17.2,
+     "e": 17.98
+    },
+    {
+     "w": " dapat",
+     "s": 17.98,
+     "e": 18.26
+    },
+    {
+     "w": " buat",
+     "s": 18.26,
+     "e": 18.48
+    },
+    {
+     "w": " aktiviti",
+     "s": 18.48,
+     "e": 18.9
+    },
+    {
+     "w": " bersama",
+     "s": 18.9,
+     "e": 19.22
+    },
+    {
+     "w": " anak",
+     "s": 19.22,
+     "e": 19.5
+    },
+    {
+     "w": "-anak",
+     "s": 19.5,
+     "e": 19.84
+    }
+   ]
+  },
+  {
+   "start": 19.84,
+   "end": 24.3,
+   "text": " Anak-anak pun dapat main dalam rumah dengan baik tak ada masalah",
+   "words": [
+    {
+     "w": " Anak",
+     "s": 19.84,
+     "e": 20.72
+    },
+    {
+     "w": "-anak",
+     "s": 20.72,
+     "e": 20.92
+    },
+    {
+     "w": " pun",
+     "s": 20.92,
+     "e": 21.08
+    },
+    {
+     "w": " dapat",
+     "s": 21.08,
+     "e": 21.22
+    },
+    {
+     "w": " main",
+     "s": 21.22,
+     "e": 21.48
+    },
+    {
+     "w": " dalam",
+     "s": 21.48,
+     "e": 21.68
+    },
+    {
+     "w": " rumah",
+     "s": 21.68,
+     "e": 22.14
+    },
+    {
+     "w": " dengan",
+     "s": 22.14,
+     "e": 22.34
+    },
+    {
+     "w": " baik",
+     "s": 22.34,
+     "e": 22.68
+    },
+    {
+     "w": " tak",
+     "s": 22.68,
+     "e": 23.68
+    },
+    {
+     "w": " ada",
+     "s": 23.68,
+     "e": 23.98
+    },
+    {
+     "w": " masalah",
+     "s": 23.98,
+     "e": 24.3
+    }
+   ]
+  },
+  {
+   "start": 24.3,
+   "end": 29.46,
+   "text": " Jadi siapa yang berminat nak dapatkan hoverball ni yang sangat cantik berkualiti",
+   "words": [
+    {
+     "w": " Jadi",
+     "s": 24.3,
+     "e": 24.68
+    },
+    {
+     "w": " siapa",
+     "s": 24.68,
+     "e": 24.98
+    },
+    {
+     "w": " yang",
+     "s": 24.98,
+     "e": 25.08
+    },
+    {
+     "w": " berminat",
+     "s": 25.08,
+     "e": 25.5
+    },
+    {
+     "w": " nak",
+     "s": 25.5,
+     "e": 25.6
+    },
+    {
+     "w": " dapatkan",
+     "s": 25.6,
+     "e": 26.06
+    },
+    {
+     "w": " hoverball",
+     "s": 26.06,
+     "e": 26.7
+    },
+    {
+     "w": " ni",
+     "s": 26.7,
+     "e": 26.9
+    },
+    {
+     "w": " yang",
+     "s": 26.9,
+     "e": 27.7
+    },
+    {
+     "w": " sangat",
+     "s": 27.7,
+     "e": 27.96
+    },
+    {
+     "w": " cantik",
+     "s": 27.96,
+     "e": 28.5
+    },
+    {
+     "w": " berkualiti",
+     "s": 28.5,
+     "e": 29.46
+    }
+   ]
+  },
+  {
+   "start": 29.46,
+   "end": 34.6,
+   "text": " Boleh tekan beg kuning sekarang sementara stok masih ada",
+   "words": [
+    {
+     "w": " Boleh",
+     "s": 29.46,
+     "e": 30.94
+    },
+    {
+     "w": " tekan",
+     "s": 30.94,
+     "e": 31.42
+    },
+    {
+     "w": " beg",
+     "s": 31.42,
+     "e": 31.58
+    },
+    {
+     "w": " kuning",
+     "s": 31.58,
+     "e": 32.04
+    },
+    {
+     "w": " sekarang",
+     "s": 32.04,
+     "e": 32.38
+    },
+    {
+     "w": " sementara",
+     "s": 32.38,
+     "e": 33.7
+    },
+    {
+     "w": " stok",
+     "s": 33.7,
+     "e": 34.1
+    },
+    {
+     "w": " masih",
+     "s": 34.1,
+     "e": 34.28
+    },
+    {
+     "w": " ada",
+     "s": 34.28,
+     "e": 34.6
+    }
+   ]
+  }
+ ]
+}

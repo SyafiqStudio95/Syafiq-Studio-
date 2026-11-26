@@ -454,7 +454,7 @@ for i, o in enumerate(OV):
         wraps_js.append(f'    tl.fromTo("#{wid}", {{scale: 1.12}}, {{scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}}, {st});')
     else:
         side = o.get("side", "left")
-        x = 120 if side == "left" else 1080 - 120 - 330
+        x = 120 if side == "left" else 888 - 330 - 24  # TikTok-safe right edge, room for the tilt
         tag = f'<div class="pipTag">{esc(o["tag"])}</div>' if o.get("tag") else ""
         vids.append(f'      <div id="{wid}" class="pip" style="left:{x}px"><div class="pipFrame"><video id="ovv{i}" class="clip footage" src="assets/video/ov_{i}.mp4" '
                     f'data-start="{st}" data-duration="{d}" data-media-start="0" data-track-index="1" muted '
@@ -501,8 +501,8 @@ index = f"""<!doctype html>
       .pipFrame {{ position: relative; width: 330px; height: 587px; border-radius: 28px; overflow: hidden;
                   border: 6px solid #fff; box-shadow: 0 24px 60px rgba(0,0,0,.45); background: #000; }}
       .pipFrame video {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }}
-      .pipTag {{ margin: -22px auto 0; position: relative; width: max-content; max-width: 320px; padding: 10px 18px; border-radius: 999px;
-                background: var(--pip-tag-bg, #ffd23f); color: var(--pip-tag-ink, #1d1400); font: 800 28px/1 "Poppins", Arial, sans-serif;
+      .pipTag {{ margin: -22px auto 0; position: relative; width: max-content; white-space: nowrap; padding: 10px 18px; border-radius: 999px;
+                background: var(--pip-tag-bg, #ffd23f); color: var(--pip-tag-ink, #1d1400); font: 800 32px/1 "Poppins", Arial, sans-serif;
                 box-shadow: 0 10px 24px rgba(0,0,0,.3); }}
       #captions {{ z-index: 20; }}
     </style>

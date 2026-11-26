@@ -1,0 +1,36 @@
+# src start end [. = sentence end] | caption groups (*word* = green emphasis)
+c5 0.00 1.90 . | Siapa kata tak boleh|main *bola* dalam rumah?
+c5 2.28 3.58 | Inilah *Hover* *Ball*,
+c5 3.88 5.62 . | bola untuk main|dalam *rumah*.
+c5 7.42 11.74 | Hover Ball ni bola yang|*khas* diciptakan
+c5 11.96 12.90 | untuk anda
+c5 13.36 15.48 . | buat aktiviti bersama|*anak-anak* dekat rumah.
+c5 15.82 17.44 | Boleh tengok kualiti dia
+c5 17.86 18.90 | dekat bahagian tepi,
+c5 19.26 20.12 . | memang sangat *lembut*.
+c5 22.98 24.90 | Dari sudut kualiti,|kita boleh lihat
+c5 25.38 26.18 . | sangat *bagus*.
+c5 26.82 27.84 | Dekat bahagian dalam,
+c5 28.26 28.98 | dia ada
+c5 29.54 31.34 | ruang untuk|masukkan *bateri*
+c5 32.06 32.78 . | *AA*.
+c5 33.64 36.08 | Dan apa yang|saya sangat suka,
+c5 39.24 41.90 | dari sudut, bila kita|tekan *suis*,
+c5 42.66 45.98 . | kat bahagian dalam,|*kipas* akan berpusing.
+c5 47.04 49.32 | *Angin* dari atas|akan masuk, menolak
+c5 49.84 53.58 . | Hover Ball ni *terangkat*|dan bergerak *automatik*.
+c5 53.82 54.64 . | Kita boleh tengok lagi kat sini.
+c5 54.70 57.90 . |
+c5 68.50 71.09 | Dan turut bersama|dalam set mainan ni,|dia bagi kita
+c5 79.74 83.54 . | *penguin* macam ni.|Anda boleh *pump*,|dia bagi sekali dengan pump.
+c6 0.32 1.50 | Jadi anda tak perlu *risau*
+c6 1.86 3.28 | bila ada Hover Ball ni,
+c6 4.86 8.74 . | tak akan ada *kerosakan*|dalam kawasan rumah lah.|Anak kan?
+c6 9.08 14.24 | Bola tu tak akan|*terbang* *tinggi*.|Biasa bola melambung tinggi,|kena bahagian
+c6 14.60 17.32 | kipas. Tapi bila guna|Hover Ball ni,
+c6 17.92 20.10 | anda dapat buat aktiviti|bersama *anak-anak*.
+c6 20.58 22.86 . | Anak-anak pun dapat main|dalam rumah dengan *baik*.
+c6 23.52 27.02 | Tak ada masalah.|Jadi siapa yang berminat|nak dapatkan Hover Ball ni,
+c6 27.70 29.80 . | yang sangat *cantik*,|*berkualiti*.
+c6 30.70 32.72 . | Boleh tekan *beg* *kuning*|sekarang
+c6 33.34 35.08 . | sementara *stok* masih ada!
