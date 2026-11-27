@@ -15,3 +15,4 @@ transcript/audio/
 assets/audio/src/
 assets/audio/*.wav
 .broll/
+.broll_*
