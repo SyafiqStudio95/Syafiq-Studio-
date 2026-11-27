@@ -1,0 +1,17 @@
+# large media: originals live in the Google Drive folder; regenerate with tools/prep_media.sh
+assets/video/
+preview/media/
+renders/
+snapshots/
+grading/*.png
+.hyperframes/
+node_modules/
+preview/film/assets/video/
+.media/
+grading/teal-amber.cube
+grading/*.jpg
+transcript/audio/
+*.log
+assets/audio/src/
+assets/audio/*.wav
+.broll/

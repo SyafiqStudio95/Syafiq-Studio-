@@ -1,0 +1,2 @@
+file '/home/user/Syafiq-Studio-/ucapan-ayah-anas/.broll_main.mp4'
+file '/home/user/Syafiq-Studio-/ucapan-ayah-anas/.broll_tail.mp4'
