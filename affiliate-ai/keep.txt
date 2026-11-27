@@ -1,0 +1,40 @@
+# src start end [. = sentence end] | caption groups (*word* = emphasis)
+c1 0.05 2.05 . | Dulu, saya buat|pakai *AI*.
+c1 2.10 4.05 . | Tapi kenapa saya|*berhenti* pakai AI?
+c1 4.10 5.00 . | Ada *tiga* perkara.
+c1 5.10 6.45 | Yang *pertama*|sekali adalah sebab
+c1 7.30 7.80 | isu
+c1 8.75 10.06 . | *violation*.
+c1 10.37 13.10 . | Kita tahu pakai AI ni|dia akan ada|satu *kelemahan*.
+c1 14.45 20.48 | Produk yang kita hasilkan|daripada AI tu mungkin|ada *kekurangan* dari sudut|*sizing* dia, ada
+c1 20.72 22.78 | dari sudut *colour* dia,|dari sudut
+c1 23.42 24.70 | *sifat* dia|sebagainya,
+c1 25.01 28.54 . | menyebabkan produk|yang hasil daripada AI tu|*tidak sama*.
+c1 28.82 31.98 | Yang *kedua* adalah|isu berkenaan dengan,
+c1 32.29 35.38 | macam saya seorang|*pembeli* juga, sebagai|seorang *pengguna*,
+c1 35.87 37.50 | kita nak tengok|*real product*,
+c1 38.01 40.60 . | sebab AI tak dapat|menghasilkan *real product*.
+c1 40.96 43.96 | Real product tu|daripada mana? Daripada|kita ambil *gambar*,
+c1 44.10 46.84 . | daripada *video*,|kita akan nampak *detail*.
+c1 47.24 49.85 | Kita kata baju tu|nampak dia punya|*benang-benang* dia,
+c1 50.54 51.80 | *colour* dia yang sebenar,
+c1 52.33 53.98 . | *saiz* dekat badan|dia yang sebenar.
+c1 54.22 57.19 . | Jadi benda tu juga|menjadi *pilihan*|kepada pembeli.
+c1 61.81 62.72 | Yang *ketiga* adalah,
+c1 63.12 65.96 | saya nampak bila terlalu|banyak sangat *video AI*|ni sebenarnya,
+c1 66.40 68.43 . | dah hilang|*speciality* bagi AI.
+c1 69.05 71.35 | Bila kita buka skrin|nak cari barang,
+c1 71.58 73.30 . | semua *AI, AI,*|*AI, AI*.
+c1 73.30 74.35 | Jadi akhirnya,
+c1 74.82 76.17 | produk yang *bukan AI* tu,
+c1 76.69 79.02 . | review yang bukan AI tu|menjadi *pilihan*|orang kita tengok.
+c1 81.19 82.92 | Bila terlalu banyak|*lambakan* AI,
+c1 83.12 86.03 . | AI sudah lagi tidak|menjadi satu yang|kita kata *menarik*.
+c1 86.52 90.93 | Jadi itulah pandangan saya,|kenapa saya *tukar*|daripada AI
+c1 91.81 92.70 . | kepada *real*.
+c1 94.83 97.55 | Masih lagi terpakai AI,|saya pakai AI lagi|tapi untuk
+c1 97.95 102.65 | mungkin sebagai *assist*,|untuk bantu saya|sediakan *teks*,|nak sediakan
+c1 103.08 104.46 . | kita punya *skrip*.
+c1 104.92 110.19 . | Dan saya masih lagi|guna *video AI*|untuk buat *iklan*|dan sebagainya.
+c1 110.78 111.92 . | Tapi *bukan* untuk affiliate.
+c1 112.76 114.15 . | Affiliate memang|kita *tak buat AI*.

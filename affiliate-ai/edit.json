@@ -1,0 +1,1117 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#0a0d14",
+   "--paper": "#ffffff",
+   "--gold": "#ffcc33",
+   "--gold-deep": "#ff9f1c",
+   "--gold-hi": "#ffe680",
+   "--btn-ink": "#1a1200",
+   "--ember": "#ff3b5c",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--title-size": "100px",
+   "--cta-size": "112px",
+   "--slam-size": "150px",
+   "--hook-scrim": ".45",
+   "--btn-size": "38px",
+   "--vol-w": "215px",
+   "--row-shift": "80px"
+  }
+ },
+ "grade": {
+  "note": "Phone footage in a car: flat and washed out. Add contrast, pull highlights to hold the white shirt, warm highlights / cool shadows, gentle vignette to centre the face.",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.14,
+    "highlights": -0.22,
+    "shadows": 0.05,
+    "whites": -0.05,
+    "blacks": -0.04,
+    "vibrance": 0.08,
+    "saturation": 0.0
+   },
+   "wheels": {
+    "shadows": {
+     "hue": 200,
+     "amount": 0.08,
+     "level": -0.02
+    },
+    "highlights": {
+     "hue": 36,
+     "amount": 0.06,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.26,
+    "vignetteFeather": 0.7,
+    "grain": 0.03
+   }
+  },
+  "exposure": {
+   "c1": 0.0
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c1",
+    "in": 39.0,
+    "out": 39.7
+   },
+   {
+    "src": "c1",
+    "in": 21.0,
+    "out": 21.7
+   },
+   {
+    "src": "c1",
+    "in": 72.0,
+    "out": 72.7
+   }
+  ],
+  "lines": [
+   {
+    "text": "DULU SAYA",
+    "style": "kicker",
+    "y": 880,
+    "in": 0.05,
+    "out": 1.1
+   },
+   {
+    "text": "buat affiliate pakai",
+    "style": "question",
+    "y": 950,
+    "in": 0.12,
+    "out": 1.1
+   },
+   {
+    "text": "AI.",
+    "style": "slam",
+    "y": 900,
+    "in": 1.12,
+    "out": 2.1
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c1",
+   "in": 0.0,
+   "out": 2.05,
+   "a": 0.05,
+   "b": 2.05,
+   "z": 1.0,
+   "note": "Dulu, saya buat pakai AI.",
+   "cap": "Dulu, saya buat|pakai *AI*."
+  },
+  {
+   "src": "c1",
+   "in": 2.05,
+   "out": 4.05,
+   "a": 2.1,
+   "b": 4.05,
+   "z": 1.08,
+   "note": "Tapi kenapa saya berhenti pakai AI?",
+   "cap": "Tapi kenapa saya|*berhenti* pakai AI?"
+  },
+  {
+   "src": "c1",
+   "in": 4.05,
+   "out": 5.05,
+   "a": 4.1,
+   "b": 5.0,
+   "z": 1.0,
+   "note": "Ada tiga perkara.",
+   "cap": "Ada *tiga* perkara."
+  },
+  {
+   "src": "c1",
+   "in": 5.05,
+   "out": 6.53,
+   "a": 5.1,
+   "b": 6.45,
+   "z": 1.14,
+   "note": "Yang pertama sekali adalah sebab",
+   "cap": "Yang *pertama*|sekali adalah sebab"
+  },
+  {
+   "src": "c1",
+   "in": 7.25,
+   "out": 7.88,
+   "a": 7.3,
+   "b": 7.8,
+   "z": 1.0,
+   "note": "isu",
+   "cap": "isu"
+  },
+  {
+   "src": "c1",
+   "in": 8.7,
+   "out": 10.22,
+   "a": 8.75,
+   "b": 10.06,
+   "z": 1.08,
+   "note": "violation.",
+   "cap": "*violation*."
+  },
+  {
+   "src": "c1",
+   "in": 10.32,
+   "out": 13.26,
+   "a": 10.37,
+   "b": 13.1,
+   "z": 1.0,
+   "note": "Kita tahu pakai AI ni dia akan ada satu kelemahan.",
+   "cap": "Kita tahu pakai AI ni|dia akan ada|satu *kelemahan*."
+  },
+  {
+   "src": "c1",
+   "in": 14.4,
+   "out": 20.56,
+   "a": 14.45,
+   "b": 20.48,
+   "z": 1.14,
+   "note": "Produk yang kita hasilkan daripada AI tu mungkin ada kekurangan dari sudut sizing dia, ada",
+   "cap": "Produk yang kita hasilkan|daripada AI tu mungkin|ada *kekurangan* dari sudut|*sizing* dia, ada"
+  },
+  {
+   "src": "c1",
+   "in": 20.67,
+   "out": 22.86,
+   "a": 20.72,
+   "b": 22.78,
+   "z": 1.0,
+   "note": "dari sudut colour dia, dari sudut",
+   "cap": "dari sudut *colour* dia,|dari sudut"
+  },
+  {
+   "src": "c1",
+   "in": 23.37,
+   "out": 24.78,
+   "a": 23.42,
+   "b": 24.7,
+   "z": 1.08,
+   "note": "sifat dia sebagainya,",
+   "cap": "*sifat* dia|sebagainya,"
+  },
+  {
+   "src": "c1",
+   "in": 24.96,
+   "out": 28.7,
+   "a": 25.01,
+   "b": 28.54,
+   "z": 1.0,
+   "note": "menyebabkan produk yang hasil daripada AI tu tidak sama.",
+   "cap": "menyebabkan produk|yang hasil daripada AI tu|*tidak sama*."
+  },
+  {
+   "src": "c1",
+   "in": 28.77,
+   "out": 32.06,
+   "a": 28.82,
+   "b": 31.98,
+   "z": 1.14,
+   "note": "Yang kedua adalah isu berkenaan dengan,",
+   "cap": "Yang *kedua* adalah|isu berkenaan dengan,"
+  },
+  {
+   "src": "c1",
+   "in": 32.24,
+   "out": 35.46,
+   "a": 32.29,
+   "b": 35.38,
+   "z": 1.0,
+   "note": "macam saya seorang pembeli juga, sebagai seorang pengguna,",
+   "cap": "macam saya seorang|*pembeli* juga, sebagai|seorang *pengguna*,"
+  },
+  {
+   "src": "c1",
+   "in": 35.82,
+   "out": 37.58,
+   "a": 35.87,
+   "b": 37.5,
+   "z": 1.08,
+   "note": "kita nak tengok real product,",
+   "cap": "kita nak tengok|*real product*,"
+  },
+  {
+   "src": "c1",
+   "in": 37.96,
+   "out": 40.76,
+   "a": 38.01,
+   "b": 40.6,
+   "z": 1.0,
+   "note": "sebab AI tak dapat menghasilkan real product.",
+   "cap": "sebab AI tak dapat|menghasilkan *real product*."
+  },
+  {
+   "src": "c1",
+   "in": 40.91,
+   "out": 44.04,
+   "a": 40.96,
+   "b": 43.96,
+   "z": 1.14,
+   "note": "Real product tu daripada mana? Daripada kita ambil gambar,",
+   "cap": "Real product tu|daripada mana? Daripada|kita ambil *gambar*,"
+  },
+  {
+   "src": "c1",
+   "in": 44.05,
+   "out": 47.0,
+   "a": 44.1,
+   "b": 46.84,
+   "z": 1.0,
+   "note": "daripada video, kita akan nampak detail.",
+   "cap": "daripada *video*,|kita akan nampak *detail*."
+  },
+  {
+   "src": "c1",
+   "in": 47.19,
+   "out": 49.93,
+   "a": 47.24,
+   "b": 49.85,
+   "z": 1.08,
+   "note": "Kita kata baju tu nampak dia punya benang-benang dia,",
+   "cap": "Kita kata baju tu|nampak dia punya|*benang-benang* dia,"
+  },
+  {
+   "src": "c1",
+   "in": 50.49,
+   "out": 51.88,
+   "a": 50.54,
+   "b": 51.8,
+   "z": 1.0,
+   "note": "colour dia yang sebenar,",
+   "cap": "*colour* dia yang sebenar,"
+  },
+  {
+   "src": "c1",
+   "in": 52.28,
+   "out": 54.14,
+   "a": 52.33,
+   "b": 53.98,
+   "z": 1.14,
+   "note": "saiz dekat badan dia yang sebenar.",
+   "cap": "*saiz* dekat badan|dia yang sebenar."
+  },
+  {
+   "src": "c1",
+   "in": 54.17,
+   "out": 57.35,
+   "a": 54.22,
+   "b": 57.19,
+   "z": 1.0,
+   "note": "Jadi benda tu juga menjadi pilihan kepada pembeli.",
+   "cap": "Jadi benda tu juga|menjadi *pilihan*|kepada pembeli."
+  },
+  {
+   "src": "c1",
+   "in": 61.76,
+   "out": 62.8,
+   "a": 61.81,
+   "b": 62.72,
+   "z": 1.08,
+   "note": "Yang ketiga adalah,",
+   "cap": "Yang *ketiga* adalah,"
+  },
+  {
+   "src": "c1",
+   "in": 63.07,
+   "out": 66.04,
+   "a": 63.12,
+   "b": 65.96,
+   "z": 1.0,
+   "note": "saya nampak bila terlalu banyak sangat video AI ni sebenarnya,",
+   "cap": "saya nampak bila terlalu|banyak sangat *video AI*|ni sebenarnya,"
+  },
+  {
+   "src": "c1",
+   "in": 66.35,
+   "out": 68.59,
+   "a": 66.4,
+   "b": 68.43,
+   "z": 1.14,
+   "note": "dah hilang speciality bagi AI.",
+   "cap": "dah hilang|*speciality* bagi AI."
+  },
+  {
+   "src": "c1",
+   "in": 69.0,
+   "out": 71.43,
+   "a": 69.05,
+   "b": 71.35,
+   "z": 1.0,
+   "note": "Bila kita buka skrin nak cari barang,",
+   "cap": "Bila kita buka skrin|nak cari barang,"
+  },
+  {
+   "src": "c1",
+   "in": 71.53,
+   "out": 73.3,
+   "a": 71.58,
+   "b": 73.3,
+   "z": 1.08,
+   "note": "semua AI, AI, AI, AI.",
+   "cap": "semua *AI, AI,*|*AI, AI*."
+  },
+  {
+   "src": "c1",
+   "in": 73.3,
+   "out": 74.43,
+   "a": 73.3,
+   "b": 74.35,
+   "z": 1.0,
+   "note": "Jadi akhirnya,",
+   "cap": "Jadi akhirnya,"
+  },
+  {
+   "src": "c1",
+   "in": 74.77,
+   "out": 76.25,
+   "a": 74.82,
+   "b": 76.17,
+   "z": 1.14,
+   "note": "produk yang bukan AI tu,",
+   "cap": "produk yang *bukan AI* tu,"
+  },
+  {
+   "src": "c1",
+   "in": 76.64,
+   "out": 79.18,
+   "a": 76.69,
+   "b": 79.02,
+   "z": 1.0,
+   "note": "review yang bukan AI tu menjadi pilihan orang kita tengok.",
+   "cap": "review yang bukan AI tu|menjadi *pilihan*|orang kita tengok."
+  },
+  {
+   "src": "c1",
+   "in": 81.14,
+   "out": 83.0,
+   "a": 81.19,
+   "b": 82.92,
+   "z": 1.08,
+   "note": "Bila terlalu banyak lambakan AI,",
+   "cap": "Bila terlalu banyak|*lambakan* AI,"
+  },
+  {
+   "src": "c1",
+   "in": 83.07,
+   "out": 86.19,
+   "a": 83.12,
+   "b": 86.03,
+   "z": 1.0,
+   "note": "AI sudah lagi tidak menjadi satu yang kita kata menarik.",
+   "cap": "AI sudah lagi tidak|menjadi satu yang|kita kata *menarik*."
+  },
+  {
+   "src": "c1",
+   "in": 86.47,
+   "out": 91.01,
+   "a": 86.52,
+   "b": 90.93,
+   "z": 1.14,
+   "note": "Jadi itulah pandangan saya, kenapa saya tukar daripada AI",
+   "cap": "Jadi itulah pandangan saya,|kenapa saya *tukar*|daripada AI"
+  },
+  {
+   "src": "c1",
+   "in": 91.76,
+   "out": 92.86,
+   "a": 91.81,
+   "b": 92.7,
+   "z": 1.0,
+   "note": "kepada real.",
+   "cap": "kepada *real*."
+  },
+  {
+   "src": "c1",
+   "in": 94.78,
+   "out": 97.63,
+   "a": 94.83,
+   "b": 97.55,
+   "z": 1.08,
+   "note": "Masih lagi terpakai AI, saya pakai AI lagi tapi untuk",
+   "cap": "Masih lagi terpakai AI,|saya pakai AI lagi|tapi untuk"
+  },
+  {
+   "src": "c1",
+   "in": 97.9,
+   "out": 102.73,
+   "a": 97.95,
+   "b": 102.65,
+   "z": 1.0,
+   "note": "mungkin sebagai assist, untuk bantu saya sediakan teks, nak sediakan",
+   "cap": "mungkin sebagai *assist*,|untuk bantu saya|sediakan *teks*,|nak sediakan"
+  },
+  {
+   "src": "c1",
+   "in": 103.03,
+   "out": 104.62,
+   "a": 103.08,
+   "b": 104.46,
+   "z": 1.14,
+   "note": "kita punya skrip.",
+   "cap": "kita punya *skrip*."
+  },
+  {
+   "src": "c1",
+   "in": 104.87,
+   "out": 110.35,
+   "a": 104.92,
+   "b": 110.19,
+   "z": 1.0,
+   "note": "Dan saya masih lagi guna video AI untuk buat iklan dan sebagainya.",
+   "cap": "Dan saya masih lagi|guna *video AI*|untuk buat *iklan*|dan sebagainya."
+  },
+  {
+   "src": "c1",
+   "in": 110.73,
+   "out": 112.08,
+   "a": 110.78,
+   "b": 111.92,
+   "z": 1.08,
+   "note": "Tapi bukan untuk affiliate.",
+   "cap": "Tapi *bukan* untuk affiliate."
+  },
+  {
+   "src": "c1",
+   "in": 112.71,
+   "out": 114.31,
+   "a": 112.76,
+   "b": 114.15,
+   "z": 1.0,
+   "note": "Affiliate memang kita tak buat AI.",
+   "cap": "Affiliate memang|kita *tak buat AI*."
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 114.2,
+  "dur": 2.4
+ },
+ "overlays": [],
+ "cards": [
+  {
+   "id": "t-kenapa",
+   "kind": "title",
+   "in": [
+    "c1",
+    2.15
+   ],
+   "out": [
+    "c1",
+    4.05
+   ],
+   "kicker": "Tapi kenapa",
+   "title": "Berhenti?",
+   "sub": "guna AI untuk affiliate",
+   "y": 330
+  },
+  {
+   "id": "t-1",
+   "kind": "title",
+   "in": [
+    "c1",
+    4.15
+   ],
+   "out": [
+    "c1",
+    10.0
+   ],
+   "kicker": "3 sebab · #1",
+   "title": "Violation",
+   "sub": "produk tak sama",
+   "y": 330
+  },
+  {
+   "id": "tri-1",
+   "kind": "trilogy",
+   "in": [
+    "c1",
+    17.3
+   ],
+   "out": [
+    "c1",
+    28.4
+   ],
+   "head": "Produk AI tak tepat",
+   "items": [
+    {
+     "at": [
+      "c1",
+      19.12
+     ],
+     "num": "01",
+     "label": "Saiz"
+    },
+    {
+     "at": [
+      "c1",
+      21.16
+     ],
+     "num": "02",
+     "label": "Warna"
+    },
+    {
+     "at": [
+      "c1",
+      23.42
+     ],
+     "num": "03",
+     "label": "Sifat"
+    }
+   ]
+  },
+  {
+   "id": "t-2",
+   "kind": "title",
+   "in": [
+    "c1",
+    28.85
+   ],
+   "out": [
+    "c1",
+    37.45
+   ],
+   "kicker": "Sebab #2",
+   "title": "Real Product",
+   "sub": "nak tengok yang sebenar",
+   "y": 330
+  },
+  {
+   "id": "tri-2",
+   "kind": "trilogy",
+   "in": [
+    "c1",
+    47.24
+   ],
+   "out": [
+    "c1",
+    57.1
+   ],
+   "head": "Nampak detail",
+   "items": [
+    {
+     "at": [
+      "c1",
+      48.6
+     ],
+     "num": "01",
+     "label": "Benang"
+    },
+    {
+     "at": [
+      "c1",
+      50.54
+     ],
+     "num": "02",
+     "label": "Warna"
+    },
+    {
+     "at": [
+      "c1",
+      52.33
+     ],
+     "num": "03",
+     "label": "Saiz"
+    }
+   ]
+  },
+  {
+   "id": "t-3",
+   "kind": "title",
+   "in": [
+    "c1",
+    61.85
+   ],
+   "out": [
+    "c1",
+    68.4
+   ],
+   "kicker": "Sebab #3",
+   "title": "Lambakan AI",
+   "sub": "dah hilang keistimewaan",
+   "y": 330
+  },
+  {
+   "id": "t-aiai",
+   "kind": "title",
+   "in": [
+    "c1",
+    69.1
+   ],
+   "out": [
+    "c1",
+    73.3
+   ],
+   "kicker": "Skrol cari barang",
+   "title": "AI · AI · AI",
+   "sub": "semua nampak sama",
+   "y": 330
+  },
+  {
+   "id": "t-review",
+   "kind": "title",
+   "in": [
+    "c1",
+    74.85
+   ],
+   "out": [
+    "c1",
+    79.0
+   ],
+   "kicker": "Yang orang pilih",
+   "title": "Review Real",
+   "sub": "bukan AI",
+   "y": 330
+  },
+  {
+   "id": "t-menarik",
+   "kind": "title",
+   "in": [
+    "c1",
+    81.2
+   ],
+   "out": [
+    "c1",
+    86.0
+   ],
+   "kicker": "Terlalu banyak AI",
+   "title": "Tak Menarik",
+   "sub": "penonton dah muak",
+   "y": 330
+  },
+  {
+   "id": "recap",
+   "kind": "trilogy",
+   "in": [
+    "c1",
+    86.55
+   ],
+   "out": [
+    "c1",
+    92.7
+   ],
+   "head": "Kenapa saya tukar",
+   "items": [
+    {
+     "at": [
+      "c1",
+      87.0
+     ],
+     "num": "1",
+     "label": "Violation"
+    },
+    {
+     "at": [
+      "c1",
+      87.7
+     ],
+     "num": "2",
+     "label": "Real"
+    },
+    {
+     "at": [
+      "c1",
+      88.4
+     ],
+     "num": "3",
+     "label": "Lambakan"
+    }
+   ]
+  },
+  {
+   "id": "tri-ai",
+   "kind": "trilogy",
+   "in": [
+    "c1",
+    97.95
+   ],
+   "out": [
+    "c1",
+    110.15
+   ],
+   "head": "AI masih saya guna",
+   "items": [
+    {
+     "at": [
+      "c1",
+      101.14
+     ],
+     "num": "01",
+     "label": "Teks"
+    },
+    {
+     "at": [
+      "c1",
+      103.62
+     ],
+     "num": "02",
+     "label": "Skrip"
+    },
+    {
+     "at": [
+      "c1",
+      108.8
+     ],
+     "num": "03",
+     "label": "Iklan"
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c1",
+    110.8
+   ],
+   "buttonAt": [
+    "c1",
+    112.76
+   ],
+   "pulseAt": [
+    "c1",
+    113.44
+   ],
+   "kicker": "Affiliate",
+   "title": "Tak Guna AI",
+   "by": "real product · real review",
+   "button": "Follow untuk tips"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": 0.1,
+   "lead": 0.0,
+   "dur": 0.72,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.12,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    2.15
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    4.15
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    17.3
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.2
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    19.12
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    21.16
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    23.42
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    28.85
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    47.24
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.2
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    48.6
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    50.54
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    52.33
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    61.85
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    69.1
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    74.85
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    81.2
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    86.55
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.2
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    87.0
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    87.7
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    88.4
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    97.95
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.2
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    101.14
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    103.62
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    108.8
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    110.8
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    2.15
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c1",
+    37.9
+   ],
+   "dur": 1.8,
+   "vol": 0.2
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    112.76
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    113.44
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.35
+  }
+ ]
+}
