@@ -1,0 +1,238 @@
+<template>
+  <style>
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      :root {
+        --ink: #140c08;
+        --paper: #ffffff;
+        --gold: #ff8a3d;
+        --gold-deep: #e2632b;
+        --gold-hi: #ffb070;
+        --btn-ink: #1a0a02;
+        --ember: #e8452f;
+        --serif: "Poppins", Arial, sans-serif;
+        --sans: "Inter", Arial, sans-serif;
+        --em-style: normal;
+        --cap-right: 300px;
+        --title-size: 112px;
+        --cta-size: 104px;
+        --slam-size: 150px;
+        --hook-scrim: .35;
+        --btn-size: 38px;
+        --vol-w: 205px;
+        --row-shift: 80px;
+      }
+    #root { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
+
+    .grp { position: absolute; left: 120px; right: var(--cap-right, 200px); bottom: 690px; text-align: center; opacity: 0; }
+    .line { display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: baseline; column-gap: 17px;
+            padding: 14px 26px 18px; border-radius: 18px; background: rgba(6,12,14,.38); }
+    .w { display: inline-block; font: 700 58px/1.18 var(--sans); color: #fffaf0; letter-spacing: -.01em;
+         text-shadow: 0 3px 18px rgba(0,0,0,.55); }
+    .w.em { font: var(--em-style, italic) 700 70px/1.0 var(--serif); color: var(--gold); letter-spacing: 0; }
+
+  </style>
+  <div id="root" data-composition-id="captions" data-start="0" data-duration="46.1" data-width="1080" data-height="1920">
+    <div id="cap-0" class="grp"><div class="line"><span class="w">berkemampuan</span> <span class="w">nak</span> <span class="w">beli</span></div></div>
+    <div id="cap-1" class="grp"><div class="line"><span class="w">peralatan</span> <span class="w">mandi,</span></div></div>
+    <div id="cap-2" class="grp"><div class="line"><span class="w em">syampu,</span> <span class="w">sabun</span></div></div>
+    <div id="cap-3" class="grp"><div class="line"><span class="w">yang</span> <span class="w">harga</span> <span class="w em">mahal-mahal.</span></div></div>
+    <div id="cap-4" class="grp"><div class="line"><span class="w">Kadang-kadang</span> <span class="w">lelaki</span> <span class="w">ni</span></div></div>
+    <div id="cap-5" class="grp"><div class="line"><span class="w">lebih</span> <span class="w">utamakan</span></div></div>
+    <div id="cap-6" class="grp"><div class="line"><span class="w em">keluarganya,</span> <span class="w">sampai</span> <span class="w">dia</span></div></div>
+    <div id="cap-7" class="grp"><div class="line"><span class="w em">mengabaikan</span> <span class="w">diri</span> <span class="w">dia.</span></div></div>
+    <div id="cap-8" class="grp"><div class="line"><span class="w">Jadi</span> <span class="w">jangan</span> <span class="w em">risau.</span></div></div>
+    <div id="cap-9" class="grp"><div class="line"><span class="w">Lelaki</span> <span class="w">boleh</span> <span class="w">dapatkan</span></div></div>
+    <div id="cap-10" class="grp"><div class="line"><span class="w em">Caveman</span> <span class="w em">Cleaner</span> <span class="w">3</span> <span class="w">in</span> <span class="w">1,</span></div></div>
+    <div id="cap-11" class="grp"><div class="line"><span class="w">Bad</span> <span class="w">Lab</span> <span class="w">macam</span> <span class="w">ni.</span></div></div>
+    <div id="cap-12" class="grp"><div class="line"><span class="w">Sebab</span> <span class="w">dia</span> <span class="w em">3</span> <span class="w em">in</span> <span class="w em">1,</span></div></div>
+    <div id="cap-13" class="grp"><div class="line"><span class="w">untuk</span> <span class="w em">rambut,</span></div></div>
+    <div id="cap-14" class="grp"><div class="line"><span class="w em">muka</span> <span class="w">dan</span> <span class="w em">badan.</span></div></div>
+    <div id="cap-15" class="grp"><div class="line"><span class="w">Beli</span> <span class="w em">satu,</span></div></div>
+    <div id="cap-16" class="grp"><div class="line"><span class="w">boleh</span> <span class="w">pakai</span> <span class="w">untuk</span></div></div>
+    <div id="cap-17" class="grp"><div class="line"><span class="w em">tiga.</span></div></div>
+    <div id="cap-18" class="grp"><div class="line"><span class="w">Boleh</span> <span class="w">dapatkan</span></div></div>
+    <div id="cap-19" class="grp"><div class="line"><span class="w">Bad</span> <span class="w">Lab</span> <span class="w em">400ml.</span></div></div>
+    <div id="cap-20" class="grp"><div class="line"><span class="w">Boleh</span> <span class="w">pakai</span> <span class="w em">sebulan</span></div></div>
+    <div id="cap-21" class="grp"><div class="line"><span class="w">ataupun</span> <span class="w">sebulan</span> <span class="w">lebih,</span></div></div>
+    <div id="cap-22" class="grp"><div class="line"><span class="w">insyaAllah.</span></div></div>
+    <div id="cap-23" class="grp"><div class="line"><span class="w">Dan</span> <span class="w">bagus,</span> <span class="w">dia</span> <span class="w">ada</span></div></div>
+    <div id="cap-24" class="grp"><div class="line"><span class="w em">kawalan</span> <span class="w em">minyak.</span></div></div>
+    <div id="cap-25" class="grp"><div class="line"><span class="w">Dan</span> <span class="w">bila</span> <span class="w">anda</span> <span class="w">pakai,</span></div></div>
+    <div id="cap-26" class="grp"><div class="line"><span class="w">bila</span> <span class="w">balik</span> <span class="w">kerja,</span></div></div>
+    <div id="cap-27" class="grp"><div class="line"><span class="w em">penat-penat,</span></div></div>
+    <div id="cap-28" class="grp"><div class="line"><span class="w">rasa</span> <span class="w em">sejuk-sejuk</span></div></div>
+    <div id="cap-29" class="grp"><div class="line"><span class="w">sebab</span> <span class="w">ada</span> <span class="w em">mentol.</span></div></div>
+    <div id="cap-30" class="grp"><div class="line"><span class="w">Anda</span> <span class="w">akan</span> <span class="w">rasa</span> <span class="w">lebih</span></div></div>
+    <div id="cap-31" class="grp"><div class="line"><span class="w em">segar.</span></div></div>
+    <div id="cap-32" class="grp"><div class="line"><span class="w">Siapa</span> <span class="w">yang</span> <span class="w">berminat,</span></div></div>
+    <div id="cap-33" class="grp"><div class="line"><span class="w">dapatkan</span> <span class="w">segera</span> <span class="w em">Bad</span> <span class="w em">Lab</span></div></div>
+    <div id="cap-34" class="grp"><div class="line"><span class="w em">Caveman</span> <span class="w em">Cleaner.</span></div></div>
+    <div id="cap-35" class="grp"><div class="line"><span class="w">Pembelian</span> <span class="w">yang</span></div></div>
+    <div id="cap-36" class="grp"><div class="line"><span class="w">sangat</span> <span class="w em">berbaloi</span></div></div>
+    <div id="cap-37" class="grp"><div class="line"><span class="w">dan</span> <span class="w em">menjimatkan</span></div></div>
+    <div id="cap-38" class="grp"><div class="line"><span class="w">duit</span> <span class="w">anda.</span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cap-0", {opacity: 0}, {opacity: 1, duration: 0.01}, 0.0);
+    tl.fromTo("#cap-0 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 0.0);
+    tl.to("#cap-0", {opacity: 0, duration: 0.1, ease: "power2.in"}, 0.2667);
+    tl.set("#cap-0", {opacity: 0, visibility: "hidden"}, 0.3667);
+    tl.fromTo("#cap-1", {opacity: 0}, {opacity: 1, duration: 0.01}, 0.3667);
+    tl.fromTo("#cap-1 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 0.3667);
+    tl.to("#cap-1", {opacity: 0, duration: 0.1, ease: "power2.in"}, 1.5333);
+    tl.set("#cap-1", {opacity: 0, visibility: "hidden"}, 1.6333);
+    tl.fromTo("#cap-2", {opacity: 0}, {opacity: 1, duration: 0.01}, 1.6333);
+    tl.fromTo("#cap-2 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 1.6333);
+    tl.to("#cap-2", {opacity: 0, duration: 0.1, ease: "power2.in"}, 2.4667);
+    tl.set("#cap-2", {opacity: 0, visibility: "hidden"}, 2.5667);
+    tl.fromTo("#cap-3", {opacity: 0}, {opacity: 1, duration: 0.01}, 2.5667);
+    tl.fromTo("#cap-3 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 2.5667);
+    tl.to("#cap-3", {opacity: 0, duration: 0.1, ease: "power2.in"}, 4.2333);
+    tl.set("#cap-3", {opacity: 0, visibility: "hidden"}, 4.3333);
+    tl.fromTo("#cap-4", {opacity: 0}, {opacity: 1, duration: 0.01}, 4.3333);
+    tl.fromTo("#cap-4 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 4.3333);
+    tl.to("#cap-4", {opacity: 0, duration: 0.1, ease: "power2.in"}, 6.0667);
+    tl.set("#cap-4", {opacity: 0, visibility: "hidden"}, 6.1667);
+    tl.fromTo("#cap-5", {opacity: 0}, {opacity: 1, duration: 0.01}, 6.1667);
+    tl.fromTo("#cap-5 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 6.1667);
+    tl.to("#cap-5", {opacity: 0, duration: 0.1, ease: "power2.in"}, 7.3);
+    tl.set("#cap-5", {opacity: 0, visibility: "hidden"}, 7.4);
+    tl.fromTo("#cap-6", {opacity: 0}, {opacity: 1, duration: 0.01}, 7.4);
+    tl.fromTo("#cap-6 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 7.4);
+    tl.to("#cap-6", {opacity: 0, duration: 0.1, ease: "power2.in"}, 8.4667);
+    tl.set("#cap-6", {opacity: 0, visibility: "hidden"}, 8.5667);
+    tl.fromTo("#cap-7", {opacity: 0}, {opacity: 1, duration: 0.01}, 8.5667);
+    tl.fromTo("#cap-7 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 8.5667);
+    tl.to("#cap-7", {opacity: 0, duration: 0.1, ease: "power2.in"}, 9.7667);
+    tl.set("#cap-7", {opacity: 0, visibility: "hidden"}, 9.8667);
+    tl.fromTo("#cap-8", {opacity: 0}, {opacity: 1, duration: 0.01}, 9.8667);
+    tl.fromTo("#cap-8 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 9.8667);
+    tl.to("#cap-8", {opacity: 0, duration: 0.1, ease: "power2.in"}, 11.1333);
+    tl.set("#cap-8", {opacity: 0, visibility: "hidden"}, 11.2333);
+    tl.fromTo("#cap-9", {opacity: 0}, {opacity: 1, duration: 0.01}, 11.2333);
+    tl.fromTo("#cap-9 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 11.2333);
+    tl.to("#cap-9", {opacity: 0, duration: 0.1, ease: "power2.in"}, 12.4667);
+    tl.set("#cap-9", {opacity: 0, visibility: "hidden"}, 12.5667);
+    tl.fromTo("#cap-10", {opacity: 0}, {opacity: 1, duration: 0.01}, 12.5667);
+    tl.fromTo("#cap-10 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 12.5667);
+    tl.to("#cap-10", {opacity: 0, duration: 0.1, ease: "power2.in"}, 14.2667);
+    tl.set("#cap-10", {opacity: 0, visibility: "hidden"}, 14.3667);
+    tl.fromTo("#cap-11", {opacity: 0}, {opacity: 1, duration: 0.01}, 14.3667);
+    tl.fromTo("#cap-11 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 14.3667);
+    tl.to("#cap-11", {opacity: 0, duration: 0.1, ease: "power2.in"}, 15.6333);
+    tl.set("#cap-11", {opacity: 0, visibility: "hidden"}, 15.7333);
+    tl.fromTo("#cap-12", {opacity: 0}, {opacity: 1, duration: 0.01}, 15.7333);
+    tl.fromTo("#cap-12 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 15.7333);
+    tl.to("#cap-12", {opacity: 0, duration: 0.1, ease: "power2.in"}, 17.1);
+    tl.set("#cap-12", {opacity: 0, visibility: "hidden"}, 17.2);
+    tl.fromTo("#cap-13", {opacity: 0}, {opacity: 1, duration: 0.01}, 17.2);
+    tl.fromTo("#cap-13 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 17.2);
+    tl.to("#cap-13", {opacity: 0, duration: 0.1, ease: "power2.in"}, 18.2);
+    tl.set("#cap-13", {opacity: 0, visibility: "hidden"}, 18.3);
+    tl.fromTo("#cap-14", {opacity: 0}, {opacity: 1, duration: 0.01}, 18.3);
+    tl.fromTo("#cap-14 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 18.3);
+    tl.to("#cap-14", {opacity: 0, duration: 0.1, ease: "power2.in"}, 19.6);
+    tl.set("#cap-14", {opacity: 0, visibility: "hidden"}, 19.7);
+    tl.fromTo("#cap-15", {opacity: 0}, {opacity: 1, duration: 0.01}, 19.7);
+    tl.fromTo("#cap-15 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 19.7);
+    tl.to("#cap-15", {opacity: 0, duration: 0.1, ease: "power2.in"}, 20.5333);
+    tl.set("#cap-15", {opacity: 0, visibility: "hidden"}, 20.6333);
+    tl.fromTo("#cap-16", {opacity: 0}, {opacity: 1, duration: 0.01}, 20.6333);
+    tl.fromTo("#cap-16 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 20.6333);
+    tl.to("#cap-16", {opacity: 0, duration: 0.1, ease: "power2.in"}, 22.0);
+    tl.set("#cap-16", {opacity: 0, visibility: "hidden"}, 22.1);
+    tl.fromTo("#cap-17", {opacity: 0}, {opacity: 1, duration: 0.01}, 22.1);
+    tl.fromTo("#cap-17 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 22.1);
+    tl.to("#cap-17", {opacity: 0, duration: 0.1, ease: "power2.in"}, 22.7333);
+    tl.set("#cap-17", {opacity: 0, visibility: "hidden"}, 22.8333);
+    tl.fromTo("#cap-18", {opacity: 0}, {opacity: 1, duration: 0.01}, 22.8333);
+    tl.fromTo("#cap-18 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 22.8333);
+    tl.to("#cap-18", {opacity: 0, duration: 0.1, ease: "power2.in"}, 23.8333);
+    tl.set("#cap-18", {opacity: 0, visibility: "hidden"}, 23.9333);
+    tl.fromTo("#cap-19", {opacity: 0}, {opacity: 1, duration: 0.01}, 23.9333);
+    tl.fromTo("#cap-19 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 23.9333);
+    tl.to("#cap-19", {opacity: 0, duration: 0.1, ease: "power2.in"}, 25.1667);
+    tl.set("#cap-19", {opacity: 0, visibility: "hidden"}, 25.2667);
+    tl.fromTo("#cap-20", {opacity: 0}, {opacity: 1, duration: 0.01}, 25.2667);
+    tl.fromTo("#cap-20 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 25.2667);
+    tl.to("#cap-20", {opacity: 0, duration: 0.1, ease: "power2.in"}, 26.3667);
+    tl.set("#cap-20", {opacity: 0, visibility: "hidden"}, 26.4667);
+    tl.fromTo("#cap-21", {opacity: 0}, {opacity: 1, duration: 0.01}, 26.4667);
+    tl.fromTo("#cap-21 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 26.4667);
+    tl.to("#cap-21", {opacity: 0, duration: 0.1, ease: "power2.in"}, 27.7);
+    tl.set("#cap-21", {opacity: 0, visibility: "hidden"}, 27.8);
+    tl.fromTo("#cap-22", {opacity: 0}, {opacity: 1, duration: 0.01}, 27.8);
+    tl.fromTo("#cap-22 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 27.8);
+    tl.to("#cap-22", {opacity: 0, duration: 0.1, ease: "power2.in"}, 28.4333);
+    tl.set("#cap-22", {opacity: 0, visibility: "hidden"}, 28.5333);
+    tl.fromTo("#cap-23", {opacity: 0}, {opacity: 1, duration: 0.01}, 28.5333);
+    tl.fromTo("#cap-23 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 28.5333);
+    tl.to("#cap-23", {opacity: 0, duration: 0.1, ease: "power2.in"}, 29.4667);
+    tl.set("#cap-23", {opacity: 0, visibility: "hidden"}, 29.5667);
+    tl.fromTo("#cap-24", {opacity: 0}, {opacity: 1, duration: 0.01}, 29.5667);
+    tl.fromTo("#cap-24 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 29.5667);
+    tl.to("#cap-24", {opacity: 0, duration: 0.1, ease: "power2.in"}, 30.8);
+    tl.set("#cap-24", {opacity: 0, visibility: "hidden"}, 30.9);
+    tl.fromTo("#cap-25", {opacity: 0}, {opacity: 1, duration: 0.01}, 30.9);
+    tl.fromTo("#cap-25 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 30.9);
+    tl.to("#cap-25", {opacity: 0, duration: 0.1, ease: "power2.in"}, 32.1333);
+    tl.set("#cap-25", {opacity: 0, visibility: "hidden"}, 32.2333);
+    tl.fromTo("#cap-26", {opacity: 0}, {opacity: 1, duration: 0.01}, 32.2333);
+    tl.fromTo("#cap-26 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 32.2333);
+    tl.to("#cap-26", {opacity: 0, duration: 0.1, ease: "power2.in"}, 33.3);
+    tl.set("#cap-26", {opacity: 0, visibility: "hidden"}, 33.4);
+    tl.fromTo("#cap-27", {opacity: 0}, {opacity: 1, duration: 0.01}, 33.4);
+    tl.fromTo("#cap-27 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 33.4);
+    tl.to("#cap-27", {opacity: 0, duration: 0.1, ease: "power2.in"}, 34.4333);
+    tl.set("#cap-27", {opacity: 0, visibility: "hidden"}, 34.5333);
+    tl.fromTo("#cap-28", {opacity: 0}, {opacity: 1, duration: 0.01}, 34.5333);
+    tl.fromTo("#cap-28 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 34.5333);
+    tl.to("#cap-28", {opacity: 0, duration: 0.1, ease: "power2.in"}, 35.5);
+    tl.set("#cap-28", {opacity: 0, visibility: "hidden"}, 35.6);
+    tl.fromTo("#cap-29", {opacity: 0}, {opacity: 1, duration: 0.01}, 35.6);
+    tl.fromTo("#cap-29 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 35.6);
+    tl.to("#cap-29", {opacity: 0, duration: 0.1, ease: "power2.in"}, 36.8333);
+    tl.set("#cap-29", {opacity: 0, visibility: "hidden"}, 36.9333);
+    tl.fromTo("#cap-30", {opacity: 0}, {opacity: 1, duration: 0.01}, 36.9333);
+    tl.fromTo("#cap-30 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 36.9333);
+    tl.to("#cap-30", {opacity: 0, duration: 0.1, ease: "power2.in"}, 38.3333);
+    tl.set("#cap-30", {opacity: 0, visibility: "hidden"}, 38.4333);
+    tl.fromTo("#cap-31", {opacity: 0}, {opacity: 1, duration: 0.01}, 38.4333);
+    tl.fromTo("#cap-31 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 38.4333);
+    tl.to("#cap-31", {opacity: 0, duration: 0.1, ease: "power2.in"}, 39.0667);
+    tl.set("#cap-31", {opacity: 0, visibility: "hidden"}, 39.1667);
+    tl.fromTo("#cap-32", {opacity: 0}, {opacity: 1, duration: 0.01}, 39.1667);
+    tl.fromTo("#cap-32 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 39.1667);
+    tl.to("#cap-32", {opacity: 0, duration: 0.1, ease: "power2.in"}, 40.0667);
+    tl.set("#cap-32", {opacity: 0, visibility: "hidden"}, 40.1667);
+    tl.fromTo("#cap-33", {opacity: 0}, {opacity: 1, duration: 0.01}, 40.1667);
+    tl.fromTo("#cap-33 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 40.1667);
+    tl.to("#cap-33", {opacity: 0, duration: 0.1, ease: "power2.in"}, 41.5667);
+    tl.set("#cap-33", {opacity: 0, visibility: "hidden"}, 41.6667);
+    tl.fromTo("#cap-34", {opacity: 0}, {opacity: 1, duration: 0.01}, 41.6667);
+    tl.fromTo("#cap-34 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 41.6667);
+    tl.to("#cap-34", {opacity: 0, duration: 0.1, ease: "power2.in"}, 42.6333);
+    tl.set("#cap-34", {opacity: 0, visibility: "hidden"}, 42.7333);
+    tl.fromTo("#cap-35", {opacity: 0}, {opacity: 1, duration: 0.01}, 42.7333);
+    tl.fromTo("#cap-35 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 42.7333);
+    tl.to("#cap-35", {opacity: 0, duration: 0.1, ease: "power2.in"}, 43.2333);
+    tl.set("#cap-35", {opacity: 0, visibility: "hidden"}, 43.3333);
+    tl.fromTo("#cap-36", {opacity: 0}, {opacity: 1, duration: 0.01}, 43.3333);
+    tl.fromTo("#cap-36 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 43.3333);
+    tl.to("#cap-36", {opacity: 0, duration: 0.1, ease: "power2.in"}, 44.2);
+    tl.set("#cap-36", {opacity: 0, visibility: "hidden"}, 44.3);
+    tl.fromTo("#cap-37", {opacity: 0}, {opacity: 1, duration: 0.01}, 44.3);
+    tl.fromTo("#cap-37 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 44.3);
+    tl.to("#cap-37", {opacity: 0, duration: 0.1, ease: "power2.in"}, 45.2);
+    tl.set("#cap-37", {opacity: 0, visibility: "hidden"}, 45.3);
+    tl.fromTo("#cap-38", {opacity: 0}, {opacity: 1, duration: 0.01}, 45.3);
+    tl.fromTo("#cap-38 .w", {opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}, 45.3);
+    tl.to("#cap-38", {opacity: 0, duration: 0.1, ease: "power2.in"}, 46.0);
+    tl.set("#cap-38", {opacity: 0, visibility: "hidden"}, 46.1);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

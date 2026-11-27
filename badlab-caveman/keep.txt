@@ -1,0 +1,25 @@
+# src start end [. = sentence end] | caption groups (*word* = orange emphasis)
+c1 0.00 2.38 | Bukan semua orang|berkemampuan nak beli
+c1 2.66 3.80 | peralatan mandi,
+c1 4.02 6.52 . | *syampu*, sabun|yang harga *mahal-mahal*.
+c1 7.02 9.96 | Kadang-kadang lelaki ni|lebih utamakan
+c1 10.36 12.62 . | *keluarganya*, sampai dia|*mengabaikan* diri dia.
+c1 12.94 14.12 . | Jadi jangan *risau*.
+c1 14.34 15.56 | Lelaki boleh dapatkan
+c1 16.20 19.14 . | *Caveman* *Cleaner* 3 in 1,|Bad Lab macam ni.
+c1 19.42 21.84 | Sebab dia *3* *in* *1*,|untuk *rambut*,
+c1 22.40 23.56 . | *muka* dan *badan*.
+c1 23.78 26.04 | Beli *satu*,|boleh pakai untuk
+c1 26.34 26.88 . | *tiga*.
+c1 28.85 31.22 . | Boleh dapatkan|Bad Lab *400ml*.
+c1 31.22 34.50 . | Boleh pakai *sebulan*|ataupun sebulan lebih,|insyaAllah.
+c1 34.50 36.72 . | Dan bagus, dia ada|*kawalan* *minyak*.
+c1 37.42 38.62 | Dan bila anda pakai,
+c1 39.02 41.18 | bila balik kerja,|*penat-penat*,
+c1 41.62 43.80 . | rasa *sejuk-sejuk*|sebab ada *mentol*.
+c1 44.02 45.40 | Anda akan rasa lebih
+c1 45.66 46.18 . | *segar*.
+c1 46.92 49.30 | Siapa yang berminat,|dapatkan segera *Bad* *Lab*
+c1 49.74 50.60 . | *Caveman* *Cleaner*.
+c1 50.96 52.32 . | Pembelian yang|sangat *berbaloi*
+c1 52.72 54.30 . | dan *menjimatkan*|duit anda.

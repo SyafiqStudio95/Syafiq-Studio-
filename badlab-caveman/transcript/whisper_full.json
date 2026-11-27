@@ -1,0 +1,673 @@
+{
+ "c1": [
+  {
+   "start": 0.0,
+   "end": 6.36,
+   "text": " Bukan semua orang berkemampuan nak beli peralatan mandi, shampoo, sabun dengan harga mahal-mahal",
+   "words": [
+    {
+     "w": " Bukan",
+     "s": 0.0,
+     "e": 0.1
+    },
+    {
+     "w": " semua",
+     "s": 0.1,
+     "e": 0.36
+    },
+    {
+     "w": " orang",
+     "s": 0.36,
+     "e": 0.76
+    },
+    {
+     "w": " berkemampuan",
+     "s": 0.76,
+     "e": 1.62
+    },
+    {
+     "w": " nak",
+     "s": 1.62,
+     "e": 1.76
+    },
+    {
+     "w": " beli",
+     "s": 1.76,
+     "e": 2.32
+    },
+    {
+     "w": " peralatan",
+     "s": 2.32,
+     "e": 3.04
+    },
+    {
+     "w": " mandi,",
+     "s": 3.04,
+     "e": 3.66
+    },
+    {
+     "w": " shampoo,",
+     "s": 3.68,
+     "e": 4.2
+    },
+    {
+     "w": " sabun",
+     "s": 4.62,
+     "e": 5.2
+    },
+    {
+     "w": " dengan",
+     "s": 5.2,
+     "e": 5.48
+    },
+    {
+     "w": " harga",
+     "s": 5.48,
+     "e": 5.86
+    },
+    {
+     "w": " mahal",
+     "s": 5.86,
+     "e": 6.06
+    },
+    {
+     "w": "-mahal",
+     "s": 6.06,
+     "e": 6.36
+    }
+   ]
+  },
+  {
+   "start": 6.36,
+   "end": 12.46,
+   "text": " Kadang-kadang lelaki ini dilebih utamakan dari sudut keluarganya sampai dia mengabaikan diri dia",
+   "words": [
+    {
+     "w": " Kadang",
+     "s": 6.36,
+     "e": 7.16
+    },
+    {
+     "w": "-kadang",
+     "s": 7.16,
+     "e": 7.44
+    },
+    {
+     "w": " lelaki",
+     "s": 7.44,
+     "e": 7.74
+    },
+    {
+     "w": " ini",
+     "s": 7.74,
+     "e": 8.0
+    },
+    {
+     "w": " dilebih",
+     "s": 8.0,
+     "e": 8.4
+    },
+    {
+     "w": " utamakan",
+     "s": 8.4,
+     "e": 8.96
+    },
+    {
+     "w": " dari",
+     "s": 8.96,
+     "e": 9.4
+    },
+    {
+     "w": " sudut",
+     "s": 9.4,
+     "e": 9.86
+    },
+    {
+     "w": " keluarganya",
+     "s": 9.86,
+     "e": 10.96
+    },
+    {
+     "w": " sampai",
+     "s": 10.96,
+     "e": 11.24
+    },
+    {
+     "w": " dia",
+     "s": 11.24,
+     "e": 11.46
+    },
+    {
+     "w": " mengabaikan",
+     "s": 11.46,
+     "e": 11.94
+    },
+    {
+     "w": " diri",
+     "s": 11.94,
+     "e": 12.28
+    },
+    {
+     "w": " dia",
+     "s": 12.28,
+     "e": 12.46
+    }
+   ]
+  },
+  {
+   "start": 12.46,
+   "end": 19.02,
+   "text": " Jadi jangan risau, lelaki boleh dapatkan Caveman Cleaner 3 in 1, back lab macam ni",
+   "words": [
+    {
+     "w": " Jadi",
+     "s": 12.46,
+     "e": 13.22
+    },
+    {
+     "w": " jangan",
+     "s": 13.22,
+     "e": 13.38
+    },
+    {
+     "w": " risau,",
+     "s": 13.38,
+     "e": 13.76
+    },
+    {
+     "w": " lelaki",
+     "s": 13.82,
+     "e": 14.58
+    },
+    {
+     "w": " boleh",
+     "s": 14.58,
+     "e": 14.78
+    },
+    {
+     "w": " dapatkan",
+     "s": 14.78,
+     "e": 15.4
+    },
+    {
+     "w": " Caveman",
+     "s": 15.4,
+     "e": 16.5
+    },
+    {
+     "w": " Cleaner",
+     "s": 16.5,
+     "e": 17.2
+    },
+    {
+     "w": " 3",
+     "s": 17.2,
+     "e": 17.5
+    },
+    {
+     "w": " in",
+     "s": 17.5,
+     "e": 17.78
+    },
+    {
+     "w": " 1,",
+     "s": 17.78,
+     "e": 18.06
+    },
+    {
+     "w": " back",
+     "s": 18.16,
+     "e": 18.4
+    },
+    {
+     "w": " lab",
+     "s": 18.4,
+     "e": 18.62
+    },
+    {
+     "w": " macam",
+     "s": 18.62,
+     "e": 18.78
+    },
+    {
+     "w": " ni",
+     "s": 18.78,
+     "e": 19.02
+    }
+   ]
+  },
+  {
+   "start": 19.02,
+   "end": 23.28,
+   "text": " Sebab dia 3 in 1 untuk rambut, muka dan badan",
+   "words": [
+    {
+     "w": " Sebab",
+     "s": 19.02,
+     "e": 19.7
+    },
+    {
+     "w": " dia",
+     "s": 19.7,
+     "e": 19.96
+    },
+    {
+     "w": " 3",
+     "s": 19.96,
+     "e": 20.44
+    },
+    {
+     "w": " in",
+     "s": 20.44,
+     "e": 20.64
+    },
+    {
+     "w": " 1",
+     "s": 20.64,
+     "e": 20.84
+    },
+    {
+     "w": " untuk",
+     "s": 20.84,
+     "e": 21.2
+    },
+    {
+     "w": " rambut,",
+     "s": 21.2,
+     "e": 21.8
+    },
+    {
+     "w": " muka",
+     "s": 21.84,
+     "e": 22.7
+    },
+    {
+     "w": " dan",
+     "s": 22.7,
+     "e": 22.84
+    },
+    {
+     "w": " badan",
+     "s": 22.84,
+     "e": 23.28
+    }
+   ]
+  },
+  {
+   "start": 23.28,
+   "end": 26.48,
+   "text": " Beli satu, boleh pakai untuk tiga",
+   "words": [
+    {
+     "w": " Beli",
+     "s": 23.28,
+     "e": 23.9
+    },
+    {
+     "w": " satu,",
+     "s": 23.9,
+     "e": 24.18
+    },
+    {
+     "w": " boleh",
+     "s": 24.36,
+     "e": 24.68
+    },
+    {
+     "w": " pakai",
+     "s": 24.68,
+     "e": 25.04
+    },
+    {
+     "w": " untuk",
+     "s": 25.04,
+     "e": 25.42
+    },
+    {
+     "w": " tiga",
+     "s": 25.42,
+     "e": 26.48
+    }
+   ]
+  },
+  {
+   "start": 26.48,
+   "end": 30.82,
+   "text": " Jadi jangan risau, boleh dapatkan back lab 400ml",
+   "words": [
+    {
+     "w": " Jadi",
+     "s": 26.48,
+     "e": 27.26
+    },
+    {
+     "w": " jangan",
+     "s": 27.26,
+     "e": 28.24
+    },
+    {
+     "w": " risau,",
+     "s": 28.24,
+     "e": 28.72
+    },
+    {
+     "w": " boleh",
+     "s": 28.72,
+     "e": 28.96
+    },
+    {
+     "w": " dapatkan",
+     "s": 28.96,
+     "e": 29.54
+    },
+    {
+     "w": " back",
+     "s": 29.54,
+     "e": 29.9
+    },
+    {
+     "w": " lab",
+     "s": 29.9,
+     "e": 30.06
+    },
+    {
+     "w": " 400ml",
+     "s": 30.06,
+     "e": 30.82
+    }
+   ]
+  },
+  {
+   "start": 30.82,
+   "end": 34.18,
+   "text": " Boleh pakai sebulan ataupun sebulan lebih insyaAllah",
+   "words": [
+    {
+     "w": " Boleh",
+     "s": 30.82,
+     "e": 31.6
+    },
+    {
+     "w": " pakai",
+     "s": 31.6,
+     "e": 31.78
+    },
+    {
+     "w": " sebulan",
+     "s": 31.78,
+     "e": 32.48
+    },
+    {
+     "w": " ataupun",
+     "s": 32.48,
+     "e": 32.86
+    },
+    {
+     "w": " sebulan",
+     "s": 32.86,
+     "e": 33.16
+    },
+    {
+     "w": " lebih",
+     "s": 33.16,
+     "e": 33.4
+    },
+    {
+     "w": " insyaAllah",
+     "s": 33.4,
+     "e": 34.18
+    }
+   ]
+  },
+  {
+   "start": 34.18,
+   "end": 36.64,
+   "text": " Dan bagus dia ada kawalan minyak",
+   "words": [
+    {
+     "w": " Dan",
+     "s": 34.18,
+     "e": 34.94
+    },
+    {
+     "w": " bagus",
+     "s": 34.94,
+     "e": 35.3
+    },
+    {
+     "w": " dia",
+     "s": 35.3,
+     "e": 35.56
+    },
+    {
+     "w": " ada",
+     "s": 35.56,
+     "e": 35.9
+    },
+    {
+     "w": " kawalan",
+     "s": 35.9,
+     "e": 36.28
+    },
+    {
+     "w": " minyak",
+     "s": 36.28,
+     "e": 36.64
+    }
+   ]
+  },
+  {
+   "start": 36.64,
+   "end": 43.2,
+   "text": " Dan bila anda pakai, bila balik kerja, penat-penat, rasa sejuk-sejuk sebab ada mentol",
+   "words": [
+    {
+     "w": " Dan",
+     "s": 36.64,
+     "e": 37.4
+    },
+    {
+     "w": " bila",
+     "s": 37.4,
+     "e": 37.76
+    },
+    {
+     "w": " anda",
+     "s": 37.76,
+     "e": 37.96
+    },
+    {
+     "w": " pakai,",
+     "s": 37.96,
+     "e": 38.3
+    },
+    {
+     "w": " bila",
+     "s": 38.5,
+     "e": 39.62
+    },
+    {
+     "w": " balik",
+     "s": 39.62,
+     "e": 39.84
+    },
+    {
+     "w": " kerja,",
+     "s": 39.84,
+     "e": 40.24
+    },
+    {
+     "w": " penat",
+     "s": 40.28,
+     "e": 40.66
+    },
+    {
+     "w": "-penat,",
+     "s": 40.66,
+     "e": 41.08
+    },
+    {
+     "w": " rasa",
+     "s": 41.1,
+     "e": 41.76
+    },
+    {
+     "w": " sejuk",
+     "s": 41.76,
+     "e": 42.24
+    },
+    {
+     "w": "-sejuk",
+     "s": 42.24,
+     "e": 42.5
+    },
+    {
+     "w": " sebab",
+     "s": 42.5,
+     "e": 42.68
+    },
+    {
+     "w": " ada",
+     "s": 42.68,
+     "e": 42.84
+    },
+    {
+     "w": " mentol",
+     "s": 42.84,
+     "e": 43.2
+    }
+   ]
+  },
+  {
+   "start": 43.2,
+   "end": 45.9,
+   "text": " Anda akan rasa lebih segar",
+   "words": [
+    {
+     "w": " Anda",
+     "s": 43.2,
+     "e": 44.08
+    },
+    {
+     "w": " akan",
+     "s": 44.08,
+     "e": 44.36
+    },
+    {
+     "w": " rasa",
+     "s": 44.36,
+     "e": 44.64
+    },
+    {
+     "w": " lebih",
+     "s": 44.64,
+     "e": 45.0
+    },
+    {
+     "w": " segar",
+     "s": 45.0,
+     "e": 45.9
+    }
+   ]
+  },
+  {
+   "start": 45.9,
+   "end": 50.48,
+   "text": " Siapa yang berminat dapatkan segera back lab Caveman Cleaner",
+   "words": [
+    {
+     "w": " Siapa",
+     "s": 45.9,
+     "e": 47.1
+    },
+    {
+     "w": " yang",
+     "s": 47.1,
+     "e": 47.24
+    },
+    {
+     "w": " berminat",
+     "s": 47.24,
+     "e": 47.62
+    },
+    {
+     "w": " dapatkan",
+     "s": 47.62,
+     "e": 48.02
+    },
+    {
+     "w": " segera",
+     "s": 48.02,
+     "e": 48.46
+    },
+    {
+     "w": " back",
+     "s": 48.46,
+     "e": 48.86
+    },
+    {
+     "w": " lab",
+     "s": 48.86,
+     "e": 49.16
+    },
+    {
+     "w": " Caveman",
+     "s": 49.16,
+     "e": 50.02
+    },
+    {
+     "w": " Cleaner",
+     "s": 50.02,
+     "e": 50.48
+    }
+   ]
+  },
+  {
+   "start": 50.48,
+   "end": 53.9,
+   "text": " Pembelian yang sangat berbaloi dan menjimatkan duit anda",
+   "words": [
+    {
+     "w": " Pembelian",
+     "s": 50.48,
+     "e": 51.34
+    },
+    {
+     "w": " yang",
+     "s": 51.34,
+     "e": 51.42
+    },
+    {
+     "w": " sangat",
+     "s": 51.42,
+     "e": 51.64
+    },
+    {
+     "w": " berbaloi",
+     "s": 51.64,
+     "e": 52.2
+    },
+    {
+     "w": " dan",
+     "s": 52.2,
+     "e": 52.7
+    },
+    {
+     "w": " menjimatkan",
+     "s": 52.7,
+     "e": 53.32
+    },
+    {
+     "w": " duit",
+     "s": 53.32,
+     "e": 53.72
+    },
+    {
+     "w": " anda",
+     "s": 53.72,
+     "e": 53.9
+    }
+   ]
+  }
+ ]
+}

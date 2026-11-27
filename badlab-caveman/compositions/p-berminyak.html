@@ -1,0 +1,51 @@
+<template>
+  <style>
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      :root {
+        --ink: #140c08;
+        --paper: #ffffff;
+        --gold: #ff8a3d;
+        --gold-deep: #e2632b;
+        --gold-hi: #ffb070;
+        --btn-ink: #1a0a02;
+        --ember: #e8452f;
+        --serif: "Poppins", Arial, sans-serif;
+        --sans: "Inter", Arial, sans-serif;
+        --em-style: normal;
+        --cap-right: 300px;
+        --title-size: 112px;
+        --cta-size: 104px;
+        --slam-size: 150px;
+        --hook-scrim: .35;
+        --btn-size: 38px;
+        --vol-w: 205px;
+        --row-shift: 80px;
+      }
+    #root { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
+
+    .pcard { position: absolute; left: 140px; right: 220px; top: 330px; }
+    .pframe { width: 100%; aspect-ratio: 3 / 2; border-radius: 30px; overflow: hidden; border: 6px solid #fff;
+              box-shadow: 0 26px 70px rgba(0,0,0,.5); background: #111; }
+    .pframe img { width: 100%; height: 100%; object-fit: cover; display: block; transform-origin: 50% 50%; }
+    .ptag { margin: -30px auto 0; position: relative; width: max-content; white-space: nowrap; padding: 14px 26px; border-radius: 999px;
+            background: var(--ember); color: #fff; font: 800 40px/1 var(--serif); box-shadow: 0 12px 28px rgba(0,0,0,.35); }
+
+  </style>
+  <div id="root" data-composition-id="p-berminyak" data-start="0" data-duration="2.3" data-width="1080" data-height="1920">
+    <div id="p-berminyak-card" class="pcard">
+      <div class="pframe"><img id="p-berminyak-img" src="assets/images/berminyak.jpg" alt="" style="object-position:50% 35%"></div>
+      <div id="p-berminyak-tag" class="ptag">Kawal minyak</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#p-berminyak-card", {opacity: 0, y: 60, scale: 0.85, rotation: -2}, {opacity: 1, y: 0, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.5)"}, 0);
+    tl.fromTo("#p-berminyak-img", {scale: 1.12}, {scale: 1.0, duration: 2.3, ease: "power1.out"}, 0);
+    tl.fromTo("#p-berminyak-tag", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.3, ease: "expo.out"}, 0.25);
+    tl.to("#p-berminyak-card", {opacity: 0, scale: 0.9, duration: 0.2, ease: "power2.in"}, 2.0667);
+    window.__timelines["p-berminyak"] = tl;
+  </script>
+</template>

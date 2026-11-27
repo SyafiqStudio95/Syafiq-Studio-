@@ -273,8 +273,8 @@ def trilogy_scene(cid, c):
     css = """
     .tri { position: absolute; left: 0; right: 0; top: 320px; text-align: center; }
     .head { font: 700 36px/1 var(--sans); letter-spacing: .38em; color: var(--gold); text-transform: uppercase; text-shadow: 0 2px 16px rgba(0,0,0,.7); }
-    .row { display: flex; justify-content: center; gap: 30px; margin-top: 34px; }
-    .vol { width: 250px; padding: 26px 0 22px; border-radius: 22px; background: rgba(9,16,19,.74); backdrop-filter: blur(20px);
+    .row { display: flex; justify-content: center; gap: 22px; margin-top: 34px; margin-right: var(--row-shift, 0px); }
+    .vol { width: var(--vol-w, 250px); padding: 26px 0 22px; border-radius: 22px; background: rgba(9,16,19,.74); backdrop-filter: blur(20px);
            border: 1px solid rgba(232,184,92,.4); box-shadow: 0 16px 50px rgba(0,0,0,.35); }
     .vol .r { font: 700 120px/0.9 var(--serif); color: var(--gold); }
     .vol .l { font: 700 30px/1.2 var(--sans); letter-spacing: .14em; color: var(--paper); text-transform: uppercase; margin-top: 12px; }
@@ -309,7 +309,7 @@ def cta_scene(cid, c):
     .by { font: var(--em-style, italic) 400 50px/1.1 var(--serif); color: var(--paper); margin-top: 14px; }
     .btn { display: inline-flex; align-items: center; gap: 18px; white-space: nowrap; margin-top: 110px; padding: 30px 56px; border-radius: 999px;
            background: linear-gradient(180deg, var(--gold-hi, #f0c470), var(--gold-deep)); color: var(--btn-ink, var(--ink));
-           font: 700 46px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase;
+           font: 700 var(--btn-size, 46px)/1 var(--sans); letter-spacing: .1em; text-transform: uppercase;
            box-shadow: 0 18px 50px rgba(0,0,0,.45), 0 0 0 2px rgba(255,236,190,.5) inset; }
 """
     scenes[cid] = (a, d, scene(cid, css, body, js, d))
@@ -347,9 +347,32 @@ def feature_scene(cid, c):
     scenes[cid] = (a, d, scene(cid, css, body, js, d))
 
 
+def photo_scene(cid, c):
+    """A still photo (problem / lifestyle shot) on a rounded card with a bold tag, upper half of frame."""
+    a, b = T(c["in"]), T(c["out"])
+    d = fr(b - a)
+    body = f"""    <div id="{cid}-card" class="pcard">
+      <div class="pframe"><img id="{cid}-img" src="{c["image"]}" alt="" style="object-position:{c.get("pos", "50% 50%")}"></div>
+      <div id="{cid}-tag" class="ptag">{esc(c["tag"])}</div>
+    </div>"""
+    css = """
+    .pcard { position: absolute; left: 140px; right: 220px; top: 330px; }
+    .pframe { width: 100%; aspect-ratio: 3 / 2; border-radius: 30px; overflow: hidden; border: 6px solid #fff;
+              box-shadow: 0 26px 70px rgba(0,0,0,.5); background: #111; }
+    .pframe img { width: 100%; height: 100%; object-fit: cover; display: block; transform-origin: 50% 50%; }
+    .ptag { margin: -30px auto 0; position: relative; width: max-content; white-space: nowrap; padding: 14px 26px; border-radius: 999px;
+            background: var(--ember); color: #fff; font: 800 40px/1 var(--serif); box-shadow: 0 12px 28px rgba(0,0,0,.35); }
+"""
+    js = f"""    tl.fromTo("#{cid}-card", {{opacity: 0, y: 60, scale: 0.85, rotation: -2}}, {{opacity: 1, y: 0, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.5)"}}, 0);
+    tl.fromTo("#{cid}-img", {{scale: 1.12}}, {{scale: 1.0, duration: {d}, ease: "power1.out"}}, 0);
+    tl.fromTo("#{cid}-tag", {{opacity: 0, y: 20}}, {{opacity: 1, y: 0, duration: 0.3, ease: "expo.out"}}, 0.25);
+    tl.to("#{cid}-card", {{opacity: 0, scale: 0.9, duration: 0.2, ease: "power2.in"}}, {fr(d - 0.22)});"""
+    scenes[cid] = (a, d, scene(cid, css, body, js, d))
+
+
 for c in E["cards"]:
     {"title": title_scene, "chapter": chapter_scene, "trilogy": trilogy_scene, "cta": cta_scene,
-     "feature": feature_scene}[c["kind"]](c["id"], c)
+     "feature": feature_scene, "photo": photo_scene}[c["kind"]](c["id"], c)
 
 # ---------------------------------------------------------------- captions
 cap_start = hook_dur
@@ -454,6 +477,15 @@ for i, o in enumerate(OV):
     st = fr(T(o["at"]))
     d = fr(o["dur"])
     wid = f"ov{i}"
+    if o.get("mode") == "image":
+        # still-image cutaway card (problem / lifestyle photos), centred in the upper half
+        tag = f'<div class="imgTag">{esc(o["tag"])}</div>' if o.get("tag") else ""
+        vids.append(f'      <div id="{wid}" class="imgCard clip" data-start="{st}" data-duration="{d}" data-track-index="1">'
+                    f'<div class="imgFrame"><img id="ovi{i}" src="{o["image"]}" alt="" style="object-position:{o.get("pos", "50% 50%")}"></div>{tag}</div>')
+        wraps_js.append(f'    tl.fromTo("#{wid}", {{opacity: 0, y: 60, scale: 0.85, rotation: -2}}, {{opacity: 1, y: 0, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.5)"}}, {st});')
+        wraps_js.append(f'    tl.fromTo("#ovi{i}", {{scale: 1.12}}, {{scale: 1.0, duration: {d}, ease: "power1.out"}}, {st});')
+        wraps_js.append(f'    tl.to("#{wid}", {{opacity: 0, scale: 0.9, duration: 0.2, ease: "power2.in"}}, {fr(st + d - 0.2)});')
+        continue
     if o.get("mode", "pip") == "full":
         vids.append(f'      <div id="{wid}" class="cam ovfull"><video id="ovv{i}" class="clip footage" src="assets/video/ov_{i}.mp4" '
                     f'data-start="{st}" data-duration="{d}" data-media-start="0" data-track-index="1" muted '
@@ -503,6 +535,13 @@ index = f"""<!doctype html>
       .cam {{ position: absolute; inset: 0; }}
       .cam video {{ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }}
       .layer {{ position: absolute; inset: 0; z-index: 10; }}
+      .imgCard {{ position: absolute; left: 140px; right: 220px; top: 330px; z-index: 6; }}
+      .imgFrame {{ width: 100%; aspect-ratio: 3 / 2; border-radius: 30px; overflow: hidden; border: 6px solid #fff;
+                   box-shadow: 0 26px 70px rgba(0,0,0,.5); background: #111; }}
+      .imgFrame img {{ width: 100%; height: 100%; object-fit: cover; display: block; transform-origin: 50% 50%; }}
+      .imgTag {{ margin: -30px auto 0; position: relative; width: max-content; white-space: nowrap; padding: 14px 26px; border-radius: 999px;
+                 background: var(--img-tag-bg, #e8452f); color: #fff; font: 800 40px/1 "Poppins", Arial, sans-serif;
+                 box-shadow: 0 12px 28px rgba(0,0,0,.35); }}
       .hookcam {{ z-index: 4; }}
       .ovfull {{ z-index: 2; }}
       .pip {{ position: absolute; top: 300px; width: 330px; z-index: 5; transform-origin: 50% 0%; }}

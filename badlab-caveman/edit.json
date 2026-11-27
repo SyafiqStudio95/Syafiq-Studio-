@@ -1,0 +1,696 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#140c08",
+   "--paper": "#ffffff",
+   "--gold": "#ff8a3d",
+   "--gold-deep": "#e2632b",
+   "--gold-hi": "#ffb070",
+   "--btn-ink": "#1a0a02",
+   "--ember": "#e8452f",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--title-size": "112px",
+   "--cta-size": "104px",
+   "--slam-size": "150px",
+   "--hook-scrim": ".35",
+   "--btn-size": "38px",
+   "--vol-w": "205px",
+   "--row-shift": "80px"
+  }
+ },
+ "grade": {
+  "note": "Teal-Amber Premium: smooth 3D LUT (tools/make_lut.py) quiets the cyan backdrop to deep teal and enriches warm covers; adjust+wheels shape contrast, warm highlights/teal shadows; vignette focuses light on the book; per-clip exposure evens lighting",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.16,
+    "shadows": 0.07,
+    "whites": -0.02,
+    "blacks": -0.02,
+    "vibrance": 0.05,
+    "saturation": -0.02
+   },
+   "wheels": {
+    "shadows": {
+     "hue": 195,
+     "amount": 0.1,
+     "level": -0.02
+    },
+    "highlights": {
+     "hue": 38,
+     "amount": 0.07,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.22,
+    "vignetteFeather": 0.7,
+    "grain": 0.04
+   }
+  },
+  "exposure": {
+   "c1": 0.16
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c1",
+    "in": 0.4,
+    "out": 1.1
+   },
+   {
+    "src": "c1",
+    "in": 27.6,
+    "out": 28.3
+   },
+   {
+    "src": "c1",
+    "in": 48.2,
+    "out": 48.9
+   }
+  ],
+  "lines": [
+   {
+    "text": "BUKAN SEMUA ORANG",
+    "style": "kicker",
+    "y": 880,
+    "in": 0.05,
+    "out": 1.1
+   },
+   {
+    "text": "mampu beli",
+    "style": "question",
+    "y": 950,
+    "in": 0.12,
+    "out": 1.1
+   },
+   {
+    "text": "yang mahal.",
+    "style": "slam",
+    "y": 900,
+    "in": 1.12,
+    "out": 2.1
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c1",
+   "in": 0.0,
+   "out": 2.46,
+   "a": 0.0,
+   "b": 2.38,
+   "z": 1.0,
+   "note": "Bukan semua orang berkemampuan nak beli",
+   "cap": "Bukan semua orang|berkemampuan nak beli"
+  },
+  {
+   "src": "c1",
+   "in": 2.61,
+   "out": 3.88,
+   "a": 2.66,
+   "b": 3.8,
+   "z": 1.08,
+   "note": "peralatan mandi,",
+   "cap": "peralatan mandi,"
+  },
+  {
+   "src": "c1",
+   "in": 3.97,
+   "out": 6.68,
+   "a": 4.02,
+   "b": 6.52,
+   "z": 1.0,
+   "note": "syampu, sabun yang harga mahal-mahal.",
+   "cap": "*syampu*, sabun|yang harga *mahal-mahal*."
+  },
+  {
+   "src": "c1",
+   "in": 6.97,
+   "out": 10.04,
+   "a": 7.02,
+   "b": 9.96,
+   "z": 1.14,
+   "note": "Kadang-kadang lelaki ni lebih utamakan",
+   "cap": "Kadang-kadang lelaki ni|lebih utamakan"
+  },
+  {
+   "src": "c1",
+   "in": 10.31,
+   "out": 12.78,
+   "a": 10.36,
+   "b": 12.62,
+   "z": 1.0,
+   "note": "keluarganya, sampai dia mengabaikan diri dia.",
+   "cap": "*keluarganya*, sampai dia|*mengabaikan* diri dia."
+  },
+  {
+   "src": "c1",
+   "in": 12.89,
+   "out": 14.28,
+   "a": 12.94,
+   "b": 14.12,
+   "z": 1.08,
+   "note": "Jadi jangan risau.",
+   "cap": "Jadi jangan *risau*."
+  },
+  {
+   "src": "c1",
+   "in": 14.29,
+   "out": 15.64,
+   "a": 14.34,
+   "b": 15.56,
+   "z": 1.0,
+   "note": "Lelaki boleh dapatkan",
+   "cap": "Lelaki boleh dapatkan"
+  },
+  {
+   "src": "c1",
+   "in": 16.15,
+   "out": 19.3,
+   "a": 16.2,
+   "b": 19.14,
+   "z": 1.14,
+   "note": "Caveman Cleaner 3 in 1, Bad Lab macam ni.",
+   "cap": "*Caveman* *Cleaner* 3 in 1,|Bad Lab macam ni."
+  },
+  {
+   "src": "c1",
+   "in": 19.37,
+   "out": 21.92,
+   "a": 19.42,
+   "b": 21.84,
+   "z": 1.0,
+   "note": "Sebab dia 3 in 1, untuk rambut,",
+   "cap": "Sebab dia *3* *in* *1*,|untuk *rambut*,"
+  },
+  {
+   "src": "c1",
+   "in": 22.35,
+   "out": 23.72,
+   "a": 22.4,
+   "b": 23.56,
+   "z": 1.08,
+   "note": "muka dan badan.",
+   "cap": "*muka* dan *badan*."
+  },
+  {
+   "src": "c1",
+   "in": 23.73,
+   "out": 26.12,
+   "a": 23.78,
+   "b": 26.04,
+   "z": 1.0,
+   "note": "Beli satu, boleh pakai untuk",
+   "cap": "Beli *satu*,|boleh pakai untuk"
+  },
+  {
+   "src": "c1",
+   "in": 26.29,
+   "out": 27.04,
+   "a": 26.34,
+   "b": 26.88,
+   "z": 1.14,
+   "note": "tiga.",
+   "cap": "*tiga*."
+  },
+  {
+   "src": "c1",
+   "in": 28.8,
+   "out": 31.22,
+   "a": 28.85,
+   "b": 31.22,
+   "z": 1.0,
+   "note": "Boleh dapatkan Bad Lab 400ml.",
+   "cap": "Boleh dapatkan|Bad Lab *400ml*."
+  },
+  {
+   "src": "c1",
+   "in": 31.22,
+   "out": 34.5,
+   "a": 31.22,
+   "b": 34.5,
+   "z": 1.08,
+   "note": "Boleh pakai sebulan ataupun sebulan lebih, insyaAllah.",
+   "cap": "Boleh pakai *sebulan*|ataupun sebulan lebih,|insyaAllah."
+  },
+  {
+   "src": "c1",
+   "in": 34.5,
+   "out": 36.88,
+   "a": 34.5,
+   "b": 36.72,
+   "z": 1.0,
+   "note": "Dan bagus, dia ada kawalan minyak.",
+   "cap": "Dan bagus, dia ada|*kawalan* *minyak*."
+  },
+  {
+   "src": "c1",
+   "in": 37.37,
+   "out": 38.7,
+   "a": 37.42,
+   "b": 38.62,
+   "z": 1.14,
+   "note": "Dan bila anda pakai,",
+   "cap": "Dan bila anda pakai,"
+  },
+  {
+   "src": "c1",
+   "in": 38.97,
+   "out": 41.26,
+   "a": 39.02,
+   "b": 41.18,
+   "z": 1.0,
+   "note": "bila balik kerja, penat-penat,",
+   "cap": "bila balik kerja,|*penat-penat*,"
+  },
+  {
+   "src": "c1",
+   "in": 41.57,
+   "out": 43.96,
+   "a": 41.62,
+   "b": 43.8,
+   "z": 1.08,
+   "note": "rasa sejuk-sejuk sebab ada mentol.",
+   "cap": "rasa *sejuk-sejuk*|sebab ada *mentol*."
+  },
+  {
+   "src": "c1",
+   "in": 43.97,
+   "out": 45.48,
+   "a": 44.02,
+   "b": 45.4,
+   "z": 1.0,
+   "note": "Anda akan rasa lebih",
+   "cap": "Anda akan rasa lebih"
+  },
+  {
+   "src": "c1",
+   "in": 45.61,
+   "out": 46.34,
+   "a": 45.66,
+   "b": 46.18,
+   "z": 1.14,
+   "note": "segar.",
+   "cap": "*segar*."
+  },
+  {
+   "src": "c1",
+   "in": 46.87,
+   "out": 49.38,
+   "a": 46.92,
+   "b": 49.3,
+   "z": 1.0,
+   "note": "Siapa yang berminat, dapatkan segera Bad Lab",
+   "cap": "Siapa yang berminat,|dapatkan segera *Bad* *Lab*"
+  },
+  {
+   "src": "c1",
+   "in": 49.69,
+   "out": 50.76,
+   "a": 49.74,
+   "b": 50.6,
+   "z": 1.08,
+   "note": "Caveman Cleaner.",
+   "cap": "*Caveman* *Cleaner*."
+  },
+  {
+   "src": "c1",
+   "in": 50.91,
+   "out": 52.48,
+   "a": 50.96,
+   "b": 52.32,
+   "z": 1.0,
+   "note": "Pembelian yang sangat berbaloi",
+   "cap": "Pembelian yang|sangat *berbaloi*"
+  },
+  {
+   "src": "c1",
+   "in": 52.67,
+   "out": 54.46,
+   "a": 52.72,
+   "b": 54.3,
+   "z": 1.14,
+   "note": "dan menjimatkan duit anda.",
+   "cap": "dan *menjimatkan*|duit anda."
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 51.0,
+  "dur": 2.4
+ },
+ "overlays": [],
+ "cards": [
+  {
+   "id": "p-dompet",
+   "kind": "photo",
+   "image": "assets/images/dompet.jpg",
+   "pos": "50% 55%",
+   "in": [
+    "c1",
+    0.1
+   ],
+   "out": [
+    "c1",
+    2.1
+   ],
+   "tag": "Bajet terhad?"
+  },
+  {
+   "id": "p-stres",
+   "kind": "photo",
+   "image": "assets/images/stres.jpg",
+   "pos": "50% 40%",
+   "in": [
+    "c1",
+    7.02
+   ],
+   "out": [
+    "c1",
+    12.52
+   ],
+   "tag": "Abaikan diri sendiri?"
+  },
+  {
+   "id": "p-berminyak",
+   "kind": "photo",
+   "image": "assets/images/berminyak.jpg",
+   "pos": "50% 35%",
+   "in": [
+    "c1",
+    34.5
+   ],
+   "out": [
+    "c1",
+    36.8
+   ],
+   "tag": "Kawal minyak"
+  },
+  {
+   "id": "p-letih",
+   "kind": "photo",
+   "image": "assets/images/letih.jpg",
+   "pos": "35% 45%",
+   "in": [
+    "c1",
+    39.02
+   ],
+   "out": [
+    "c1",
+    41.32
+   ],
+   "tag": "Penat balik kerja?"
+  },
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c1",
+    16.2
+   ],
+   "out": [
+    "c1",
+    19.2
+   ],
+   "kicker": "Bad-Lab",
+   "title": "Caveman Cleaner",
+   "sub": "3-in-1 untuk lelaki",
+   "y": 330
+  },
+  {
+   "id": "trio",
+   "kind": "trilogy",
+   "in": [
+    "c1",
+    19.42
+   ],
+   "out": [
+    "c1",
+    26.95
+   ],
+   "head": "Satu botol, 3 guna",
+   "items": [
+    {
+     "at": [
+      "c1",
+      20.9
+     ],
+     "num": "1",
+     "label": "Rambut"
+    },
+    {
+     "at": [
+      "c1",
+      22.4
+     ],
+     "num": "2",
+     "label": "Muka"
+    },
+    {
+     "at": [
+      "c1",
+      23.1
+     ],
+     "num": "3",
+     "label": "Badan"
+    }
+   ]
+  },
+  {
+   "id": "t-400",
+   "kind": "title",
+   "in": [
+    "c1",
+    28.85
+   ],
+   "out": [
+    "c1",
+    34.4
+   ],
+   "kicker": "400ml",
+   "title": "Sebulan+",
+   "sub": "satu botol, cukup sebulan",
+   "y": 330
+  },
+  {
+   "id": "t-segar",
+   "kind": "title",
+   "in": [
+    "c1",
+    41.62
+   ],
+   "out": [
+    "c1",
+    46.2
+   ],
+   "kicker": "Rasa sejuk",
+   "title": "Segar!",
+   "sub": "dengan Vitamin B5",
+   "y": 330
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c1",
+    46.92
+   ],
+   "buttonAt": [
+    "c1",
+    49.74
+   ],
+   "pulseAt": [
+    "c1",
+    52.72
+   ],
+   "kicker": "Bad-Lab",
+   "title": "Caveman Cleaner",
+   "by": "3-in-1 · 400ml · jimat",
+   "button": "Dapatkan sekarang"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": 0.1,
+   "lead": 0.0,
+   "dur": 0.72,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.12,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    2.66
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c1",
+    16.2
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    7.02
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    20.9
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    22.4
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    23.1
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    28.85
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    34.5
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    39.02
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    41.62
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    46.92
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    49.74
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    52.72
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.35
+  }
+ ]
+}

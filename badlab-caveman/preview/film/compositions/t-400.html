@@ -1,0 +1,66 @@
+<template>
+  <style>
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      :root {
+        --ink: #140c08;
+        --paper: #ffffff;
+        --gold: #ff8a3d;
+        --gold-deep: #e2632b;
+        --gold-hi: #ffb070;
+        --btn-ink: #1a0a02;
+        --ember: #e8452f;
+        --serif: "Poppins", Arial, sans-serif;
+        --sans: "Inter", Arial, sans-serif;
+        --em-style: normal;
+        --cap-right: 300px;
+        --title-size: 112px;
+        --cta-size: 104px;
+        --slam-size: 150px;
+        --hook-scrim: .35;
+        --btn-size: 38px;
+        --vol-w: 205px;
+        --row-shift: 80px;
+      }
+    #root { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
+
+    .topscrim { position: absolute; left: 0; right: 0; top: 0; height: 1000px;
+                 background: linear-gradient(180deg, rgba(5,10,12,.82) 0%, rgba(5,10,12,.62) 45%, rgba(5,10,12,0) 100%); }
+    .lock { position: absolute; left: 0; right: 0; top: 330px; text-align: center; }
+    .kick { font: 700 34px/1 var(--sans); letter-spacing: .42em; color: var(--gold); text-transform: uppercase;
+             text-shadow: 0 2px 16px rgba(0,0,0,.6); }
+    .ttl { font: 700 var(--title-size, 150px)/1.02 var(--serif); color: var(--paper); margin: 18px 120px 0; letter-spacing: .01em; text-wrap: balance;
+            text-shadow: 0 8px 40px rgba(0,0,0,.65); }
+    .ttl .wd { display: inline-block; white-space: nowrap; }
+    .ttl .ch { display: inline-block; }
+    .sub { font: var(--em-style, italic) 400 54px/1.1 var(--serif); color: var(--paper); opacity: .92; margin-top: 14px;
+            text-shadow: 0 4px 24px rgba(0,0,0,.7); }
+    .rule { width: 420px; height: 3px; margin: 22px auto; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+             transform-origin: 50% 50%; }
+
+  </style>
+  <div id="root" data-composition-id="t-400" data-start="0" data-duration="5.5667" data-width="1080" data-height="1920">
+    <div id="t-400-scrim" class="topscrim"></div>
+    <div id="t-400-wrap" class="lock">
+      <div id="t-400-rule-l" class="rule"></div>
+      <div id="t-400-kick" class="kick">400ml</div>
+      <div id="t-400-title" class="ttl"><span class="wd"><span class="ch">S</span><span class="ch">e</span><span class="ch">b</span><span class="ch">u</span><span class="ch">l</span><span class="ch">a</span><span class="ch">n</span><span class="ch">+</span></span></div>
+      <div id="t-400-sub" class="sub">satu botol, cukup sebulan</div>
+      <div id="t-400-rule-r" class="rule"></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#t-400-scrim", {opacity: 0}, {opacity: 1, duration: 0.35, ease: "power2.out"}, 0.0);
+    tl.to("#t-400-scrim", {opacity: 0, duration: 0.3, ease: "power2.in"}, 5.2667);
+    tl.fromTo("#t-400-rule-l", {scaleX: 0}, {scaleX: 1, duration: 0.5, ease: "expo.out"}, 0.0);
+    tl.fromTo("#t-400-kick", {opacity: 0, y: 16, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out"}, 0.05);
+    tl.fromTo("#t-400-title .ch", {opacity: 0.0, y: 26, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.4, ease: "expo.out", stagger: 0.035}, 0.12);
+    tl.fromTo("#t-400-sub", {opacity: 0, filter: "blur(8px)"}, {opacity: 0.92, filter: "blur(0px)", duration: 0.25, ease: "power4.out"}, 0.55);
+    tl.fromTo("#t-400-rule-r", {scaleX: 0}, {scaleX: 1, duration: 0.5, ease: "expo.out"}, 0.5);
+    tl.to("#t-400-wrap", {opacity: 0, filter: "blur(10px)", duration: 0.22, ease: "power2.in"}, 5.3333);
+    window.__timelines["t-400"] = tl;
+  </script>
+</template>

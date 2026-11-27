@@ -53,7 +53,8 @@ for r, (src, segs) in enumerate(runs):
 
 # muted b-roll: hook shots and the tail shot, LUT baked the same way
 broll = [(f"hook_{i}", h["src"], h["in"], h["out"]) for i, h in enumerate(E["hook"]["clips"])]
-broll += [(f"ov_{i}", o["src"], o["in"], o["in"] + o["dur"]) for i, o in enumerate(E.get("overlays", []))]
+broll += [(f"ov_{i}", o["src"], o["in"], o["in"] + o["dur"]) for i, o in enumerate(E.get("overlays", []))
+          if o.get("mode") != "image"]
 t = E["tail"]
 broll.append(("tail", t["src"], t["in"], t["in"] + t["dur"]))
 for name, src, a, b in broll:
