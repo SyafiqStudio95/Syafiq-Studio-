@@ -1,0 +1,678 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4",
+  "c2": "assets/video/c2.mp4",
+  "c3": "assets/video/c3.mp4",
+  "c4": "assets/video/c4.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#0b1a12",
+   "--paper": "#ffffff",
+   "--gold": "#7dff6a",
+   "--gold-deep": "#ffb400",
+   "--gold-hi": "#ffe45c",
+   "--btn-ink": "#1d1400",
+   "--ember": "#ff5a5f",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--cta-size": "112px",
+   "--title-size": "112px",
+   "--slam-size": "140px",
+   "--hook-scrim": ".45"
+  }
+ },
+ "grade": {
+  "note": "Bright and playful: teal-amber LUT quiets the blue demo backdrop; demo clips lifted (darker), kids clips held.",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.14,
+    "shadows": 0.08,
+    "whites": 0.02,
+    "blacks": -0.03,
+    "temperature": 0.02,
+    "vibrance": 0.12,
+    "saturation": 0.03
+   },
+   "wheels": {
+    "highlights": {
+     "hue": 45,
+     "amount": 0.04,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.08,
+    "vignetteFeather": 0.75
+   }
+  },
+  "exposure": {
+   "c1": -0.03,
+   "c2": -0.03,
+   "c3": 0.15,
+   "c4": -0.01
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c1",
+    "in": 1.6,
+    "out": 2.5
+   },
+   {
+    "src": "c2",
+    "in": 6.6,
+    "out": 7.5
+   },
+   {
+    "src": "c2",
+    "in": 19.0,
+    "out": 19.9
+   }
+  ],
+  "lines": [
+   {
+    "text": "PETANG-PETANG",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.05,
+    "out": 1.6
+   },
+   {
+    "text": "selalu hujan…",
+    "style": "question",
+    "y": 680,
+    "in": 0.12,
+    "out": 1.6
+   },
+   {
+    "text": "Anak mengeluh?",
+    "style": "slam",
+    "y": 620,
+    "in": 1.62,
+    "out": 2.7
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c3",
+   "in": 0.0,
+   "out": 1.82,
+   "a": 0.0,
+   "b": 1.66,
+   "z": 1.0,
+   "note": "Petang-petang selalu hujan.",
+   "cap": "Petang-petang selalu *hujan*."
+  },
+  {
+   "src": "c3",
+   "in": 1.87,
+   "out": 2.84,
+   "a": 1.92,
+   "b": 2.76,
+   "z": 1.08,
+   "note": "Dan anak mengeluh,",
+   "cap": "Dan anak *mengeluh*,"
+  },
+  {
+   "src": "c3",
+   "in": 3.07,
+   "out": 4.72,
+   "a": 3.12,
+   "b": 4.56,
+   "z": 1.0,
+   "note": "\"Tak dapat nak main bola lagi ni.\"",
+   "cap": "\"Tak dapat nak|main *bola* lagi ni.\""
+  },
+  {
+   "src": "c3",
+   "in": 4.95,
+   "out": 9.84,
+   "a": 5.0,
+   "b": 9.68,
+   "z": 1.14,
+   "note": "Jangan risau. Anda boleh dapatkan Hover Ball macam ni. Yang ni khas untuk main dalam rumah.",
+   "cap": "Jangan risau.|Anda boleh dapatkan|*Hover Ball* macam ni.|Yang ni khas untuk|main *dalam rumah*."
+  },
+  {
+   "src": "c3",
+   "in": 9.99,
+   "out": 10.7,
+   "a": 10.04,
+   "b": 10.62,
+   "z": 1.0,
+   "note": "Sebab apa?",
+   "cap": "Sebab apa?"
+  },
+  {
+   "src": "c3",
+   "in": 10.85,
+   "out": 14.52,
+   "a": 10.9,
+   "b": 14.36,
+   "z": 1.08,
+   "note": "Sebab Hover Ball ni tak akan melambung tinggi.",
+   "cap": "Sebab Hover Ball ni|*tak akan*|melambung tinggi."
+  },
+  {
+   "src": "c3",
+   "in": 14.57,
+   "out": 18.56,
+   "a": 14.62,
+   "b": 18.4,
+   "z": 1.0,
+   "note": "Dan apa yang menarik, boleh tengok dekat sini kualiti dia, bampar kat tepi ni.",
+   "cap": "Dan apa yang menarik,|boleh tengok dekat sini|kualiti dia,|*bampar* kat tepi ni."
+  },
+  {
+   "src": "c3",
+   "in": 18.81,
+   "out": 19.98,
+   "a": 18.86,
+   "b": 19.82,
+   "z": 1.14,
+   "note": "Memang sangat kenyal.",
+   "cap": "Memang sangat *kenyal*."
+  },
+  {
+   "src": "c3",
+   "in": 20.27,
+   "out": 26.52,
+   "a": 20.32,
+   "b": 26.36,
+   "z": 1.0,
+   "note": "Jadi tak ada masalah terhadap lantunan dia. Tak akan merosakkan permukaan dinding. Dan yang paling penting,",
+   "cap": "Jadi tak ada masalah|terhadap lantunan dia.|Tak akan *merosakkan*|permukaan dinding.|Dan yang paling penting,"
+  },
+  {
+   "src": "c3",
+   "in": 26.97,
+   "out": 31.2,
+   "a": 27.02,
+   "b": 31.04,
+   "z": 1.08,
+   "note": "Kita tengok Hover Ball ni, dia ada sistem angin. Daripada atas akan masuk angin.",
+   "cap": "Kita tengok Hover Ball ni,|dia ada *sistem angin*.|Daripada atas|akan masuk angin."
+  },
+  {
+   "src": "c3",
+   "in": 31.79,
+   "out": 35.06,
+   "a": 31.84,
+   "b": 34.98,
+   "z": 1.0,
+   "note": "Contoh bila kita on, kita akan nampak",
+   "cap": "Contoh bila kita *on*,|kita akan nampak"
+  },
+  {
+   "src": "c3",
+   "in": 35.57,
+   "out": 37.22,
+   "a": 35.62,
+   "b": 37.06,
+   "z": 1.14,
+   "note": "dia akan terus bergerak.",
+   "cap": "dia akan terus *bergerak*."
+  },
+  {
+   "src": "c3",
+   "in": 41.05,
+   "out": 43.4,
+   "a": 41.1,
+   "b": 43.32,
+   "z": 1.0,
+   "note": "Siapa yang berminat nak dapatkan",
+   "cap": "Siapa yang berminat|nak dapatkan"
+  },
+  {
+   "src": "c3",
+   "in": 43.73,
+   "out": 44.6,
+   "a": 43.78,
+   "b": 44.52,
+   "z": 1.08,
+   "note": "Hover Ball,",
+   "cap": "*Hover Ball*,"
+  },
+  {
+   "src": "c3",
+   "in": 44.99,
+   "out": 46.68,
+   "a": 45.04,
+   "b": 46.6,
+   "z": 1.0,
+   "note": "khas untuk main dalam rumah,",
+   "cap": "khas untuk main|dalam rumah,"
+  },
+  {
+   "src": "c3",
+   "in": 46.81,
+   "out": 48.02,
+   "a": 46.86,
+   "b": 47.86,
+   "z": 1.14,
+   "note": "musim-musim hujan ni,",
+   "cap": "musim-musim *hujan* ni,"
+  },
+  {
+   "src": "c3",
+   "in": 48.43,
+   "out": 51.06,
+   "a": 48.48,
+   "b": 50.98,
+   "z": 1.0,
+   "note": "boleh tekan beg kuning sekarang. Dan juga,",
+   "cap": "boleh tekan|*beg kuning* sekarang.|Dan juga,"
+  },
+  {
+   "src": "c3",
+   "in": 51.17,
+   "out": 52.54,
+   "a": 51.22,
+   "b": 52.46,
+   "z": 1.08,
+   "note": "dia bagi kepada kita",
+   "cap": "dia bagi kepada kita"
+  },
+  {
+   "src": "c3",
+   "in": 53.23,
+   "out": 56.8,
+   "a": 53.28,
+   "b": 56.64,
+   "z": 1.0,
+   "note": "penguin yang bersama dengan pam.",
+   "cap": "*penguin* yang bersama|dengan *pam*."
+  },
+  {
+   "src": "c3",
+   "in": 57.15,
+   "out": 62.66,
+   "a": 57.2,
+   "b": 62.5,
+   "z": 1.14,
+   "note": "Boleh pam penguin tu, main dalam rumah. Siapa berminat, beli sekarang. Harga tengah murah!",
+   "cap": "Boleh pam penguin tu,|main dalam rumah.|Siapa berminat,|*beli sekarang*.|Harga tengah *murah*!"
+  }
+ ],
+ "tail": {
+  "src": "c2",
+  "in": 12.0,
+  "dur": 2.4
+ },
+ "overlays": [
+  {
+   "mode": "pip",
+   "side": "left",
+   "src": "c1",
+   "in": 3.0,
+   "dur": 3.0,
+   "at": [
+    "c3",
+    3.12
+   ],
+   "tag": "Tak boleh main luar"
+  },
+  {
+   "mode": "full",
+   "src": "c2",
+   "in": 11.0,
+   "dur": 2.4,
+   "at": [
+    "c3",
+    7.6
+   ]
+  },
+  {
+   "mode": "pip",
+   "side": "left",
+   "src": "c1",
+   "in": 0.5,
+   "dur": 2.6,
+   "at": [
+    "c3",
+    20.4
+   ],
+   "tag": "Main dalam rumah"
+  },
+  {
+   "mode": "pip",
+   "side": "left",
+   "src": "c1",
+   "in": 4.5,
+   "dur": 2.8,
+   "at": [
+    "c3",
+    35.0
+   ],
+   "tag": "Terapung!"
+  },
+  {
+   "mode": "full",
+   "src": "c2",
+   "in": 21.0,
+   "dur": 2.2,
+   "at": [
+    "c3",
+    45.0
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c4",
+   "in": 0.5,
+   "dur": 3.2,
+   "at": [
+    "c3",
+    51.22
+   ]
+  },
+  {
+   "mode": "pip",
+   "side": "right",
+   "src": "c2",
+   "in": 2.5,
+   "dur": 3.0,
+   "at": [
+    "c3",
+    57.3
+   ],
+   "tag": "Bonus penguin!"
+  }
+ ],
+ "cards": [
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c3",
+    5.9
+   ],
+   "out": [
+    "c3",
+    9.68
+   ],
+   "kicker": "Bola dalam rumah",
+   "title": "Hover Ball",
+   "sub": "terapung · lampu LED",
+   "y": 330
+  },
+  {
+   "id": "t-selamat",
+   "kind": "title",
+   "in": [
+    "c3",
+    10.9
+   ],
+   "out": [
+    "c3",
+    14.36
+   ],
+   "kicker": "Selamat dalam rumah",
+   "title": "Tak Melambung",
+   "sub": "gelongsor atas lantai",
+   "y": 330
+  },
+  {
+   "id": "t-lembut",
+   "kind": "title",
+   "in": [
+    "c3",
+    16.6
+   ],
+   "out": [
+    "c3",
+    19.82
+   ],
+   "kicker": "Bampar pelindung",
+   "title": "Kenyal",
+   "sub": "tak rosakkan dinding",
+   "y": 330
+  },
+  {
+   "id": "t-udara",
+   "kind": "title",
+   "in": [
+    "c3",
+    27.02
+   ],
+   "out": [
+    "c3",
+    31.04
+   ],
+   "kicker": "Sistem kusyen udara",
+   "title": "Angin",
+   "sub": "angin masuk dari atas",
+   "y": 330
+  },
+  {
+   "id": "t-bonus",
+   "kind": "title",
+   "in": [
+    "c3",
+    53.28
+   ],
+   "out": [
+    "c3",
+    56.64
+   ],
+   "kicker": "Bonus dalam set",
+   "title": "Penguin + Pam",
+   "sub": "mainan tambahan",
+   "y": 330
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c3",
+    59.3
+   ],
+   "buttonAt": [
+    "c3",
+    60.6
+   ],
+   "pulseAt": [
+    "c3",
+    61.6
+   ],
+   "kicker": "Musim hujan",
+   "title": "Hover Ball",
+   "by": "+ bonus penguin & pam",
+   "button": "Tekan beg kuning"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.62,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    3.12
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c3",
+    5.9
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c3",
+    6.0
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    7.6
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    10.9
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    16.6
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    20.4
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    27.02
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    35.0
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    45.0
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    51.22
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c3",
+    53.4
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    57.3
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c3",
+    59.3
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    60.6
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  }
+ ]
+}

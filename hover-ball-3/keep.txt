@@ -1,0 +1,22 @@
+# Hover Ball (take 3). c3 = A-roll. Dropped: 37.5-41.1 (motor noise only, before "Siapa yang berminat").
+# c1/c2 = kids playing (b-roll, Whisper hallucinated "Terima kasih" on c2), c4 = penguin bonus.
+c3 0.00 1.66 . | Petang-petang selalu *hujan*.
+c3 1.92 2.76 | Dan anak *mengeluh*,
+c3 3.12 4.56 . | "Tak dapat nak|main *bola* lagi ni."
+c3 5.00 9.68 . | Jangan risau.|Anda boleh dapatkan|*Hover Ball* macam ni.|Yang ni khas untuk|main *dalam rumah*.
+c3 10.04 10.62 | Sebab apa?
+c3 10.90 14.36 . | Sebab Hover Ball ni|*tak akan*|melambung tinggi.
+c3 14.62 18.40 . | Dan apa yang menarik,|boleh tengok dekat sini|kualiti dia,|*bampar* kat tepi ni.
+c3 18.86 19.82 . | Memang sangat *kenyal*.
+c3 20.32 26.36 . | Jadi tak ada masalah|terhadap lantunan dia.|Tak akan *merosakkan*|permukaan dinding.|Dan yang paling penting,
+c3 27.02 31.04 . | Kita tengok Hover Ball ni,|dia ada *sistem angin*.|Daripada atas|akan masuk angin.
+c3 31.84 34.98 | Contoh bila kita *on*,|kita akan nampak
+c3 35.62 37.06 . | dia akan terus *bergerak*.
+c3 41.10 43.32 | Siapa yang berminat|nak dapatkan
+c3 43.78 44.52 | *Hover Ball*,
+c3 45.04 46.60 | khas untuk main|dalam rumah,
+c3 46.86 47.86 . | musim-musim *hujan* ni,
+c3 48.48 50.98 | boleh tekan|*beg kuning* sekarang.|Dan juga,
+c3 51.22 52.46 | dia bagi kepada kita
+c3 53.28 56.64 . | *penguin* yang bersama|dengan *pam*.
+c3 57.20 62.50 . | Boleh pam penguin tu,|main dalam rumah.|Siapa berminat,|*beli sekarang*.|Harga tengah *murah*!
