@@ -1,0 +1,913 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4",
+  "c2": "assets/video/c2.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#0b1a12",
+   "--paper": "#ffffff",
+   "--gold": "#ff8ccf",
+   "--gold-deep": "#ffb400",
+   "--gold-hi": "#ffe45c",
+   "--btn-ink": "#1d1400",
+   "--ember": "#ff5a5f",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--cta-size": "112px",
+   "--title-size": "112px",
+   "--slam-size": "140px",
+   "--hook-scrim": ".45",
+   "--panel": "440px"
+  }
+ },
+ "grade": {
+  "note": "Pink fan on a cyan backdrop: teal-amber LUT calms the cyan, keeps the pink product warm.",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.14,
+    "shadows": 0.08,
+    "whites": 0.02,
+    "blacks": -0.03,
+    "temperature": 0.02,
+    "vibrance": 0.12,
+    "saturation": 0.03
+   },
+   "wheels": {
+    "highlights": {
+     "hue": 45,
+     "amount": 0.04,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.08,
+    "vignetteFeather": 0.75
+   }
+  },
+  "exposure": {
+   "c1": 0.05,
+   "c2": 0.0
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c1",
+    "in": 0.3,
+    "out": 1.2
+   },
+   {
+    "src": "c1",
+    "in": 1.4,
+    "out": 2.3
+   },
+   {
+    "src": "c1",
+    "in": 2.5,
+    "out": 3.4
+   }
+  ],
+  "lines": [
+   {
+    "text": "ADUH,",
+    "style": "kicker",
+    "y": 560,
+    "in": 0.05,
+    "out": 2.7
+   },
+   {
+    "text": "asyik lupa",
+    "style": "question",
+    "y": 640,
+    "in": 0.1,
+    "out": 2.7
+   },
+   {
+    "text": "cas kipas!",
+    "style": "slam",
+    "y": 760,
+    "in": 1.6,
+    "out": 2.7
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c2",
+   "in": 0.0,
+   "out": 2.7,
+   "a": 0.0,
+   "b": 2.7,
+   "z": 1.0,
+   "note": "Aduh, asyik lupa cas kipas!",
+   "cap": "Aduh, asyik lupa|cas *kipas*!"
+  },
+  {
+   "src": "c2",
+   "in": 2.7,
+   "out": 4.72,
+   "a": 2.72,
+   "b": 4.72,
+   "z": 1.08,
+   "note": "Bila nak guna, bateri pula habis.",
+   "cap": "Bila nak guna,|*bateri* pula habis."
+  },
+  {
+   "src": "c2",
+   "in": 4.72,
+   "out": 7.33,
+   "a": 4.76,
+   "b": 7.3,
+   "z": 1.0,
+   "note": "Panas lagi, peluh lagi, geramnya!",
+   "cap": "Panas lagi, peluh lagi,|*geramnya*!"
+  },
+  {
+   "src": "c2",
+   "in": 7.33,
+   "out": 9.61,
+   "a": 7.38,
+   "b": 9.48,
+   "z": 1.14,
+   "note": "Mulai hari ni tak payah cas lagi.",
+   "cap": "Mulai hari ni|*tak* *payah* *cas* lagi."
+  },
+  {
+   "src": "c2",
+   "in": 9.61,
+   "out": 10.38,
+   "a": 9.66,
+   "b": 10.3,
+   "z": 1.0,
+   "note": "Kenalkan,",
+   "cap": "Kenalkan,"
+  },
+  {
+   "src": "c2",
+   "in": 10.51,
+   "out": 12.96,
+   "a": 10.56,
+   "b": 12.8,
+   "z": 1.08,
+   "note": "GOOJODOQ USB High Speed Mini Fan!",
+   "cap": "*GOOJODOQ*|USB High Speed Mini Fan!"
+  },
+  {
+   "src": "c2",
+   "in": 13.15,
+   "out": 14.34,
+   "a": 13.2,
+   "b": 14.26,
+   "z": 1.0,
+   "note": "Kipas ni tak ada bateri,",
+   "cap": "Kipas ni tak ada *bateri*,"
+  },
+  {
+   "src": "c2",
+   "in": 14.65,
+   "out": 15.78,
+   "a": 14.7,
+   "b": 15.62,
+   "z": 1.14,
+   "note": "jadi tak perlu cas.",
+   "cap": "jadi tak perlu *cas*."
+  },
+  {
+   "src": "c2",
+   "in": 16.15,
+   "out": 18.52,
+   "a": 16.2,
+   "b": 18.44,
+   "z": 1.0,
+   "note": "Cucuk sahaja pada port USB Type-C,",
+   "cap": "Cucuk sahaja pada|port *USB* *Type-C*,"
+  },
+  {
+   "src": "c2",
+   "in": 18.75,
+   "out": 21.5,
+   "a": 18.8,
+   "b": 21.34,
+   "z": 1.08,
+   "note": "dekat telefon, tablet, power bank atau laptop.",
+   "cap": "dekat telefon, tablet,|*power* *bank* atau laptop."
+  },
+  {
+   "src": "c2",
+   "in": 21.75,
+   "out": 24.52,
+   "a": 21.8,
+   "b": 24.36,
+   "z": 1.0,
+   "note": "Dalam beberapa saat, angin sejuk terus bertiup.",
+   "cap": "Dalam beberapa saat,|angin sejuk *terus* *bertiup*."
+  },
+  {
+   "src": "c2",
+   "in": 24.77,
+   "out": 26.68,
+   "a": 24.82,
+   "b": 26.52,
+   "z": 1.14,
+   "note": "Plug and play, semudah itu saja.",
+   "cap": "*Plug* *and* *play*,|semudah itu saja."
+  },
+  {
+   "src": "c2",
+   "in": 26.89,
+   "out": 29.45,
+   "a": 26.94,
+   "b": 29.3,
+   "z": 1.0,
+   "note": "Kelajuan angin boleh dilaras ikut selesa anda.",
+   "cap": "Kelajuan angin boleh dilaras|ikut *selesa* anda."
+  },
+  {
+   "src": "c2",
+   "in": 29.45,
+   "out": 32.62,
+   "a": 29.5,
+   "b": 32.46,
+   "z": 1.08,
+   "note": "Saiznya kecil, tapi anginnya laju dan padu.",
+   "cap": "Saiznya kecil,|tapi anginnya *laju*|dan *padu*."
+  },
+  {
+   "src": "c2",
+   "in": 32.69,
+   "out": 34.31,
+   "a": 32.74,
+   "b": 34.3,
+   "z": 1.0,
+   "note": "Ringan dan kompak, muat nak bawa.",
+   "cap": "Ringan dan *kompak*,|muat nak bawa."
+  },
+  {
+   "src": "c2",
+   "in": 34.31,
+   "out": 36.48,
+   "a": 34.36,
+   "b": 36.32,
+   "z": 1.14,
+   "note": "Letak dalam beg, dalam poket pun muat.",
+   "cap": "Letak dalam *beg*,|dalam *poket* pun muat."
+  },
+  {
+   "src": "c2",
+   "in": 36.57,
+   "out": 40.18,
+   "a": 36.62,
+   "b": 40.1,
+   "z": 1.0,
+   "note": "Sesuai bawa ke ofis, pergi kelas, bercuti,",
+   "cap": "Sesuai bawa ke *ofis*,|pergi *kelas*, *bercuti*,"
+  },
+  {
+   "src": "c2",
+   "in": 40.37,
+   "out": 42.69,
+   "a": 40.42,
+   "b": 42.64,
+   "z": 1.08,
+   "note": "atau masa naik transit, tren pun boleh.",
+   "cap": "atau masa naik *transit*,|tren pun boleh."
+  },
+  {
+   "src": "c2",
+   "in": 42.69,
+   "out": 45.59,
+   "a": 42.74,
+   "b": 45.56,
+   "z": 1.0,
+   "note": "Selagi telefon ada di tangan anda atau power bank,",
+   "cap": "Selagi telefon ada|di tangan anda|atau *power* *bank*,"
+  },
+  {
+   "src": "c2",
+   "in": 45.59,
+   "out": 49.62,
+   "a": 45.64,
+   "b": 49.46,
+   "z": 1.14,
+   "note": "anda akan kekal rasa sejuk dengan kipas.",
+   "cap": "anda akan kekal|rasa *sejuk*|dengan kipas."
+  },
+  {
+   "src": "c2",
+   "in": 50.15,
+   "out": 51.4,
+   "a": 50.2,
+   "b": 51.24,
+   "z": 1.0,
+   "note": "Jadi, jangan risau lagi.",
+   "cap": "Jadi, jangan risau lagi."
+  },
+  {
+   "src": "c2",
+   "in": 51.65,
+   "out": 54.32,
+   "a": 51.7,
+   "b": 54.16,
+   "z": 1.08,
+   "note": "Belilah GOOJODOQ High Speed USB Mini Fan.",
+   "cap": "Belilah *GOOJODOQ*|High Speed USB Mini Fan."
+  },
+  {
+   "src": "c2",
+   "in": 54.41,
+   "out": 56.86,
+   "a": 54.46,
+   "b": 56.7,
+   "z": 1.0,
+   "note": "Tak perlu cas lagi. Senang bawa ke mana-mana.",
+   "cap": "*Tak* *perlu* *cas* lagi.|Senang bawa ke mana-mana."
+  },
+  {
+   "src": "c2",
+   "in": 56.99,
+   "out": 59.3,
+   "a": 57.04,
+   "b": 59.14,
+   "z": 1.14,
+   "note": "Dapatkan sekarang. Tekan beg kuning sekarang!",
+   "cap": "Dapatkan sekarang.|Tekan *beg* *kuning* sekarang!"
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 56.0,
+  "dur": 2.4
+ },
+ "overlays": [
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 2.9,
+   "dur": 2.07,
+   "at": [
+    "c2",
+    2.72
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 5.0,
+   "dur": 5.54,
+   "at": [
+    "c2",
+    7.38
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 10.6,
+   "dur": 2.34,
+   "at": [
+    "c2",
+    13.2
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 17.8,
+   "dur": 5.21,
+   "at": [
+    "c2",
+    16.2
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 23.6,
+   "dur": 2.87,
+   "at": [
+    "c2",
+    21.8
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 26.0,
+   "dur": 1.91,
+   "at": [
+    "c2",
+    24.82
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 30.0,
+   "dur": 2.64,
+   "at": [
+    "c2",
+    26.94
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 33.9,
+   "dur": 3.17,
+   "at": [
+    "c2",
+    29.5
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 52.4,
+   "dur": 1.64,
+   "at": [
+    "c2",
+    32.74
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 48.0,
+   "dur": 0.91,
+   "at": [
+    "c2",
+    34.36
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 44.2,
+   "dur": 1.37,
+   "at": [
+    "c2",
+    35.2
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 37.2,
+   "dur": 3.64,
+   "at": [
+    "c2",
+    36.62
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 41.0,
+   "dur": 2.34,
+   "at": [
+    "c2",
+    40.42
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 18.6,
+   "dur": 2.94,
+   "at": [
+    "c2",
+    42.74
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 13.4,
+   "dur": 4.11,
+   "at": [
+    "c2",
+    45.64
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 51.9,
+   "dur": 3.94,
+   "at": [
+    "c2",
+    50.2
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 5.4,
+   "dur": 4.77,
+   "at": [
+    "c2",
+    54.46
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "id": "t-panas",
+   "kind": "title",
+   "in": [
+    "c2",
+    4.76
+   ],
+   "out": [
+    "c2",
+    7.34
+   ],
+   "kicker": "Panas · berpeluh",
+   "title": "Geramnya!",
+   "sub": "bateri habis lagi…",
+   "y": 420
+  },
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c2",
+    10.56
+   ],
+   "out": [
+    "c2",
+    13.16
+   ],
+   "kicker": "Kenalkan",
+   "title": "GOOJODOQ",
+   "sub": "USB High Speed Mini Fan",
+   "y": 330
+  },
+  {
+   "id": "f-bateri",
+   "kind": "feature",
+   "in": [
+    "c2",
+    13.2
+   ],
+   "out": [
+    "c2",
+    15.9
+   ],
+   "image": "assets/images/p1.jpg",
+   "pos": "50% 60%",
+   "stat": "0 bateri",
+   "label": "tak perlu cas langsung"
+  },
+  {
+   "id": "f-typec",
+   "kind": "feature",
+   "in": [
+    "c2",
+    18.8
+   ],
+   "out": [
+    "c2",
+    21.6
+   ],
+   "image": "assets/images/p2.jpg",
+   "pos": "50% 50%",
+   "stat": "Type-C",
+   "label": "telefon · tablet · laptop"
+  },
+  {
+   "id": "t-plug",
+   "kind": "title",
+   "in": [
+    "c2",
+    24.82
+   ],
+   "out": [
+    "c2",
+    26.9
+   ],
+   "kicker": "Angin dalam beberapa saat",
+   "title": "Plug & Play",
+   "sub": "semudah itu",
+   "y": 330
+  },
+  {
+   "id": "f-tahap",
+   "kind": "feature",
+   "in": [
+    "c2",
+    26.94
+   ],
+   "out": [
+    "c2",
+    29.45
+   ],
+   "image": "assets/images/p4.jpg",
+   "pos": "50% 50%",
+   "stat": "3 tahap",
+   "label": "lembut · sederhana · turbo"
+  },
+  {
+   "id": "f-rpm",
+   "kind": "feature",
+   "in": [
+    "c2",
+    29.5
+   ],
+   "out": [
+    "c2",
+    32.6
+   ],
+   "image": "assets/images/p3.jpg",
+   "pos": "50% 50%",
+   "stat": "15,573 RPM",
+   "statSize": 96,
+   "label": "kecil tapi laju & padu"
+  },
+  {
+   "id": "f-ringan",
+   "kind": "feature",
+   "in": [
+    "c2",
+    32.74
+   ],
+   "out": [
+    "c2",
+    34.34
+   ],
+   "image": "assets/images/p6.jpg",
+   "pos": "50% 50%",
+   "stat": "43 g",
+   "label": "ringan & kompak"
+  },
+  {
+   "id": "t-mana",
+   "kind": "title",
+   "in": [
+    "c2",
+    36.62
+   ],
+   "out": [
+    "c2",
+    42.7
+   ],
+   "kicker": "Bawa ke mana-mana",
+   "title": "Kekal cool",
+   "sub": "ofis · kelas · cuti · transit",
+   "y": 330
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c2",
+    51.7
+   ],
+   "buttonAt": [
+    "c2",
+    57.04
+   ],
+   "pulseAt": [
+    "c2",
+    58.2
+   ],
+   "kicker": "Tak perlu cas lagi",
+   "title": "GOOJODOQ",
+   "by": "USB High Speed Mini Fan",
+   "button": "Tekan beg kuning"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.6,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    4.76
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    7.38
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c2",
+    10.56
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c2",
+    10.7
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    13.2
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    16.2
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    18.8
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    21.8
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    24.82
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    26.94
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    29.5
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    32.74
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    34.36
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    36.62
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    42.74
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    50.2
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    51.7
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    57.04
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c2",
+    58.2
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.35
+  }
+ ]
+}

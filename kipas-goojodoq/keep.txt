@@ -1,0 +1,25 @@
+# src start end [. = sentence end] | caption groups (*word* = emphasis)
+c2 0.00 2.70 . | Aduh, asyik lupa|cas *kipas*!
+c2 2.72 4.72 . | Bila nak guna,|*bateri* pula habis.
+c2 4.76 7.30 . | Panas lagi, peluh lagi,|*geramnya*!
+c2 7.38 9.48 . | Mulai hari ni|*tak* *payah* *cas* lagi.
+c2 9.66 10.30 | Kenalkan,
+c2 10.56 12.80 . | *GOOJODOQ*|USB High Speed Mini Fan!
+c2 13.20 14.26 | Kipas ni tak ada *bateri*,
+c2 14.70 15.62 . | jadi tak perlu *cas*.
+c2 16.20 18.44 | Cucuk sahaja pada|port *USB* *Type-C*,
+c2 18.80 21.34 . | dekat telefon, tablet,|*power* *bank* atau laptop.
+c2 21.80 24.36 . | Dalam beberapa saat,|angin sejuk *terus* *bertiup*.
+c2 24.82 26.52 . | *Plug* *and* *play*,|semudah itu saja.
+c2 26.94 29.30 . | Kelajuan angin boleh dilaras|ikut *selesa* anda.
+c2 29.50 32.46 . | Saiznya kecil,|tapi anginnya *laju*|dan *padu*.
+c2 32.74 34.30 | Ringan dan *kompak*,|muat nak bawa.
+c2 34.36 36.32 . | Letak dalam *beg*,|dalam *poket* pun muat.
+c2 36.62 40.10 | Sesuai bawa ke *ofis*,|pergi *kelas*, *bercuti*,
+c2 40.42 42.64 . | atau masa naik *transit*,|tren pun boleh.
+c2 42.74 45.56 | Selagi telefon ada|di tangan anda|atau *power* *bank*,
+c2 45.64 49.46 . | anda akan kekal|rasa *sejuk*|dengan kipas.
+c2 50.20 51.24 . | Jadi, jangan risau lagi.
+c2 51.70 54.16 . | Belilah *GOOJODOQ*|High Speed USB Mini Fan.
+c2 54.46 56.70 . | *Tak* *perlu* *cas* lagi.|Senang bawa ke mana-mana.
+c2 57.04 59.14 . | Dapatkan sekarang.|Tekan *beg* *kuning* sekarang!
