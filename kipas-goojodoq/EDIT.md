@@ -20,7 +20,7 @@ Film length: 58.47s (24 cuts)
 | 13 | 27.57 | 3.17 | c2 | 29.45 | 32.62 | Saiznya kecil, tapi anginnya laju dan padu. |
 | 14 | 30.73 | 1.60 | c2 | 32.69 | 34.31 | Ringan dan kompak, muat nak bawa. |
 | 15 | 32.33 | 2.17 | c2 | 34.31 | 36.48 | Letak dalam beg, dalam poket pun muat. |
-| 16 | 34.50 | 3.60 | c2 | 36.57 | 40.18 | Sesuai bawa ke ofis, pergi kelas, bercuti, |
+| 16 | 34.50 | 3.60 | c2 | 36.57 | 40.18 | Sesuai bawa ke office, pergi kelas, bercuti, |
 | 17 | 38.10 | 2.33 | c2 | 40.37 | 42.69 | atau masa naik transit, tren pun boleh. |
 | 18 | 40.43 | 2.90 | c2 | 42.69 | 45.59 | Selagi telefon ada di tangan anda atau power bank, |
 | 19 | 43.33 | 4.03 | c2 | 45.59 | 49.62 | anda akan kekal rasa sejuk dengan kipas. |

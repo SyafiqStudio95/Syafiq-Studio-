@@ -15,7 +15,7 @@ c2 26.94 29.30 . | Kelajuan angin boleh dilaras|ikut *selesa* anda.
 c2 29.50 32.46 . | Saiznya kecil,|tapi anginnya *laju*|dan *padu*.
 c2 32.74 34.30 | Ringan dan *kompak*,|muat nak bawa.
 c2 34.36 36.32 . | Letak dalam *beg*,|dalam *poket* pun muat.
-c2 36.62 40.10 | Sesuai bawa ke *ofis*,|pergi *kelas*, *bercuti*,
+c2 36.62 40.10 | Sesuai bawa ke *office*,|pergi *kelas*, *bercuti*,
 c2 40.42 42.64 . | atau masa naik *transit*,|tren pun boleh.
 c2 42.74 45.56 | Selagi telefon ada|di tangan anda|atau *power* *bank*,
 c2 45.64 49.46 . | anda akan kekal|rasa *sejuk*|dengan kipas.

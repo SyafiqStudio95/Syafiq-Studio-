@@ -288,8 +288,8 @@
    "a": 36.62,
    "b": 40.1,
    "z": 1.0,
-   "note": "Sesuai bawa ke ofis, pergi kelas, bercuti,",
-   "cap": "Sesuai bawa ke *ofis*,|pergi *kelas*, *bercuti*,"
+   "note": "Sesuai bawa ke office, pergi kelas, bercuti,",
+   "cap": "Sesuai bawa ke *office*,|pergi *kelas*, *bercuti*,"
   },
   {
    "src": "c2",
@@ -682,7 +682,7 @@
    ],
    "kicker": "Bawa ke mana-mana",
    "title": "Kekal cool",
-   "sub": "ofis · kelas · cuti · transit",
+   "sub": "office · kelas · transit",
    "y": 330
   },
   {
