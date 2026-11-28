@@ -76,7 +76,7 @@ def person(kind="man", body=None, faces=("smile",), label=None, arm="up"):
                  "sly": '<path d="M124,218 Q156,232 180,210" stroke="#3b2a1a" stroke-width="7" fill="none" stroke-linecap="round"/>',
                  "flat": '<line x1="130" y1="222" x2="170" y2="222" stroke="#3b2a1a" stroke-width="7" stroke-linecap="round"/>'}[f]
         g.append(mouth)
-        faces_svg.append(f'<g class="face f-{f}" style="opacity:{1 if i == 0 else 0}">{"".join(g)}</g>')
+        faces_svg.append(f'<g class="face fi{i} f-{f}" style="opacity:{1 if i == 0 else 0}">{"".join(g)}</g>')
     p += faces_svg
     return 300, 640, "".join(p)
 
@@ -254,7 +254,7 @@ def make(E, T, fr, scene, esc, total):
                 for k, (fc, f) in enumerate(it.get("faces", [])):
                     tf = rel(fc, a)
                     js.append(f'    tl.set("#{iid} .face", {{opacity: 0}}, {tf});')
-                    js.append(f'    tl.set("#{iid} .face:nth-of-type({k + 2})", {{opacity: 1}}, {tf});')
+                    js.append(f'    tl.set("#{iid} .fi{k + 1}", {{opacity: 1}}, {tf});')
                 if it.get("wave"):
                     js.append(f'    tl.fromTo("#{iid} .arm", {{rotation: 0}}, {{rotation: -10, svgOrigin: "208 300", duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: {max(1, int(d / 0.45) - 1)}}}, {fr(at + 0.3)});')
                 body.append(html)

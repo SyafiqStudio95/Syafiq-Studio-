@@ -13,3 +13,4 @@ grading/*.jpg
 transcript/audio/
 *.log
 transcript/log.txt
+renders.log
