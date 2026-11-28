@@ -1,0 +1,60 @@
+<template>
+  <style>
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      :root {
+        --ink: #140c08;
+        --paper: #ffffff;
+        --gold: #ff8a3d;
+        --gold-deep: #e2632b;
+        --gold-hi: #ffb070;
+        --btn-ink: #1a0a02;
+        --ember: #e8452f;
+        --serif: "Poppins", Arial, sans-serif;
+        --sans: "Inter", Arial, sans-serif;
+        --em-style: normal;
+        --cap-right: 300px;
+        --title-size: 112px;
+        --cta-size: 104px;
+        --slam-size: 150px;
+        --hook-scrim: .35;
+        --btn-size: 38px;
+        --vol-w: 205px;
+        --row-shift: 80px;
+      }
+    #root { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
+
+    .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,10,12,.78) 0%, rgba(5,10,12,.35) 42%, rgba(5,10,12,.15) 60%, rgba(5,10,12,.7) 100%); }
+    .cta { position: absolute; left: 120px; right: 180px; top: 330px; text-align: center; }
+    .kick { font: 700 34px/1 var(--sans); letter-spacing: .4em; color: var(--gold); text-transform: uppercase; }
+    .ttl { font: 700 var(--cta-size, 150px)/0.95 var(--serif); color: var(--paper); margin-top: 22px; text-shadow: 0 10px 44px rgba(0,0,0,.6); }
+    .by { font: var(--em-style, italic) 400 50px/1.1 var(--serif); color: var(--paper); margin-top: 14px; }
+    .btn { display: inline-flex; align-items: center; gap: 18px; white-space: nowrap; margin-top: 110px; padding: 30px 56px; border-radius: 999px;
+           background: linear-gradient(180deg, var(--gold-hi, #f0c470), var(--gold-deep)); color: var(--btn-ink, var(--ink));
+           font: 700 var(--btn-size, 46px)/1 var(--sans); letter-spacing: .1em; text-transform: uppercase;
+           box-shadow: 0 18px 50px rgba(0,0,0,.45), 0 0 0 2px rgba(255,236,190,.5) inset; }
+
+  </style>
+  <div id="root" data-composition-id="cta" data-start="0" data-duration="7.3" data-width="1080" data-height="1920">
+    <div id="cta-scrim" class="scrim"></div>
+    <div id="cta-wrap" class="cta">
+      <div id="cta-kick" class="kick">Bad-Lab</div>
+      <div id="cta-title" class="ttl">Caveman Cleaner</div>
+      <div id="cta-by" class="by">3-in-1 · rambut · muka · badan</div>
+      <div id="cta-btn" class="btn"><span>Beli sekarang</span><svg viewBox="0 0 24 24" width="46" height="46"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#cta-scrim", {opacity: 0}, {opacity: 1, duration: 0.6, ease: "power2.inOut"}, 0);
+    tl.fromTo("#cta-kick", {opacity: 0, y: 16, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out"}, 0.1);
+    tl.fromTo("#cta-title", {opacity: 0, scale: 1.12, filter: "blur(12px)"}, {opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.5, ease: "expo.out"}, 0.2);
+    tl.fromTo("#cta-by", {opacity: 0}, {opacity: 0.9, duration: 0.4, ease: "power2.out"}, 0.55);
+    tl.fromTo("#cta-btn", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.8)"}, 1.1667);
+    tl.to("#cta-btn", {scale: 1.12, duration: 0.16, ease: "power2.out"}, 3.1667);
+    tl.to("#cta-btn", {scale: 1, duration: 0.4, ease: "power2.inOut"}, 3.3333);
+    window.__timelines["cta"] = tl;
+  </script>
+</template>

@@ -1,0 +1,538 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#140c08",
+   "--paper": "#ffffff",
+   "--gold": "#ff8a3d",
+   "--gold-deep": "#e2632b",
+   "--gold-hi": "#ffb070",
+   "--btn-ink": "#1a0a02",
+   "--ember": "#e8452f",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--title-size": "112px",
+   "--cta-size": "104px",
+   "--slam-size": "150px",
+   "--hook-scrim": ".35",
+   "--btn-size": "38px",
+   "--vol-w": "205px",
+   "--row-shift": "80px"
+  }
+ },
+ "grade": {
+  "note": "Teal-Amber Premium: smooth 3D LUT (tools/make_lut.py) quiets the cyan backdrop to deep teal and enriches warm covers; adjust+wheels shape contrast, warm highlights/teal shadows; vignette focuses light on the book; per-clip exposure evens lighting",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.16,
+    "shadows": 0.07,
+    "whites": -0.02,
+    "blacks": -0.02,
+    "vibrance": 0.05,
+    "saturation": -0.02
+   },
+   "wheels": {
+    "shadows": {
+     "hue": 195,
+     "amount": 0.1,
+     "level": -0.02
+    },
+    "highlights": {
+     "hue": 38,
+     "amount": 0.07,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.22,
+    "vignetteFeather": 0.7,
+    "grain": 0.04
+   }
+  },
+  "exposure": {
+   "c1": 0.16
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c1",
+    "in": 6.0,
+    "out": 6.9
+   },
+   {
+    "src": "c1",
+    "in": 21.0,
+    "out": 21.9
+   },
+   {
+    "src": "c1",
+    "in": 36.4,
+    "out": 37.3
+   }
+  ],
+  "lines": [
+   {
+    "text": "KELUAR KERJA PAGI,",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.05,
+    "out": 1.5
+   },
+   {
+    "text": "balik waktu malam…",
+    "style": "question",
+    "y": 600,
+    "in": 1.55,
+    "out": 2.7
+   },
+   {
+    "text": "Penat?",
+    "style": "slam",
+    "y": 960,
+    "in": 1.95,
+    "out": 2.7
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c1",
+   "in": 0.0,
+   "out": 1.54,
+   "a": 0.0,
+   "b": 1.38,
+   "z": 1.0,
+   "note": "Keluar kerja pagi.",
+   "cap": "Keluar kerja *pagi*."
+  },
+  {
+   "src": "c1",
+   "in": 1.65,
+   "out": 2.88,
+   "a": 1.7,
+   "b": 2.72,
+   "z": 1.08,
+   "note": "Balik waktu malam.",
+   "cap": "Balik waktu *malam*."
+  },
+  {
+   "src": "c1",
+   "in": 3.09,
+   "out": 9.84,
+   "a": 3.14,
+   "b": 9.68,
+   "z": 1.0,
+   "note": "Anda rasa penat, badan letih, berpeluh, kepala gatal-gatal, jangan risau, boleh dapatkan Bad Lab 3 in 1.",
+   "cap": "Anda rasa *penat*,|badan letih, berpeluh,|kepala *gatal-gatal*,|jangan risau,|boleh dapatkan|*Bad Lab* 3 in 1."
+  },
+  {
+   "src": "c1",
+   "in": 9.93,
+   "out": 11.32,
+   "a": 9.98,
+   "b": 11.16,
+   "z": 1.14,
+   "note": "Anda tak payah nak fikir banyak.",
+   "cap": "Anda tak payah|nak fikir banyak."
+  },
+  {
+   "src": "c1",
+   "in": 11.41,
+   "out": 17.5,
+   "a": 11.46,
+   "b": 17.34,
+   "z": 1.0,
+   "note": "Sebab dekat sini dia boleh pakai untuk rambut, muka dan juga badan. Yang menarik, dia ada kawalan minyak.",
+   "cap": "Sebab dekat sini|dia boleh pakai untuk|*rambut*, *muka*|dan juga *badan*.|Yang menarik,|dia ada *kawalan minyak*."
+  },
+  {
+   "src": "c1",
+   "in": 17.73,
+   "out": 19.22,
+   "a": 17.78,
+   "b": 19.06,
+   "z": 1.08,
+   "note": "Dan bagus untuk anda.",
+   "cap": "Dan bagus untuk anda."
+  },
+  {
+   "src": "c1",
+   "in": 19.95,
+   "out": 24.68,
+   "a": 20.0,
+   "b": 24.52,
+   "z": 1.0,
+   "note": "Sebabnya dia mengawal dari sudut masalah muka yang berminyak dan sebagainya.",
+   "cap": "Sebabnya dia mengawal|dari sudut masalah|muka yang *berminyak*|dan sebagainya."
+  },
+  {
+   "src": "c1",
+   "in": 25.25,
+   "out": 27.68,
+   "a": 25.3,
+   "b": 27.52,
+   "z": 1.14,
+   "note": "Dan apa yang lagi menarik, dia ada mentol.",
+   "cap": "Dan apa yang|lagi menarik,|dia ada *mentol*."
+  },
+  {
+   "src": "c1",
+   "in": 27.97,
+   "out": 30.92,
+   "a": 28.02,
+   "b": 30.76,
+   "z": 1.0,
+   "note": "Bila anda mandi tu, rasa sejuk-sejuk, sedap je.",
+   "cap": "Bila anda mandi tu,|rasa *sejuk-sejuk*,|sedap je."
+  },
+  {
+   "src": "c1",
+   "in": 31.25,
+   "out": 31.76,
+   "a": 31.3,
+   "b": 31.68,
+   "z": 1.08,
+   "note": "Jadi,",
+   "cap": "Jadi,"
+  },
+  {
+   "src": "c1",
+   "in": 31.87,
+   "out": 34.52,
+   "a": 31.92,
+   "b": 34.36,
+   "z": 1.0,
+   "note": "boleh dapatkan sekarang Bad Lab 3 in 1.",
+   "cap": "boleh dapatkan sekarang|*Bad Lab* 3 in 1."
+  },
+  {
+   "src": "c1",
+   "in": 36.03,
+   "out": 37.84,
+   "a": 36.08,
+   "b": 37.68,
+   "z": 1.14,
+   "note": "Beli sekarang, harga tengah murah!",
+   "cap": "Beli sekarang,|harga tengah *murah*!"
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 0.4,
+  "dur": 2.4
+ },
+ "overlays": [],
+ "cards": [
+  {
+   "id": "p-penat",
+   "kind": "photo",
+   "image": "assets/images/penat.jpg",
+   "pos": "40% 45%",
+   "in": [
+    "c1",
+    3.14
+   ],
+   "out": [
+    "c1",
+    5.75
+   ],
+   "tag": "Penat? Letih?"
+  },
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c1",
+    7.5
+   ],
+   "out": [
+    "c1",
+    9.75
+   ],
+   "kicker": "Bad-Lab",
+   "title": "Caveman Cleaner",
+   "sub": "3-in-1 untuk lelaki",
+   "y": 330
+  },
+  {
+   "id": "p-fikir",
+   "kind": "photo",
+   "image": "assets/images/letih.jpg",
+   "pos": "70% 45%",
+   "in": [
+    "c1",
+    9.98
+   ],
+   "out": [
+    "c1",
+    11.4
+   ],
+   "tag": "Tak payah fikir"
+  },
+  {
+   "id": "trio",
+   "kind": "trilogy",
+   "in": [
+    "c1",
+    11.46
+   ],
+   "out": [
+    "c1",
+    15.4
+   ],
+   "head": "Satu botol, 3 guna",
+   "items": [
+    {
+     "at": [
+      "c1",
+      13.0
+     ],
+     "num": "1",
+     "label": "Rambut"
+    },
+    {
+     "at": [
+      "c1",
+      13.95
+     ],
+     "num": "2",
+     "label": "Muka"
+    },
+    {
+     "at": [
+      "c1",
+      14.8
+     ],
+     "num": "3",
+     "label": "Badan"
+    }
+   ]
+  },
+  {
+   "id": "t-minyak",
+   "kind": "title",
+   "in": [
+    "c1",
+    15.5
+   ],
+   "out": [
+    "c1",
+    19.06
+   ],
+   "kicker": "Scalp & Skin Defence",
+   "title": "Kawal Minyak",
+   "sub": "kurang berminyak",
+   "y": 330
+  },
+  {
+   "id": "t-mentol",
+   "kind": "title",
+   "in": [
+    "c1",
+    25.3
+   ],
+   "out": [
+    "c1",
+    30.76
+   ],
+   "kicker": "Ada mentol",
+   "title": "Sejuk & Segar!",
+   "sub": "dengan Vitamin B5",
+   "y": 330
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c1",
+    31.3
+   ],
+   "buttonAt": [
+    "c1",
+    32.6
+   ],
+   "pulseAt": [
+    "c1",
+    36.1
+   ],
+   "kicker": "Bad-Lab",
+   "title": "Caveman Cleaner",
+   "by": "3-in-1 · rambut · muka · badan",
+   "button": "Beli sekarang"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.95,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    3.14
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    7.7
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c1",
+    7.85
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    9.98
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    11.46
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    13.0
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    13.95
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    14.8
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    15.5
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    25.3
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c1",
+    28.6
+   ],
+   "dur": 1.8,
+   "vol": 0.22
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    31.3
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    32.6
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+# Bad-Lab Caveman Cleaner 3-in-1 (take 2). Dropped: Whisper "Terima kasih kerana menonton" at 19.28, 24.74, 38.16
+# (breath / restarted "sebab..." and "dan..."), and the 1.7 s pause before "Beli sekarang".
+c1 0.00 1.38 . | Keluar kerja *pagi*.
+c1 1.70 2.72 . | Balik waktu *malam*.
+c1 3.14 9.68 . | Anda rasa *penat*,|badan letih, berpeluh,|kepala *gatal-gatal*,|jangan risau,|boleh dapatkan|*Bad Lab* 3 in 1.
+c1 9.98 11.16 . | Anda tak payah|nak fikir banyak.
+c1 11.46 17.34 . | Sebab dekat sini|dia boleh pakai untuk|*rambut*, *muka*|dan juga *badan*.|Yang menarik,|dia ada *kawalan minyak*.
+c1 17.78 19.06 . | Dan bagus untuk anda.
+c1 20.00 24.52 . | Sebabnya dia mengawal|dari sudut masalah|muka yang *berminyak*|dan sebagainya.
+c1 25.30 27.52 . | Dan apa yang|lagi menarik,|dia ada *mentol*.
+c1 28.02 30.76 . | Bila anda mandi tu,|rasa *sejuk-sejuk*,|sedap je.
+c1 31.30 31.68 | Jadi,
+c1 31.92 34.36 . | boleh dapatkan sekarang|*Bad Lab* 3 in 1.
+c1 36.08 37.68 . | Beli sekarang,|harga tengah *murah*!
