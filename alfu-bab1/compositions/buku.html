@@ -67,7 +67,7 @@
     .pw { position: absolute; inset: 0; }
 
   </style>
-  <div id="root" data-composition-id="buku" data-start="0" data-duration="4.8333" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="buku" data-start="0" data-duration="4.5" data-width="1080" data-height="1920">
     <div id="buku-wrap" class="pw">
       <div id="buku-0" class="cover" style="left:540px; top:600px; height:700px; aspect-ratio: 941 / 1453"><img src="assets/images/cover1.jpg" alt=""></div>
       <div id="buku-1" class="tag solid" style="left:540px; top:500px">garis masa sejarah Islam</div>
@@ -75,10 +75,10 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#buku-0 img", {scale: 1.0}, {scale: 1.06, duration: 4.7667, ease: "none"}, 0.0667);
-    tl.fromTo("#buku-0", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 0.0667);
-    tl.fromTo("#buku-1", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 1.9);
-    tl.to("#buku-wrap", {opacity: 0, duration: 0.2, ease: "power2.in"}, 4.6333);
+    tl.fromTo("#buku-0 img", {scale: 1.0}, {scale: 1.06, duration: 4.5, ease: "none"}, 0.0);
+    tl.fromTo("#buku-0", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 0.0);
+    tl.fromTo("#buku-1", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 1.5667);
+    tl.to("#buku-wrap", {opacity: 0, duration: 0.2, ease: "power2.in"}, 4.3);
     window.__timelines["buku"] = tl;
   </script>
 </template>

@@ -67,7 +67,7 @@
     .pw { position: absolute; inset: 0; }
 
   </style>
-  <div id="root" data-composition-id="cta" data-start="0" data-duration="5.0" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="cta" data-start="0" data-duration="5.0333" data-width="1080" data-height="1920">
     <div id="cta-wrap" class="pw">
       <div id="cta-0" class="cta" style="top:560px"><div class="row"><div class="av">SS</div><div><div class="nm">Syafiq Studio</div><div class="sm">Review buku · Alfu Sanatin</div></div></div><div id="cta-0-btn" class="btn">TEKAN BEG KUNING 🛒</div></div>
       <div id="cta-1" class="it" style="left:230px; top:910px; width:620px; height:190px"><svg viewBox="0 0 620 190" width="620" height="190"><g class="ic" id="ICN0"><circle cx="70" cy="70" r="58" fill="#f4ead2"/><text x="70" y="92" text-anchor="middle" fill="#e0573a" style="font: 800 58px Poppins, sans-serif">♥</text><text x="70" y="170" text-anchor="middle" class="iclab">Like</text></g><g class="ic" id="ICN1"><circle cx="230" cy="70" r="58" fill="#f4ead2"/><text x="230" y="92" text-anchor="middle" fill="#0f2a20" style="font: 800 58px Poppins, sans-serif">…</text><text x="230" y="170" text-anchor="middle" class="iclab">Komen</text></g><g class="ic" id="ICN2"><circle cx="390" cy="70" r="58" fill="#f4ead2"/><text x="390" y="92" text-anchor="middle" fill="#d9a53f" style="font: 800 58px Poppins, sans-serif">⚑</text><text x="390" y="170" text-anchor="middle" class="iclab">Simpan</text></g><g class="ic" id="ICN3"><circle cx="550" cy="70" r="58" fill="#f4ead2"/><text x="550" y="92" text-anchor="middle" fill="#0f2a20" style="font: 800 58px Poppins, sans-serif">➦</text><text x="550" y="170" text-anchor="middle" class="iclab">Kongsi</text></g></svg></div>
@@ -75,13 +75,13 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.to("#cta-0-btn", {scale: 1.08, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 3}, 0.4333);
-    tl.fromTo("#cta-0", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 0.0333);
-    tl.fromTo("#cta-1 #ICN0", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}, 1.6333);
-    tl.fromTo("#cta-1 #ICN1", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}, 1.8);
-    tl.fromTo("#cta-1 #ICN2", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}, 2.0);
-    tl.fromTo("#cta-1 #ICN3", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}, 2.1667);
-    tl.to("#cta-wrap", {opacity: 0, duration: 0.2, ease: "power2.in"}, 4.8);
+    tl.to("#cta-0-btn", {scale: 1.08, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 3}, 0.4667);
+    tl.fromTo("#cta-0", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 0.0667);
+    tl.fromTo("#cta-1 #ICN0", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}, 1.6667);
+    tl.fromTo("#cta-1 #ICN1", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}, 1.8333);
+    tl.fromTo("#cta-1 #ICN2", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}, 2.0333);
+    tl.fromTo("#cta-1 #ICN3", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)"}, 2.2);
+    tl.to("#cta-wrap", {opacity: 0, duration: 0.2, ease: "power2.in"}, 4.8333);
     window.__timelines["cta"] = tl;
   </script>
 </template>

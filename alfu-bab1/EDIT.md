@@ -1,6 +1,6 @@
 # Alfu Sanatin — edit sheet
 
-Film length: 137.33s (43 cuts)
+Film length: 137.00s (43 cuts)
 
 | # | film in | dur | source | src in | src out | note |
 |---|---|---|---|---|---|---|
@@ -37,13 +37,13 @@ Film length: 137.33s (43 cuts)
 | 30 | 92.10 | 4.03 | c1 | 102.01 | 106.04 | darah TERPERCIK / ke atas MUSHAF |
 | 31 | 96.13 | 1.60 | c1 | 108.09 | 109.70 | umat KEHILANGAN / khalifah |
 | 32 | 97.73 | 5.03 | c1 | 109.71 | 114.72 | Sayidina Ali / terima BAIAH fitnah yang / LEBIH BESAR |
-| 33 | 102.77 | 1.80 | c1 | 115.15 | 116.92 | dalam / ALFU SANATIN |
-| 34 | 104.57 | 3.03 | c1 | 117.01 | 120.04 | GARIS MASA / sejarah Islam |
-| 35 | 107.60 | 2.97 | c1 | 120.25 | 123.24 | Khalifah UTHMAN / ke UTHMANIYYAH |
-| 36 | 110.57 | 2.57 | c1 | 127.93 | 130.50 | gaya SANTAI, / PADAT |
-| 37 | 113.13 | 2.53 | c1 | 130.65 | 133.20 | dengan RIWAYAT / dekat zaman kita |
-| 38 | 115.67 | 4.50 | c1 | 133.27 | 137.78 | CERMIN generasi / mudah termakan BERITA PALSU |
-| 39 | 120.17 | 1.97 | c1 | 137.99 | 139.98 | mudah TAKSUB, / mudah MELATAH |
-| 40 | 122.13 | 7.07 | c2 | 0.25 | 7.32 | sebelum MENGHUKUM KENALI / SEJARAHNYA ALFU SANATIN Khalifah Uthman / ke UTHMANIYYAH |
-| 41 | 129.20 | 3.10 | c2 | 9.35 | 12.44 | bacaan sejarah / WAJIB MILIKI |
-| 42 | 132.30 | 3.03 | c2 | 12.55 | 15.58 | tekan BEG KUNING beli SEKARANG! |
+| 33 | 102.77 | 1.47 | c1 | 115.47 | 116.92 | dalam / ALFU SANATIN |
+| 34 | 104.23 | 3.03 | c1 | 117.01 | 120.04 | GARIS MASA / sejarah Islam |
+| 35 | 107.27 | 2.97 | c1 | 120.25 | 123.24 | Khalifah UTHMAN / ke UTHMANIYYAH |
+| 36 | 110.23 | 2.57 | c1 | 127.93 | 130.50 | gaya SANTAI, / PADAT |
+| 37 | 112.80 | 2.53 | c1 | 130.65 | 133.20 | dengan RIWAYAT / dekat zaman kita |
+| 38 | 115.33 | 4.50 | c1 | 133.27 | 137.78 | CERMIN generasi / mudah termakan BERITA PALSU |
+| 39 | 119.83 | 1.97 | c1 | 137.99 | 139.98 | mudah TAKSUB, / mudah MELATAH |
+| 40 | 121.80 | 7.07 | c2 | 0.25 | 7.32 | sebelum MENGHUKUM KENALI / SEJARAHNYA ALFU SANATIN Khalifah Uthman / ke UTHMANIYYAH |
+| 41 | 128.87 | 3.10 | c2 | 9.35 | 12.44 | bacaan sejarah / WAJIB MILIKI |
+| 42 | 131.97 | 3.03 | c2 | 12.55 | 15.58 | tekan BEG KUNING beli SEKARANG! |

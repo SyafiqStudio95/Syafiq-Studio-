@@ -73,7 +73,7 @@ P = [
      dict(t="cover", image="assets/images/cover1.jpg", x=700, y=1300, h=560, at=c(2.6, "c2"))]),
  ("wajib", c(7.3, "c2"), c(12.55, "c2"), [dict(t="cover", image="assets/images/trilogy.jpg", ar="2813 / 1453", x=540, y=1150, h=420, at=c(9.4, "c2")),
      dict(t="tag", text="wajib dimiliki", style="solid", x=540, y=1180, at=c(10.6, "c2"))]),
- ("cta", c(12.55, "c2"), 137.3, [dict(t="cta", y=560, name="Syafiq Studio", sub="Review buku · Alfu Sanatin", button="TEKAN BEG KUNING 🛒", at=c(12.6, "c2"), pulseAt=c(13.0, "c2")),
+ ("cta", c(12.55, "c2"), 137.0, [dict(t="cta", y=560, name="Syafiq Studio", sub="Review buku · Alfu Sanatin", button="TEKAN BEG KUNING 🛒", at=c(12.6, "c2"), pulseAt=c(13.0, "c2")),
      dict(t="icons", x=540, y=1100, at=c(14.2, "c2"))
      ]),
 ]

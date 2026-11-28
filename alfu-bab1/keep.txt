@@ -1,7 +1,7 @@
 # Alfu Sanatin Bab 1: voice only (camera covered). Dropped: 59.64 "surat bermohon" (stumble, retaken 62.48),
 # 100.24-101.48 "darah seorang" (restart), 106.46 "Umat kehilangan Sayyidin" (slip), 123.64-127.50 "gaya penulisannya... dan riwayat dengan"
 # (slip, retaken 127.98), 140.04-142.52 "sebelum menghukum, kenali sejak" (slip, retaken), 145.48-154.99 (ending retaken in c2),
-# c2 7.62 "Dapatkan bacaan sejarah." (cut off, retaken 9.40)
+# c2 7.62 "Dapatkan bacaan sejarah." (cut off, retaken 9.40); 115.20-115.47 "Dan..." false start before "Dalam Alfu Sanatin"
 c1 0.00 4.56 . | "Uthman *MEMBAKAR* / *al-Quran!*"|hujah untuk / *JATUHKAN* khalifah
 c1 4.78 5.84 . | tapi *BENARKAH?*
 c1 6.08 8.60   | *12* *TAHUN* / Sayidina Uthman
@@ -35,7 +35,7 @@ c1 97.64 100.22  | *18* *ZULHIJAH* / 35 Hijrah
 c1 102.06 105.88 . | darah *TERPERCIK* / ke atas *MUSHAF*
 c1 108.14 109.54 . | umat *KEHILANGAN* / khalifah
 c1 109.76 114.56 . | Sayidina Ali / terima *BAIAH*|fitnah yang / *LEBIH* *BESAR*
-c1 115.20 116.84   | dalam / *ALFU* *SANATIN*
+c1 115.52 116.84   | dalam / *ALFU* *SANATIN*
 c1 117.06 119.96   | *GARIS* *MASA* / sejarah Islam
 c1 120.30 123.08 . | Khalifah *UTHMAN* / ke *UTHMANIYYAH*
 c1 127.98 130.42   | gaya *SANTAI*, / *PADAT*

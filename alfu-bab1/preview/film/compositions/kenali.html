@@ -67,7 +67,7 @@
     .pw { position: absolute; inset: 0; }
 
   </style>
-  <div id="root" data-composition-id="kenali" data-start="0" data-duration="7.0333" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="kenali" data-start="0" data-duration="7.0667" data-width="1080" data-height="1920">
     <div id="kenali-wrap" class="pw">
       <div id="kenali-0" class="it" style="left:110px; top:690px; width:300px; height:640px"><svg viewBox="0 0 300 640" width="300" height="640"><g><line x1="130" y1="440" x2="108" y2="636" class="ln"/><line x1="170" y1="440" x2="192" y2="636" class="ln"/><line x1="92" y1="300" x2="40" y2="420" class="ln"/><circle cx="38" cy="426" r="15" class="hand"/><g class="arm"><line x1="208" y1="300" x2="268" y2="210" class="ln"/><circle cx="270" cy="204" r="15" class="hand"/></g><rect x="88" y="262" width="124" height="200" rx="58" fill="#3f7d62" class="ol"/><circle cx="150" cy="180" r="78" fill="#efd6a8" class="ol"/><path d="M78,150 Q150,70 222,150 L222,160 Q150,140 78,160 Z" fill="#f7f2e6" class="ol"/><line x1="92" y1="128" x2="208" y2="128" stroke="#cfc6b0" stroke-width="5"/><g class="face f-smile" style="opacity:1"><circle cx="122" cy="186" r="8" fill="#3b2a1a"/><circle cx="178" cy="186" r="8" fill="#3b2a1a"/><path d="M124,214 Q150,238 176,214" stroke="#3b2a1a" stroke-width="7" fill="none" stroke-linecap="round"/></g></g></svg></div>
       <div id="kenali-1" class="cover" style="left:700px; top:740px; height:560px; aspect-ratio: 941 / 1453"><img src="assets/images/cover1.jpg" alt=""></div>
@@ -75,11 +75,11 @@
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    tl.fromTo("#kenali-0 .arm", {rotation: 0}, {rotation: -10, svgOrigin: "208 300", duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 14}, 0.3333);
-    tl.fromTo("#kenali-0", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 0.0333);
-    tl.fromTo("#kenali-1 img", {scale: 1.0}, {scale: 1.06, duration: 4.7, ease: "none"}, 2.3333);
+    tl.fromTo("#kenali-0 .arm", {rotation: 0}, {rotation: -10, svgOrigin: "208 300", duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 14}, 0.3667);
+    tl.fromTo("#kenali-0", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 0.0667);
+    tl.fromTo("#kenali-1 img", {scale: 1.0}, {scale: 1.06, duration: 4.7333, ease: "none"}, 2.3333);
     tl.fromTo("#kenali-1", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 2.3333);
-    tl.to("#kenali-wrap", {opacity: 0, duration: 0.2, ease: "power2.in"}, 6.8333);
+    tl.to("#kenali-wrap", {opacity: 0, duration: 0.2, ease: "power2.in"}, 6.8667);
     window.__timelines["kenali"] = tl;
   </script>
 </template>
