@@ -1,0 +1,23 @@
+# Meja makan Lavin Stock (VO). c17 = voice-over (black), c1-c16 = unboxing/assembly/result b-roll as full overlays.
+# Dropped retakes: "Bukan." 9.74, "Saya beli set meja makan..." 11.98 & 14.64, aside at 20.12, stumbled 24.20 take,
+# "Bila dah siap, siap." 49.16, Whisper "Terima kasih" at 0.00/23.32/90.10.
+c17 0.62 2.76 . | Meja makan murah|selalunya *goyang*.
+c17 3.08 4.30 | Tapi yang ni|*lain macam*.
+c17 4.56 5.12 . | *Kukuh*.
+c17 5.46 9.42 . | Saya beli set meja makan|*rattan 6 seater* ni|dari *Lavin Stock*.
+c17 30.02 31.66 . | Dan cuma *3 hari*|dah sampai.
+c17 31.96 32.90 | Bila buka,
+c17 33.24 36.20 . | balutan yang *kemas*|dan semuanya|dalam keadaan baik.
+c17 36.64 37.92 . | Langsung tak ada *rosak*.
+c17 38.38 40.04 . | Cara pasang pun *mudah*.
+c17 40.48 45.34 . | Dah disertakan *manual*|untuk pasang kaki meja.|Siap dengan *screwdriver* sekali.
+c17 45.74 48.46 . | Saya guna *cordless drill*,|lagi cepat dan mudah.
+c17 50.10 51.42 | Bila dah siap pasang,
+c17 51.78 55.74 . | memang boleh nampak|kualitinya.|Mejanya *kukuh*.
+c17 55.96 57.38 . | Tak *goyang* langsung.
+c17 57.60 61.52 . | Kerusi plastiknya pula|berkualiti dan|*tahan lasak*.
+c17 61.86 63.94 . | Sesuai untuk rumah|yang *ramai anak*.
+c17 64.24 70.88 . | Rekaannya *minimalis moden*|dengan sentuhan *rotan*.|Jadi ruang makan|terus nampak lebih|kemas dan cantik.
+c17 71.36 72.50 . | Muat *6 orang*.
+c17 72.72 82.04 . | Jadi makan bersama keluarga|atau jamu tamu|tak perlu *bersempit* lagi.|Bukan untuk rumah sahaja.|Set ni juga sesuai untuk|*restoran*, *kafe* dan *pejabat*.
+c17 82.28 89.10 . | Kalau awak tengah cari|meja makan yang *cantik*,|*kukuh* dan senang dipasang,|saya memang *rekomen*.|Tekan *beg kuning* sekarang!

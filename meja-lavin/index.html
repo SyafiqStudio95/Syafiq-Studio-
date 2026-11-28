@@ -1,61 +1,165 @@
 <!doctype html>
-<html lang="en" data-resolution="portrait">
+<html lang="ms" data-resolution="portrait">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1080, height=1920" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
     <style>
-      /* Placeholders: replace all three with the film's own palette and display face. */
-      :root {
-        --ground: #000;
-        --ink: #ffffff;
-        --font-display: sans-serif;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0;
-        width: 1080px;
-        height: 1920px;
-        overflow: hidden;
-        background: var(--ground);
-      }
-      #root {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-display);
-      }
-      #title {
-        color: var(--ink);
-        font-size: 72px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
-      }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #05090b; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; }
+      .cam { position: absolute; inset: 0; }
+      .cam video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .layer { position: absolute; inset: 0; z-index: 10; }
+      .imgCard { position: absolute; left: 140px; right: 220px; top: 330px; z-index: 6; }
+      .imgFrame { width: 100%; aspect-ratio: 3 / 2; border-radius: 30px; overflow: hidden; border: 6px solid #fff;
+                   box-shadow: 0 26px 70px rgba(0,0,0,.5); background: #111; }
+      .imgFrame img { width: 100%; height: 100%; object-fit: cover; display: block; transform-origin: 50% 50%; }
+      .imgTag { margin: -30px auto 0; position: relative; width: max-content; white-space: nowrap; padding: 14px 26px; border-radius: 999px;
+                 background: var(--img-tag-bg, #e8452f); color: #fff; font: 800 40px/1 "Poppins", Arial, sans-serif;
+                 box-shadow: 0 12px 28px rgba(0,0,0,.35); }
+      .hookcam { z-index: 4; }
+      .ovfull { z-index: 2; }
+      .pip { position: absolute; top: 300px; width: 330px; z-index: 5; transform-origin: 50% 0%; }
+      .pipFrame { position: relative; width: 330px; height: 587px; border-radius: 28px; overflow: hidden;
+                  border: 6px solid #fff; box-shadow: 0 24px 60px rgba(0,0,0,.45); background: #000; }
+      .pipFrame video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      .pipTag { margin: -22px auto 0; position: relative; width: max-content; white-space: nowrap; padding: 10px 18px; border-radius: 999px;
+                background: var(--pip-tag-bg, #ffd23f); color: var(--pip-tag-ink, #1d1400); font: 800 32px/1 "Poppins", Arial, sans-serif;
+                box-shadow: 0 10px 24px rgba(0,0,0,.3); }
+      #captions { z-index: 20; }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="10"
-      data-width="1080"
-      data-height="1920"
-    >
-      <h1 id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="66.9" data-fps="30" data-width="1080" data-height="1920">
+      <!-- footage: one <video> per kept cut; wrappers carry punch-ins -->
+      <div id="hookcam0" class="cam hookcam"><video id="hook0" class="clip footage" src="assets/video/hook_0.mp4" data-start="0.0" data-duration="0.8" data-media-start="0" data-track-index="0" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="hookcam1" class="cam hookcam"><video id="hook1" class="clip footage" src="assets/video/hook_1.mp4" data-start="0.8" data-duration="0.8" data-media-start="0" data-track-index="0" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="hookcam2" class="cam hookcam"><video id="hook2" class="clip footage" src="assets/video/hook_2.mp4" data-start="1.6" data-duration="0.8" data-media-start="0" data-track-index="0" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="cam0" class="cam"><video id="aroll0" class="clip footage" src="assets/video/aroll_r0.mp4" data-start="0.0" data-duration="64.5" data-media-start="0" data-track-index="0" data-has-audio="true" data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov0" class="cam ovfull"><video id="ovv0" class="clip footage" src="assets/video/ov_0.mp4" data-start="2.4333" data-duration="1.3333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov1" class="cam ovfull"><video id="ovv1" class="clip footage" src="assets/video/ov_1.mp4" data-start="3.7333" data-duration="0.7667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov2" class="cam ovfull"><video id="ovv2" class="clip footage" src="assets/video/ov_2.mp4" data-start="4.5333" data-duration="4.1667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov3" class="cam ovfull"><video id="ovv3" class="clip footage" src="assets/video/ov_3.mp4" data-start="8.6667" data-duration="1.8667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov4" class="cam ovfull"><video id="ovv4" class="clip footage" src="assets/video/ov_4.mp4" data-start="10.5333" data-duration="2.4333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov5" class="cam ovfull"><video id="ovv5" class="clip footage" src="assets/video/ov_5.mp4" data-start="12.9667" data-duration="1.8" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov6" class="cam ovfull"><video id="ovv6" class="clip footage" src="assets/video/ov_6.mp4" data-start="14.7667" data-duration="1.4667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov7" class="cam ovfull"><video id="ovv7" class="clip footage" src="assets/video/ov_7.mp4" data-start="16.2667" data-duration="4.2" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov8" class="cam ovfull"><video id="ovv8" class="clip footage" src="assets/video/ov_8.mp4" data-start="20.4333" data-duration="2.7333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov9" class="cam ovfull"><video id="ovv9" class="clip footage" src="assets/video/ov_9.mp4" data-start="23.1667" data-duration="1.4667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov10" class="cam ovfull"><video id="ovv10" class="clip footage" src="assets/video/ov_10.mp4" data-start="24.6333" data-duration="1.4667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov11" class="cam ovfull"><video id="ovv11" class="clip footage" src="assets/video/ov_11.mp4" data-start="26.1333" data-duration="1.4333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov12" class="cam ovfull"><video id="ovv12" class="clip footage" src="assets/video/ov_12.mp4" data-start="27.5667" data-duration="1.8333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov13" class="cam ovfull"><video id="ovv13" class="clip footage" src="assets/video/ov_13.mp4" data-start="29.3667" data-duration="2.3333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov14" class="cam ovfull"><video id="ovv14" class="clip footage" src="assets/video/ov_14.mp4" data-start="31.7333" data-duration="1.6333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov15" class="cam ovfull"><video id="ovv15" class="clip footage" src="assets/video/ov_15.mp4" data-start="33.3667" data-duration="2.0" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov16" class="cam ovfull"><video id="ovv16" class="clip footage" src="assets/video/ov_16.mp4" data-start="35.3667" data-duration="2.1333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov17" class="cam ovfull"><video id="ovv17" class="clip footage" src="assets/video/ov_17.mp4" data-start="37.4667" data-duration="2.3" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov18" class="cam ovfull"><video id="ovv18" class="clip footage" src="assets/video/ov_18.mp4" data-start="39.7667" data-duration="3.5667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov19" class="cam ovfull"><video id="ovv19" class="clip footage" src="assets/video/ov_19.mp4" data-start="43.3333" data-duration="3.2667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov20" class="cam ovfull"><video id="ovv20" class="clip footage" src="assets/video/ov_20.mp4" data-start="46.6333" data-duration="1.3667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov21" class="cam ovfull"><video id="ovv21" class="clip footage" src="assets/video/ov_21.mp4" data-start="47.9667" data-duration="3.7667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov22" class="cam ovfull"><video id="ovv22" class="clip footage" src="assets/video/ov_22.mp4" data-start="51.7667" data-duration="2.1" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov23" class="cam ovfull"><video id="ovv23" class="clip footage" src="assets/video/ov_23.mp4" data-start="53.8667" data-duration="3.6667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov24" class="cam ovfull"><video id="ovv24" class="clip footage" src="assets/video/ov_24.mp4" data-start="57.5333" data-duration="2.7333" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="ov25" class="cam ovfull"><video id="ovv25" class="clip footage" src="assets/video/ov_25.mp4" data-start="60.2333" data-duration="4.2667" data-media-start="0" data-track-index="1" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <div id="tailcam" class="cam"><video id="tail" class="clip footage" src="assets/video/tail.mp4" data-start="64.5" data-duration="2.4" data-media-start="0" data-track-index="0" muted data-color-grading="{&quot;intensity&quot;:1,&quot;adjust&quot;:{&quot;contrast&quot;:0.1,&quot;highlights&quot;:-0.14,&quot;shadows&quot;:0.08,&quot;whites&quot;:0.02,&quot;blacks&quot;:-0.03,&quot;temperature&quot;:0.02,&quot;vibrance&quot;:0.12,&quot;saturation&quot;:0.03,&quot;exposure&quot;:0.0},&quot;wheels&quot;:{&quot;highlights&quot;:{&quot;hue&quot;:45,&quot;amount&quot;:0.04,&quot;level&quot;:0}},&quot;details&quot;:{&quot;vignette&quot;:0.08,&quot;vignetteFeather&quot;:0.75}}" playsinline></video></div>
+      <!-- motion graphics and captions -->
+      <div id="hook" class="layer" data-composition-id="hook" data-composition-src="compositions/hook.html" data-start="0" data-duration="2.4" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="title-main" class="layer" data-composition-id="title-main" data-composition-src="compositions/title-main.html" data-start="4.5333" data-duration="3.9333" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="t-sampai" class="layer" data-composition-id="t-sampai" data-composition-src="compositions/t-sampai.html" data-start="8.6667" data-duration="2.8333" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="t-pasang" class="layer" data-composition-id="t-pasang" data-composition-src="compositions/t-pasang.html" data-start="16.2667" data-duration="3.9667" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="t-kukuh" class="layer" data-composition-id="t-kukuh" data-composition-src="compositions/t-kukuh.html" data-start="27.5667" data-duration="5.5667" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="t-lasak" class="layer" data-composition-id="t-lasak" data-composition-src="compositions/t-lasak.html" data-start="33.3667" data-duration="3.9" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="t-enam" class="layer" data-composition-id="t-enam" data-composition-src="compositions/t-enam.html" data-start="46.6333" data-duration="5.0333" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="guna" class="layer" data-composition-id="guna" data-composition-src="compositions/guna.html" data-start="53.8667" data-duration="3.6333" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="cta" class="layer" data-composition-id="cta" data-composition-src="compositions/cta.html" data-start="57.5333" data-duration="9.3667" data-track-index="10" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="captions" class="layer" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="2.4" data-duration="62.1" data-track-index="11" data-track-kind="captions" data-width="1080" data-height="1920"></div>
+      <!-- sound effects -->
+      <audio id="sfx00" class="clip" src="assets/sfx/whoosh.mp3" data-start="0.0" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx01" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="1.2667" data-duration="2.1" data-volume="0.3" data-track-index="2"></audio>
+      <audio id="sfx02" class="clip" src="assets/sfx/whoosh.mp3" data-start="2.3" data-duration="0.57" data-volume="0.25" data-track-index="3"></audio>
+      <audio id="sfx03" class="clip" src="assets/sfx/pop.mp3" data-start="3.6333" data-duration="0.72" data-volume="0.3" data-track-index="2"></audio>
+      <audio id="sfx04" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="4.5" data-duration="2.1" data-volume="0.3" data-track-index="2"></audio>
+      <audio id="sfx05" class="clip" src="assets/sfx/sparkle.mp3" data-start="4.6667" data-duration="1.8" data-volume="0.25" data-track-index="3"></audio>
+      <audio id="sfx06" class="clip" src="assets/sfx/whoosh.mp3" data-start="8.5333" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx07" class="clip" src="assets/sfx/whoosh.mp3" data-start="10.4" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx08" class="clip" src="assets/sfx/whoosh.mp3" data-start="16.1333" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx09" class="clip" src="assets/sfx/whoosh.mp3" data-start="23.0333" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx10" class="clip" src="assets/sfx/whoosh.mp3" data-start="26.0" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx11" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="27.5333" data-duration="2.1" data-volume="0.3" data-track-index="2"></audio>
+      <audio id="sfx12" class="clip" src="assets/sfx/whoosh.mp3" data-start="33.2333" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx13" class="clip" src="assets/sfx/whoosh.mp3" data-start="39.6333" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx14" class="clip" src="assets/sfx/pop.mp3" data-start="46.5333" data-duration="0.72" data-volume="0.3" data-track-index="2"></audio>
+      <audio id="sfx15" class="clip" src="assets/sfx/whoosh.mp3" data-start="47.8333" data-duration="0.57" data-volume="0.25" data-track-index="2"></audio>
+      <audio id="sfx16" class="clip" src="assets/sfx/pop.mp3" data-start="55.5667" data-duration="0.72" data-volume="0.3" data-track-index="2"></audio>
+      <audio id="sfx17" class="clip" src="assets/sfx/pop.mp3" data-start="56.1667" data-duration="0.72" data-volume="0.3" data-track-index="3"></audio>
+      <audio id="sfx18" class="clip" src="assets/sfx/pop.mp3" data-start="56.7667" data-duration="0.72" data-volume="0.3" data-track-index="2"></audio>
+      <audio id="sfx19" class="clip" src="assets/sfx/impact-bass-1.mp3" data-start="57.5" data-duration="2.1" data-volume="0.3" data-track-index="2"></audio>
+      <audio id="sfx20" class="clip" src="assets/sfx/pop.mp3" data-start="62.8333" data-duration="0.72" data-volume="0.3" data-track-index="2"></audio>
     </div>
     <script>
       const tl = gsap.timeline({ paused: true });
-      // Example: tl.fromTo("#title", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 0);
+    tl.set("#hookcam0", {scale: 1.0, transformOrigin: "50% 46%"}, 0);
+    tl.fromTo("#hookcam0", {scale: 1.140}, {scale: 1.0, duration: 0.45, ease: "expo.out", immediateRender: false}, 0.0);
+    tl.set("#hookcam1", {scale: 1.0, transformOrigin: "50% 46%"}, 0);
+    tl.fromTo("#hookcam1", {scale: 1.140}, {scale: 1.0, duration: 0.45, ease: "expo.out", immediateRender: false}, 0.8);
+    tl.set("#hookcam2", {scale: 1.0, transformOrigin: "50% 46%"}, 0);
+    tl.fromTo("#hookcam2", {scale: 1.140}, {scale: 1.0, duration: 0.45, ease: "expo.out", immediateRender: false}, 1.6);
+    tl.set("#cam0", {scale: 1.0, transformOrigin: "50% 46%"}, 0);
+    tl.fromTo("#cam0", {scale: 1.120, y: 70}, {scale: 1.0, y: 0, duration: 0.5, ease: "expo.out", immediateRender: false}, 0.0);
+    tl.set("#cam0", {scale: 1.08}, 2.3667);
+    tl.set("#cam0", {scale: 1.0}, 3.7);
+    tl.set("#cam0", {scale: 1.14}, 4.4667);
+    tl.set("#cam0", {scale: 1.0}, 8.6333);
+    tl.set("#cam0", {scale: 1.08}, 10.5);
+    tl.set("#cam0", {scale: 1.0}, 11.5667);
+    tl.set("#cam0", {scale: 1.14}, 14.7333);
+    tl.set("#cam0", {scale: 1.0}, 16.2);
+    tl.set("#cam0", {scale: 1.08}, 18.0667);
+    tl.set("#cam0", {scale: 1.0}, 23.1333);
+    tl.set("#cam0", {scale: 1.14}, 26.0667);
+    tl.set("#cam0", {scale: 1.0}, 27.5);
+    tl.set("#cam0", {scale: 1.08}, 31.6667);
+    tl.set("#cam0", {scale: 1.0}, 33.3);
+    tl.set("#cam0", {scale: 1.14}, 37.4333);
+    tl.set("#cam0", {scale: 1.0}, 39.7333);
+    tl.set("#cam0", {scale: 1.08}, 46.5667);
+    tl.set("#cam0", {scale: 1.0}, 47.9333);
+    tl.set("#cam0", {scale: 1.14}, 57.4667);
+    tl.fromTo("#ov0", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 2.4333);
+    tl.fromTo("#ov1", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 3.7333);
+    tl.fromTo("#ov2", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 4.5333);
+    tl.fromTo("#ov3", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 8.6667);
+    tl.fromTo("#ov4", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 10.5333);
+    tl.fromTo("#ov5", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 12.9667);
+    tl.fromTo("#ov6", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 14.7667);
+    tl.fromTo("#ov7", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 16.2667);
+    tl.fromTo("#ov8", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 20.4333);
+    tl.fromTo("#ov9", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 23.1667);
+    tl.fromTo("#ov10", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 24.6333);
+    tl.fromTo("#ov11", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 26.1333);
+    tl.fromTo("#ov12", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 27.5667);
+    tl.fromTo("#ov13", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 29.3667);
+    tl.fromTo("#ov14", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 31.7333);
+    tl.fromTo("#ov15", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 33.3667);
+    tl.fromTo("#ov16", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 35.3667);
+    tl.fromTo("#ov17", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 37.4667);
+    tl.fromTo("#ov18", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 39.7667);
+    tl.fromTo("#ov19", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 43.3333);
+    tl.fromTo("#ov20", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 46.6333);
+    tl.fromTo("#ov21", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 47.9667);
+    tl.fromTo("#ov22", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 51.7667);
+    tl.fromTo("#ov23", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 53.8667);
+    tl.fromTo("#ov24", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 57.5333);
+    tl.fromTo("#ov25", {scale: 1.12}, {scale: 1.0, duration: 0.5, ease: "expo.out", immediateRender: false}, 60.2333);
+    tl.set("#tailcam", {scale: 1.0, transformOrigin: "50% 46%"}, 0);
+    tl.fromTo("#tailcam", {scale: 1.1}, {scale: 1.0, duration: 2.4, ease: "power2.out", immediateRender: false}, 64.5);
       window.__timelines["main"] = tl;
-      tl.seek(0);
     </script>
   </body>
 </html>

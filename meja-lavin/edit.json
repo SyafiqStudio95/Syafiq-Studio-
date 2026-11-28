@@ -1,0 +1,1115 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4",
+  "c2": "assets/video/c2.mp4",
+  "c3": "assets/video/c3.mp4",
+  "c4": "assets/video/c4.mp4",
+  "c5": "assets/video/c5.mp4",
+  "c6": "assets/video/c6.mp4",
+  "c7": "assets/video/c7.mp4",
+  "c8": "assets/video/c8.mp4",
+  "c9": "assets/video/c9.mp4",
+  "c10": "assets/video/c10.mp4",
+  "c11": "assets/video/c11.mp4",
+  "c12": "assets/video/c12.mp4",
+  "c13": "assets/video/c13.mp4",
+  "c14": "assets/video/c14.mp4",
+  "c15": "assets/video/c15.mp4",
+  "c16": "assets/video/c16.mp4",
+  "c17": "assets/video/c17.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#160f0a",
+   "--paper": "#ffffff",
+   "--gold": "#e9b26a",
+   "--gold-deep": "#b97a35",
+   "--gold-hi": "#f5cf94",
+   "--btn-ink": "#2a1606",
+   "--ember": "#ff5a5f",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--cta-size": "112px",
+   "--title-size": "112px",
+   "--slam-size": "140px",
+   "--hook-scrim": ".45",
+   "--panel": "440px"
+  }
+ },
+ "grade": {
+  "note": "Warm interior: teal-amber LUT keeps wood and rattan warm, whites neutral.",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.14,
+    "shadows": 0.08,
+    "whites": 0.02,
+    "blacks": -0.03,
+    "temperature": 0.02,
+    "vibrance": 0.12,
+    "saturation": 0.03
+   },
+   "wheels": {
+    "highlights": {
+     "hue": 45,
+     "amount": 0.04,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.08,
+    "vignetteFeather": 0.75
+   }
+  },
+  "exposure": {
+   "c1": 0.0,
+   "c2": 0.0,
+   "c3": 0.0,
+   "c4": 0.0,
+   "c5": 0.0,
+   "c6": 0.0,
+   "c7": 0.0,
+   "c8": 0.0,
+   "c9": 0.0,
+   "c10": 0.0,
+   "c11": 0.0,
+   "c12": 0.0,
+   "c13": 0.0,
+   "c14": 0.0,
+   "c15": 0.0,
+   "c16": 0.0,
+   "c17": 0.0
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c16",
+    "in": 0.3,
+    "out": 1.1
+   },
+   {
+    "src": "c15",
+    "in": 1.0,
+    "out": 1.8
+   },
+   {
+    "src": "c13",
+    "in": 9.0,
+    "out": 9.8
+   }
+  ],
+  "lines": [
+   {
+    "text": "MEJA MAKAN MURAH",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.05,
+    "out": 2.4
+   },
+   {
+    "text": "selalunya…",
+    "style": "question",
+    "y": 680,
+    "in": 0.12,
+    "out": 2.4
+   },
+   {
+    "text": "goyang?",
+    "style": "slam",
+    "y": 820,
+    "in": 1.3,
+    "out": 2.4
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c17",
+   "in": 0.57,
+   "out": 2.92,
+   "a": 0.62,
+   "b": 2.76,
+   "z": 1.0,
+   "note": "Meja makan murah selalunya goyang.",
+   "cap": "Meja makan murah|selalunya *goyang*."
+  },
+  {
+   "src": "c17",
+   "in": 3.03,
+   "out": 4.38,
+   "a": 3.08,
+   "b": 4.3,
+   "z": 1.08,
+   "note": "Tapi yang ni lain macam.",
+   "cap": "Tapi yang ni|*lain macam*."
+  },
+  {
+   "src": "c17",
+   "in": 4.51,
+   "out": 5.28,
+   "a": 4.56,
+   "b": 5.12,
+   "z": 1.0,
+   "note": "Kukuh.",
+   "cap": "*Kukuh*."
+  },
+  {
+   "src": "c17",
+   "in": 5.41,
+   "out": 9.58,
+   "a": 5.46,
+   "b": 9.42,
+   "z": 1.14,
+   "note": "Saya beli set meja makan rattan 6 seater ni dari Lavin Stock.",
+   "cap": "Saya beli set meja makan|*rattan 6 seater* ni|dari *Lavin Stock*."
+  },
+  {
+   "src": "c17",
+   "in": 29.97,
+   "out": 31.82,
+   "a": 30.02,
+   "b": 31.66,
+   "z": 1.0,
+   "note": "Dan cuma 3 hari dah sampai.",
+   "cap": "Dan cuma *3 hari*|dah sampai."
+  },
+  {
+   "src": "c17",
+   "in": 31.91,
+   "out": 32.98,
+   "a": 31.96,
+   "b": 32.9,
+   "z": 1.08,
+   "note": "Bila buka,",
+   "cap": "Bila buka,"
+  },
+  {
+   "src": "c17",
+   "in": 33.19,
+   "out": 36.36,
+   "a": 33.24,
+   "b": 36.2,
+   "z": 1.0,
+   "note": "balutan yang kemas dan semuanya dalam keadaan baik.",
+   "cap": "balutan yang *kemas*|dan semuanya|dalam keadaan baik."
+  },
+  {
+   "src": "c17",
+   "in": 36.59,
+   "out": 38.08,
+   "a": 36.64,
+   "b": 37.92,
+   "z": 1.14,
+   "note": "Langsung tak ada rosak.",
+   "cap": "Langsung tak ada *rosak*."
+  },
+  {
+   "src": "c17",
+   "in": 38.33,
+   "out": 40.2,
+   "a": 38.38,
+   "b": 40.04,
+   "z": 1.0,
+   "note": "Cara pasang pun mudah.",
+   "cap": "Cara pasang pun *mudah*."
+  },
+  {
+   "src": "c17",
+   "in": 40.43,
+   "out": 45.5,
+   "a": 40.48,
+   "b": 45.34,
+   "z": 1.08,
+   "note": "Dah disertakan manual untuk pasang kaki meja. Siap dengan screwdriver sekali.",
+   "cap": "Dah disertakan *manual*|untuk pasang kaki meja.|Siap dengan *screwdriver* sekali."
+  },
+  {
+   "src": "c17",
+   "in": 45.69,
+   "out": 48.62,
+   "a": 45.74,
+   "b": 48.46,
+   "z": 1.0,
+   "note": "Saya guna cordless drill, lagi cepat dan mudah.",
+   "cap": "Saya guna *cordless drill*,|lagi cepat dan mudah."
+  },
+  {
+   "src": "c17",
+   "in": 50.05,
+   "out": 51.5,
+   "a": 50.1,
+   "b": 51.42,
+   "z": 1.14,
+   "note": "Bila dah siap pasang,",
+   "cap": "Bila dah siap pasang,"
+  },
+  {
+   "src": "c17",
+   "in": 51.73,
+   "out": 55.9,
+   "a": 51.78,
+   "b": 55.74,
+   "z": 1.0,
+   "note": "memang boleh nampak kualitinya. Mejanya kukuh.",
+   "cap": "memang boleh nampak|kualitinya.|Mejanya *kukuh*."
+  },
+  {
+   "src": "c17",
+   "in": 55.91,
+   "out": 57.54,
+   "a": 55.96,
+   "b": 57.38,
+   "z": 1.08,
+   "note": "Tak goyang langsung.",
+   "cap": "Tak *goyang* langsung."
+  },
+  {
+   "src": "c17",
+   "in": 57.55,
+   "out": 61.68,
+   "a": 57.6,
+   "b": 61.52,
+   "z": 1.0,
+   "note": "Kerusi plastiknya pula berkualiti dan tahan lasak.",
+   "cap": "Kerusi plastiknya pula|berkualiti dan|*tahan lasak*."
+  },
+  {
+   "src": "c17",
+   "in": 61.81,
+   "out": 64.1,
+   "a": 61.86,
+   "b": 63.94,
+   "z": 1.14,
+   "note": "Sesuai untuk rumah yang ramai anak.",
+   "cap": "Sesuai untuk rumah|yang *ramai anak*."
+  },
+  {
+   "src": "c17",
+   "in": 64.19,
+   "out": 71.04,
+   "a": 64.24,
+   "b": 70.88,
+   "z": 1.0,
+   "note": "Rekaannya minimalis moden dengan sentuhan rotan. Jadi ruang makan terus nampak lebih kemas dan cantik.",
+   "cap": "Rekaannya *minimalis moden*|dengan sentuhan *rotan*.|Jadi ruang makan|terus nampak lebih|kemas dan cantik."
+  },
+  {
+   "src": "c17",
+   "in": 71.31,
+   "out": 72.66,
+   "a": 71.36,
+   "b": 72.5,
+   "z": 1.08,
+   "note": "Muat 6 orang.",
+   "cap": "Muat *6 orang*."
+  },
+  {
+   "src": "c17",
+   "in": 72.67,
+   "out": 82.2,
+   "a": 72.72,
+   "b": 82.04,
+   "z": 1.0,
+   "note": "Jadi makan bersama keluarga atau jamu tamu tak perlu bersempit lagi. Bukan untuk rumah sahaja. Set ni juga sesuai untuk restoran, kafe dan pejabat.",
+   "cap": "Jadi makan bersama keluarga|atau jamu tamu|tak perlu *bersempit* lagi.|Bukan untuk rumah sahaja.|Set ni juga sesuai untuk|*restoran*, *kafe* dan *pejabat*."
+  },
+  {
+   "src": "c17",
+   "in": 82.23,
+   "out": 89.26,
+   "a": 82.28,
+   "b": 89.1,
+   "z": 1.14,
+   "note": "Kalau awak tengah cari meja makan yang cantik, kukuh dan senang dipasang, saya memang rekomen. Tekan beg kuning sekarang!",
+   "cap": "Kalau awak tengah cari|meja makan yang *cantik*,|*kukuh* dan senang dipasang,|saya memang *rekomen*.|Tekan *beg kuning* sekarang!"
+  }
+ ],
+ "tail": {
+  "src": "c16",
+  "in": 1.0,
+  "dur": 2.4
+ },
+ "overlays": [
+  {
+   "mode": "full",
+   "src": "c16",
+   "in": 3.0,
+   "dur": 1.33,
+   "at": [
+    "c17",
+    3.08
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c13",
+   "in": 9.5,
+   "dur": 0.77,
+   "at": [
+    "c17",
+    4.56
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c15",
+   "in": 0.5,
+   "dur": 4.17,
+   "at": [
+    "c17",
+    5.46
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c2",
+   "in": 2.0,
+   "dur": 1.87,
+   "at": [
+    "c17",
+    30.02
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 0.0,
+   "dur": 2.43,
+   "at": [
+    "c17",
+    31.96
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c3",
+   "in": 0.5,
+   "dur": 1.81,
+   "at": [
+    "c17",
+    34.6
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c4",
+   "in": 1.5,
+   "dur": 1.47,
+   "at": [
+    "c17",
+    36.64
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c3",
+   "in": 9.0,
+   "dur": 4.19,
+   "at": [
+    "c17",
+    38.38
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c3",
+   "in": 14.5,
+   "dur": 2.75,
+   "at": [
+    "c17",
+    42.8
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c8",
+   "in": 0.0,
+   "dur": 1.46,
+   "at": [
+    "c17",
+    45.74
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c9",
+   "in": 0.5,
+   "dur": 1.47,
+   "at": [
+    "c17",
+    47.2
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c11",
+   "in": 0.5,
+   "dur": 1.43,
+   "at": [
+    "c17",
+    50.1
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c12",
+   "in": 0.0,
+   "dur": 1.82,
+   "at": [
+    "c17",
+    51.78
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c13",
+   "in": 8.5,
+   "dur": 2.35,
+   "at": [
+    "c17",
+    53.6
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c15",
+   "in": 5.5,
+   "dur": 1.63,
+   "at": [
+    "c17",
+    55.96
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c15",
+   "in": 17.0,
+   "dur": 2.0,
+   "at": [
+    "c17",
+    57.6
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c16",
+   "in": 7.0,
+   "dur": 2.13,
+   "at": [
+    "c17",
+    59.6
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c13",
+   "in": 0.0,
+   "dur": 2.3,
+   "at": [
+    "c17",
+    61.86
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c15",
+   "in": 22.0,
+   "dur": 3.56,
+   "at": [
+    "c17",
+    64.24
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c16",
+   "in": 0.0,
+   "dur": 3.27,
+   "at": [
+    "c17",
+    67.8
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c15",
+   "in": 26.0,
+   "dur": 1.37,
+   "at": [
+    "c17",
+    71.36
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c16",
+   "in": 12.5,
+   "dur": 3.78,
+   "at": [
+    "c17",
+    72.72
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c14",
+   "in": 11.0,
+   "dur": 2.1,
+   "at": [
+    "c17",
+    76.5
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c14",
+   "in": 2.0,
+   "dur": 3.65,
+   "at": [
+    "c17",
+    78.6
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c15",
+   "in": 8.0,
+   "dur": 2.72,
+   "at": [
+    "c17",
+    82.28
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c16",
+   "in": 4.0,
+   "dur": 4.26,
+   "at": [
+    "c17",
+    85.0
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c17",
+    5.46
+   ],
+   "out": [
+    "c17",
+    9.42
+   ],
+   "kicker": "Lavin Stock",
+   "title": "Meja Makan Rattan",
+   "sub": "set 6 seater · minimalis moden",
+   "y": 330
+  },
+  {
+   "id": "t-sampai",
+   "kind": "title",
+   "in": [
+    "c17",
+    30.02
+   ],
+   "out": [
+    "c17",
+    32.9
+   ],
+   "kicker": "Penghantaran",
+   "title": "3 Hari Sampai",
+   "sub": "kemas · tak rosak",
+   "y": 330
+  },
+  {
+   "id": "t-pasang",
+   "kind": "title",
+   "in": [
+    "c17",
+    38.38
+   ],
+   "out": [
+    "c17",
+    42.6
+   ],
+   "kicker": "Cara pasang",
+   "title": "Mudah",
+   "sub": "manual & screwdriver",
+   "y": 330
+  },
+  {
+   "id": "t-kukuh",
+   "kind": "title",
+   "in": [
+    "c17",
+    51.78
+   ],
+   "out": [
+    "c17",
+    57.38
+   ],
+   "kicker": "Kualiti",
+   "title": "Kukuh",
+   "sub": "tak goyang langsung",
+   "y": 330
+  },
+  {
+   "id": "t-lasak",
+   "kind": "title",
+   "in": [
+    "c17",
+    57.6
+   ],
+   "out": [
+    "c17",
+    61.52
+   ],
+   "kicker": "Kerusi plastik",
+   "title": "Tahan Lasak",
+   "sub": "sesuai rumah ramai anak",
+   "y": 330
+  },
+  {
+   "id": "t-enam",
+   "kind": "title",
+   "in": [
+    "c17",
+    71.36
+   ],
+   "out": [
+    "c17",
+    76.4
+   ],
+   "kicker": "Muat",
+   "title": "6 Orang",
+   "sub": "tak perlu bersempit",
+   "y": 330
+  },
+  {
+   "id": "guna",
+   "kind": "trilogy",
+   "in": [
+    "c17",
+    78.6
+   ],
+   "out": [
+    "c17",
+    82.25
+   ],
+   "head": "Sesuai juga untuk",
+   "items": [
+    {
+     "at": [
+      "c17",
+      80.1
+     ],
+     "num": "1",
+     "label": "Restoran"
+    },
+    {
+     "at": [
+      "c17",
+      80.7
+     ],
+     "num": "2",
+     "label": "Kafe"
+    },
+    {
+     "at": [
+      "c17",
+      81.3
+     ],
+     "num": "3",
+     "label": "Pejabat"
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c17",
+    82.28
+   ],
+   "buttonAt": [
+    "c17",
+    87.7
+   ],
+   "pulseAt": [
+    "c17",
+    88.5
+   ],
+   "kicker": "Cantik · kukuh · mudah",
+   "title": "Lavin Stock",
+   "by": "Meja makan rattan 6 seater",
+   "button": "Tekan beg kuning"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.3,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    3.08
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c17",
+    4.56
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c17",
+    5.46
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c17",
+    5.6
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    30.02
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    31.96
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    38.38
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    45.74
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    50.1
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c17",
+    51.78
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    57.6
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    64.24
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c17",
+    71.36
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c17",
+    72.72
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c17",
+    80.4
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c17",
+    81.0
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c17",
+    81.6
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c17",
+    82.28
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c17",
+    87.7
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  }
+ ],
+ "_ovplan": [
+  [
+   3.08,
+   "c16",
+   3.0
+  ],
+  [
+   4.56,
+   "c13",
+   9.5
+  ],
+  [
+   5.46,
+   "c15",
+   0.5
+  ],
+  [
+   30.02,
+   "c2",
+   2.0
+  ],
+  [
+   31.96,
+   "c1",
+   0.0
+  ],
+  [
+   34.6,
+   "c3",
+   0.5
+  ],
+  [
+   36.64,
+   "c4",
+   1.5
+  ],
+  [
+   38.38,
+   "c3",
+   9.0
+  ],
+  [
+   42.8,
+   "c3",
+   14.5
+  ],
+  [
+   45.74,
+   "c8",
+   0.0
+  ],
+  [
+   47.2,
+   "c9",
+   0.5
+  ],
+  [
+   50.1,
+   "c11",
+   0.5
+  ],
+  [
+   51.78,
+   "c12",
+   0.0
+  ],
+  [
+   53.6,
+   "c13",
+   8.5
+  ],
+  [
+   55.96,
+   "c15",
+   5.5
+  ],
+  [
+   57.6,
+   "c15",
+   17.0
+  ],
+  [
+   59.6,
+   "c16",
+   7.0
+  ],
+  [
+   61.86,
+   "c13",
+   0.0
+  ],
+  [
+   64.24,
+   "c15",
+   22.0
+  ],
+  [
+   67.8,
+   "c16",
+   0.0
+  ],
+  [
+   71.36,
+   "c15",
+   26.0
+  ],
+  [
+   72.72,
+   "c16",
+   12.5
+  ],
+  [
+   76.5,
+   "c14",
+   11.0
+  ],
+  [
+   78.6,
+   "c14",
+   2.0
+  ],
+  [
+   82.28,
+   "c15",
+   8.0
+  ],
+  [
+   85.0,
+   "c16",
+   4.0
+  ]
+ ]
+}
