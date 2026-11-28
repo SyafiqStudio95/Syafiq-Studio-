@@ -1,0 +1,89 @@
+<template>
+  <style>
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      :root {
+        --ink: #0f2a20;
+        --paper: #f4ead2;
+        --gold: #e2ad45;
+        --gold-deep: #b8862c;
+        --ember: #c9472f;
+        --serif: Poppins, sans-serif;
+        --sans: Poppins, sans-serif;
+      }
+    #root { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
+
+    .it { position: absolute; transform-origin: 50% 100%; }
+    .it svg { display: block; overflow: visible; }
+    .ln { stroke: #efe2c4; stroke-width: 11; stroke-linecap: round; }
+    .hand { fill: #efd6a8; stroke: #efe2c4; stroke-width: 5; }
+    .ol { stroke: #efe2c4; stroke-width: 7; }
+    .ol2 { stroke: #efe2c4; stroke-width: 4; }
+    .calnum { font: 800 130px/1 Poppins, sans-serif; fill: #0f2a20; }
+    .calunit { font: 800 34px/1 Poppins, sans-serif; fill: #c9472f; letter-spacing: .12em; }
+    .coin { font: 800 64px/1 Poppins, sans-serif; fill: #6b4a14; }
+    .iclab { font: 600 28px/1 Poppins, sans-serif; fill: #efe2c4; }
+    .tag { position: absolute; transform: translateX(-50%); white-space: nowrap; padding: 8px 18px 7px; border-radius: 10px;
+            font: 800 26px/1 Poppins, sans-serif; letter-spacing: .06em; text-transform: uppercase; }
+    .tag.solid { background: #f4ead2; color: #0f2a20; }
+    .tag.line { border: 3px dashed #d9a53f; color: #d9a53f; background: rgba(15,42,32,.6); }
+    .tag.red { border: 4px solid #c9472f; color: #ffb29e; background: rgba(30,6,3,.85); transform: translateX(-50%) rotate(-6deg); font-size: 34px; }
+    .bubble { position: absolute; transform: translateX(-50%); max-width: 520px; padding: 22px 28px; border-radius: 26px; background: #f4ead2; color: #0f2a20;
+               font: 800 36px/1.2 Poppins, sans-serif; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,.3); }
+    .bubble::after { content: ""; position: absolute; left: var(--tail, 30%); bottom: -22px; border: 14px solid transparent; border-top: 18px solid #f4ead2; }
+    .bubble b { color: #c9472f; }
+    .card { position: absolute; transform: translateX(-50%); padding: 26px 30px; border-radius: 22px; border: 3px solid #d9a53f;
+             background: rgba(10,30,22,.85); color: #f4ead2; text-align: center; }
+    .card .h { font: 800 30px/1.2 Poppins, sans-serif; color: #d9a53f; letter-spacing: .06em; text-transform: uppercase; }
+    .card .b { font: 600 38px/1.25 Poppins, sans-serif; margin-top: 10px; }
+    .card .b em { font-style: normal; color: #d9a53f; font-weight: 800; }
+    .cover { position: absolute; transform: translateX(-50%); border-radius: 8px; overflow: hidden; box-shadow: 0 30px 70px rgba(0,0,0,.55), 0 0 0 4px #f4ead2; }
+    .cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .split { position: absolute; left: 150px; right: 150px; display: flex; gap: 16px; }
+    .split > div { flex: 1; height: 230px; border-radius: 22px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .split .a { background: #d9a53f; color: #0f2a20; transform-origin: 0 50%; }
+    .split .b { background: #8e2f1e; color: #fbe3d6; transform-origin: 100% 50%; }
+    .split b { font: 800 96px/1 Poppins, sans-serif; }
+    .split span { font: 800 24px/1.2 Poppins, sans-serif; letter-spacing: .06em; text-align: center; padding: 0 14px; text-transform: uppercase; margin-top: 8px; }
+    .mapb { position: absolute; left: 130px; right: 130px; border-radius: 30px; border: 2px solid rgba(217,165,63,.5); background: rgba(8,24,18,.45); }
+    .mlnk { fill: none; stroke: #d9a53f; stroke-width: 6; stroke-linecap: round; }
+    .mnode { position: absolute; width: 0; height: 0; }
+    .mnode i { position: absolute; left: -16px; top: -16px; width: 32px; height: 32px; border-radius: 50%; background: #d9a53f; border: 6px solid #0f2a20; box-shadow: 0 0 0 3px #d9a53f; }
+    .mnode.o i { background: #c9472f; box-shadow: 0 0 0 3px #c9472f; }
+    .mnode.t i { background: #f4ead2; box-shadow: 0 0 0 3px #f4ead2; width: 44px; height: 44px; left: -22px; top: -22px; }
+    .mnode span { position: absolute; left: -140px; width: 280px; top: 28px; text-align: center; font: 800 34px/1.1 Poppins, sans-serif; color: #f4ead2; }
+    .mnode.t span { color: #d9a53f; font-size: 42px; }
+    .cta { position: absolute; left: 160px; right: 160px; padding: 30px; border-radius: 28px; border: 4px solid #d9a53f; background: rgba(10,30,22,.85); }
+    .cta .row { display: flex; align-items: center; gap: 22px; }
+    .cta .av { width: 96px; height: 96px; border-radius: 50%; border: 4px solid #d9a53f; display: flex; align-items: center; justify-content: center;
+                font: 800 36px/1 Poppins, sans-serif; color: #d9a53f; background: #0f2a20; }
+    .cta .nm { font: 800 40px/1.1 Poppins, sans-serif; color: #f4ead2; }
+    .cta .sm { font: 600 26px/1.2 Poppins, sans-serif; color: #b9c9bd; margin-top: 6px; }
+    .cta .btn { margin-top: 26px; padding: 22px; border-radius: 999px; background: #f2c230; color: #2a1d00; text-align: center;
+                 font: 800 38px/1 Poppins, sans-serif; letter-spacing: .04em; }
+
+    .pw { position: absolute; inset: 0; }
+
+  </style>
+  <div id="root" data-composition-id="fitnah-besar" data-start="0" data-duration="6.6333" data-width="1080" data-height="1920">
+    <div id="fitnah-besar-wrap" class="pw">
+      <div id="fitnah-besar-0" class="it" style="left:110px; top:818px; width:240px; height:512px"><svg viewBox="0 0 300 640" width="240" height="512"><g><line x1="130" y1="440" x2="108" y2="636" class="ln"/><line x1="170" y1="440" x2="192" y2="636" class="ln"/><line x1="92" y1="300" x2="40" y2="420" class="ln"/><circle cx="38" cy="426" r="15" class="hand"/><g class="arm"><line x1="208" y1="300" x2="268" y2="210" class="ln"/><circle cx="270" cy="204" r="15" class="hand"/></g><rect x="88" y="262" width="124" height="200" rx="58" fill="#3f7d62" class="ol"/><circle cx="150" cy="180" r="78" fill="#efd6a8" class="ol"/><path d="M78,150 Q150,70 222,150 L222,160 Q150,140 78,160 Z" fill="#f7f2e6" class="ol"/><line x1="92" y1="128" x2="208" y2="128" stroke="#cfc6b0" stroke-width="5"/><g class="face f-worry" style="opacity:1"><line x1="108" y1="168" x2="136" y2="160" stroke="#3b2a1a" stroke-width="6" stroke-linecap="round"/><line x1="192" y1="168" x2="164" y2="160" stroke="#3b2a1a" stroke-width="6" stroke-linecap="round"/><circle cx="122" cy="186" r="8" fill="#3b2a1a"/><circle cx="178" cy="186" r="8" fill="#3b2a1a"/><path d="M128,230 Q150,214 172,230" stroke="#3b2a1a" stroke-width="7" fill="none" stroke-linecap="round"/></g></g></svg></div>
+      <div id="fitnah-besar-1" class="it" style="left:280px; top:818px; width:240px; height:512px"><svg viewBox="0 0 300 640" width="240" height="512"><g><line x1="130" y1="440" x2="108" y2="636" class="ln"/><line x1="170" y1="440" x2="192" y2="636" class="ln"/><line x1="92" y1="300" x2="40" y2="420" class="ln"/><circle cx="38" cy="426" r="15" class="hand"/><g class="arm"><line x1="208" y1="300" x2="268" y2="210" class="ln"/><circle cx="270" cy="204" r="15" class="hand"/></g><rect x="88" y="262" width="124" height="200" rx="58" fill="#6b4a36" class="ol"/><circle cx="150" cy="180" r="78" fill="#efd6a8" class="ol"/><path d="M74,150 Q150,92 226,150 L226,162 Q150,132 74,162 Z" fill="#a8743f"/><g class="face f-worry" style="opacity:1"><line x1="108" y1="168" x2="136" y2="160" stroke="#3b2a1a" stroke-width="6" stroke-linecap="round"/><line x1="192" y1="168" x2="164" y2="160" stroke="#3b2a1a" stroke-width="6" stroke-linecap="round"/><circle cx="122" cy="186" r="8" fill="#3b2a1a"/><circle cx="178" cy="186" r="8" fill="#3b2a1a"/><path d="M128,230 Q150,214 172,230" stroke="#3b2a1a" stroke-width="7" fill="none" stroke-linecap="round"/></g></g></svg></div>
+      <div id="fitnah-besar-2" class="card" style="left:640px; top:600px; width:520px"><div class="h">Sayidina Ali r.a.</div><div class="b">terpaksa menerima <em>baiah</em></div></div>
+      <div id="fitnah-besar-3" class="it" style="left:617px; top:968px; width:286px; height:132px"><svg viewBox="0 0 260 120" width="286" height="132"><path d="M0,60 L70,40 L110,80 L160,30 L200,70 L260,50" stroke="#c9472f" stroke-width="10" fill="none" stroke-linejoin="round"/></svg></div>
+      <div id="fitnah-besar-4" class="tag red" style="left:760px; top:1140px">fitnah lebih besar</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fitnah-besar-0", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 0.1);
+    tl.fromTo("#fitnah-besar-1", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 0.2);
+    tl.fromTo("#fitnah-besar-2", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 1.7);
+    tl.fromTo("#fitnah-besar-3", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 4.1);
+    tl.fromTo("#fitnah-besar-4", {opacity: 0, y: 40, scale: 0.85}, {opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.7)"}, 4.3);
+    tl.to("#fitnah-besar-wrap", {opacity: 0, duration: 0.2, ease: "power2.in"}, 6.4333);
+    window.__timelines["fitnah-besar"] = tl;
+  </script>
+</template>

@@ -1,0 +1,2732 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4",
+  "c2": "assets/video/c2.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#0f2a20",
+   "--paper": "#f4ead2",
+   "--gold": "#e2ad45",
+   "--gold-deep": "#b8862c",
+   "--ember": "#c9472f",
+   "--serif": "Poppins, sans-serif",
+   "--sans": "Poppins, sans-serif"
+  }
+ },
+ "captionStyle": "headline",
+ "frame": {
+  "pill": "BAB 1 · ALFU SANATIN",
+  "watermark": "SYAFIQ STUDIO"
+ },
+ "grade": {
+  "base": {},
+  "exposure": {},
+  "bakedLut": null
+ },
+ "hook": {
+  "clips": [],
+  "lines": []
+ },
+ "edl": [
+  {
+   "src": "c1",
+   "in": 0.0,
+   "out": 4.72,
+   "a": 0.0,
+   "b": 4.56,
+   "z": 1,
+   "note": "\"Uthman MEMBAKAR / al-Quran!\" hujah untuk / JATUHKAN khalifah",
+   "cap": "\"Uthman *MEMBAKAR* / *al-Quran!*\"|hujah untuk / *JATUHKAN* khalifah"
+  },
+  {
+   "src": "c1",
+   "in": 4.73,
+   "out": 6.0,
+   "a": 4.78,
+   "b": 5.84,
+   "z": 1.08,
+   "note": "tapi BENARKAH?",
+   "cap": "tapi *BENARKAH?*"
+  },
+  {
+   "src": "c1",
+   "in": 6.03,
+   "out": 8.68,
+   "a": 6.08,
+   "b": 8.6,
+   "z": 1.0,
+   "note": "12 TAHUN / Sayidina Uthman",
+   "cap": "*12* *TAHUN* / Sayidina Uthman"
+  },
+  {
+   "src": "c1",
+   "in": 8.79,
+   "out": 10.14,
+   "a": 8.84,
+   "b": 10.06,
+   "z": 1.14,
+   "note": "6 tahun / KEGEMILANGAN",
+   "cap": "6 tahun / *KEGEMILANGAN*"
+  },
+  {
+   "src": "c1",
+   "in": 10.45,
+   "out": 21.58,
+   "a": 10.5,
+   "b": 21.42,
+   "z": 1.0,
+   "note": "6 tahun / permulaan FITNAH dimulakan / ABDULLAH BIN SABA' dari YAMAN hasut anak MUDA MESIR, KUFAH / dan BASRAH beremosi / tapi TANPA ILMU",
+   "cap": "6 tahun / permulaan *FITNAH*|dimulakan / *ABDULLAH* *BIN* *SABA'*|dari *YAMAN*|hasut anak *MUDA*|*MESIR*, *KUFAH* / dan *BASRAH*|beremosi / tapi *TANPA* *ILMU*"
+  },
+  {
+   "src": "c1",
+   "in": 21.71,
+   "out": 23.74,
+   "a": 21.76,
+   "b": 23.66,
+   "z": 1.08,
+   "note": "musim haji / 35 HIJRAH",
+   "cap": "musim haji / *35* *HIJRAH*"
+  },
+  {
+   "src": "c1",
+   "in": 23.91,
+   "out": 25.84,
+   "a": 23.96,
+   "b": 25.76,
+   "z": 1.0,
+   "note": "sahabat di MEKAH",
+   "cap": "sahabat di *MEKAH*"
+  },
+  {
+   "src": "c1",
+   "in": 25.93,
+   "out": 30.36,
+   "a": 25.98,
+   "b": 30.2,
+   "z": 1.14,
+   "note": "MENYUSUP ke / Madinah tuduhan: / terlalu KAYA",
+   "cap": "*MENYUSUP* ke / Madinah|tuduhan: / terlalu *KAYA*"
+  },
+  {
+   "src": "c1",
+   "in": 30.47,
+   "out": 44.52,
+   "a": 30.52,
+   "b": 44.36,
+   "z": 1.0,
+   "note": "NEPOTISME dan / BAKAR al-Quran satu-satu / DIJAWAB mereka TERDIAM tukar GABENOR / Mesir kepada / MUHAMMAD BIN ABU BAKAR sangka mereka / khalifah MENOLAK",
+   "cap": "*NEPOTISME* dan / *BAKAR* al-Quran|satu-satu / *DIJAWAB*|mereka *TERDIAM*|tukar *GABENOR* / Mesir|kepada / *MUHAMMAD* *BIN* *ABU* *BAKAR*|sangka mereka / khalifah *MENOLAK*"
+  },
+  {
+   "src": "c1",
+   "in": 44.69,
+   "out": 47.18,
+   "a": 44.74,
+   "b": 47.02,
+   "z": 1.08,
+   "note": "Uthman terus / BERSETUJU",
+   "cap": "Uthman terus / *BERSETUJU*"
+  },
+  {
+   "src": "c1",
+   "in": 47.33,
+   "out": 49.26,
+   "a": 47.38,
+   "b": 49.18,
+   "z": 1.0,
+   "note": "\"jika itu kehendak / penduduk MESIR\"",
+   "cap": "\"jika itu kehendak / penduduk *MESIR*\""
+  },
+  {
+   "src": "c1",
+   "in": 49.59,
+   "out": 51.76,
+   "a": 49.64,
+   "b": 51.6,
+   "z": 1.14,
+   "note": "mereka MATI LANGKAH",
+   "cap": "mereka *MATI* *LANGKAH*"
+  },
+  {
+   "src": "c1",
+   "in": 51.77,
+   "out": 56.08,
+   "a": 51.82,
+   "b": 55.92,
+   "z": 1.0,
+   "note": "TIBA-TIBA lelaki BERUNTA / mengaku UTUSAN",
+   "cap": "*TIBA-TIBA*|lelaki *BERUNTA* / mengaku *UTUSAN*"
+  },
+  {
+   "src": "c1",
+   "in": 56.27,
+   "out": 57.28,
+   "a": 56.32,
+   "b": 57.12,
+   "z": 1.08,
+   "note": "dia TAK LARI",
+   "cap": "dia *TAK* *LARI*"
+  },
+  {
+   "src": "c1",
+   "in": 57.31,
+   "out": 59.34,
+   "a": 57.36,
+   "b": 59.18,
+   "z": 1.0,
+   "note": "SENGAJA / mahu ditangkap",
+   "cap": "*SENGAJA* / mahu ditangkap"
+  },
+  {
+   "src": "c1",
+   "in": 62.43,
+   "out": 64.98,
+   "a": 62.48,
+   "b": 64.82,
+   "z": 1.14,
+   "note": "surat bercop / MOHOR KHALIFAH",
+   "cap": "surat bercop / *MOHOR* *KHALIFAH*"
+  },
+  {
+   "src": "c1",
+   "in": 65.07,
+   "out": 67.22,
+   "a": 65.12,
+   "b": 67.06,
+   "z": 1.0,
+   "note": "\"TAHAN mereka. / HUKUM mereka.\"",
+   "cap": "\"*TAHAN* mereka. / *HUKUM* mereka.\""
+  },
+  {
+   "src": "c1",
+   "in": 67.27,
+   "out": 70.18,
+   "a": 67.32,
+   "b": 70.02,
+   "z": 1.08,
+   "note": "surat KONONNYA / dari Sayidina Ali",
+   "cap": "surat *KONONNYA* / dari Sayidina Ali"
+  },
+  {
+   "src": "c1",
+   "in": 70.35,
+   "out": 72.32,
+   "a": 70.4,
+   "b": 72.16,
+   "z": 1.0,
+   "note": "mereka PATAH BALIK",
+   "cap": "mereka *PATAH* *BALIK*"
+  },
+  {
+   "src": "c1",
+   "in": 72.45,
+   "out": 74.92,
+   "a": 72.5,
+   "b": 74.84,
+   "z": 1.14,
+   "note": "Kufah & Basrah / tiba SERENTAK",
+   "cap": "Kufah & Basrah / tiba *SERENTAK*"
+  },
+  {
+   "src": "c1",
+   "in": 75.33,
+   "out": 77.74,
+   "a": 75.38,
+   "b": 77.58,
+   "z": 1.0,
+   "note": "arah pulang / BERLAINAN",
+   "cap": "arah pulang / *BERLAINAN*"
+  },
+  {
+   "src": "c1",
+   "in": 77.91,
+   "out": 80.18,
+   "a": 77.96,
+   "b": 80.1,
+   "z": 1.08,
+   "note": "\"DEMI ALLAH...\"",
+   "cap": "\"*DEMI* *ALLAH*...\""
+  },
+  {
+   "src": "c1",
+   "in": 80.45,
+   "out": 83.56,
+   "a": 80.5,
+   "b": 83.4,
+   "z": 1.0,
+   "note": "\"aku tak pernah / MENULIS apa pun\"",
+   "cap": "\"aku tak pernah / *MENULIS* apa pun\""
+  },
+  {
+   "src": "c1",
+   "in": 83.67,
+   "out": 84.96,
+   "a": 83.72,
+   "b": 84.8,
+   "z": 1.14,
+   "note": "surat itu PALSU",
+   "cap": "surat itu *PALSU*"
+  },
+  {
+   "src": "c1",
+   "in": 85.17,
+   "out": 86.68,
+   "a": 85.22,
+   "b": 86.52,
+   "z": 1.0,
+   "note": "semuanya / DIRANCANG",
+   "cap": "semuanya / *DIRANCANG*"
+  },
+  {
+   "src": "c1",
+   "in": 87.25,
+   "out": 90.68,
+   "a": 87.3,
+   "b": 90.52,
+   "z": 1.08,
+   "note": "dikepung / 40 HARI air DISEKAT",
+   "cap": "dikepung / *40* *HARI*|air *DISEKAT*"
+  },
+  {
+   "src": "c1",
+   "in": 90.93,
+   "out": 92.88,
+   "a": 90.98,
+   "b": 92.8,
+   "z": 1.0,
+   "note": "sahabat mahu / PERTAHANKAN",
+   "cap": "sahabat mahu / *PERTAHANKAN*"
+  },
+  {
+   "src": "c1",
+   "in": 93.03,
+   "out": 94.38,
+   "a": 93.08,
+   "b": 94.22,
+   "z": 1.14,
+   "note": "beliau MENOLAK",
+   "cap": "beliau *MENOLAK*"
+  },
+  {
+   "src": "c1",
+   "in": 94.71,
+   "out": 97.38,
+   "a": 94.76,
+   "b": 97.22,
+   "z": 1.0,
+   "note": "tak mahu darah / TERTUMPAH",
+   "cap": "tak mahu darah / *TERTUMPAH*"
+  },
+  {
+   "src": "c1",
+   "in": 97.59,
+   "out": 100.3,
+   "a": 97.64,
+   "b": 100.22,
+   "z": 1.08,
+   "note": "18 ZULHIJAH / 35 Hijrah",
+   "cap": "*18* *ZULHIJAH* / 35 Hijrah"
+  },
+  {
+   "src": "c1",
+   "in": 102.01,
+   "out": 106.04,
+   "a": 102.06,
+   "b": 105.88,
+   "z": 1.0,
+   "note": "darah TERPERCIK / ke atas MUSHAF",
+   "cap": "darah *TERPERCIK* / ke atas *MUSHAF*"
+  },
+  {
+   "src": "c1",
+   "in": 108.09,
+   "out": 109.7,
+   "a": 108.14,
+   "b": 109.54,
+   "z": 1.14,
+   "note": "umat KEHILANGAN / khalifah",
+   "cap": "umat *KEHILANGAN* / khalifah"
+  },
+  {
+   "src": "c1",
+   "in": 109.71,
+   "out": 114.72,
+   "a": 109.76,
+   "b": 114.56,
+   "z": 1.0,
+   "note": "Sayidina Ali / terima BAIAH fitnah yang / LEBIH BESAR",
+   "cap": "Sayidina Ali / terima *BAIAH*|fitnah yang / *LEBIH* *BESAR*"
+  },
+  {
+   "src": "c1",
+   "in": 115.15,
+   "out": 116.92,
+   "a": 115.2,
+   "b": 116.84,
+   "z": 1.08,
+   "note": "dalam / ALFU SANATIN",
+   "cap": "dalam / *ALFU* *SANATIN*"
+  },
+  {
+   "src": "c1",
+   "in": 117.01,
+   "out": 120.04,
+   "a": 117.06,
+   "b": 119.96,
+   "z": 1.0,
+   "note": "GARIS MASA / sejarah Islam",
+   "cap": "*GARIS* *MASA* / sejarah Islam"
+  },
+  {
+   "src": "c1",
+   "in": 120.25,
+   "out": 123.24,
+   "a": 120.3,
+   "b": 123.08,
+   "z": 1.14,
+   "note": "Khalifah UTHMAN / ke UTHMANIYYAH",
+   "cap": "Khalifah *UTHMAN* / ke *UTHMANIYYAH*"
+  },
+  {
+   "src": "c1",
+   "in": 127.93,
+   "out": 130.5,
+   "a": 127.98,
+   "b": 130.42,
+   "z": 1.0,
+   "note": "gaya SANTAI, / PADAT",
+   "cap": "gaya *SANTAI*, / *PADAT*"
+  },
+  {
+   "src": "c1",
+   "in": 130.65,
+   "out": 133.2,
+   "a": 130.7,
+   "b": 133.04,
+   "z": 1.08,
+   "note": "dengan RIWAYAT / dekat zaman kita",
+   "cap": "dengan *RIWAYAT* / dekat zaman kita"
+  },
+  {
+   "src": "c1",
+   "in": 133.27,
+   "out": 137.78,
+   "a": 133.32,
+   "b": 137.7,
+   "z": 1.0,
+   "note": "CERMIN generasi / mudah termakan BERITA PALSU",
+   "cap": "*CERMIN* generasi / mudah termakan *BERITA* *PALSU*"
+  },
+  {
+   "src": "c1",
+   "in": 137.99,
+   "out": 139.98,
+   "a": 138.04,
+   "b": 139.82,
+   "z": 1.14,
+   "note": "mudah TAKSUB, / mudah MELATAH",
+   "cap": "mudah *TAKSUB*, / mudah *MELATAH*"
+  },
+  {
+   "src": "c2",
+   "in": 0.25,
+   "out": 7.32,
+   "a": 0.3,
+   "b": 7.16,
+   "z": 1.0,
+   "note": "sebelum MENGHUKUM KENALI / SEJARAHNYA ALFU SANATIN Khalifah Uthman / ke UTHMANIYYAH",
+   "cap": "sebelum *MENGHUKUM*|*KENALI* / *SEJARAHNYA*|*ALFU* *SANATIN*|Khalifah Uthman / ke *UTHMANIYYAH*"
+  },
+  {
+   "src": "c2",
+   "in": 9.35,
+   "out": 12.44,
+   "a": 9.4,
+   "b": 12.28,
+   "z": 1.08,
+   "note": "bacaan sejarah / WAJIB MILIKI",
+   "cap": "bacaan sejarah / *WAJIB* *MILIKI*"
+  },
+  {
+   "src": "c2",
+   "in": 12.55,
+   "out": 15.58,
+   "a": 12.6,
+   "b": 15.42,
+   "z": 1.0,
+   "note": "tekan BEG KUNING beli SEKARANG!",
+   "cap": "tekan *BEG* *KUNING*|beli *SEKARANG*!"
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 1.0,
+  "dur": 2.0
+ },
+ "cards": [],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    0
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    1.2
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    4.6
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    4.9
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    6.0
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    12.0
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    14.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    13.4
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    16.2
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    21.8
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    28.0
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    29.3
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    31.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    35.5
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    37.6
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    44.7
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    51.75
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    54.0
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    62.4
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    63.4
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    67.25
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    68.3
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    68.8
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    70.35
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    74.3
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    75.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    77.9
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    83.65
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    84.1
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    87.2
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    88.7
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    94.7
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    94.8
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    95.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    97.6
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    97.7
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    99.3
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    102.0
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    103.3
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    103.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    108.1
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    112.4
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    115.15
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    117.1
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    120.25
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    127.95
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    128.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    129.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    130.9
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    131.9
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c1",
+    133.3
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    135.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    138.0
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c1",
+    138.9
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    0.25
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    7.3
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c2",
+    10.6
+   ],
+   "lead": 0.1,
+   "dur": 0.4,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c2",
+    12.55
+   ],
+   "lead": 0.13,
+   "dur": 0.6,
+   "vol": 0.18
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    84.1
+   ],
+   "lead": 0.04,
+   "dur": 1.2,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    88.7
+   ],
+   "lead": 0.04,
+   "dur": 1.2,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    112.2
+   ],
+   "lead": 0.04,
+   "dur": 1.2,
+   "vol": 0.3
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c1",
+    1.2
+   ],
+   "lead": 0.04,
+   "dur": 1.2,
+   "vol": 0.3
+  }
+ ],
+ "panels": [
+  {
+   "id": "hook",
+   "in": [
+    "c1",
+    0
+   ],
+   "out": [
+    "c1",
+    4.6
+   ],
+   "items": [
+    {
+     "t": "mushaf",
+     "x": 600,
+     "s": 1.2,
+     "at": [
+      "c1",
+      0.1
+     ]
+    },
+    {
+     "t": "fire",
+     "x": 600,
+     "y": 1150,
+     "s": 0.85,
+     "at": [
+      "c1",
+      0.5
+     ]
+    },
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 250,
+     "face": "angry",
+     "at": [
+      "c1",
+      0.2
+     ],
+     "arm": "point",
+     "label": "Penghasut"
+    },
+    {
+     "t": "glyph",
+     "ch": "!",
+     "x": 860,
+     "y": 900,
+     "at": [
+      "c1",
+      1.2
+     ],
+     "color": "#c9472f"
+    }
+   ]
+  },
+  {
+   "id": "benar",
+   "in": [
+    "c1",
+    4.6
+   ],
+   "out": [
+    "c1",
+    6.0
+   ],
+   "items": [
+    {
+     "t": "person",
+     "kind": "man",
+     "x": 360,
+     "face": "shock",
+     "at": [
+      "c1",
+      4.7
+     ],
+     "label": "Kita"
+    },
+    {
+     "t": "glyph",
+     "ch": "?",
+     "x": 720,
+     "y": 1000,
+     "s": 1.4,
+     "at": [
+      "c1",
+      4.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dua-belas",
+   "in": [
+    "c1",
+    6.0
+   ],
+   "out": [
+    "c1",
+    12.0
+   ],
+   "items": [
+    {
+     "t": "light",
+     "x": 540,
+     "y": 700,
+     "s": 0.7,
+     "at": [
+      "c1",
+      6.1
+     ],
+     "label": "Sayidina Uthman r.a.",
+     "labelStyle": "solid"
+    },
+    {
+     "t": "split",
+     "y": 930,
+     "left": {
+      "n": "6",
+      "t": "tahun kegemilangan",
+      "at": [
+       "c1",
+       8.84
+      ]
+     },
+     "right": {
+      "n": "6",
+      "t": "tahun fitnah",
+      "at": [
+       "c1",
+       10.5
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "saba",
+   "in": [
+    "c1",
+    12.0
+   ],
+   "out": [
+    "c1",
+    16.2
+   ],
+   "items": [
+    {
+     "t": "person",
+     "kind": "saba",
+     "x": 380,
+     "face": "sly",
+     "at": [
+      "c1",
+      12.6
+     ],
+     "label": "Abdullah bin Saba'"
+    },
+    {
+     "t": "tag",
+     "text": "dari Yaman",
+     "style": "line",
+     "x": 760,
+     "y": 900,
+     "at": [
+      "c1",
+      14.6
+     ]
+    },
+    {
+     "t": "glyph",
+     "ch": "?",
+     "x": 760,
+     "y": 860,
+     "s": 0.8,
+     "at": [
+      "c1",
+      13.4
+     ],
+     "outAt": [
+      "c1",
+      14.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "peta",
+   "in": [
+    "c1",
+    16.2
+   ],
+   "out": [
+    "c1",
+    28.0
+   ],
+   "items": [
+    {
+     "t": "map",
+     "top": 560,
+     "h": 740,
+     "at": [
+      "c1",
+      16.2
+     ],
+     "nodes": [
+      {
+       "id": "ym",
+       "label": "Yaman",
+       "x": 640,
+       "y": 1200,
+       "k": "o",
+       "at": [
+        "c1",
+        16.25
+       ]
+      },
+      {
+       "id": "ms",
+       "label": "Mesir",
+       "x": 250,
+       "y": 660,
+       "at": [
+        "c1",
+        17.4
+       ]
+      },
+      {
+       "id": "kf",
+       "label": "Kufah",
+       "x": 800,
+       "y": 640,
+       "at": [
+        "c1",
+        17.9
+       ]
+      },
+      {
+       "id": "bs",
+       "label": "Basrah",
+       "x": 860,
+       "y": 860,
+       "at": [
+        "c1",
+        18.5
+       ]
+      },
+      {
+       "id": "mk",
+       "label": "Mekah",
+       "x": 470,
+       "y": 1080,
+       "at": [
+        "c1",
+        24.0
+       ]
+      },
+      {
+       "id": "md",
+       "label": "Madinah",
+       "x": 520,
+       "y": 880,
+       "k": "t",
+       "at": [
+        "c1",
+        26.0
+       ]
+      }
+     ],
+     "links": [
+      {
+       "from": "ym",
+       "to": "ms",
+       "at": [
+        "c1",
+        17.2
+       ]
+      },
+      {
+       "from": "ym",
+       "to": "kf",
+       "at": [
+        "c1",
+        17.7
+       ]
+      },
+      {
+       "from": "ym",
+       "to": "bs",
+       "at": [
+        "c1",
+        18.3
+       ]
+      },
+      {
+       "from": "ms",
+       "to": "md",
+       "at": [
+        "c1",
+        26.1
+       ]
+      },
+      {
+       "from": "kf",
+       "to": "md",
+       "at": [
+        "c1",
+        26.3
+       ]
+      },
+      {
+       "from": "bs",
+       "to": "md",
+       "at": [
+        "c1",
+        26.5
+       ]
+      }
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "35 Hijrah · musim haji",
+     "style": "solid",
+     "x": 540,
+     "y": 500,
+     "at": [
+      "c1",
+      21.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tuduhan",
+   "in": [
+    "c1",
+    28.0
+   ],
+   "out": [
+    "c1",
+    37.6
+   ],
+   "items": [
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 200,
+     "face": "angry",
+     "at": [
+      "c1",
+      28.1
+     ],
+     "arm": "point",
+     "s": 0.85
+    },
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 380,
+     "face": "angry",
+     "at": [
+      "c1",
+      28.3
+     ],
+     "s": 0.85,
+     "arm": "point"
+    },
+    {
+     "t": "coins",
+     "x": 780,
+     "y": 720,
+     "s": 0.9,
+     "at": [
+      "c1",
+      29.3
+     ],
+     "outAt": [
+      "c1",
+      35.2
+     ],
+     "label": "terlalu kaya",
+     "labelStyle": "red"
+    },
+    {
+     "t": "tag",
+     "text": "nepotisme",
+     "style": "red",
+     "x": 780,
+     "y": 840,
+     "at": [
+      "c1",
+      31.6
+     ],
+     "outAt": [
+      "c1",
+      35.2
+     ]
+    },
+    {
+     "t": "mushaf",
+     "x": 780,
+     "y": 1300,
+     "s": 0.75,
+     "at": [
+      "c1",
+      32.4
+     ],
+     "outAt": [
+      "c1",
+      35.2
+     ]
+    },
+    {
+     "t": "fire",
+     "x": 780,
+     "y": 1130,
+     "s": 0.6,
+     "at": [
+      "c1",
+      32.6
+     ],
+     "outAt": [
+      "c1",
+      35.2
+     ]
+    },
+    {
+     "t": "light",
+     "x": 780,
+     "y": 960,
+     "s": 0.7,
+     "at": [
+      "c1",
+      35.3
+     ],
+     "label": "Sayidina Uthman r.a.",
+     "labelStyle": "solid"
+    },
+    {
+     "t": "glyph",
+     "ch": "✓",
+     "x": 780,
+     "y": 760,
+     "color": "#7fc89a",
+     "at": [
+      "c1",
+      35.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gabenor",
+   "in": [
+    "c1",
+    37.6
+   ],
+   "out": [
+    "c1",
+    44.7
+   ],
+   "items": [
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 220,
+     "face": "angry",
+     "at": [
+      "c1",
+      37.7
+     ],
+     "s": 0.85,
+     "faces": [
+      [
+       [
+        "c1",
+        41.7
+       ],
+       "sly"
+      ]
+     ]
+    },
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 400,
+     "face": "angry",
+     "at": [
+      "c1",
+      37.8
+     ],
+     "s": 0.85,
+     "faces": [
+      [
+       [
+        "c1",
+        41.7
+       ],
+       "sly"
+      ]
+     ]
+    },
+    {
+     "t": "card",
+     "x": 540,
+     "y": 560,
+     "w": 760,
+     "head": "Tuntutan",
+     "body": "Tukar gabenor Mesir kepada [Muhammad bin Abu Bakar]",
+     "at": [
+      "c1",
+      37.9
+     ]
+    },
+    {
+     "t": "bubble",
+     "x": 720,
+     "y": 900,
+     "w": 380,
+     "text": "Mesti dia [tolak]!",
+     "tail": "10%",
+     "at": [
+      "c1",
+      41.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "setuju",
+   "in": [
+    "c1",
+    44.7
+   ],
+   "out": [
+    "c1",
+    51.75
+   ],
+   "items": [
+    {
+     "t": "light",
+     "x": 760,
+     "y": 1000,
+     "s": 0.7,
+     "at": [
+      "c1",
+      44.8
+     ],
+     "label": "Sayidina Uthman r.a.",
+     "labelStyle": "solid"
+    },
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 220,
+     "face": "sly",
+     "at": [
+      "c1",
+      44.8
+     ],
+     "s": 0.85,
+     "faces": [
+      [
+       [
+        "c1",
+        49.64
+       ],
+       "shock"
+      ]
+     ]
+    },
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 400,
+     "face": "sly",
+     "at": [
+      "c1",
+      44.9
+     ],
+     "s": 0.85,
+     "faces": [
+      [
+       [
+        "c1",
+        49.64
+       ],
+       "shock"
+      ]
+     ]
+    },
+    {
+     "t": "bubble",
+     "x": 700,
+     "y": 560,
+     "w": 520,
+     "text": "“Jika itu kehendak penduduk [Mesir].”",
+     "tail": "60%",
+     "at": [
+      "c1",
+      47.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "utusan",
+   "in": [
+    "c1",
+    51.75
+   ],
+   "out": [
+    "c1",
+    62.4
+   ],
+   "items": [
+    {
+     "t": "camel",
+     "x": 650,
+     "s": 0.95,
+     "at": [
+      "c1",
+      51.9
+     ]
+    },
+    {
+     "t": "person",
+     "kind": "rider",
+     "x": 640,
+     "y": 1130,
+     "s": 0.62,
+     "face": "sly",
+     "at": [
+      "c1",
+      52.6
+     ],
+     "arm": "up"
+    },
+    {
+     "t": "tag",
+     "text": "utusan khalifah?",
+     "style": "line",
+     "x": 650,
+     "y": 600,
+     "at": [
+      "c1",
+      54.0
+     ]
+    },
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 200,
+     "face": "angry",
+     "at": [
+      "c1",
+      57.4
+     ],
+     "s": 0.8,
+     "arm": "point",
+     "label": "Rombongan Mesir"
+    }
+   ]
+  },
+  {
+   "id": "surat",
+   "in": [
+    "c1",
+    62.4
+   ],
+   "out": [
+    "c1",
+    67.25
+   ],
+   "items": [
+    {
+     "t": "letter",
+     "x": 540,
+     "y": 1050,
+     "s": 1.5,
+     "at": [
+      "c1",
+      62.5
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "cop mohor khalifah",
+     "style": "solid",
+     "x": 540,
+     "y": 1080,
+     "at": [
+      "c1",
+      63.4
+     ]
+    },
+    {
+     "t": "card",
+     "x": 540,
+     "y": 1150,
+     "w": 620,
+     "head": "Isi surat",
+     "body": "[Tahan] mereka. [Hukum] mereka.",
+     "at": [
+      "c1",
+      65.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "surat-ali",
+   "in": [
+    "c1",
+    67.25
+   ],
+   "out": [
+    "c1",
+    70.35
+   ],
+   "items": [
+    {
+     "t": "letter",
+     "x": 420,
+     "y": 1100,
+     "s": 1.1,
+     "at": [
+      "c1",
+      67.3
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "kononnya dari Sayidina Ali",
+     "style": "line",
+     "x": 540,
+     "y": 1130,
+     "at": [
+      "c1",
+      68.3
+     ]
+    },
+    {
+     "t": "glyph",
+     "ch": "?",
+     "x": 800,
+     "y": 950,
+     "at": [
+      "c1",
+      68.8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "serentak",
+   "in": [
+    "c1",
+    70.35
+   ],
+   "out": [
+    "c1",
+    77.9
+   ],
+   "items": [
+    {
+     "t": "map",
+     "top": 560,
+     "h": 700,
+     "at": [
+      "c1",
+      70.4
+     ],
+     "nodes": [
+      {
+       "id": "ms",
+       "label": "Mesir",
+       "x": 250,
+       "y": 700,
+       "at": [
+        "c1",
+        70.4
+       ]
+      },
+      {
+       "id": "kf",
+       "label": "Kufah",
+       "x": 800,
+       "y": 660,
+       "at": [
+        "c1",
+        72.5
+       ]
+      },
+      {
+       "id": "bs",
+       "label": "Basrah",
+       "x": 860,
+       "y": 900,
+       "at": [
+        "c1",
+        73.2
+       ]
+      },
+      {
+       "id": "md",
+       "label": "Madinah",
+       "x": 520,
+       "y": 1000,
+       "k": "t",
+       "at": [
+        "c1",
+        70.5
+       ]
+      }
+     ],
+     "links": [
+      {
+       "from": "ms",
+       "to": "md",
+       "at": [
+        "c1",
+        70.6
+       ]
+      },
+      {
+       "from": "kf",
+       "to": "md",
+       "at": [
+        "c1",
+        73.6
+       ]
+      },
+      {
+       "from": "bs",
+       "to": "md",
+       "at": [
+        "c1",
+        73.8
+       ]
+      }
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "serentak?!",
+     "style": "red",
+     "x": 540,
+     "y": 1180,
+     "at": [
+      "c1",
+      74.3
+     ]
+    },
+    {
+     "t": "glyph",
+     "ch": "?",
+     "x": 830,
+     "y": 1200,
+     "s": 0.7,
+     "at": [
+      "c1",
+      75.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sumpah",
+   "in": [
+    "c1",
+    77.9
+   ],
+   "out": [
+    "c1",
+    83.65
+   ],
+   "items": [
+    {
+     "t": "light",
+     "x": 540,
+     "y": 1150,
+     "s": 0.9,
+     "at": [
+      "c1",
+      78.0
+     ]
+    },
+    {
+     "t": "bubble",
+     "x": 540,
+     "y": 560,
+     "w": 720,
+     "text": "“Demi Allah, aku tidak pernah [menulis] apa pun kepada kamu!”",
+     "tail": "46%",
+     "at": [
+      "c1",
+      78.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "palsu",
+   "in": [
+    "c1",
+    83.65
+   ],
+   "out": [
+    "c1",
+    87.2
+   ],
+   "items": [
+    {
+     "t": "letter",
+     "x": 640,
+     "y": 1000,
+     "s": 1.2,
+     "at": [
+      "c1",
+      83.7
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "PALSU",
+     "style": "red",
+     "x": 650,
+     "y": 760,
+     "at": [
+      "c1",
+      84.1
+     ],
+     "shake": [
+      "c1",
+      84.3
+     ]
+    },
+    {
+     "t": "person",
+     "kind": "saba",
+     "x": 230,
+     "face": "sly",
+     "s": 0.85,
+     "at": [
+      "c1",
+      85.2
+     ],
+     "label": "Dirancang"
+    }
+   ]
+  },
+  {
+   "id": "kepung",
+   "in": [
+    "c1",
+    87.2
+   ],
+   "out": [
+    "c1",
+    94.7
+   ],
+   "items": [
+    {
+     "t": "house",
+     "x": 540,
+     "s": 1.1,
+     "at": [
+      "c1",
+      87.3
+     ]
+    },
+    {
+     "t": "light",
+     "x": 540,
+     "y": 980,
+     "s": 0.5,
+     "at": [
+      "c1",
+      87.5
+     ],
+     "label": null,
+     "labelStyle": "solid"
+    },
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 190,
+     "face": "angry",
+     "at": [
+      "c1",
+      87.8
+     ],
+     "s": 0.75,
+     "arm": "point"
+    },
+    {
+     "t": "person",
+     "kind": "rebel",
+     "x": 890,
+     "face": "angry",
+     "at": [
+      "c1",
+      88.0
+     ],
+     "s": 0.75,
+     "arm": "point",
+     "flip": true
+    },
+    {
+     "t": "calendar",
+     "num": "40",
+     "unit": "HARI",
+     "x": 260,
+     "y": 880,
+     "s": 0.85,
+     "at": [
+      "c1",
+      88.7
+     ],
+     "outAt": [
+      "c1",
+      90.9
+     ]
+    },
+    {
+     "t": "nowater",
+     "x": 820,
+     "y": 880,
+     "s": 0.8,
+     "at": [
+      "c1",
+      89.6
+     ],
+     "outAt": [
+      "c1",
+      90.9
+     ]
+    },
+    {
+     "t": "card",
+     "x": 540,
+     "y": 560,
+     "w": 700,
+     "head": "Para sahabat",
+     "body": "mahu [mempertahankan] beliau",
+     "at": [
+      "c1",
+      91.0
+     ],
+     "outAt": [
+      "c1",
+      93.05
+     ]
+    },
+    {
+     "t": "card",
+     "x": 540,
+     "y": 560,
+     "w": 700,
+     "head": "Sayidina Uthman r.a.",
+     "body": "beliau [menolak]",
+     "at": [
+      "c1",
+      93.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "darah",
+   "in": [
+    "c1",
+    94.7
+   ],
+   "out": [
+    "c1",
+    97.6
+   ],
+   "items": [
+    {
+     "t": "drop",
+     "x": 540,
+     "y": 1150,
+     "s": 1.6,
+     "at": [
+      "c1",
+      94.8
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "tiada pertumpahan darah",
+     "style": "line",
+     "x": 540,
+     "y": 1180,
+     "at": [
+      "c1",
+      95.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tarikh",
+   "in": [
+    "c1",
+    97.6
+   ],
+   "out": [
+    "c1",
+    102.0
+   ],
+   "items": [
+    {
+     "t": "calendar",
+     "num": "18",
+     "unit": "ZULHIJAH",
+     "x": 540,
+     "y": 1180,
+     "s": 1.4,
+     "at": [
+      "c1",
+      97.7
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "35 Hijrah",
+     "style": "solid",
+     "x": 540,
+     "y": 1210,
+     "at": [
+      "c1",
+      99.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mushaf",
+   "in": [
+    "c1",
+    102.0
+   ],
+   "out": [
+    "c1",
+    108.1
+   ],
+   "items": [
+    {
+     "t": "mushaf",
+     "x": 540,
+     "s": 1.5,
+     "at": [
+      "c1",
+      102.1
+     ]
+    },
+    {
+     "t": "light",
+     "x": 540,
+     "y": 900,
+     "s": 0.8,
+     "at": [
+      "c1",
+      102.1
+     ],
+     "label": null,
+     "labelStyle": "solid",
+     "outAt": [
+      "c1",
+      105.4
+     ]
+    },
+    {
+     "t": "drop",
+     "x": 470,
+     "y": 1080,
+     "s": 0.45,
+     "at": [
+      "c1",
+      103.3
+     ]
+    },
+    {
+     "t": "drop",
+     "x": 600,
+     "y": 1110,
+     "s": 0.35,
+     "at": [
+      "c1",
+      103.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fitnah-besar",
+   "in": [
+    "c1",
+    108.1
+   ],
+   "out": [
+    "c1",
+    115.15
+   ],
+   "items": [
+    {
+     "t": "person",
+     "kind": "man",
+     "x": 230,
+     "face": "worry",
+     "s": 0.8,
+     "at": [
+      "c1",
+      108.2
+     ]
+    },
+    {
+     "t": "person",
+     "kind": "crowd",
+     "x": 400,
+     "face": "worry",
+     "s": 0.8,
+     "at": [
+      "c1",
+      108.3
+     ]
+    },
+    {
+     "t": "card",
+     "x": 640,
+     "y": 600,
+     "w": 520,
+     "head": "Sayidina Ali r.a.",
+     "body": "terpaksa menerima [baiah]",
+     "at": [
+      "c1",
+      109.8
+     ]
+    },
+    {
+     "t": "crack",
+     "x": 760,
+     "y": 1100,
+     "s": 1.1,
+     "at": [
+      "c1",
+      112.2
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "fitnah lebih besar",
+     "style": "red",
+     "x": 760,
+     "y": 1140,
+     "at": [
+      "c1",
+      112.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "buku",
+   "in": [
+    "c1",
+    115.15
+   ],
+   "out": [
+    "c1",
+    120.25
+   ],
+   "items": [
+    {
+     "t": "cover",
+     "image": "assets/images/cover1.jpg",
+     "x": 540,
+     "y": 1300,
+     "h": 700,
+     "at": [
+      "c1",
+      115.2
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "garis masa sejarah Islam",
+     "style": "solid",
+     "x": 540,
+     "y": 500,
+     "at": [
+      "c1",
+      117.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "garis-masa",
+   "in": [
+    "c1",
+    120.25
+   ],
+   "out": [
+    "c1",
+    127.95
+   ],
+   "items": [
+    {
+     "t": "map",
+     "top": 600,
+     "h": 520,
+     "at": [
+      "c1",
+      120.3
+     ],
+     "nodes": [
+      {
+       "id": "a",
+       "label": "Khalifah Uthman",
+       "x": 270,
+       "y": 860,
+       "k": "o",
+       "at": [
+        "c1",
+        120.4
+       ]
+      },
+      {
+       "id": "b",
+       "label": "Khilafah Uthmaniyyah",
+       "x": 810,
+       "y": 860,
+       "k": "t",
+       "at": [
+        "c1",
+        121.6
+       ]
+      }
+     ],
+     "links": [
+      {
+       "from": "a",
+       "to": "b",
+       "at": [
+        "c1",
+        120.9
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gaya",
+   "in": [
+    "c1",
+    127.95
+   ],
+   "out": [
+    "c1",
+    133.3
+   ],
+   "items": [
+    {
+     "t": "person",
+     "kind": "man",
+     "x": 250,
+     "face": "smile",
+     "s": 0.85,
+     "at": [
+      "c1",
+      128.0
+     ],
+     "label": "Pembaca"
+    },
+    {
+     "t": "cover",
+     "image": "assets/images/cover1.jpg",
+     "x": 700,
+     "y": 1300,
+     "h": 430,
+     "at": [
+      "c1",
+      128.1
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "santai",
+     "style": "solid",
+     "x": 440,
+     "y": 560,
+     "at": [
+      "c1",
+      128.6
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "padat",
+     "style": "solid",
+     "x": 700,
+     "y": 560,
+     "at": [
+      "c1",
+      129.6
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "riwayat",
+     "style": "line",
+     "x": 440,
+     "y": 650,
+     "at": [
+      "c1",
+      130.9
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "dekat zaman kita",
+     "style": "line",
+     "x": 720,
+     "y": 650,
+     "at": [
+      "c1",
+      131.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cermin",
+   "in": [
+    "c1",
+    133.3
+   ],
+   "out": [
+    "c1",
+    139.95
+   ],
+   "items": [
+    {
+     "t": "person",
+     "kind": "man",
+     "x": 280,
+     "face": "shock",
+     "s": 0.9,
+     "at": [
+      "c1",
+      133.4
+     ],
+     "faces": [
+      [
+       [
+        "c1",
+        138.0
+       ],
+       "angry"
+      ]
+     ]
+    },
+    {
+     "t": "letter",
+     "x": 740,
+     "y": 1000,
+     "s": 0.85,
+     "at": [
+      "c1",
+      135.0
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "berita palsu",
+     "style": "red",
+     "x": 740,
+     "y": 760,
+     "at": [
+      "c1",
+      135.6
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "taksub",
+     "style": "red",
+     "x": 640,
+     "y": 1100,
+     "at": [
+      "c1",
+      138.0
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "melatah",
+     "style": "red",
+     "x": 860,
+     "y": 1180,
+     "at": [
+      "c1",
+      138.9
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kenali",
+   "in": [
+    "c2",
+    0.25
+   ],
+   "out": [
+    "c2",
+    7.3
+   ],
+   "items": [
+    {
+     "t": "person",
+     "kind": "man",
+     "x": 260,
+     "face": "smile",
+     "at": [
+      "c2",
+      0.3
+     ],
+     "wave": true
+    },
+    {
+     "t": "cover",
+     "image": "assets/images/cover1.jpg",
+     "x": 700,
+     "y": 1300,
+     "h": 560,
+     "at": [
+      "c2",
+      2.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wajib",
+   "in": [
+    "c2",
+    7.3
+   ],
+   "out": [
+    "c2",
+    12.55
+   ],
+   "items": [
+    {
+     "t": "cover",
+     "image": "assets/images/trilogy.jpg",
+     "ar": "2813 / 1453",
+     "x": 540,
+     "y": 1150,
+     "h": 420,
+     "at": [
+      "c2",
+      9.4
+     ]
+    },
+    {
+     "t": "tag",
+     "text": "wajib dimiliki",
+     "style": "solid",
+     "x": 540,
+     "y": 1180,
+     "at": [
+      "c2",
+      10.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "in": [
+    "c2",
+    12.55
+   ],
+   "out": 137.3,
+   "items": [
+    {
+     "t": "cta",
+     "y": 560,
+     "name": "Syafiq Studio",
+     "sub": "Review buku · Alfu Sanatin",
+     "button": "TEKAN BEG KUNING 🛒",
+     "at": [
+      "c2",
+      12.6
+     ],
+     "pulseAt": [
+      "c2",
+      13.0
+     ]
+    },
+    {
+     "t": "icons",
+     "x": 540,
+     "y": 1100,
+     "at": [
+      "c2",
+      14.2
+     ]
+    }
+   ]
+  }
+ ]
+}

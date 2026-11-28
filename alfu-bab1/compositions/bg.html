@@ -1,0 +1,38 @@
+<template>
+  <style>
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      :root {
+        --ink: #0f2a20;
+        --paper: #f4ead2;
+        --gold: #e2ad45;
+        --gold-deep: #b8862c;
+        --ember: #c9472f;
+        --serif: Poppins, sans-serif;
+        --sans: Poppins, sans-serif;
+      }
+    #root { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
+
+    .board { position: absolute; inset: 0; background: radial-gradient(110% 70% at 50% 40%, #1d4a38 0%, #143728 55%, #0b2219 100%); }
+    .frame { position: absolute; left: 44px; right: 44px; top: 44px; bottom: 44px; border: 2px solid rgba(217,165,63,.55); border-radius: 8px; }
+    .frame::after { content: ""; position: absolute; inset: 10px; border: 1px solid rgba(217,165,63,.22); border-radius: 4px; }
+    .pill { position: absolute; left: 50%; top: 238px; transform: translateX(-50%); white-space: nowrap; padding: 15px 38px 14px; border-radius: 999px;
+             background: linear-gradient(180deg, #dcae4c, #b8862c); color: #20160a; font: 800 30px/1 Poppins, sans-serif; letter-spacing: .05em; text-transform: uppercase;
+             box-shadow: 0 6px 20px rgba(0,0,0,.3); }
+    .ground { position: absolute; left: 120px; right: 120px; top: 1330px; height: 3px; background: rgba(160,200,180,.22); border-radius: 2px; }
+
+  </style>
+  <div id="root" data-composition-id="bg" data-start="0" data-duration="137.3333" data-width="1080" data-height="1920">
+    <div class="board"></div>
+    <div class="frame"></div>
+    <div id="pill" class="pill">BAB 1 · ALFU SANATIN</div>
+    <div class="ground"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#pill", {opacity: 0, y: -20}, {opacity: 1, y: 0, duration: 0.5, ease: "expo.out"}, 0.05);
+    window.__timelines["bg"] = tl;
+  </script>
+</template>

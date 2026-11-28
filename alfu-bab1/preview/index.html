@@ -1,0 +1,188 @@
+<meta charset="utf-8">
+<title>Alfu Sanatin Bab 1</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;600;700&display=swap">
+<style>
+  /* Layout: a screening room. The 9:16 film sits on the left like a phone on a desk,
+     the editor's notes and chapter list sit beside it; one column on phones. */
+  :root {
+    --ink: #0b1418;        /* page ground: deep teal-black, the film's own shadow tone */
+    --panel: #12201f;      /* raised surfaces */
+    --line: #23332f;       /* hairlines */
+    --paper: #f3e9d2;      /* text: the poster's paper */
+    --muted: #9aaba4;      /* secondary text */
+    --gold: #e2b35a;       /* accent: the cover gilt */
+    --serif: "EB Garamond", Georgia, "Times New Roman", serif;
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ink); color: var(--paper); font: 400 15px/1.55 var(--sans);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 28px 48px;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 28px; }
+  header { display: grid; gap: 6px; }
+  .eyebrow { font: 700 12px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+  h1 { margin: 0; font: 700 clamp(34px, 6vw, 56px)/1 var(--serif); text-wrap: balance; }
+  .lede { margin: 4px 0 0; color: var(--muted); max-width: 62ch; }
+  .stage { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); gap: 32px; align-items: start; }
+  @media (max-width: 820px) { .stage { grid-template-columns: minmax(0, 1fr); } }
+  .film { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); display: grid; gap: 12px; justify-items: center; }
+  @media (max-width: 820px) { .film { position: static; } }
+  .phone {
+    width: 100%; max-width: 400px; aspect-ratio: 9 / 16; border-radius: 22px; overflow: hidden;
+    background: #000; border: 1px solid var(--line); box-shadow: 0 30px 80px rgba(0,0,0,.45);
+  }
+  hyperframes-player { display: block; width: 100%; height: 100%; }
+  .status { font: 400 13px/1.4 var(--sans); color: var(--muted); text-align: center; min-height: 1.4em; }
+  .status b { color: var(--paper); font-weight: 600; }
+  .notes { display: grid; gap: 22px; min-width: 0; }
+  section { display: grid; gap: 10px; }
+  h2 { margin: 0; font: 700 22px/1.2 var(--serif); }
+  .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  .stat .v { font: 700 28px/1 var(--serif); color: var(--gold); font-variant-numeric: tabular-nums; }
+  .stat .k { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  ol.chapters { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+  .chap {
+    width: 100%; display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 12px; align-items: baseline;
+    text-align: left; background: transparent; color: var(--paper); border: 0; border-radius: 10px;
+    padding: 9px 12px; font: inherit; cursor: pointer;
+  }
+  .chap:hover { background: var(--panel); }
+  .chap:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+  .chap[aria-current="true"] { background: var(--panel); box-shadow: inset 3px 0 0 var(--gold); }
+  .chap .t { font: 600 13px/1 var(--sans); color: var(--gold); font-variant-numeric: tabular-nums; }
+  .chap .n { font-weight: 600; }
+  .chap .d { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+  ul.list { margin: 0; padding-left: 18px; display: grid; gap: 6px; color: var(--paper); }
+  ul.list li::marker { color: var(--gold); }
+  q { font-family: var(--serif); font-style: italic; font-size: 1.06em; }
+  .muted { color: var(--muted); }
+  .note { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Preview · belum dirender</div>
+    <h1>Alfu Sanatin · Bab 1</h1>
+    <p class="lede">Review Bab 1 versi Syafiq Studio: suara anda yang dah dibersihkan dari tersasul &amp; tergagap, dengan animasi gaya “review bab”. Tekan main untuk tonton dengan bunyi, atau pilih bab di sebelah untuk lompat.</p>
+  </header>
+
+  <div class="stage">
+    <div class="film">
+      <div class="phone">
+        <hyperframes-player id="player" src="film/index.html" runtime-src="runtime.js" controls></hyperframes-player>
+      </div>
+      <div class="status" id="status" aria-live="polite">Memuatkan filem…</div>
+    </div>
+
+    <div class="notes">
+      <section>
+        <h2>Ringkasan suntingan</h2>
+        <div class="stats">
+          <div class="stat"><div class="v">137s</div><div class="k">daripada ~171s rakaman</div></div>
+          <div class="stat"><div class="v">26</div><div class="k">babak animasi</div></div>
+          <div class="stat"><div class="v">9:16</div><div class="k">1080×1920, 30 fps</div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Bab</h2>
+        <ol class="chapters" id="chapters"></ol>
+      </section>
+
+      <section>
+        <h2>Yang dibuang (tersasul &amp; tergagap)</h2>
+        <ul class="list">
+          <li><q>Bersamanya ada sepucuk surat bermohon…</q> → ambil ulangan <q>Ada sepucuk surat bercop mohor khalifah.</q></li>
+          <li><q>Pada 18 Zulhijah 35 Hijrah, darah seorang… darah beliau</q> → <q>darah seorang</q> dibuang.</li>
+          <li><q>Umat kehilangan Sayyidin…</q> → ambil <q>Umat kehilangan khalifah.</q></li>
+          <li><q>Gaya penulisannya santai, padat. Dan riwayat dengan…</q> → ambil ulangan yang lancar.</li>
+          <li><q>Sebelum menghukum, kenali sejak…</q> dan penutup klip pertama → guna rakaman kedua (lebih kemas).</li>
+          <li><q>Dapatkan bacaan sejarah.</q> (terputus), dan <q>Terima kasih</q> di hujung.</li>
+          <li>Semua jeda panjang dipendekkan.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Rupa &amp; bunyi</h2>
+        <ul class="list">
+          <li><b>Gaya rujukan:</b> papan hijau gelap, bingkai emas nipis, pil <q>BAB 1 · ALFU SANATIN</q>, tajuk ringkas dengan kata kunci EMAS.</li>
+          <li><b>Animasi stick-figure:</b> penghasut, Abdullah bin Saba', peta Yaman → Mesir/Kufah/Basrah → Madinah, surat bercop <q>PALSU</q>, rumah dikepung 40 hari, kalendar 18 Zulhijah.</li>
+          <li><b>Sahabat tidak dilukis</b> sebagai watak: Sayidina Uthman r.a. dan Sayidina Ali r.a. dipaparkan sebagai cahaya / kad nama sahaja.</li>
+          <li><b>Watermark Syafiq Studio</b> sepanjang video, dan kad penutup <q>TEKAN BEG KUNING</q>.</li>
+          <li>Whoosh pada setiap tukar babak, pop pada label, bass impact pada <q>PALSU</q> dan <q>40 hari</q>.</li>
+        </ul>
+      </section>
+
+      <p class="note">Preview guna video proxy 540p supaya ringan dimuat; render akhir pada 1080×1920 penuh. Belum ada muzik latar (untuk TikTok affiliate, tambah lagu dari Commercial Music Library dalam app).</p>
+    </div>
+  </div>
+</div>
+
+<script src="player.js"></script>
+<script>
+  const CHAPTERS = [
+    [0, "Hook", "Uthman membakar al-Quran?"],
+    [6.0, "12 tahun", "6 tahun gemilang, 6 tahun fitnah"],
+    [11.53, "Abdullah bin Saba'", "Fitnah bermula dari Yaman"],
+    [15.73, "Peta", "Mesir, Kufah, Basrah → Madinah"],
+    [27.1, "Tuduhan", "Kaya, nepotisme, bakar al-Quran"],
+    [36.6, "Gabenor Mesir", "Tuntutan & jawapan khalifah"],
+    [50.1, "Utusan berunta", "Surat bercop mohor"],
+    [65.03, "Serentak?", "Rombongan berpatah balik"],
+    [77.27, "Palsu", "Semuanya dirancang"],
+    [80.07, "Dikepung", "40 hari, air disekat"],
+    [89.4, "18 Zulhijah", "Darah di atas mushaf"],
+    [96.13, "Fitnah besar", "Umat kehilangan khalifah"],
+    [102.77, "Alfu Sanatin", "Garis masa sejarah Islam"],
+    [115.7, "Cermin", "Berita palsu, taksub, melatah"],
+    [122.13, "Penutup", "Kenali sejarahnya · Tekan beg kuning"]
+  ];
+  const player = document.getElementById("player");
+  const status = document.getElementById("status");
+  const list = document.getElementById("chapters");
+  const fmt = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, "0")}`;
+
+  const buttons = CHAPTERS.map(([t, name, desc], i) => {
+    const li = document.createElement("li");
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "chap"; b.id = `chap-${i}`;
+    b.innerHTML = `<span class="t">${fmt(t)}</span><span><span class="n"></span><span class="d"></span></span>`;
+    b.querySelector(".n").textContent = name;
+    b.querySelector(".d").textContent = desc;
+    b.addEventListener("click", () => {
+      try { player.currentTime = t + 0.05; player.play(); } catch (e) { status.textContent = "Filem belum siap dimuat, cuba sekejap lagi."; }
+    });
+    li.appendChild(b); list.appendChild(li);
+    return b;
+  });
+
+  player.addEventListener("ready", () => {
+    const d = player.duration;
+    status.innerHTML = `Sedia · <b>${Number.isFinite(d) ? d.toFixed(1) : "104.5"}s</b> · tekan main untuk tonton dengan bunyi`;
+  });
+  player.addEventListener("error", (e) => {
+    status.textContent = "Filem gagal dimuat. Muat semula halaman untuk cuba lagi.";
+  });
+
+  let last = -1;
+  (function tick() {
+    let t = 0;
+    try { t = player.currentTime || 0; } catch (e) {}
+    let idx = 0;
+    for (let i = 0; i < CHAPTERS.length; i++) if (t + 0.01 >= CHAPTERS[i][0]) idx = i;
+    if (idx !== last) {
+      buttons.forEach((b, i) => b.setAttribute("aria-current", i === idx ? "true" : "false"));
+      last = idx;
+    }
+    requestAnimationFrame(tick);
+  })();
+</script>

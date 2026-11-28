@@ -1,0 +1,32 @@
+<template>
+  <style>
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; }
+      @font-face { font-family: "Poppins"; src: url("assets/fonts/Poppins-800.woff2") format("woff2"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-400.woff2") format("woff2"); font-weight: 400; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter-700.woff2") format("woff2"); font-weight: 700; }
+      :root {
+        --ink: #0f2a20;
+        --paper: #f4ead2;
+        --gold: #e2ad45;
+        --gold-deep: #b8862c;
+        --ember: #c9472f;
+        --serif: Poppins, sans-serif;
+        --sans: Poppins, sans-serif;
+      }
+    #root { position: absolute; inset: 0; overflow: visible; pointer-events: none; }
+
+    .wm { position: absolute; left: 0; right: 0; top: 1420px; display: flex; justify-content: center; align-items: center; gap: 14px; opacity: .8; }
+    .wm .mk { width: 54px; height: 54px; border-radius: 14px; border: 3px solid #d9a53f; display: flex; align-items: center; justify-content: center;
+              font: 800 24px/1 Poppins, sans-serif; color: #d9a53f; }
+    .wm .nm { font: 800 28px/1 Poppins, sans-serif; letter-spacing: .28em; color: rgba(244,234,210,.8); }
+
+  </style>
+  <div id="root" data-composition-id="wm" data-start="0" data-duration="137.3333" data-width="1080" data-height="1920">
+    <div id="wm" class="wm"><span class="mk">SS</span><span class="nm">SYAFIQ STUDIO</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    window.__timelines["wm"] = tl;
+  </script>
+</template>

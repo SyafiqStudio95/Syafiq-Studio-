@@ -377,7 +377,7 @@ for c in E["cards"]:
 
 # ---------------------------------------------------------------- story layer (voice-only edits)
 STORY = {}
-if E.get("story") is not None:
+if E.get("panels") is not None:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import story
     STORY = story.make(E, T, fr, scene, esc, TOTAL)
@@ -416,6 +416,8 @@ for gi, (ga, gb, text) in enumerate(cap_groups):
         raise SystemExit(f"caption {gi} has no time: {text}")
     spans = []
     for w in text.split(" "):
+        if w == "/":
+            spans.append('<span class="br"></span>'); continue
         is_em = "*" in w          # *word*, *word*, *word*. all mark emphasis
         w = w.replace("*", "")
         spans.append(f'<span class="{"w em" if is_em else "w"}">{esc(w)}</span>')
@@ -433,6 +435,16 @@ css = """
          text-shadow: 0 3px 18px rgba(0,0,0,.55); }
     .w.em { font: var(--em-style, italic) 700 70px/1.0 var(--serif); color: var(--gold); letter-spacing: 0; }
 """
+if E.get("captionStyle") == "headline":
+    css = """
+    .grp { position: absolute; left: 110px; right: 110px; top: 330px; text-align: center; opacity: 0; }
+    .line { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; column-gap: 18px; row-gap: 4px; }
+    .br { flex-basis: 100%; height: 0; }
+    .w { display: inline-block; font: 800 66px/1.12 Poppins, sans-serif; color: #f4ead2; letter-spacing: -.005em; }
+    .w.em { color: #e2ad45; text-transform: uppercase; }
+"""
+    cjs = [l.replace('{opacity: 0, y: 18, filter: "blur(6px)"}, {opacity: 1, y: 0, filter: "blur(0px)", duration: 0.18, ease: "power4.out", stagger: 0.06}',
+                     '{opacity: 0.25}, {opacity: 1, duration: 0.2, ease: "power2.out", stagger: 0}') for l in cjs]
 scenes["captions"] = (cap_start, cap_dur, scene("captions", css, "\n".join(groups), "\n".join(cjs), cap_dur))
 
 # ---------------------------------------------------------------- write scenes
