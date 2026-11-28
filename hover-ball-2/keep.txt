@@ -1,0 +1,24 @@
+# src start end [. = sentence end] | caption groups (*word* = green emphasis)
+c3 0.00 1.80 . | Tak semua bola|itu *bulat*.
+c3 1.85 3.70 . | Ada juga yang|*leper* macam ni.
+c3 3.78 4.80 | Ini dia *Hover* *Ball*,
+c3 4.86 6.36 | khas untuk anda,
+c3 6.74 8.82 . | aktiviti *indoor*|dalam rumah.
+c3 9.40 10.32 | Jadi, anak-anak
+c3 10.62 14.28 . | anda yang aktif, yang *lasak*,|yang suka main bola,|jangan *risau*.
+c3 14.88 19.60 | Boleh dapatkan Hover Ball ni|sebagai aktiviti bersama|*anak-anak*.|Apa yang menarik,
+c3 19.60 23.25 . | boleh tengok kualiti dia:|*bampar* tepi ni|sangat *lembut*.
+c3 23.30 26.00 | Jadi tak ada masalah|akan *merosakkan*|dinding rumah.
+c3 27.48 30.66 | Dan Hover Ball ni,|kita nampak dalam ni|ada *kipas*.
+c3 31.02 32.42 | Bila ada kipas kat sini,
+c3 32.64 33.20 | *angin*
+c3 33.56 36.36 . | dari atas akan masuk,|menolak ke bahagian bawah,
+c3 36.82 40.30 . | menyebabkan Hover Ball *terapung*|dan bergerak *automatik*.
+c3 40.80 43.90 . |
+c3 49.36 51.34 | Siapa yang berminat|dapatkan Hover Ball,
+c3 51.94 53.70 . | khas untuk anak-anak|yang *lasak*.
+c3 54.16 56.34 | Berikan mereka|*kebebasan* nak main,
+c3 56.74 58.56 . | tapi main dalam keadaan|*selamat* dalam rumah.
+c3 59.08 60.54 . | Boleh dapatkan Hover Ball.
+c3 61.12 63.00 . | Kualiti yang *bagus*,|harga yang *murah*.
+c3 63.48 65.00 . | Tekan *beg* *kuning*|sekarang!

@@ -1,0 +1,617 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4",
+  "c2": "assets/video/c2.mp4",
+  "c3": "assets/video/c3.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#0b1a12",
+   "--paper": "#ffffff",
+   "--gold": "#7dff6a",
+   "--gold-deep": "#ffb400",
+   "--gold-hi": "#ffe45c",
+   "--btn-ink": "#1d1400",
+   "--ember": "#ff5a5f",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--cta-size": "112px",
+   "--title-size": "112px",
+   "--slam-size": "140px",
+   "--hook-scrim": ".45"
+  }
+ },
+ "grade": {
+  "note": "Bright and playful: teal-amber LUT quiets the blue demo backdrop; demo clips lifted (darker), kids clips held.",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.14,
+    "shadows": 0.08,
+    "whites": 0.02,
+    "blacks": -0.03,
+    "temperature": 0.02,
+    "vibrance": 0.12,
+    "saturation": 0.03
+   },
+   "wheels": {
+    "highlights": {
+     "hue": 45,
+     "amount": 0.04,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.08,
+    "vignetteFeather": 0.75
+   }
+  },
+  "exposure": {
+   "c1": 0.0,
+   "c2": -0.03,
+   "c3": 0.15
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c2",
+    "in": 10.0,
+    "out": 11.26
+   },
+   {
+    "src": "c1",
+    "in": 18.0,
+    "out": 19.26
+   },
+   {
+    "src": "c3",
+    "in": 42.0,
+    "out": 43.26
+   }
+  ],
+  "lines": [
+   {
+    "text": "TAK SEMUA BOLA",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.05,
+    "out": 1.8
+   },
+   {
+    "text": "itu bulat.",
+    "style": "question",
+    "y": 680,
+    "in": 0.12,
+    "out": 1.8
+   },
+   {
+    "text": "Ada yang leper!",
+    "style": "slam",
+    "y": 560,
+    "in": 1.85,
+    "out": 3.7
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c3",
+   "in": 0.0,
+   "out": 1.8,
+   "a": 0.0,
+   "b": 1.8,
+   "z": 1.0,
+   "note": "Tak semua bola itu bulat.",
+   "cap": "Tak semua bola|itu *bulat*."
+  },
+  {
+   "src": "c3",
+   "in": 1.8,
+   "out": 3.73,
+   "a": 1.85,
+   "b": 3.7,
+   "z": 1.08,
+   "note": "Ada juga yang leper macam ni.",
+   "cap": "Ada juga yang|*leper* macam ni."
+  },
+  {
+   "src": "c3",
+   "in": 3.73,
+   "out": 4.81,
+   "a": 3.78,
+   "b": 4.8,
+   "z": 1.0,
+   "note": "Ini dia Hover Ball,",
+   "cap": "Ini dia *Hover* *Ball*,"
+  },
+  {
+   "src": "c3",
+   "in": 4.81,
+   "out": 6.44,
+   "a": 4.86,
+   "b": 6.36,
+   "z": 1.14,
+   "note": "khas untuk anda,",
+   "cap": "khas untuk anda,"
+  },
+  {
+   "src": "c3",
+   "in": 6.69,
+   "out": 8.98,
+   "a": 6.74,
+   "b": 8.82,
+   "z": 1.0,
+   "note": "aktiviti indoor dalam rumah.",
+   "cap": "aktiviti *indoor*|dalam rumah."
+  },
+  {
+   "src": "c3",
+   "in": 9.35,
+   "out": 10.4,
+   "a": 9.4,
+   "b": 10.32,
+   "z": 1.08,
+   "note": "Jadi, anak-anak",
+   "cap": "Jadi, anak-anak"
+  },
+  {
+   "src": "c3",
+   "in": 10.57,
+   "out": 14.44,
+   "a": 10.62,
+   "b": 14.28,
+   "z": 1.0,
+   "note": "anda yang aktif, yang lasak, yang suka main bola, jangan risau.",
+   "cap": "anda yang aktif, yang *lasak*,|yang suka main bola,|jangan *risau*."
+  },
+  {
+   "src": "c3",
+   "in": 14.83,
+   "out": 19.6,
+   "a": 14.88,
+   "b": 19.6,
+   "z": 1.14,
+   "note": "Boleh dapatkan Hover Ball ni sebagai aktiviti bersama anak-anak. Apa yang menarik,",
+   "cap": "Boleh dapatkan Hover Ball ni|sebagai aktiviti bersama|*anak-anak*.|Apa yang menarik,"
+  },
+  {
+   "src": "c3",
+   "in": 19.6,
+   "out": 23.25,
+   "a": 19.6,
+   "b": 23.25,
+   "z": 1.0,
+   "note": "boleh tengok kualiti dia: bampar tepi ni sangat lembut.",
+   "cap": "boleh tengok kualiti dia:|*bampar* tepi ni|sangat *lembut*."
+  },
+  {
+   "src": "c3",
+   "in": 23.25,
+   "out": 26.08,
+   "a": 23.3,
+   "b": 26.0,
+   "z": 1.08,
+   "note": "Jadi tak ada masalah akan merosakkan dinding rumah.",
+   "cap": "Jadi tak ada masalah|akan *merosakkan*|dinding rumah."
+  },
+  {
+   "src": "c3",
+   "in": 27.43,
+   "out": 30.74,
+   "a": 27.48,
+   "b": 30.66,
+   "z": 1.0,
+   "note": "Dan Hover Ball ni, kita nampak dalam ni ada kipas.",
+   "cap": "Dan Hover Ball ni,|kita nampak dalam ni|ada *kipas*."
+  },
+  {
+   "src": "c3",
+   "in": 30.97,
+   "out": 32.5,
+   "a": 31.02,
+   "b": 32.42,
+   "z": 1.14,
+   "note": "Bila ada kipas kat sini,",
+   "cap": "Bila ada kipas kat sini,"
+  },
+  {
+   "src": "c3",
+   "in": 32.59,
+   "out": 33.28,
+   "a": 32.64,
+   "b": 33.2,
+   "z": 1.0,
+   "note": "angin",
+   "cap": "*angin*"
+  },
+  {
+   "src": "c3",
+   "in": 33.51,
+   "out": 36.52,
+   "a": 33.56,
+   "b": 36.36,
+   "z": 1.08,
+   "note": "dari atas akan masuk, menolak ke bahagian bawah,",
+   "cap": "dari atas akan masuk,|menolak ke bahagian bawah,"
+  },
+  {
+   "src": "c3",
+   "in": 36.77,
+   "out": 40.46,
+   "a": 36.82,
+   "b": 40.3,
+   "z": 1.0,
+   "note": "menyebabkan Hover Ball terapung dan bergerak automatik.",
+   "cap": "menyebabkan Hover Ball *terapung*|dan bergerak *automatik*."
+  },
+  {
+   "src": "c3",
+   "in": 40.75,
+   "out": 44.06,
+   "a": 40.8,
+   "b": 43.9,
+   "z": 1.14,
+   "note": "",
+   "cap": ""
+  },
+  {
+   "src": "c3",
+   "in": 49.31,
+   "out": 51.42,
+   "a": 49.36,
+   "b": 51.34,
+   "z": 1.0,
+   "note": "Siapa yang berminat dapatkan Hover Ball,",
+   "cap": "Siapa yang berminat|dapatkan Hover Ball,"
+  },
+  {
+   "src": "c3",
+   "in": 51.89,
+   "out": 53.86,
+   "a": 51.94,
+   "b": 53.7,
+   "z": 1.08,
+   "note": "khas untuk anak-anak yang lasak.",
+   "cap": "khas untuk anak-anak|yang *lasak*."
+  },
+  {
+   "src": "c3",
+   "in": 54.11,
+   "out": 56.42,
+   "a": 54.16,
+   "b": 56.34,
+   "z": 1.0,
+   "note": "Berikan mereka kebebasan nak main,",
+   "cap": "Berikan mereka|*kebebasan* nak main,"
+  },
+  {
+   "src": "c3",
+   "in": 56.69,
+   "out": 58.72,
+   "a": 56.74,
+   "b": 58.56,
+   "z": 1.14,
+   "note": "tapi main dalam keadaan selamat dalam rumah.",
+   "cap": "tapi main dalam keadaan|*selamat* dalam rumah."
+  },
+  {
+   "src": "c3",
+   "in": 59.03,
+   "out": 60.7,
+   "a": 59.08,
+   "b": 60.54,
+   "z": 1.0,
+   "note": "Boleh dapatkan Hover Ball.",
+   "cap": "Boleh dapatkan Hover Ball."
+  },
+  {
+   "src": "c3",
+   "in": 61.07,
+   "out": 63.16,
+   "a": 61.12,
+   "b": 63.0,
+   "z": 1.08,
+   "note": "Kualiti yang bagus, harga yang murah.",
+   "cap": "Kualiti yang *bagus*,|harga yang *murah*."
+  },
+  {
+   "src": "c3",
+   "in": 63.43,
+   "out": 65.16,
+   "a": 63.48,
+   "b": 65.0,
+   "z": 1.0,
+   "note": "Tekan beg kuning sekarang!",
+   "cap": "Tekan *beg* *kuning*|sekarang!"
+  }
+ ],
+ "tail": {
+  "src": "c1",
+  "in": 55.0,
+  "dur": 2.4
+ },
+ "overlays": [
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 18.0,
+   "dur": 4.6,
+   "at": [
+    "c3",
+    9.4
+   ]
+  },
+  {
+   "mode": "pip",
+   "side": "left",
+   "src": "c2",
+   "in": 12.0,
+   "dur": 3.2,
+   "at": [
+    "c3",
+    14.88
+   ],
+   "tag": "Main bersama!"
+  },
+  {
+   "mode": "pip",
+   "side": "right",
+   "src": "c2",
+   "in": 4.0,
+   "dur": 2.6,
+   "at": [
+    "c3",
+    23.3
+   ],
+   "tag": "Selamat!"
+  },
+  {
+   "mode": "full",
+   "src": "c2",
+   "in": 9.0,
+   "dur": 4.2,
+   "at": [
+    "c3",
+    51.94
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c3",
+    3.78
+   ],
+   "out": [
+    "c3",
+    8.9
+   ],
+   "kicker": "Main dalam rumah",
+   "title": "Hover Ball",
+   "sub": "terapung · lampu LED",
+   "y": 330
+  },
+  {
+   "id": "t-lembut",
+   "kind": "title",
+   "in": [
+    "c3",
+    19.6
+   ],
+   "out": [
+    "c3",
+    23.2
+   ],
+   "kicker": "Bampar pelindung",
+   "title": "Lembut",
+   "sub": "tak rosakkan dinding",
+   "y": 330
+  },
+  {
+   "id": "t-udara",
+   "kind": "title",
+   "in": [
+    "c3",
+    31.02
+   ],
+   "out": [
+    "c3",
+    36.4
+   ],
+   "kicker": "Kusyen udara",
+   "title": "Terapung",
+   "sub": "kipas tolak bola ke atas",
+   "y": 330
+  },
+  {
+   "id": "t-led",
+   "kind": "title",
+   "in": [
+    "c3",
+    40.8
+   ],
+   "out": [
+    "c3",
+    43.9
+   ],
+   "kicker": "Lampu LED",
+   "title": "Bercahaya",
+   "sub": "boleh on / off",
+   "y": 330
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c3",
+    59.08
+   ],
+   "buttonAt": [
+    "c3",
+    63.48
+   ],
+   "pulseAt": [
+    "c3",
+    64.4
+   ],
+   "kicker": "Harga murah",
+   "title": "Hover Ball",
+   "by": "untuk anak-anak yang lasak",
+   "button": "Tekan beg kuning"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.85,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    3.78
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c3",
+    3.9
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    14.88
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    19.6
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    23.3
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    31.02
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    40.8
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    9.4
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c3",
+    51.94
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c3",
+    63.48
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.35
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c3",
+    64.4
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.35
+  }
+ ]
+}
