@@ -1,0 +1,18 @@
+# Ulanzi Super Macro Lens (VO). c27 = voice-over (black), c1-c26 = unboxing + macro sample b-roll as full overlays.
+# Dropped: trailing "tapi kamera telefon..." of the first line (said again at 5.84), retakes at 11.90, 32.12, 38.52, 52.24,
+# "Lensa 75mm ini" tail of the 25.00 chunk (cut at the pause 29.15, said again at 40.20), Whisper "Terima kasih" at 4.76.
+c27 0.78 2.90 | Pernah tak nak ambil|gambar *makro* yang detail,
+c27 5.84 7.84 . | tapi kamera telefon|tak cukup *dekat*?
+c27 8.40 11.18 . | Kenalkan,|*Ulanzi Super Macro Lens*.
+c27 17.42 22.10 . | Cuma klip pada telefon|dan terus nampak detail|yang mata kita sendiri|tak *perasan*.
+c27 22.36 23.26 | *Urat daun*,
+c27 23.60 24.64 | *titisan embun*,
+c27 25.00 29.15 . | tekstur kain|sampai ke *mata serangga*,|semuanya jelas dan *tajam*.
+c27 40.20 46.90 . | Lensa *75mm* ini|boleh ambil gambar sedekat|*4 hingga 7.5 cm*|dari objek.
+c27 47.20 51.80 . | Salutan lensa berlapis pula|kekalkan *kejelasan*|kamera telefon awak.
+c27 55.16 59.38 . | Jadi hasilnya *tajam*|dan hampir setaraf|dengan kamera *DSLR*.
+c27 60.20 62.38 | Klipnya diperbuat|daripada *logam*,
+c27 62.64 64.42 . | dan ada *skru*|untuk ketatkan.
+c27 64.68 66.34 . | Jadi tak perlu risau|lensa *jatuh*.
+c27 66.56 84.30 . | Pasang dan buka pun|cepat dan *mudah*.|Lensa ini sesuai untuk|lebih *90%*|telefon pintar di pasaran.|Ia juga pilihan|*hadiah* yang sempurna|untuk kawan yang suka|fotografi, berniaga online|atau *konten kreator*.|Tak perlu beli|*kamera mahal*|untuk ambil gambar|makro yang cantik.
+c27 84.68 88.14 . | Tekan *beg kuning* sekarang,|dapatkan|*Ulanzi Super Macro Lens*.

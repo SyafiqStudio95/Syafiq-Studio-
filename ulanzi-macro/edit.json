@@ -1,0 +1,1164 @@
+{
+ "sources": {
+  "c1": "assets/video/c1.mp4",
+  "c2": "assets/video/c2.mp4",
+  "c3": "assets/video/c3.mp4",
+  "c4": "assets/video/c4.mp4",
+  "c5": "assets/video/c5.mp4",
+  "c6": "assets/video/c6.mp4",
+  "c7": "assets/video/c7.mp4",
+  "c8": "assets/video/c8.mp4",
+  "c9": "assets/video/c9.mp4",
+  "c10": "assets/video/c10.mp4",
+  "c11": "assets/video/c11.mp4",
+  "c12": "assets/video/c12.mp4",
+  "c13": "assets/video/c13.mp4",
+  "c14": "assets/video/c14.mp4",
+  "c15": "assets/video/c15.mp4",
+  "c16": "assets/video/c16.mp4",
+  "c17": "assets/video/c17.mp4",
+  "c18": "assets/video/c18.mp4",
+  "c19": "assets/video/c19.mp4",
+  "c20": "assets/video/c20.mp4",
+  "c21": "assets/video/c21.mp4",
+  "c22": "assets/video/c22.mp4",
+  "c23": "assets/video/c23.mp4",
+  "c24": "assets/video/c24.mp4",
+  "c25": "assets/video/c25.mp4",
+  "c26": "assets/video/c26.mp4",
+  "c27": "assets/video/c27.mp4"
+ },
+ "theme": {
+  "fonts": [
+   [
+    "Poppins",
+    "assets/fonts/Poppins-600.woff2",
+    600
+   ],
+   [
+    "Poppins",
+    "assets/fonts/Poppins-800.woff2",
+    800
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-400.woff2",
+    400
+   ],
+   [
+    "Inter",
+    "assets/fonts/Inter-700.woff2",
+    700
+   ]
+  ],
+  "tokens": {
+   "--ink": "#071214",
+   "--paper": "#ffffff",
+   "--gold": "#c8f24a",
+   "--gold-deep": "#7fb51f",
+   "--gold-hi": "#e3ff8a",
+   "--btn-ink": "#142100",
+   "--ember": "#ff5a5f",
+   "--serif": "\"Poppins\", Arial, sans-serif",
+   "--sans": "\"Inter\", Arial, sans-serif",
+   "--em-style": "normal",
+   "--cap-right": "300px",
+   "--cta-size": "112px",
+   "--title-size": "112px",
+   "--slam-size": "140px",
+   "--hook-scrim": ".45",
+   "--panel": "440px"
+  }
+ },
+ "grade": {
+  "note": "Macro nature + teal unboxing backdrop: teal-amber LUT, colours left rich.",
+  "base": {
+   "intensity": 1,
+   "adjust": {
+    "contrast": 0.1,
+    "highlights": -0.14,
+    "shadows": 0.08,
+    "whites": 0.02,
+    "blacks": -0.03,
+    "temperature": 0.02,
+    "vibrance": 0.12,
+    "saturation": 0.03
+   },
+   "wheels": {
+    "highlights": {
+     "hue": 45,
+     "amount": 0.04,
+     "level": 0
+    }
+   },
+   "details": {
+    "vignette": 0.08,
+    "vignetteFeather": 0.75
+   }
+  },
+  "exposure": {
+   "c1": 0.0,
+   "c2": 0.0,
+   "c3": 0.0,
+   "c4": 0.0,
+   "c5": 0.0,
+   "c6": 0.0,
+   "c7": 0.0,
+   "c8": 0.0,
+   "c9": 0.0,
+   "c10": 0.0,
+   "c11": 0.0,
+   "c12": 0.0,
+   "c13": 0.0,
+   "c14": 0.0,
+   "c15": 0.0,
+   "c16": 0.0,
+   "c17": 0.0,
+   "c18": 0.0,
+   "c19": 0.0,
+   "c20": 0.0,
+   "c21": 0.0,
+   "c22": 0.0,
+   "c23": 0.0,
+   "c24": 0.0,
+   "c25": 0.0,
+   "c26": 0.0,
+   "c27": 0.0
+  },
+  "bakedLut": "grading/teal-amber.cube"
+ },
+ "hook": {
+  "overVoice": true,
+  "clips": [
+   {
+    "src": "c12",
+    "in": 7.0,
+    "out": 7.7
+   },
+   {
+    "src": "c13",
+    "in": 0.5,
+    "out": 1.2
+   },
+   {
+    "src": "c22",
+    "in": 3.0,
+    "out": 3.7
+   }
+  ],
+  "lines": [
+   {
+    "text": "PERNAH TAK",
+    "style": "kicker",
+    "y": 600,
+    "in": 0.05,
+    "out": 2.1
+   },
+   {
+    "text": "nak ambil gambar makro",
+    "style": "question",
+    "y": 680,
+    "in": 0.12,
+    "out": 1.1
+   },
+   {
+    "text": "yang detail?",
+    "style": "slam",
+    "y": 700,
+    "in": 1.15,
+    "out": 2.1
+   }
+  ]
+ },
+ "edl": [
+  {
+   "src": "c27",
+   "in": 0.73,
+   "out": 2.98,
+   "a": 0.78,
+   "b": 2.9,
+   "z": 1.0,
+   "note": "Pernah tak nak ambil gambar makro yang detail,",
+   "cap": "Pernah tak nak ambil|gambar *makro* yang detail,"
+  },
+  {
+   "src": "c27",
+   "in": 5.79,
+   "out": 8.0,
+   "a": 5.84,
+   "b": 7.84,
+   "z": 1.08,
+   "note": "tapi kamera telefon tak cukup dekat?",
+   "cap": "tapi kamera telefon|tak cukup *dekat*?"
+  },
+  {
+   "src": "c27",
+   "in": 8.35,
+   "out": 11.34,
+   "a": 8.4,
+   "b": 11.18,
+   "z": 1.0,
+   "note": "Kenalkan, Ulanzi Super Macro Lens.",
+   "cap": "Kenalkan,|*Ulanzi Super Macro Lens*."
+  },
+  {
+   "src": "c27",
+   "in": 17.37,
+   "out": 22.26,
+   "a": 17.42,
+   "b": 22.1,
+   "z": 1.14,
+   "note": "Cuma klip pada telefon dan terus nampak detail yang mata kita sendiri tak perasan.",
+   "cap": "Cuma klip pada telefon|dan terus nampak detail|yang mata kita sendiri|tak *perasan*."
+  },
+  {
+   "src": "c27",
+   "in": 22.31,
+   "out": 23.34,
+   "a": 22.36,
+   "b": 23.26,
+   "z": 1.0,
+   "note": "Urat daun,",
+   "cap": "*Urat daun*,"
+  },
+  {
+   "src": "c27",
+   "in": 23.55,
+   "out": 24.72,
+   "a": 23.6,
+   "b": 24.64,
+   "z": 1.08,
+   "note": "titisan embun,",
+   "cap": "*titisan embun*,"
+  },
+  {
+   "src": "c27",
+   "in": 24.95,
+   "out": 29.31,
+   "a": 25.0,
+   "b": 29.15,
+   "z": 1.0,
+   "note": "tekstur kain sampai ke mata serangga, semuanya jelas dan tajam.",
+   "cap": "tekstur kain|sampai ke *mata serangga*,|semuanya jelas dan *tajam*."
+  },
+  {
+   "src": "c27",
+   "in": 40.15,
+   "out": 47.06,
+   "a": 40.2,
+   "b": 46.9,
+   "z": 1.14,
+   "note": "Lensa 75mm ini boleh ambil gambar sedekat 4 hingga 7.5 cm dari objek.",
+   "cap": "Lensa *75mm* ini|boleh ambil gambar sedekat|*4 hingga 7.5 cm*|dari objek."
+  },
+  {
+   "src": "c27",
+   "in": 47.15,
+   "out": 51.96,
+   "a": 47.2,
+   "b": 51.8,
+   "z": 1.0,
+   "note": "Salutan lensa berlapis pula kekalkan kejelasan kamera telefon awak.",
+   "cap": "Salutan lensa berlapis pula|kekalkan *kejelasan*|kamera telefon awak."
+  },
+  {
+   "src": "c27",
+   "in": 55.11,
+   "out": 59.54,
+   "a": 55.16,
+   "b": 59.38,
+   "z": 1.08,
+   "note": "Jadi hasilnya tajam dan hampir setaraf dengan kamera DSLR.",
+   "cap": "Jadi hasilnya *tajam*|dan hampir setaraf|dengan kamera *DSLR*."
+  },
+  {
+   "src": "c27",
+   "in": 60.15,
+   "out": 62.46,
+   "a": 60.2,
+   "b": 62.38,
+   "z": 1.0,
+   "note": "Klipnya diperbuat daripada logam,",
+   "cap": "Klipnya diperbuat|daripada *logam*,"
+  },
+  {
+   "src": "c27",
+   "in": 62.59,
+   "out": 64.58,
+   "a": 62.64,
+   "b": 64.42,
+   "z": 1.14,
+   "note": "dan ada skru untuk ketatkan.",
+   "cap": "dan ada *skru*|untuk ketatkan."
+  },
+  {
+   "src": "c27",
+   "in": 64.63,
+   "out": 66.5,
+   "a": 64.68,
+   "b": 66.34,
+   "z": 1.0,
+   "note": "Jadi tak perlu risau lensa jatuh.",
+   "cap": "Jadi tak perlu risau|lensa *jatuh*."
+  },
+  {
+   "src": "c27",
+   "in": 66.51,
+   "out": 84.46,
+   "a": 66.56,
+   "b": 84.3,
+   "z": 1.08,
+   "note": "Pasang dan buka pun cepat dan mudah. Lensa ini sesuai untuk lebih 90% telefon pintar di pasaran. Ia juga pilihan hadiah yang sempurna untuk kawan yang suka fotografi, berniaga online atau konten kreator. Tak perlu beli kamera mahal untuk ambil gambar makro yang cantik.",
+   "cap": "Pasang dan buka pun|cepat dan *mudah*.|Lensa ini sesuai untuk|lebih *90%*|telefon pintar di pasaran.|Ia juga pilihan|*hadiah* yang sempurna|untuk kawan yang suka|fotografi, berniaga online|atau *konten kreator*.|Tak perlu beli|*kamera mahal*|untuk ambil gambar|makro yang cantik."
+  },
+  {
+   "src": "c27",
+   "in": 84.63,
+   "out": 88.3,
+   "a": 84.68,
+   "b": 88.14,
+   "z": 1.0,
+   "note": "Tekan beg kuning sekarang, dapatkan Ulanzi Super Macro Lens.",
+   "cap": "Tekan *beg kuning* sekarang,|dapatkan|*Ulanzi Super Macro Lens*."
+  }
+ ],
+ "tail": {
+  "src": "c13",
+  "in": 8.0,
+  "dur": 2.4
+ },
+ "overlays": [
+  {
+   "mode": "full",
+   "src": "c1",
+   "in": 2.0,
+   "dur": 2.2,
+   "at": [
+    "c27",
+    5.84
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c2",
+   "in": 0.0,
+   "dur": 1.25,
+   "at": [
+    "c27",
+    8.4
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c3",
+   "in": 1.0,
+   "dur": 1.75,
+   "at": [
+    "c27",
+    9.65
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c8",
+   "in": 0.0,
+   "dur": 2.18,
+   "at": [
+    "c27",
+    17.42
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c24",
+   "in": 0.0,
+   "dur": 1.0,
+   "at": [
+    "c27",
+    19.6
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c11",
+   "in": 0.5,
+   "dur": 1.72,
+   "at": [
+    "c27",
+    20.6
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c20",
+   "in": 0.5,
+   "dur": 1.03,
+   "at": [
+    "c27",
+    22.36
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c24",
+   "in": 12.0,
+   "dur": 1.2,
+   "at": [
+    "c27",
+    23.6
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c10",
+   "in": 20.0,
+   "dur": 1.0,
+   "at": [
+    "c27",
+    25.0
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c22",
+   "in": 1.0,
+   "dur": 1.3,
+   "at": [
+    "c27",
+    26.0
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c12",
+   "in": 10.0,
+   "dur": 2.07,
+   "at": [
+    "c27",
+    27.3
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c7",
+   "in": 3.0,
+   "dur": 2.8,
+   "at": [
+    "c27",
+    40.2
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c23",
+   "in": 4.0,
+   "dur": 2.0,
+   "at": [
+    "c27",
+    43.0
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c9",
+   "in": 13.0,
+   "dur": 2.13,
+   "at": [
+    "c27",
+    45.0
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c25",
+   "in": 2.5,
+   "dur": 2.3,
+   "at": [
+    "c27",
+    47.2
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c5",
+   "in": 0.0,
+   "dur": 1.5,
+   "at": [
+    "c27",
+    49.5
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c25",
+   "in": 6.0,
+   "dur": 1.03,
+   "at": [
+    "c27",
+    51.0
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c14",
+   "in": 0.0,
+   "dur": 2.34,
+   "at": [
+    "c27",
+    55.16
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c19",
+   "in": 0.0,
+   "dur": 2.09,
+   "at": [
+    "c27",
+    57.5
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c6",
+   "in": 1.0,
+   "dur": 2.33,
+   "at": [
+    "c27",
+    60.2
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c8",
+   "in": 3.0,
+   "dur": 1.97,
+   "at": [
+    "c27",
+    62.64
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c23",
+   "in": 6.0,
+   "dur": 1.87,
+   "at": [
+    "c27",
+    64.68
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c8",
+   "in": 8.0,
+   "dur": 2.14,
+   "at": [
+    "c27",
+    66.56
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c8",
+   "in": 15.0,
+   "dur": 2.8,
+   "at": [
+    "c27",
+    68.7
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c16",
+   "in": 0.0,
+   "dur": 2.2,
+   "at": [
+    "c27",
+    71.5
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c3",
+   "in": 8.0,
+   "dur": 2.8,
+   "at": [
+    "c27",
+    73.7
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c21",
+   "in": 0.0,
+   "dur": 1.5,
+   "at": [
+    "c27",
+    76.5
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c17",
+   "in": 3.0,
+   "dur": 2.8,
+   "at": [
+    "c27",
+    78.0
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c15",
+   "in": 0.0,
+   "dur": 1.7,
+   "at": [
+    "c27",
+    80.8
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c26",
+   "in": 0.0,
+   "dur": 2.03,
+   "at": [
+    "c27",
+    82.5
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c23",
+   "in": 1.5,
+   "dur": 1.82,
+   "at": [
+    "c27",
+    84.68
+   ]
+  },
+  {
+   "mode": "full",
+   "src": "c13",
+   "in": 4.0,
+   "dur": 1.8,
+   "at": [
+    "c27",
+    86.5
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "id": "title-main",
+   "kind": "title",
+   "in": [
+    "c27",
+    8.4
+   ],
+   "out": [
+    "c27",
+    11.18
+   ],
+   "kicker": "Kenalkan",
+   "title": "Ulanzi",
+   "sub": "Super Macro Lens",
+   "y": 330
+  },
+  {
+   "id": "detail",
+   "kind": "trilogy",
+   "in": [
+    "c27",
+    22.36
+   ],
+   "out": [
+    "c27",
+    29.15
+   ],
+   "head": "Nampak semua detail",
+   "items": [
+    {
+     "at": [
+      "c27",
+      22.36
+     ],
+     "num": "1",
+     "label": "Urat daun"
+    },
+    {
+     "at": [
+      "c27",
+      23.6
+     ],
+     "num": "2",
+     "label": "Embun"
+    },
+    {
+     "at": [
+      "c27",
+      26.2
+     ],
+     "num": "3",
+     "label": "Serangga"
+    }
+   ]
+  },
+  {
+   "id": "t-jarak",
+   "kind": "title",
+   "in": [
+    "c27",
+    40.2
+   ],
+   "out": [
+    "c27",
+    46.9
+   ],
+   "kicker": "Lensa 75mm",
+   "title": "4–7.5 cm",
+   "sub": "jarak dari objek",
+   "y": 330
+  },
+  {
+   "id": "t-dslr",
+   "kind": "title",
+   "in": [
+    "c27",
+    55.16
+   ],
+   "out": [
+    "c27",
+    59.38
+   ],
+   "kicker": "Salutan berlapis",
+   "title": "Hampir DSLR",
+   "sub": "tajam & jelas",
+   "y": 330
+  },
+  {
+   "id": "t-klip",
+   "kind": "title",
+   "in": [
+    "c27",
+    60.2
+   ],
+   "out": [
+    "c27",
+    66.34
+   ],
+   "kicker": "Klip logam + skru",
+   "title": "Tak Jatuh",
+   "sub": "ketat & selamat",
+   "y": 330
+  },
+  {
+   "id": "t-90",
+   "kind": "title",
+   "in": [
+    "c27",
+    68.7
+   ],
+   "out": [
+    "c27",
+    73.5
+   ],
+   "kicker": "Sesuai untuk",
+   "title": "90% Telefon",
+   "sub": "telefon pintar di pasaran",
+   "y": 330
+  },
+  {
+   "id": "t-hadiah",
+   "kind": "title",
+   "in": [
+    "c27",
+    73.7
+   ],
+   "out": [
+    "c27",
+    80.6
+   ],
+   "kicker": "Pilihan hadiah",
+   "title": "Hadiah Sempurna",
+   "sub": "fotografi · niaga · konten",
+   "y": 330
+  },
+  {
+   "id": "cta",
+   "kind": "cta",
+   "in": [
+    "c27",
+    84.68
+   ],
+   "buttonAt": [
+    "c27",
+    85.0
+   ],
+   "pulseAt": [
+    "c27",
+    87.0
+   ],
+   "kicker": "Tak perlu kamera mahal",
+   "title": "Ulanzi Macro",
+   "by": "lensa makro 75mm",
+   "button": "Tekan beg kuning"
+  }
+ ],
+ "sfx": [
+  {
+   "file": "whoosh.mp3",
+   "at": 0.0,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": 1.15,
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    5.84
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c27",
+    8.4
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c27",
+    8.6
+   ],
+   "dur": 1.8,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    17.42
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c27",
+    22.4
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c27",
+    23.65
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c27",
+    26.2
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    40.2
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    47.2
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    55.16
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "sparkle.mp3",
+   "at": [
+    "c27",
+    55.4
+   ],
+   "dur": 1.8,
+   "vol": 0.22
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    60.2
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    66.56
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    68.7
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    73.7
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "whoosh.mp3",
+   "at": [
+    "c27",
+    80.8
+   ],
+   "lead": 0.13,
+   "dur": 0.57,
+   "vol": 0.25
+  },
+  {
+   "file": "impact-bass-1.mp3",
+   "at": [
+    "c27",
+    84.68
+   ],
+   "lead": 0.04,
+   "dur": 2.1,
+   "vol": 0.3
+  },
+  {
+   "file": "pop.mp3",
+   "at": [
+    "c27",
+    85.0
+   ],
+   "lead": 0.1,
+   "dur": 0.72,
+   "vol": 0.3
+  }
+ ],
+ "_ovplan": [
+  [
+   5.84,
+   "c1",
+   2.0
+  ],
+  [
+   8.4,
+   "c2",
+   0.0
+  ],
+  [
+   9.65,
+   "c3",
+   1.0
+  ],
+  [
+   17.42,
+   "c8",
+   0.0
+  ],
+  [
+   19.6,
+   "c24",
+   0.0
+  ],
+  [
+   20.6,
+   "c11",
+   0.5
+  ],
+  [
+   22.36,
+   "c20",
+   0.5
+  ],
+  [
+   23.6,
+   "c24",
+   12.0
+  ],
+  [
+   25.0,
+   "c10",
+   20.0
+  ],
+  [
+   26.0,
+   "c22",
+   1.0
+  ],
+  [
+   27.3,
+   "c12",
+   10.0
+  ],
+  [
+   40.2,
+   "c7",
+   3.0
+  ],
+  [
+   43.0,
+   "c23",
+   4.0
+  ],
+  [
+   45.0,
+   "c9",
+   13.0
+  ],
+  [
+   47.2,
+   "c25",
+   2.5
+  ],
+  [
+   49.5,
+   "c5",
+   0.0
+  ],
+  [
+   51.0,
+   "c25",
+   6.0
+  ],
+  [
+   55.16,
+   "c14",
+   0.0
+  ],
+  [
+   57.5,
+   "c19",
+   0.0
+  ],
+  [
+   60.2,
+   "c6",
+   1.0
+  ],
+  [
+   62.64,
+   "c8",
+   3.0
+  ],
+  [
+   64.68,
+   "c23",
+   6.0
+  ],
+  [
+   66.56,
+   "c8",
+   8.0
+  ],
+  [
+   68.7,
+   "c8",
+   15.0
+  ],
+  [
+   71.5,
+   "c16",
+   0.0
+  ],
+  [
+   73.7,
+   "c3",
+   8.0
+  ],
+  [
+   76.5,
+   "c21",
+   0.0
+  ],
+  [
+   78.0,
+   "c17",
+   3.0
+  ],
+  [
+   80.8,
+   "c15",
+   0.0
+  ],
+  [
+   82.5,
+   "c26",
+   0.0
+  ],
+  [
+   84.68,
+   "c23",
+   1.5
+  ],
+  [
+   86.5,
+   "c13",
+   4.0
+  ]
+ ]
+}
