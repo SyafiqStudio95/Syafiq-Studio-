@@ -59,6 +59,20 @@ That project is the reference: copy its decisions, read its `edit.json`, `EDIT.m
    draft MP4 (`hyperframes render --quality draft`), which plays smoothly everywhere.
 10. On approval: `toolkit/finish.sh <name> <output-name>` → master + `-social.mp4` at about -14 LUFS. Send the social file.
 
+## Voice-only "review bab" series (Alfu Sanatin Bab 1, Nov 2026 → reuse for Bab 2, 3 …)
+
+When the camera was covered (clips are black, luma ~23) the picture is built from motion graphics, in the
+style of the user's reference reel: dark green board, thin gold frame, gold pill "BAB N · TAJUK", headline
+captions at the top with gold UPPERCASE keywords, flat stick-figure scenes on a ground line, Syafiq Studio
+watermark under the ground line, closing card "TEKAN BEG KUNING" + Like/Komen/Simpan/Kongsi.
+- Copy `alfu-bab1/` (tools/story.py, tools/panels_spec.py, edit.json theme/frame/captionStyle) for the next bab;
+  change `frame.pill`, write keep.txt, then rewrite the `P` list in tools/panels_spec.py and run it.
+- `edit.json`: `"captionStyle": "headline"`, `"frame"`, `"panels"`, empty `hook.clips`; images in `assets/images/`.
+- **Never draw sahabah** as figures: they appear as a `light` item with a name tag (or a card).
+- Stutter check before showing: re-transcribe the *cut* audio verbatim (prompt with "sa- saya" fillers,
+  `condition_on_previous_text=False`) and transcribe suspicious starts on their own (found "Dan… dalam").
+- Render of 137 s took ~10 min; social copy ≈ 15 MB.
+
 ## Gotchas already paid for
 
 - HyperFrames **secondaries and hue curves blotch** dark and grey areas (macro-block patches): don't use them.
