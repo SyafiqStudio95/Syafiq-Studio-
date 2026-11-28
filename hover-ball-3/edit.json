@@ -407,7 +407,7 @@
     "c3",
     57.3
    ],
-   "tag": "Bonus penguin!"
+   "tag": "Set + penguin"
   }
  ],
  "cards": [
@@ -486,9 +486,9 @@
     "c3",
     56.64
    ],
-   "kicker": "Bonus dalam set",
+   "kicker": "Pilihan set",
    "title": "Penguin + Pam",
-   "sub": "mainan tambahan",
+   "sub": "ada set bersama penguin",
    "y": 330
   },
   {
@@ -508,7 +508,7 @@
    ],
    "kicker": "Musim hujan",
    "title": "Hover Ball",
-   "by": "+ bonus penguin & pam",
+   "by": "+ pilihan set penguin",
    "button": "Tekan beg kuning"
   }
  ],
